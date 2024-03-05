@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdBuffer Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdBuffer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdBuffer.html" target="topic">TIdBuffer Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdBubbleSortStringList_BubbleSort@TIdStringListSortCompare.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdBuffer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdBuffer Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdBuffer.html" target="topic">TIdBuffer Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdBuffer.html" target="topic">TIdBuffer Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdBuffer.html" target="topic">TIdBuffer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements a buffer used for input and output operations in the Indy library.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdBuffer_pas.html" target="topic">IdBuffer</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdBuffer.png" border="0" alt="" title="" usemap="#TIdBuffer"><map class="Element150" name="TIdBuffer"><area class="Element150" shape="rect" coords="111,0,169,15" href="TIdBuffer.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdBuffer = <strong>class</strong>(TIdBaseObject);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdBuffer is a TObject descendant that implements a buffer used for input and output operations in the Indy library. TIdBuffer is used as a read and/or <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">write</a> buffer for the communication layer. TIdBuffer is optimized for adding data at the end of the buffer, and extracting data from the beginning of the buffer.&nbsp;</p>
+<p class="Element10">
+TIdBuffer isolates the differences between memory allocation and pointer operations as implemented on the platforms supported by the Indy library.&nbsp;</p>
+<p class="Element10">
+TIdBuffer implements properties that manage the size, growth, and encoding used for the buffer class instance, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="17%">
+<div class="Element66">
+Property&nbsp;</div></td><td class="Element65" valign="top" width="83%">
+<div class="Element66">
+Usage&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+<a href="TIdBuffer_Capacity.html" target="topic">Capacity</a>&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+Maximum size to allocate for the buffer.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+<a href="TIdBuffer_Encoding.html" target="topic">Encoding</a>&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdBuffer_Encoding.html" target="topic">Encoding</a> used for string values added to the buffer.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+<a href="TIdBuffer_GrowthFactor.html" target="topic">GrowthFactor</a>&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+Threshold for allocating additional buffer storage.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+<a href="TIdBuffer_Size.html" target="topic">Size</a>&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+Number of bytes in buffer storage.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+<a href="TIdBuffer_AsString.html" target="topic">AsString</a>&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+Contents of the buffer as a String data type.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+By default, TIdBuffer uses ANSI-encoding for string values added to the buffer using the <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">Write</a> methods. Set the value in <a href="TIdBuffer_Encoding.html" target="topic">Encoding</a> to another <a href="TIdEncoding.html" target="topic">TIdEncoding</a> value to alter the encoding used in the <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">Write</a> methods.&nbsp;</p>
+<p class="Element10">
+When additional internal storage is required for the buffer, the value in <a href="TIdBuffer_GrowthFactor.html" target="topic">GrowthFactor</a> is used to determine the number of additional bytes allocated. The default value for <a href="TIdBuffer_GrowthFactor.html" target="topic">GrowthFactor</a> is 2048.&nbsp;</p>
+<p class="Element10">
+TIdBuffer implements methods that handle reading and writing various data types in the buffer. <a href="TIdBuffer_Extract@Integer.html" target="topic">Extract</a> methods are used to read and <a href="TIdBuffer_Remove@Integer.html" target="topic">remove</a> existing byte values in the buffer, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="61%">
+<div class="Element66">
+Method&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Storage Data Type&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_Extract@Integer.html" target="topic">Extract</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+String&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToByte@Integer.html" target="topic">ExtractToByte</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+Byte&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToBytes@TIdBytes@Integer@Boolean@Integer.html" target="topic">ExtractToBytes</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdBytes.html" target="topic">TIdBytes</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToCardinal@Integer.html" target="topic">ExtractToCardinal</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+Cardinal&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToIPv6@Integer.html" target="topic">ExtractToIPv6</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdIPv6Address.html" target="topic">TIdIPv6Address</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToIdBuffer@TIdBuffer@Integer@Integer.html" target="topic">ExtractToIdBuffer</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+TIdBuffer&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToInt64@Integer.html" target="topic">ExtractToInt64</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+Int64&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToStream@TIdStream@Integer@Integer.html" target="topic">ExtractToStream</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdStream.html" target="topic">TIdStream</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="61%">
+<div class="Element68">
+<a href="TIdBuffer_ExtractToWord@Integer.html" target="topic">ExtractToWord</a>&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+Word&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdBuffer maintains an internal <a href="TIdBufferBytesRemoved.html" target="topic">TIdBufferBytesRemoved</a> event handler that is signalled when byte values are read and removed from the internal storage for the buffer.&nbsp;</p>
+<p class="Element10">
+Use the overloaded constructors to <a href="TIdBuffer_Create.html" target="topic">create</a> buffer instances and to perform assignment for the <a href="TIdBuffer_GrowthFactor.html" target="topic">GrowthFactor</a> or the <a href="TIdBufferBytesRemoved.html" target="topic">TIdBufferBytesRemoved</a> event handler used for the buffer.&nbsp;</p>
+<p class="Element10">
+TIdBuffer implements overloaded <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">Write</a> methods that are used to convert various data types to an array of bytes as used in the internal storage for the buffer. Arguments passed to the overloaded <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">Write</a> methods generally indicate the value to be stored and the zero-based position in the internal storage for the buffer where the values will be stored. Other arguments may reflect additional information needed to convert the original data type to a sequence of byte values.&nbsp;</p>
+<p class="Element10">
+TIdBuffer implements other properties and methods that provide access to the byte values stored in the buffer, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_AsString.html" target="topic">AsString</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_Clear.html" target="topic">Clear</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_IndexOf@TIdBytes@Integer.html" target="topic">IndexOf</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_IndexOf@TIdBytes@Integer.html" target="topic">IndexOf</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_PeekByte@Integer.html" target="topic">PeekByte</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdBuffer_SaveToStream@TIdStream.html" target="topic">SaveToStream</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdBuffer is used extensively in <a href="TIdIOHandler.html" target="topic">TIdIOHandler</a>, both as a property and as an argument to methods that perform the read and <a href="TIdBuffer_Write@Byte@Integer.html" target="topic">write</a> operation for the IO handler.&nbsp;</p>
+<p class="Element10">
+<img src="DotNet.jpg" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+The .Net platform forces us to perform copies from strings to Bytes so that it can do the proper unicode and other conversions. The copy is a separate issue and we considered several options. For .Net, we will always have to copy data to send or to receive to translate it to binary.&nbsp;</p>
+<p class="Element10">
+For example if we have a string it must be converted to bytes. This conversion requires a copy. All strings are WideString and must be converted to single bytes by a convertor. This is not limited to strings.&nbsp;</p>
+<p class="Element10">
+In VCL previously all strings were AnsiString so we used a pointer and just accessed the memory directly from the string. This avoided the overhead of a copy.&nbsp;</p>
+<p class="Element10">
+We have come up with several ideas on how to allow the copy on .net, while avoiding the copy on VCL to keep the performance benefit. However we must do it in a single source manner and in a manner that does not impact the code negatively.&nbsp;</p>
+<p class="Element10">
+For now for VCL we also do a copy. This has the advantage that Byte arrays are reference counted and automaticaly handled by Delphi. For example:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00016');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00016"><pre class="Element12">  WriteBytes(StringToBytes(s));</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The array returned by this function will automatically be freed by Delphi.&nbsp;</p>
+<p class="Element10">
+There are other options that are nearly as transparent but have the additional overhead of requiring class creation. These classes can be used to copy for .net and proxy on VCL. It all works very nice and has low memory overhead. The objects can then be freed by default in methods that accept them.&nbsp;</p>
+<p class="Element10">
+However after analysis, copy on VCL may not be that bad after all. The copy only really impacts strings. The overhead to copy strings is minimal and only used in commands etc. The big transfers come from files, streams, or other. Such transfers have to be mapped into memory in VCL anyways, and if we map directly into the byte array instead of the previous classes peformance should be fine.&nbsp;</p>
+<p class="Element10">
+In short - copy under VCL should be acceptable if we watch for bottlenecks and fix them appropriately without having to <a href="TIdBuffer_Create.html" target="topic">create</a> proxy classes. The only problem remains for transmitting large memory blocks. But if this is done against a fixed copy buffer the performance hit will be neglible and it is not a common task to transmit large memory blocks.&nbsp;</p>
+<p class="Element10">
+For such transfers from streams, etc the user can declare a persistent array of bytes that is not freed between each call to WriteBytes.&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Kudzu</li>
+</ul>&nbsp;</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdBuffer.html" target="topic">TIdBuffer Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdBuffer.html" target="topic">TIdBuffer Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdBuffer.html" target="topic">TIdBuffer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

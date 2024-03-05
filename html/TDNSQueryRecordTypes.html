@@ -1,0 +1,239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TDNSQueryRecordTypes Enumeration</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TDNSQueryRecordTypes.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Structs, Records, Enums &gt; <a href="TDNSQueryRecordTypes.html" target="topic">TDNSQueryRecordTypes Enumeration</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TDays.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="TDNSServerTypes.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TDNSQueryRecordTypes Enumeration</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Identifies resource record types that can be requested in a DNS query.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSCommon_pas.html" target="topic">IdDNSCommon</a></p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TDNSQueryRecordTypes = (
+  DqtA,
+  DqtNS,
+  DqtMD,
+  DqtMF,
+  DqtName,
+  DqtSOA,
+  DqtMB,
+  DqtMG,
+  DqtMR,
+  DqtNull,
+  DqtWKS,
+  DqtPTR,
+  DqtHINFO,
+  DqtMINFO,
+  DqtMX,
+  DqtTXT,
+  DqtNSAP,
+  DqtNSAP_PTR,
+  DqtLOC,
+  DqtIXFR,
+  DqtAXFR,
+  DqtSTAR,
+  DqtAAAA
+);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TDNSQueryRecordTypes is an enumerated type that represents the valid values that can be used for selecting DNS Resource Record returned in a DNS query response by their resource record type.&nbsp;</p>
+<p class="Element10">
+TDNSQueryRecordTypes may contain one or more of the following values, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="19%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="81%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtA&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+IPv4 Host address&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtAAAA&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+IPv6 Host address&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtNS&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Authoritative name server&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMD&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mail destination (Obsolete - use MX)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMF&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mail forwarder (Obsolete - use MX)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtName&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Canonical name for an alias&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtSOA&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Start of a zone of authority marker&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMB&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mailbox domain name (EXPERIMENTAL)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMG&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mail group member (EXPERIMENTAL)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMR&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mail rename domain name (EXPERIMENTAL)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtNull&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Null resource record (EXPERIMENTAL)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtWKS&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Well known service description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtPTR&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Domain name pointer&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtHINFO&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Host information&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMINFO&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mailbox or mail list information&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtMX&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Mail exchange&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtTXT&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Text strings&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtNSAP&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Network Server Address Protocol request&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtNSAP_PTR&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+PTR resource records for NSAP entries&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtLOC&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Geographic location request&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtAXFR&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+Zone transfer query request&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+DqtSTAR&nbsp;</div></td><td class="Element67" valign="top" width="81%">
+<div class="Element68">
+All resource record types&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

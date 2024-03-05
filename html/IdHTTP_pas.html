@@ -1,0 +1,331 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdHTTP.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdHTTP_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdHTTP_pas.html" target="topic">IdHTTP.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdHL7_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdHTTPHeaderInfo_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdHTTP.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements an HTTP client.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdHTTP.pas contains Classes, Types, Procedures, and Functions needed to define and implement an Hypertext Transfer Protocol (HTTP) client, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1945.txt"> RFC 1945 - Hypertext Transfer Protocol version 1.0 [HTTP/1.0] </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2109.txt"> RFC 2109 - HTTP State Management Mechanism </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2616.txt"> RFC 2616 - Hypertext Transfer Protocol version 1.1 [HTTP/1.1] </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2965.txt"> RFC 2965 - HTTP State Management Mechanism </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.netscape.com/newsref/std/cookie_spec.html"> Netscape Persistent Client State - HTTP Cookies </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2660.txt"> RFC 2660 - The Secure HyperText Transfer Protocol </a>&nbsp;</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdHTTP.html" target="topic">TIdHTTP</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPRequest.html" target="topic">TIdHTTPRequest</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponse.html" target="topic">TIdHTTPResponse</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPProtocol.html" target="topic">TIdHTTPProtocol</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCookieRFC2109.html" target="topic">TIdCookieRFC2109</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCookieRFC2965.html" target="topic">TIdCookieRFC2965</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCookies.html" target="topic">TIdCookies</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPProtocolException.html" target="topic">EIdHTTPProtocolException</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+<a href="IdSys_pas.html" target="topic">Exception</a> raised during processing of a HTTP response.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdUnknownProtocol.html" target="topic">EIdUnknownProtocol</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Exception raised for an invalid protocol in the URL for a HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Specifies an HTTP client implementation.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTP.html" target="topic">TIdHTTP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements an HTTP client.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPProtocol.html" target="topic">TIdHTTPProtocol</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a HTTP protocol handler for connection and request/response processing.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPRequest.html" target="topic">TIdHTTPRequest</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Provides access to headers and properties for an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPResponse.html" target="topic">TIdHTTPResponse</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Provides access to headers and properties for an HTTP response.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodConnect.html" target="topic">Id_HTTPMethodConnect</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the Connect method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodDelete.html" target="topic">Id_HTTPMethodDelete</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the Delete method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodGet.html" target="topic">Id_HTTPMethodGet</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the GET method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodHead.html" target="topic">Id_HTTPMethodHead</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the HEAD method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodOptions.html" target="topic">Id_HTTPMethodOptions</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the OPTIONS method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodPost.html" target="topic">Id_HTTPMethodPost</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the POST method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodPut.html" target="topic">Id_HTTPMethodPut</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the PUT method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_HTTPMethodTrace.html" target="topic">Id_HTTPMethodTrace</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the TRACE method in an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TIdHTTP_HandleRedirects.html" target="topic">Id_TIdHTTP_HandleRedirects</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdHTTP_HandleRedirects.html" target="topic">TIdHTTP.HandleRedirects</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TIdHTTP_MaxAuthRetries.html" target="topic">Id_TIdHTTP_MaxAuthRetries</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the MaxAuthRetries property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TIdHTTP_MaxHeaderLines.html" target="topic">Id_TIdHTTP_MaxHeaderLines</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTP.MaxHeaderLines property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TIdHTTP_ProtocolVersion.html" target="topic">Id_TIdHTTP_ProtocolVersion</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdHTTP_ProtocolVersion.html" target="topic">TIdHTTP.ProtocolVersion</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TIdHTTP_RedirectMax.html" target="topic">Id_TIdHTTP_RedirectMax</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTP.RedirectMax property.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Enumerations"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Enumerations');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgEnumerations">Enumerations</a></div>
+<div id="divEnumerations">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Enumeration&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPConnectionType.html" target="topic">TIdHTTPConnectionType</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates the host and transport used for a HTTP connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPOption.html" target="topic">TIdHTTPOption</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents HTTP protocol options available for use with an HTTP client.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPProtocolVersion.html" target="topic">TIdHTTPProtocolVersion</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the HTTP Protocol version for a request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPWhatsNext.html" target="topic">TIdHTTPWhatsNext</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Identifies the next action required after a request/response protocl exchange.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Types"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Types');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTypes">Types</a></div>
+<div id="divTypes">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPMethod.html" target="topic">TIdHTTPMethod</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the HTTP Method for a request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPOnHeadersAvailable.html" target="topic">TIdHTTPOnHeadersAvailable</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPOnRedirectEvent.html" target="topic">TIdHTTPOnRedirectEvent</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Event type triggered for a HTTP redirection request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPOptions.html" target="topic">TIdHTTPOptions</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the set of HTTP options used for an HTTP client.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdOnAuthorization.html" target="topic">TIdOnAuthorization</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Event signalled when authentication is required for an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdOnSelectAuthorization.html" target="topic">TIdOnSelectAuthorization</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Event type signalled when an HTTP client selects an authentication mechanism.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

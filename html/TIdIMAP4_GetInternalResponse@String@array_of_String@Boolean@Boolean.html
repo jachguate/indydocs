@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIMAP4.GetInternalResponse Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIMAP4_GetInternalResponse@String@array_of_String@Boolean@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic">TIdIMAP4 Methods</a> &gt; <a href="TIdIMAP4_GetInternalResponse@String@array_of_String@Boolean@Boolean.html" target="topic">GetInternalResponse Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIMAP4_FindHowServerCreatesFolders.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIMAP4_GetResponse.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIMAP4.GetInternalResponse Method</div>
+<div class="Element7">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads mutiple untagged responses or a single tagged response from the server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> GetInternalResponse(
+    <strong>const</strong> ATag: <strong>String</strong>; 
+    AExpectedResponses: <strong>array</strong> <strong>of</strong> <strong>String</strong>; 
+    ASingleLineMode: Boolean; 
+    ASingleLineMayBeSplit: Boolean = False
+): <strong>string</strong>; <strong>overload</strong>; <strong>reintroduce</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ATag&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Command tag expecetd in the IMAP4 response.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AExpectedResponses&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Success values for the current response.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASingleLineMode&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Caller wants only the first line of the server response.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASingleLineMayBeSplit&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+The first line may contain values split among one or more lines. Default value is False.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+String - Text from the server response.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GetInternalResponse is a procedure that implements reading of tagged and untagged IMAP4 responses from the remote IMAP4 server. GetInternalResponse is called from the implementation of the <a href="TIdIMAP4_GetResponse.html" target="topic">GetResponse</a> method.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse creates and maintains a TStringList that is used to capture the response line(s) from the IMAP4 server using <a href="TIdIMAP4_ReadLnWait.html" target="topic">ReadLnWait</a>. GetInternalLineResponse will read multiple untagged responses until the tagged response in ATag is encountered, or a single tagged response line having the value in ATag.&nbsp;</p>
+<p class="Element10">
+ASingleLineMode indicates if the caller wants only the first line in the IMAP4 response. For instance, the caller may be looking only for &quot;* FETCH (blah blah)&quot;, because he needs to parse that line to figure out how the rest will follow. This arises with a number of the FETCH commands where the caller needs to get the byte-count from the first line before he can <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> the rest of the response.&nbsp;</p>
+<p class="Element10">
+Note &quot;FETCH&quot; would have to be in AExpectedResponses.&nbsp;</p>
+<p class="Element10">
+When ASingleLineMode contains False, the caller wants everything up to and including the reply terminator (e.g. &quot;C45 <a href="OK.html" target="topic">OK</a> Completed&quot;).&nbsp;</p>
+<p class="Element10">
+In ASingleLineMode, we ignore any lines that dont have one of AExpectedResponses at the start, otherwise we add all lines to .Text and later strip out any lines that dont have one of AExpectedResponses at the start.&nbsp;</p>
+<p class="Element10">
+ASingleLineMayBeSplit (which should only be used with ASingleLineMode = True) deals with the (unusual) case where the server cannot or does not fit a single-line response onto one line. This arises when FETCHing the BODYSTRUCTURE, which can be very long. The server (Courier, anyway) signals it by adding a byte-count to the end of the first line, that would not normally be present.&nbsp;</p>
+<p class="Element10">
+For example, for normal short responses, the server would send:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">FETCH (BODYSTRUCTURE (Part1 Part2))</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+but if it splits it, it sends:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">FETCH (BODYSTRUCTURE (Part1 {16} Part2))</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+The number in the chain brackets {16} seems to be random.&nbsp;</p>
+<p class="Element10">
+WARNING: If you use ASingleLineMayBeSplit on a line that is EXPECTED to end with a byte-count, the code will break, so don't use it unless absolutely necessary.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse handles server response lines that include the &quot;BYE&quot; command that indicates pending disconnection from the server. If the value &quot;BYE&quot; is not included in AExpectedResponses, the disconnection is not expected and causes the value in <a href="TIdIMAP4_ConnectionState.html" target="topic">ConnectionState</a> to be set to csUnexpectedlyDisconnected. An <a href="EIdDisconnectedProbablyIdledOut.html" target="topic">EIdDisconnectedProbablyIdledOut</a> is raised in this circumstance.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse calls LastCmdResult.ParseResponse using the command tag in ATag and the TStringList containing response lines to prepare the response for use in the IMAP4 client. GetInternalResponse frees the TStringList prior to exiting from the method.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIMAP4_GetResponse.html" target="topic">GetResponse</a> TIdRFCReply</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

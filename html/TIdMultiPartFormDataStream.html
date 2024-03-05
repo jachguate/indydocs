@@ -1,0 +1,190 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMultiPartFormDataStream Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMultiPartFormDataStream.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMPiXFTPListItem_RecLength.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdMultiPartFormDataStream.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMultiPartFormDataStream Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements support for MIME-like multipart form responses.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdMultipartFormData_pas.html" target="topic">IdMultipartFormData</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdMultiPartFormDataStream.png" border="0" alt="" title="" usemap="#TIdMultiPartFormDataStream"><map class="Element150" name="TIdMultiPartFormDataStream"><area class="Element150" shape="rect" coords="93,0,176,15" href="TIdBaseStream.html"><area class="Element150" shape="rect" coords="206,0,348,15" href="TIdMultiPartFormDataStream.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdMultiPartFormDataStream = <strong>class</strong>(TIdBaseStream);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdMultiPartFormDataStream is a <a href="TIdBaseStream.html" target="topic">TIdBaseStream</a> descendant that implements support for encapsulation of MIME-like &quot;multipart&quot; types in the content of an HTTP message body, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1867.txt"> RFC 1867 - Form-based File Upload in HTML </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2388.txt"> RFC 2388 - Returning Values from Forms: multipart/form-data </a>&nbsp;</p>
+<p class="Element10">
+TIdMultiPartFormDataStream is oriented towards handling HTTP messages specifically defined to carry HTML FORM data suitable for processing via the POST request method. TIdMultiPartFormDataStream includes support for uniformly representing both field and file upload requests, and a MIME compatible representation for field and file upload responses.&nbsp;</p>
+<p class="Element10">
+Multipart form content for the stream can include values for the HTML INPUT elements with the following type attributes:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+CHECKBOX&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+HIDDEN&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+IMAGE&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+PASSWORD&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+RADIO&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+RESET&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SUBMIT&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+TEXT&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+FILE&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdMultiPartFormDataStream uses the MIME media type &quot;multipart/form-data&quot; to specify the content-type for values in the HTTP message sent from a client to a server. Please note that the content-type &quot;multipart/mixed&quot; may be used when multiple files are included the multipart response.&nbsp;</p>
+<p class="Element10">
+TIdMultiPartFormDataStream adheres to the rules for multipart MIME data streams as outlined in the Internet Standards document:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2046.txt"> RFC 2046 - Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types </a>&nbsp;</p>
+<p class="Element10">
+In forms, data items have both a unique name and a value. Data items are represented in TIdMultiPartFormDataStream as a series of message parts with a content-disposition header value of &quot;form-data&quot;, as described in the Internet Standards document:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2183.txt"> RFC 2183 - Communicating Presentation Information in Internet Messages: The Content-Disposition Header Field </a>&nbsp;</p>
+<p class="Element10">
+The content-disposition header contains an (additional) parameter of &quot;name&quot;, where the value of that parameter is the original field name in the form. For example, a part might contain a header:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00047');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00047"><pre class="Element12">  Content-Disposition: form-data; name=&quot;user&quot;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Form field names originally in non-ASCII character sets may be encoded within the value of the &quot;name&quot; parameter using the standard method, as described in the Internet Standards document:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2047.txt"> RFC 2047 - MIME (Multipurpose Internet Mail Extensions) Part Three: Message Header Extensions for Non-ASCII Text </a>&nbsp;</p>
+<p class="Element10">
+As with all multipart MIME types, each part in the data stream has an optional &quot;Content-Type&quot; header, which defaults to the value &quot;text/plain&quot;. If the contents of a file are returned using the form, then the file input is identified as the appropriate media type, if known, or the value &quot;application/octet-stream&quot;. If multiple files are to be returned as the result of a single form entry, they should be represented as a &quot;multipart/mixed&quot; part embedded within the &quot;multipart/form-data&quot;.&nbsp;</p>
+<p class="Element10">
+Each part in the data stream may be encoded and the &quot;content-transfer-encoding&quot; header supplied when the value of that part does not conform to the default encoding.&nbsp;</p>
+<p class="Element10">
+Use the <a href="TIdMultiPartFormDataStream_AddFormField@string@string.html" target="topic">AddFormField</a>, <a href="TIdMultiPartFormDataStream_AddFile@string@string@string.html" target="topic">AddFile</a>, and <a href="TIdMultiPartFormDataStream_AddObject@string@string@TObject@string.html" target="topic">AddObject</a> methods to <a href="TIdMultiPartFormDataStream_Create.html" target="topic">create</a> data items and the corresponding values for the form data stream.&nbsp;</p>
+<p class="Element10">
+TIdMultiPartFormDataStream is used in the overloaded TIdHTTP.Post method when sending a &quot;multipart/form-data&quot; request to an HTTP server.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCustomHTTP_Post@string@TIdMultiPartFormDataStream.html" target="topic">TIdCustomHTTP.Post</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdBaseStream.html" target="topic">TIdBaseStream</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdMultiPartFormDataStream.html" target="topic">TIdMultiPartFormDataStream Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

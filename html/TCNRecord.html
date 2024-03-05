@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TCNRecord Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TCNRecord.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TCNRecord.html" target="topic">TCNRecord Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TARecord.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="TCompressionStream.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TCNRecord Class</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents a resource record returned from a DNS query that includes Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> resource record types.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TCNRecord.png" border="0" alt="" title="" usemap="#TCNRecord"><map class="Element150" name="TCNRecord"><area class="Element150" shape="rect" coords="230,0,310,15" href="TNAMERecord.html"><area class="Element150" shape="rect" coords="340,0,406,15" href="TCNRecord.html"><area class="Element150" shape="rect" coords="123,0,200,15" href="TResultRecord.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TCNRecord = <strong>class</strong>(TNAMERecord);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TCNRecord is a <a href="TNAMERecord.html" target="topic">TNameRecord</a> descendant that represents a resource record returned in the results for a DNS query. TCNRecord is a collection item created to represent a resource resource returned when TIDNSResolver.QueryRecords includes the value qtCN for Mail Exchange resource records.&nbsp;</p>
+<p class="Element10">
+Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> resoure records are used to indicate the canonical or primary name for the owner. Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> resource records cause no additional section processing, but Canonical Names may choose to restart the query at the Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> in certain cases. See the Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> resoure records uses the same DNS packet layout as other <a href="TResultRecord.html" target="topic">TResultRecord</a>-based responses, but extends the use of <a href="TResultRecord_RData.html" target="topic">RData</a> to include the following definition and format:&nbsp;</p>
+<p class="Element10">
+<img src="RR_CNAME.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+CNAME - Domain name which specifies the canonical or primary name for the owner. The owner name is an alias.&nbsp;</p>
+<p class="Element10">
+TCNRecord extends <a href="TNAMERecord.html" target="topic">TNameRecord</a> to implement the specifics of accessing <a href="TResultRecord_RData.html" target="topic">RData</a> values as properties, including <a href="TNAMERecord_HostName.html" target="topic">HostName</a>. <a href="TNAMERecord_HostName.html" target="topic">HostName</a> is used to store the CNAMe value from the resource record.&nbsp;</p>
+<p class="Element10">
+TCNRecord also overrides the <a href="TNAMERecord_Parse@TIdBytes@Integer.html" target="topic">Parse</a> method to read the values in <a href="TResultRecord_RData.html" target="topic">RData</a> into their property counterparts.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TNAMERecord.html" target="topic">TNameRecord</a> <a href="TResultRecord.html" target="topic">TResultRecord</a> <a href="TQueryResult.html" target="topic">TQueryResult</a> TIdDNSResolver.QueryRecords</p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

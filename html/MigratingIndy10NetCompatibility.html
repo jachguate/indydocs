@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>.Net compatibility</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'MigratingIndy10NetCompatibility.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="MigratingIndy10.html" target="topic">Migrating to Indy.Sockets Version 10</a> &gt; <a href="MigratingIndy10NetCompatibility.html" target="topic">.Net compatibility</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="MigratingIndy10.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="MigratingIndy10.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="MigratingIndy10Packages.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+.Net compatibility</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Indy 10 adds to its impressive list of supported platforms by including Windows .Net for the new release. Indy 10 supports the .Net platform using DCCIL and Delphi .Net compiler. By using DCCIL, Indy 10 can be used in Delphi 8 as well as other .Net hosted languages like C#, ASP.NET, Visual Basic.Net, and J#.Net.&nbsp;</p>
+<p class="Element10">
+To accomplish this porting feat, some changes were required of the Indy code base. These changes include the following items specific to supporting the .Net platform:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Use of CLR, CIL, and MANAGEDCODE compiler defines</li>
+<li class="Element601">Replaced unsafe code for CLR execution</li>
+<li class="Element601">Replaced unsafe types for CLR execution</li>
+<li class="Element601">Modified constructors for visual components</li>
+<li class="Element601">Isolated dependencies on VCL and .Net string handling</li>
+<li class="Element601">Isolated dependencies on VCL and .Net stream implementations</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Unsafe Code and Types</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Some common techniques widely used by programmers in the past may no longer be available for &quot;safe&quot; or &quot;managed&quot; code in .Net. Some of the most prominent items that are no longer available in .NET include:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Untyped variables</li>
+<li class="Element601">AfterConstruction and BeforeDestruction</li>
+<li class="Element601">Pointers</li>
+<li class="Element601">Sets</li>
+<li class="Element601">Globals</li>
+<li class="Element601">Class cracking</li>
+<li class="Element601">Win32</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Pointers</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Pointers are the typical cause for unsafe code. In modern object-oriented code, pointers have been relegated to infrequent use, mostly for calling operating system API's or interacting with external DLL's. There is no magic replacement for the use of pointers, but there is a multi-faceted approach which includes the use of:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">String Indexes</li>
+<li class="Element601">Object references</li>
+<li class="Element601">IntPtr</li>
+<li class="Element601">Dynamic arrays</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+Because the Pointer type is no longer permitted in managed code, this means that the address of operator (the @ symbol) is no longer permitted. However there is one exception: the @ symbol can still be used with procedure pointers. In this one specific case the @ operator is permitted because the Delphi compiler recognizes this specific case and translates it to a .NET delegate. That is, internally no pointer is used, but the use of the @ symbol is preserved for backwards compatibility.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Buffers (Untyped Variables)</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Since untyped variables rely on the use of Pointers, they are also no longer available in safe code. Use of untyped variables must be replaced with object references or overloaded methods that accept arguments for specific data types.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Win32</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The Win32 API is no longer available in safe code either. However, since Windows is the only current platform for which .NET is released, it is still common place to call the Win32 API directly. This practice makes the code unsafe, and should be avoided or isolated into a separate unmanaged assembly.&nbsp;</p>
+<p class="Element10">
+Instead of calling the Win32 API, FCL or RTL classes should be used when possible. If a Win32 API call must be called, P/Invoke can be used. P/Invoke is a way for safe code to call unsafe code. Delphi does much of the P/Invoke work automatically in a manner similar to calling an extern in Delphi 7. Most Win32 API's have already been mapped in the Windows unit and can be called directly by using this unit.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Globals</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Globals of all kinds are no longer available. This includes global variables, procedures, and functions. Because everything in .Net is a class, no global procedures or variables can exist. a class.&nbsp;</p>
+<p class="Element10">
+To replace globals, class statics can be used. A static is a variable or method that exists in the class, rather than in a single instance of the class. Delphi has always had static methods that could be called on the class, but the introduction of static variables is new in Delphi 8.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Sets</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Sets are another item that are not really removed, but implemented in .Net through some compiler magic. When using Delphi code, sets are available and function nearly the same as before. However, if a C# user or Visual Basic user tries to use your set, he will encounter some difficulty. Delphi exports sets as integer values and indexes. They can in fact use them, but the usage will be a bit awkward and require boolean operations. If you are using sets, you should only use them in Delphi code that is not exported. If you need to export set functionality you should rethink the interface and export it as a class instead.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Strings</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Strings have changed significantly in their implementation, with backward compatibility preserved when possible. The biggest change to the string type is that all strings are now Unicode-enabled. Each character in a Unicode string consists of two bytes (or more), instead of one as before. This does not affect normal string operations, but many developers regularly use strings as dynamic buffers for binary data. Strings can no longer contain binary data. Instead of using strings for binary data, other specifically suited constructs such as byte arrays or binary streams should be used instead.&nbsp;</p>
+<p class="Element10">
+Strings in .NET are also immutable. Immutable is just a fancy word for saying that they are not changeable. Dynamic strings have been a tenet of programming for a long time. Strings in .NET can be changed of course, but not without reallocating storage for the data type and performing copy/update operations for its altered values. In Delphi for .Net, this operation has been implemented transparently, but can have very negative impacts on performance.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+StringBuilder</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+.Net provides an FCL class called StringBuilder that is used for manipulating string values. Using StringBuilder, string values can be changed without constant reallocation for the string storage. While StringBuilder solves the problem in .NET, it is not available in Win32. A StringBuilder class is available on the Borland Developer Network for the Win32 platform, and allows use of StringBuilder in both Win32 and .NET.&nbsp;</p>
+<p class="Element10">
+StringBuilder is a good solution for managing dynamic Unicode strings. In many cases, Unicode is not required (or allowed) and should be treated as ASCII values. For instance: TCP commands. Indy implements a buffered class that handles binary data, as well as ASCII values called TIdBuffer. Storage in TIdBuffer is allocated a sequence of Byte values, and allows use of the class instance for handling ASCII strings or binary data. TIdBuffer also manages the memory required for the buffer by reducing the number of reallocations needed when adding or removing buffer values.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+String Default Values</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Another difference in strings is the default value for an uninitialized string type. On the Win32 platform, uninitialized strings would always have the value '' (empty string). On the .Net platform, string types are an object reference and are given the uninitialized value of Nil for the object reference. As a result, common coding techniques that check for empty strings (and ignore the value of the object reference) could cause exceptions. Delphi for .Net preserves backward compatibility by masking this difference between the Win32 and .Net platform; checking for '' in the string type value will also check for Nil as the value for the object reference.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+AnsiString</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The AnsiString type is still available in Delphi and produces single byte strings. Use of AnsiString types can adversely affect performance in .Net code, as well. Since .Net is Unicode enabled, passing AnsiString types (when String types are expected) forces conversions to be performed when passing the argument and when receiving the return value. AnsiStrings are safe for usage in Delphi code, but should be replaced with Unicode strings for use with RTL and FCL.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TList and TStrings</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In the RTL library, TList and TStrings accept an additional &quot;tag&quot; value known as Object for each item in the list. In Win32, this was represented as a Pointer and commonly typecast to other values/types when accessed. For example:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  MyStringList.AddObject('Line one', Pointer(1));</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Since pointers are not available in .NET, this no longer works. However pointers are compatible with TObject, so the code can be changed to:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  MyStringList.AddObject('Line one', TObject(1));</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+This code compiles in both .NET and Win32.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Other Items</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Other Delphi language features are no longer available in the Delphi for .NET environment because they result in &quot;unsafe&quot; code, or used &quot;unsafe&quot; types. These items include RTL types and functions like GetMem, FreeMem, ReAllocMem, FillChar, Move, BlockRead, BlockWrite, and PChar. As a result, code in the Indy library has been rewritten to avoid these platform-specific items.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Stream Implementations in Indy</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Another area of change in the Indy 10 library is use of stream implementations. In Delphi, TStream has traditionally relied on use of untyped arguments. For Win32, the TStream has relied on the ReadBuffer and WriteBuffer methods and untyped parameters for the buffer used in the operation. While this provided an &quot;easy&quot; way to allow many data types to be read and written, it is incompatible with .NET. TStream in .Net now uses overloaded methods with a specific overload for each supported data type.&nbsp;</p>
+<p class="Element10">
+TIdStream is an Indy class that can assist with these differences. TIdStream is not 100% interface compatible with TStream, but it does accept a TStream in its constructor. It then marshals or proxies its consistent interface onto the differing implementations of TStream for Win32 and .Net.&nbsp;</p>
+<p class="Element10">
+Indy uses the TIdStream class in the library implementation that defines a wrapper for stream classes. TIdStream isolates the differences between stream implementations for the platforms supported by the Indy library.&nbsp;</p>
+<p class="Element10">
+To minimize the number of overloaded methods required for TStream and .Net Stream arguments, TIdStream provides an implicit converter for VCL to .Net stream types.&nbsp;</p>
+<p class="Element10">
+TIdStream overrides the methods used for reading and writing to the stream that isolates the differences between pointers and memory allocation for the .Net platform. Platform specific code is then included that overrides methods that perform read and write operations using the stream wrapper.&nbsp;</p>
+<p class="Element10">
+Many method and operations requiring stream input or output use instances of TIdStream to ensure that platform compatibility is maintained in the library implementation.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Other Type-Specific Issues</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Some Delphi features like sets and unsigned integers are not CLS-compliant. This does not mean that you can no longer use them in your Delphi code, and it doesn't even mean that you can't export them as part of your cross-language component's public interface. What it does mean is that the compiler will warn you that you are using a non-CLS feature on the .Net platform, and that you should include secondary features that manipulate your non-compliant features in a CLS-compliant way. For example, if you publish a set property, you should also publish methods that can Include() and Exclude() values and methods that can do tests like &quot;This in That&quot;.&nbsp;</p>
+<p class="Element10">
+Happily for Delphi users, the CLS is case-insensitive, so that any libraries that 'natively' rely on case differences to separate one identifier from another will have to include case-insensitive aliases.&nbsp;</p>
+<p class="Element10">
+The CLS also requires that all languages use Unicode identifiers. Thus, programmers who don't think in English will be able to use identifiers that make sense to them.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Visual Components and Constructors</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Constructor and destructor behavior has changed considerably in .Net. Some of these changes extend to the implementation of constructors used for visual components (most of the Indy clients and servers). To account for the differences between the designers used in IDE, and the lack of default parameter values in .Net, the object hierarchy for visual components has been changed to descend from TIdInitializerComponent. TIdInitializerComponent is used to consolidate differences between constructors as implemented in the .Net and VCL environments.&nbsp;</p>
+<p class="Element10">
+In the IDE and in other .Net environment, constructors (for visual components) are generally called without arguments. In the VCL environment, constructors (for visual components) are generally called with an owner for free notifications. TIdInitializerComponent accounts for these differences by implementing overloaded constructors for both platforms that accept the expected arguments.&nbsp;</p>
+<p class="Element10">
+TIdInitializerComponent also implements the protected virtual procedure InitComponent which eliminates the need for overridden constructors in descendant classes. Descendant classes override the InitComponent method to perform component initialization operations that were traditionally reserved for overridden (or overloaded) constructors.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Initialization and Finalization</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Delphi developers have come to rely on initialization and finalization sections to initialize global variables, create global objects, and more. When using code directly in Delphi 8, initialization and finalization sections work much as they do in Win32 versions of Delphi. But when code is placed in an assembly for use in other .Net languages, Initialization and Finalization sections are called in an unpredictable order. In addition, no interdependencies are permitted between the sections in assemblies.&nbsp;</p>
+<p class="Element10">
+In .Net, classes are not initialized until they are actually used. This causes delayed initialization, and in some cases initialization sections are never called at all. Since Delphi exports units as classes and the initialization sections as class initializers, this causes a behavioral change. In such situations initialization sections are often called much later than before, and in many cases never at all. Initialization sections which self-register classes are particularly problematic as they never get called to register the class, and thus the class is never used, and thus never has its initializer called.&nbsp;</p>
+<p class="Element10">
+For the .Net environment, initialization sections are not called unless a reference has been added for the unit. Delphi for .Net makes initializations and globals part of a &quot;Unit&quot; class. So initialization sections won't get called until the Unit class is used. Delphi 8 EXEs are ok, but assemblies (ie VS.NET and probably asms in some cases when used from a D8 EXE) do not call their initialization sections.&nbsp;</p>
+<p class="Element10">
+This can be solved by using IdBaseComponent in Indy, which iterates through the list of unit classes and forces manual calls to the initialization sections. InitComponent is used to loop through the list of classes in the assembly, and for each named Unit the class constructor which causes the initialization section to be called.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

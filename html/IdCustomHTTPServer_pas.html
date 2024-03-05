@@ -1,0 +1,315 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdCustomHTTPServer.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdCustomHTTPServer_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdCustomHTTPServer_pas.html" target="topic">IdCustomHTTPServer.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdCore90ASM90_inc.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdCustomTCPServer_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdCustomHTTPServer.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains Classes, Types, Procedures, and Functions needed to define an HTTP server base class.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdCustomHTTPServer.pas contains Classes, Types, Procedures, and Functions needed to define and implement an HTTP server, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1945.txt"> RFC 1945 - Hypertext Transfer Protocol [HTTP] version 1.0 </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2616.txt"> RFC 2616 - Hypertext Transfer Protocol [HTTP] version 1.1 </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2660.txt"> RFC 2660 - The Secure HyperText Transfer Protocol </a>&nbsp;</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdHTTPServer.html" target="topic">TIdHTTPServer</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPCannotSwitchSessionStateWhenActive.html" target="topic">EIdHTTPCannotSwitchSessionStateWhenActive</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+HTTP server exception for changing state on an active server.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPErrorParsingCommand.html" target="topic">EIdHTTPErrorParsingCommand</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+HTTP server exception for an unknown HTTP command.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPHeaderAlreadyWritten.html" target="topic">EIdHTTPHeaderAlreadyWritten</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+HTTP response exception raised during writing headers.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPServerError.html" target="topic">EIdHTTPServerError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Ancestor for Indy HTTP exceptions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdHTTPUnsupportedAuthorisationScheme.html" target="topic">EIdHTTPUnsupportedAuthorisationScheme</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+HTTP server exception for an invalid authentication scheme.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdCustomHTTPServer.html" target="topic">TIdCustomHTTPServer</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Specifies properties, methods, and events for the base HTTP Server implementation in Indy.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPCustomSessionList.html" target="topic">TIdHTTPCustomSessionList</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Specifies an abstract container for persistent HTTP sessions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPDefaultSessionList.html" target="topic">TIdHTTPDefaultSessionList</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a thread-safe container for persistent HTTP sessions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPRequestInfo.html" target="topic">TIdHTTPRequestInfo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a HTTP Request object.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a HTTP response object.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPSession.html" target="topic">TIdHTTPSession</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a persistent HTTP Session.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GContentType.html" target="topic">GContentType</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTPResponseInfo.ContentType property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GFContentLength.html" target="topic">GFContentLength</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTPResponseInfo.ContentLength property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GResponseNo.html" target="topic">GResponseNo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">TIdHTTPResponseInfo.ResponseNo</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GServerSoftware.html" target="topic">GServerSoftware</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdHTTPResponseInfo_ServerSoftware.html" target="topic">TIdHTTPResponseInfo.ServerSoftware</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GSessionIDCookie.html" target="topic">GSessionIDCookie</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Cookie name used to maintain a persistent connection for HTTP client connections.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="HTTPRequestStrings.html" target="topic">HTTPRequestStrings</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+String representations of HTTP commands for an HTTP request.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPAutoStartSession.html" target="topic">Id_TId_HTTPAutoStartSession</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTPServer.AutoStartSession property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPMaximumHeaderLineCount.html" target="topic">Id_TId_HTTPMaximumHeaderLineCount</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdCustomHTTPServer_MaximumHeaderLineCount.html" target="topic">TIdCustomHTTPServer.MaximumHeaderLineCount</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPServer_KeepAlive.html" target="topic">Id_TId_HTTPServer_KeepAlive</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTPServer.KeepAlive property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPServer_ParseParams.html" target="topic">Id_TId_HTTPServer_ParseParams</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the TIdHTTPServer.ParseParams property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPServer_SessionState.html" target="topic">Id_TId_HTTPServer_SessionState</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdCustomHTTPServer_SessionState.html" target="topic">TIdCustomHTTPServer.SessionState</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_TId_HTTPSessionTimeOut.html" target="topic">Id_TId_HTTPSessionTimeOut</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Default value for the <a href="TIdCustomHTTPServer_SessionTimeOut.html" target="topic">TIdCustomHTTPServer.SessionTimeOut</a> property.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Enumerations"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Enumerations');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgEnumerations">Enumerations</a></div>
+<div id="divEnumerations">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Enumeration&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="THTTPCommandType.html" target="topic">THTTPCommandType</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents command types used in an HTTP request.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Types"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Types');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTypes">Types</a></div>
+<div id="divTypes">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPCommandEvent.html" target="topic">TIdHTTPCommandEvent</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdHTTPInvalidSessionEvent.html" target="topic">TIdHTTPInvalidSessionEvent</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Event type signalled when an HTTP session cannot be restored using the session ID Cookie.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TOnCreatePostStream.html" target="topic">TOnCreatePostStream</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Allows creation of the stream used in client POST or GET requests.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TOnCreateSession.html" target="topic">TOnCreateSession</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Event type signalled when a HTTP session is needed for a client connection.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TOnSessionEndEvent.html" target="topic">TOnSessionEndEvent</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Specifies an event type for a terminating HTTP session.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TOnSessionStartEvent.html" target="topic">TOnSessionStartEvent</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Specifies an event type for a new HTTP session.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

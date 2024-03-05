@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.ChangeDir Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_ChangeDir@string.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &gt; <a href="TIdFTP_ChangeDir@string.html" target="topic">ChangeDir Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_Allocate@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_ChangeDirUp.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.ChangeDir Method</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Changes the current directory on the FTP server file system.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> ChangeDir(
+    <strong>const</strong> ADirName: <strong>string</strong>
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADirName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+path desired on the server file system.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ChangeDir is a procedure used to change the current directory on the FTP server file system to the subdirectory specified in the ADirName parameter.&nbsp;</p>
+<p class="Element10">
+ChangeDir sends the FTP CWD command using ADirName as an argument to set the current directory to the specified value.&nbsp;</p>
+<p class="Element10">
+RFC 959 indicates that response code 250 is the success response code for the CWD command. Some server implementations (to remain nameless) return the 200 response code to indicate successful completion of the CWD command. Indy will recognize both response codes 200 and 250 as the success response code for the CWD command.&nbsp;</p>
+<p class="Element10">
+According to RFC 959, ChangeDir may encounter any of the following error responses in the FTP protocol:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="5%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="95%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+500&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Syntax error, command unrecognized. (This may include errors such as command line too long.)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+501&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Syntax error in parameters or arguments.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+502&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Command not implemented.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+421&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Service not available, closing control connection. (This may be a reply to any command if the service knows it must shut down.)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+530&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Not logged in.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+550&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Requested action not taken. File unavailable (e.g., file not found, no access).&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+When one of these protocol error responses is received, an EIdProtocolReplyError is raised. The ReplyErrorCode for the exception is set to the numeric portion of the protocol response. The Message for the exception is set to the textual part of the protocol response, and may vary based on the exact values returned from the server implementation.&nbsp;</p>
+<p class="Element10">
+An an example, if the directory in ADirName does not exist on the server file system, the EIdProtocolReplyError raised will contain 550 in the ReplyErrorCode.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_RetrieveCurrentDir.html" target="topic">RetrieveCurrentDir</a> to determine the current working directory on the server file system.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_ChangeDirUp.html" target="topic">ChangeDirUp</a> to set the current directory on the FTP server to the directory one level higher in the file system hierarchy.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+EIdProtocolReplyError&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_RetrieveCurrentDir.html" target="topic">RetrieveCurrentDir</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ChangeDirUp.html" target="topic">ChangeDirUp</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

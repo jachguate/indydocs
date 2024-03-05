@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdStack.SetMulticastTTL Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdStack_SetMulticastTTL@TIdStackSocketHandle@Byte@TIdIPVersion.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdStack.html" target="topic">TIdStack Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdStack.html" target="topic">TIdStack Methods</a> &gt; <a href="TIdStack_SetMulticastTTL@TIdStackSocketHandle@Byte@TIdIPVersion.html" target="topic">SetMulticastTTL Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdStack_SetLoopBack@TIdStackSocketHandle@Boolean@TIdIPVersion.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdStack.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdStack_SetSocketOption@TIdStackSocketHandle@TIdSocketOptionLevel@TIdSocketOption@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdStack.SetMulticastTTL Method</div>
+<div class="Element7">
+<a href="TIdStack.html" target="topic">TIdStack Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdStack.html" target="topic">TIdStack Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Specifies the mechanism used to change the &quot;time to live&quot; value for multicast packets using the specified socket.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> SetMulticastTTL(
+    AHandle: TIdStackSocketHandle; 
+    <strong>const</strong> AValue: Byte; 
+    <strong>const</strong> AIPVersion: TIdIPVersion = ID_DEFAULT_IP_VERSION
+); <strong>virtual</strong>; <strong>abstract</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AHandle&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Handle for the socket.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AValue&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Time-to-live value to set in the socket options.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AIPVersion&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Scope is const. Type is <a href="TIdIPVersion.html" target="topic">TIdIPVersion</a>. Default value is <a href="ID_DEFAULT_IP_VERSION.html" target="topic">ID_DEFAULT_IP_VERSION</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+SetMulticastTTL is an abstract virtual method that specifies the mechanism used to change the &quot;time to live&quot; value in the multicast packets using the specified socket.&nbsp;</p>
+<p class="Element10">
+SetMulticastTTL is used when sending multicast packets beyond the local network, since the default TTL for multicast packets is one. Multicast datagrams with a TTL of 0 are not transmitted on any subnetwork. Multicast datagrams with a TTL of greater than one may be delivered to more than one subnetwork if there are one or more multicast routers attached to the first-hop subnetwork. To <a href="TIdStack_Send@TIdStackSocketHandle@TIdBytes@Integer@Integer.html" target="topic">send</a> multicast packets beyond the local network, your local router and any other routers between you and the hosts you want to <a href="TIdStack_Send@TIdStackSocketHandle@TIdBytes@Integer@Integer.html" target="topic">send</a> to must be multicast capable (i.e. they must be &quot;multicast routers,&quot; with support for IGMP).&nbsp;</p>
+<p class="Element10">
+A multicast router does not forward multicast datagrams with destination addresses between 224.0.0.0 and 224.0.0.255, inclusive, regardless of their TTLs. This particular range of addresses is reserved for the use of routing protocols and other low-level topology discovery or maintenance protocols, such as gateway discovery and group membership reporting. Each multicast transmission is sent from a single network interface, even if the host has more than one multicast-capable interface. A socket option is available to override the default for subsequent transmissions from a given socket. For example&nbsp;</p>
+<p class="Element10">
+If a multicast datagram is sent to a group to which the sending host itself belongs (on the outgoing interface), by default, a copy of the datagram is looped back by the IP layer for local delivery. Under some versions of <a href="UNIX.html" target="topic">UNIX</a>, there is an option available to disable this behavior (IP_MULTICAST_LOOP). This option is not supported in Windows NT. If you try to disable this behavior, the call fails with the error WSAENOPROTOOPT (Bad protocol option).&nbsp;</p>
+<p class="Element10">
+A multicast datagram sent with an initial TTL greater than 1 may be delivered to the sending host on a different interface from that on which it was sent, if the host belongs to the destination group on that other interface. The loopback control option has no effect on such delivery.&nbsp;</p>
+<p class="Element10">
+SetMulticastTTL can also be used locate available multicast group members using a technique called the &quot;expanding ring search&quot;; this technique involves using a TTL value that increments from 0 until a response is received on from a multicast group address. The suggested TTL value sequence is 0, 1, 2, 4, 8, 16, 32, etc. Eventually, a response will be received from one or more group members &quot;listening&quot; on the same port number for the transmission.&nbsp;</p>
+<p class="Element10">
+You can use any valid host group address as a destination address in an expanding ring search. You cannot use the &quot;all-hosts&quot; group (224.0.0.1) however, since multicast routers never forward packets destined for the all-hosts group beyond the local network (this limitation is similar to the limitation on packets sent to the IP broadcast address).&nbsp;</p>
+<p class="Element10">
+SetMulticastTTL must be overridden and implemented in a descendant class that provides access to the specific capablities of the protocol stack for the operating system or platform hosting the Indy library.</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdStack.html" target="topic">TIdStack Class</a><br /><a href="!!MEMBEROVERVIEW_TIdStack.html" target="topic">TIdStack Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMessage.ContentType Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMessage_ContentType.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMessage.html" target="topic">TIdMessage Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdMessage.html" target="topic">TIdMessage Properties</a> &gt; <a href="TIdMessage_ContentType.html" target="topic">ContentType Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMessage_ContentTransferEncoding.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdMessage.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdMessage_ConvertPreamble.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMessage.ContentType Property</div>
+<div class="Element7">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Identifies the MIME media type for the message.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> ContentType: <strong>string</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ContentType is a String property that specifies the MIME media type and subtype for the message. ContentType is used to identify and describe the data contained in the body of the message, and to fully specify the native representation (canonical form) of such data.&nbsp;</p>
+<p class="Element10">
+ContentType allows a user agent to determine how to present data for the message. The ability to recognize the ContentType for the message, and invoke the appropriate display process accordingly, will improve the readability of messages and allow the exchange of messages containing mathematical symbols, or foreign language characters.&nbsp;</p>
+<p class="Element10">
+ContentType contains information about the media type, subtype, and optional parameter information in the following notation:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  type/subtype; param=value</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In general, the top-level media type is used to declare the general type of data, while the subtype specifies a specific format for that type of data. An initial set of seven top-level media types are defined in RFC 2046, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="100%">
+<div class="Element66">
+Media Type&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+text&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+image&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+audio&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+video&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+application&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+message&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+multipart&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Five of these are discrete types whose content is essentially opaque as far as MIME processing is concerned. The remaining two are composite types whose contents require additional handling by MIME processors. This set of top-level media types is intended to be substantially complete. It is expected that additions to the larger set of supported types can generally be accomplished by the creation of new subtypes of these initial types. In the future, more top-level types may be defined.&nbsp;</p>
+<p class="Element10">
+Parameters are modifiers of the media subtype, and do not fundamentally affect the nature of the content. The set of meaningful parameters depends on the media type and subtype. Most parameters are associated with a single specific subtype. However, a given top-level media type may define parameters which are applicable to any subtype of that type. The type, subtype, and parameter names are not case sensitive. For example, TEXT, Text, and TeXt are all equivalent top-level media types. Parameter values may be case sensitive, but sometimes are interpreted in a case-insensitive fashion, depending on the intended use. (For example, multipart boundaries are case-sensitive, but the &quot;access-type&quot; parameter for message/External-body is not case-sensitive.)&nbsp;</p>
+<p class="Element10">
+The default content type for RFC 2822 messages without a MIME Content-Type header are taken by this protocol to be plain text in the US-ASCII character set, which can be explicitly specified as:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  text/plain; charset=us-ascii</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Use the <a href="TIdMessage_CharSet.html" target="topic">CharSet</a> property to indicate the character set required (or detected) for the message body. Use <a href="TIdMessage_ContentTransferEncoding.html" target="topic">ContentTransferEncoding</a> to identify the encoding scheme for the message. For additional information on ContentType values and their usage, please refer to the following Internet Standards and reference documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2822.txt"> RFC 2822 - Standard for the Format of ARPA Internet Text Messages </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1049.txt"> RFC 1049 - Content-type header field for Internet messages. </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1437.txt"> RFC 1437 - The Extension of MIME Content-Types to a New Medium. </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1896.txt"> RFC 1896 - The text/enriched MIME Content-type. </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2045.txt"> RFC 2045 - Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2045.txt"> RFC 2046 - Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2387.txt"> RFC 2387 - The MIME Multipart/Related Content-type. </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.iana.org/assignments/media-types"> Internet Assigned Numbering Authority (IANA) Official Media Types </a>&nbsp;</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdMessage_ContentTransferEncoding.html" target="topic">TIdMessage.ContentTransferEncoding</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMessage_CharSet.html" target="topic">TIdMessage.CharSet</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a><br /><a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

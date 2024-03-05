@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdSimpleServer.Listen Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdSimpleServer_Listen.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdSimpleServer.html" target="topic">TIdSimpleServer Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdSimpleServer.html" target="topic">TIdSimpleServer Methods</a> &gt; <a href="TIdSimpleServer_Listen.html" target="topic">Listen Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdSimpleServer_EndListen.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdSimpleServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdSimpleServer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdSimpleServer.Listen Method</div>
+<div class="Element7">
+<a href="TIdSimpleServer.html" target="topic">TIdSimpleServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdSimpleServer.html" target="topic">TIdSimpleServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Returns,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Returns,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Allows a server to listen for a client connection.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> Listen: Boolean; <strong>virtual</strong>;</pre></div></div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Boolean - True on success, False on error.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Listen is a virtual Boolean function that allows <a href="TIdSimpleServer.html" target="topic">TIdSimpleServer</a> to listen for serial connection requests.&nbsp;</p>
+<p class="Element10">
+Listen returns True when a the server is able to listen for connection requests on the socket handle for the listener. Listen returns False if <a href="TIdSimpleServer_Abort.html" target="topic">Abort</a> has been called, or when an error occurs while accepting new connections on the listener socket handle.&nbsp;</p>
+<p class="Element10">
+Listen call <a href="TIdSimpleServer_BeginListen.html" target="topic">BeginListen</a> to initialize the listener socket handle and state prior to allowing the listener to acept new connections.&nbsp;</p>
+<p class="Element10">
+Listen contains a control loop that executes while AbortRequested is False and the listener socket handle is not Readable (or still allocated to a previous connection). When the connection is Readable, Listen will wait briefly for a connection request and accept the connection using the <a href="TIdSimpleServer_AcceptWait.html" target="topic">AcceptWait</a> timeout value. When a connection request is detected, Listen calls Accept for the <a href="TIdSimpleServer_Binding.html" target="topic">Binding</a> using the handle for the listener.&nbsp;</p>
+<p class="Element10">
+When AbortRequested is True or a new connection has handled with Accept, Listen will close and invalidate the socket handle in ListenHandle.</p></div>
+</div>
+</div>
+<a name="Todo"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Todo');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTodo">Todo</a></div>
+<div id="divTodo">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implementation modified.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdSimpleServer_Binding.html" target="topic">TIdSimpleServer.Binding</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSimpleServer_AcceptWait.html" target="topic">TIdSimpleServer.AcceptWait</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSimpleServer_EndListen.html" target="topic">TIdSimpleServer.EndListen</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdSimpleServer.html" target="topic">TIdSimpleServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdSimpleServer.html" target="topic">TIdSimpleServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

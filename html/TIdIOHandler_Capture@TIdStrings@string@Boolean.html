@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandler.Capture Method (TIdStrings, string, Boolean)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandler_Capture@TIdStrings@string@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a> &gt; <a href="!!OVERLOADED_Capture_TIdIOHandler.html" target="topic">Capture Method</a> &gt; <a href="TIdIOHandler_Capture@TIdStrings@string@Boolean.html" target="topic">Capture Method (TIdStrings, string, Boolean)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIOHandler_Capture@TIdStrings@Integer@string@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Capture_TIdIOHandler.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIOHandler_CheckForDataOnSource@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandler.Capture Method (TIdStrings, string, Boolean)</div>
+<div class="Element7">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads data from the connection into the specified object.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Capture(
+    ADest: TIdStrings; 
+    <strong>const</strong> ADelim: <strong>string</strong>; 
+    AIsRFCMessage: Boolean = True
+); <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADest&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Storage for the captured data values.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADelim&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Delimiter for captured data values. Default value is '.'.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AIsRFCMessage&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Captured data is an RFC 2822 message. Default value is True.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Capture is an overloaded procedure used to read data from the connection into the destination specified by ADest. If ADest contains an unknown or uninitialized data type, an <a href="EIdObjectTypeNotSupported.html" target="topic">EIdObjectTypeNotSupported</a> exception with the message <a href="RSObjectTypeNotSupported.html" target="topic">RSObjectTypeNotSupported</a> will be raised. The overloaded methods provide support for both <a href="TIdStream.html" target="topic">TIdStream</a> and <a href="TIdStrings.html" target="topic">TIdStrings</a> as the data type for ADest.&nbsp;</p>
+<p class="Element10">
+ADelim is the delimiter used to determine if all data has been read from the connection. ADelim will appear as a line with no other data when all data has been captured. The default delimiter is '.', as used in most RFC-compliant protocols.&nbsp;</p>
+<p class="Element10">
+AIsRFCMessage indicates that Capture is reading an RFC 2822 Internet message format where a line may contain the characters '..'. Capture will convert this character sequence to a single '.' character. A single '.' character in a line indicates the end of the RFC 822 message.&nbsp;</p>
+<p class="Element10">
+Capture triggers the <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a> event handler with wmRead mode before reading data from the connection. Capture calls <a href="TIdIOHandler_ReadLn.html" target="topic">ReadLn</a> to retrieve data from the connection until the delimiter specified in ADelim is received. Each line is written to ADest upon receipt. Capture triggers the <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a> event handler with wmRead mode when all data has been captured from the connection.&nbsp;</p>
+<p class="Element10">
+Capture is used in the implementation of various protocol-oriented clients, like <a href="TIdIMAP4.html" target="topic">TIdIMAP4</a> and <a href="TIdNNTP.html" target="topic">TIdNNTP</a>.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="EIdObjectTypeNotSupported.html" target="topic">EIdObjectTypeNotSupported</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWorkBegin.html" target="topic">TIdIOHandler.OnWorkBegin</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWorkEnd.html" target="topic">TIdIOHandler.OnWorkEnd</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_ReadLn.html" target="topic">TIdIOHandler.ReadLn</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

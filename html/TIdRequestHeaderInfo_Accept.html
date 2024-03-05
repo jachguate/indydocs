@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdRequestHeaderInfo.Accept Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdRequestHeaderInfo_Accept.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Properties</a> &gt; <a href="TIdRequestHeaderInfo_Accept.html" target="topic">Accept Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Properties_TIdRequestHeaderInfo.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdRequestHeaderInfo.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdRequestHeaderInfo_AcceptCharSet.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdRequestHeaderInfo.Accept Property</div>
+<div class="Element7">
+<a href="TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Specifies the media types accepted in a HTTP response.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> Accept: <strong>String</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Accept is a String property that specifies the media types that are acceptable in a resulting HTTP response, and can be used to limit the request to a small set of desired types. If no Accept header field is present, then it is assumed that the client accepts all media types.&nbsp;</p>
+<p class="Element10">
+Accept is composed of the media type, subtype, and optional parameters. The asterisk &quot;*&quot; character is used to group media types into ranges, with &quot;*/*&quot; indicating all media types and &quot;type/*&quot; indicating all subtypes of that type.&nbsp;</p>
+<p class="Element10">
+Each media type and subtype may include one or more parameters, beginning with the &quot;q&quot; parameter that indicates the relative quality factor. Quality factors allow the user agent to determine the relative degree of preference for that media type and subtype, using the qvalue scale from 0 to 1. The default value is q=1.&nbsp;</p>
+<p class="Element10">
+Accept is updated in the ProcessHeaders method. Accept is used in SetHeaders to read the header values for the request.&nbsp;</p>
+<p class="Element10">
+The default value for Accept is set to 'text/html, */*' when the <a href="TIdRequestHeaderInfo_Clear.html" target="topic">Clear</a> method is called.</p></div>
+</div>
+</div>
+<a name="Example"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Example');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExample">Example</a></div>
+<div id="divExample">
+<div class="Element11">
+<div class="Element10">
+<div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00058');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00058"><pre class="Element12">  ARequestHeaderInfo.Accept := 'audio/*; q=0.2, audio/basic';
+  ARequestHeaderInfo.Accept := 'text/plain; q=0.5, text/html';</pre></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdRequestHeaderInfo_Clear.html" target="topic">TIdRequestHeaderInfo.Clear</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Class</a><br /><a href="!!MEMBEROVERVIEW_TIdRequestHeaderInfo.html" target="topic">TIdRequestHeaderInfo Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

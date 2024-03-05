@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.CRC Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_CRC@String@Int64@Int64.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &gt; <a href="TIdFTP_CRC@String@Int64@Int64.html" target="topic">CRC Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_Connect.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_Delete@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.CRC Method</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Calculates the Cyclic Redundancy Check (or CRC) for a specified file on an FTP server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> CRC(
+    <strong>const</strong> AFIleName: <strong>String</strong>; 
+    <strong>const</strong> AStartPoint: Int64 = 0; 
+    <strong>const</strong> AEndPoint: Int64 = 0
+): Int64;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AFIleName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+File name on the server for the checksum calculation.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStartPoint&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Initial position in the block of data for the checksum calculation. Default value is 0 (zero).<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AEndPoint&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Final position in the block of data for the checksum calculation. Default value is 0 (zero).&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Int64 - CRC value for the indicated file name. the FTP server.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+CRC is an Int64 function that returns the Cyclic Redundancy Check (or CRC) value for a range of content in a specified file on the FTP server. CRC provides the ability for the FTP client to verify that the file has been successfully transferred to the server without corruption.&nbsp;</p>
+<p class="Element10">
+The CRC value is a mathematical calculation on a block of data in the file specified in AFileName, and returns a number that represents the content and organization of that data. The CRC calculation returns a unique number (or &quot;fingerprint&quot;) that uniquely identifies the data found in the offsets specified by a StartPoint and AEndPoint.&nbsp;</p>
+<p class="Element10">
+AStartPoint and AEndPoint indicate the initial and final positions in a block of data to be used in the CRC calculation. When AStartPoint contains 0 (zero), both AStartPoint and AEndPoint are ignored and the entire contents of the file are used in the CRC calculation. When AEndPoint contains 0 (zero), the length of the indicated file is assumed as the final position in the CRC calculation.&nbsp;</p>
+<p class="Element10">
+The return value is the 64-bit integer that represents the CRC for file on the remote server for the connection. The return value can contain the value -1 when the file does not exist or the CRC is invalid in the FTP response.&nbsp;</p>
+<p class="Element10">
+CRC can be used when the FTP server supports the FTP XCRC extension command, and after uploading the content for the file in AFileName using the <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> method. The FTP server will perform the CRC calculation on the file ( or byte range) and return the 8-byte 'fingerprint' for the specified file.&nbsp;</p>
+<p class="Element10">
+The client application can compare this fingerprint to the CRC fingerprint which it generates locally to determine if the file has been modified, corrupted, or altered during its transfer to the server. Use <a href="TIdHashCRC32.html" target="topic">TIdHashCRC32</a> or a comparable component to perform the local CRC calculation for the files content.&nbsp;</p>
+<p class="Element10">
+Please note that the FTP XCRC extension commands is not widely supported in FTP server implementations at the current time. Use the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> property to determine if the command is supported on the FTP server for the current connection.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

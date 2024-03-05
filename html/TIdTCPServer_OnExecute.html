@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdTCPServer.OnExecute Event</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdTCPServer_OnExecute.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdTCPServer.html" target="topic">TIdTCPServer Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdTCPServer.html" target="topic">TIdTCPServer Properties</a> &gt; <a href="TIdTCPServer_OnExecute.html" target="topic">OnExecute Event</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Properties_TIdTCPServer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdTCPServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdTCPStream.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdTCPServer.OnExecute Event</div>
+<div class="Element7">
+<a href="TIdTCPServer.html" target="topic">TIdTCPServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdTCPServer.html" target="topic">TIdTCPServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Event handler used to execute the task for a client connection.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> OnExecute;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+OnExecute is a TIdServerThreadEvents event handler used to execute the task for a client connection to the server. OnExecute is signalled when the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> executes the thread or fiber associated with the client connection.&nbsp;</p>
+<p class="Element10">
+OnExecute receives a <a href="TIdContext.html" target="topic">TIdContext</a> argument that represents the task for the client connection, and contains a <a href="TIdTCPConnection.html" target="topic">TIdTCPConnection</a> instance for the client connection, and the thread or fiber that controls execution of the task. A protected procedure in the server that triggers OnExecute is assigned to the <a href="TIdContext.html" target="topic">TIdContext</a>, and eventually the thread or fiber acquired from the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for the server.&nbsp;</p>
+<p class="Element10">
+Use OnExecute to control the interaction between the client and the server during the lifetime of the client connection. This includes reading and/or writing commands and/or data supported in exchanges between the client and server. <a href="TIdTCPServer.html" target="topic">TIdTCPServer</a> does not implement support for any given protocol used for communication exchanges between clients and the server.&nbsp;</p>
+<p class="Element10">
+When the thread or fiber is running, the OnExecute event handler is triggered inside a loop that continues to execute the event handler until the client is disconnected. This allows the OnExecute event handler procedure to be written in a straight-forward manner, and still yield to the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for the server.&nbsp;</p>
+<p class="Element10">
+The event handler can be used to interact with the client connection by read a command and/or writing a response dependent on the protocol in use for the session. When the command and/or response is handled, the event handler should be exited to allow the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> to respond other client connections to the server. Using loops or polling inside the OnExecute event handler should be avoided to reduce the chance of interferring with the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for the server.&nbsp;</p>
+<p class="Element10">
+The preferred way to interrupt execution of the looped OnExecute event handler is to call the TIdContext.Connection.Disconnect method for the context instance.&nbsp;</p>
+<p class="Element10">
+For example:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00065');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00065"><pre class="Element12">
+  TMyForm.MyServerExecute(AContext: TIdContext);
+  <strong>var</strong>
+    lCmd: <strong>string</strong>;
+  <strong>begin</strong>
+    lCmd := Trim(AContext.Connection.IOHandler.ReadLn);
+    <strong>if</strong> AnsiSameText(lCmd, 'HELP') <strong>then</strong>
+    <strong>begin</strong>
+        AContext.Connection.IOHandler.WriteLn('HELP');
+        AContext.Connection.IOHandler.WriteLn('QUIT');
+        AContext.Connection.IOHandler.WriteLn('GETTIMESTAMP');
+        AContext.Connection.IOHandler.WriteLn('');
+    <strong>end</strong>
+
+    <strong>else</strong> <strong>if</strong> AnsiSameText(lCmd, 'QUIT') <strong>then</strong>
+    <strong>begin</strong>
+        AContext.Connection.IOHandler.WriteLn('Goodbye...');
+        AContext.Connection.IOHandler.WriteLn('');
+        AContext.Connection.Disconnect;
+    <strong>end</strong>
+
+    <strong>else</strong> <strong>if</strong> AnsiSameText(lCmd, 'GETTIMESTAMP') <strong>then</strong>
+    <strong>begin</strong>
+        AContext.Connection.IOHandler.WriteLn(
+          FormatDateTime(Now, 'yyyy-mm-ddThh:nn:ss.zzz'));
+        AContext.Connection.IOHandler.WriteLn('');
+    <strong>end</strong>;
+  <strong>end</strong>;
+</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Exceptions raised in the OnExecute event handler are caught in the executing thread or fiber. If the exception cannot be handled by the thread or fiber, it is re-raised and causes termination of the thread or fiber.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdCustomTCPServer_OnConnect.html" target="topic">OnConnect</a> to perform actions for the client after it is connected and prior to execution in the OnExecute event handler.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdCustomTCPServer_OnDisconnect.html" target="topic">OnDisconnect</a> to perform actions for the client after is has been disconnected, and exited from the OnExecute event handler.&nbsp;</p>
+<p class="Element10">
+Assign a <a href="TIdServerThreadEvent.html" target="topic">TIdServerThreadEvent</a> event handler procedure to OnExecute to respond to the event notification.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+TIdServerThreadEvents</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdTCPServer.html" target="topic">TIdTCPServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdTCPServer.html" target="topic">TIdTCPServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

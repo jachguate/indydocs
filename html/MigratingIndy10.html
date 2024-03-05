@@ -1,0 +1,117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Migrating to Indy.Sockets Version 10</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'MigratingIndy10.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="MigratingIndy10.html" target="topic">Migrating to Indy.Sockets Version 10</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="InstallUninstall.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="MigratingIndy10NetCompatibility.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Migrating to Indy.Sockets Version 10</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Topics', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Topics', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Updating any sufficiently large code base always introduces issues of code compatibility. Updating to Internet Direct (Indy) version 10 is no exception to this general rule. Because of bug fixes, new features, refactoring, and requirements for .Net compatibility, some of your Indy 9 code may no longer work.&nbsp;</p>
+<p class="Element10">
+In this section, we'll review some of the issues encountered when migrating from the Indy 9 to the Indy 10 code base. Migrating from earlier Indy versions, including Indy 8 (or even Winshoes), is not discussed in this section. The issues are the same, but they occur on an even larger scale.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+<a name="Topics"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Topics');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTopics">Topics</a></div>
+<div id="divTopics">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Topic&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MigratingIndy10NetCompatibility.html" target="topic">.Net compatibility</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indy 10 adds to its impressive list of supported platforms by including Windows .Net for the new release. Indy 10 supports the .Net platform using DCCIL and Delphi .Net compiler. By using DCCIL, Indy 10 can be used in Delphi 8 as well as other .Net hosted languages like C#, ASP.NET, Visual Basic.Net, and J#.Net.<br>To accomplish this porting feat, some changes were required of the Indy code base. These changes include the following items specific to supporting the .Net platform:<br>&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Use of CLR, CIL, and MANAGEDCODE compiler defines</li>
+<li class="Element600">Replaced unsafe code for CLR execution</li>
+<li class="Element600">Replaced unsafe types for CLR... <a href="MigratingIndy10NetCompatibility.html" target="topic">more</a>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MigratingIndy10Packages.html" target="topic">Packages Changes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+One significant change in Indy 10 is the reorganization of the library into four separate packages.<br>
+<ul class="Element631">
+<li class="Element601">IndySystem</li>
+<li class="Element601">IndyCore</li>
+<li class="Element601">IndyProtocols</li>
+<li class="Element601">IndySuperCore</li>
+</ul><br>Each package, except IndySystem, consists of both a runtime and designtime .DPK file for Delphi compiler versions 4, 5, 6, 7, 8, Delphi 2005, Delphi 2006, and Kylix 3. (IndySystem has only a runtime .DPK file - the designtime .DPK is not required.)<br>.DPK files for the packages include the package name and the compiler version as part of the package file name. For instance, the IndySystem package file for Delphi 7 is represented by the following:<br>&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ChangesObjectHierarchy.html" target="topic">Changes to the Object Hierarchy</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+In this section, we will review some specific changes made to the object hierarchy in Indy 10. These changes will have an impact on any code migrated from Indy 9.<br>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

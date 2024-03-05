@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdStreamHelper Type</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdStreamHelper.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Types &gt; <a href="TIdStreamHelper.html" target="topic">TIdStreamHelper Type</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdStream.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="TIdStringList.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdStreamHelper Type</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Specifies the class helper for <a href="TIdStream.html" target="topic">TIdStream</a> instances in the Indy library.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdStream_pas.html" target="topic">IdStream</a></p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdStreamHelper = TIdStreamHelperVCL;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdStreamHelper is an alias for the <a href="TIdStream.html" target="topic">TIdStream</a> helper class for use on the .Net platform. Class helpers are a type that - when associated with another class - introduces additional method names and properties which may be used in the context of the associated class (or its descendants). Class helpers are a way to extend a class without using inheritance. A class helper simply introduces a wider scope for the compiler to use when resolving identifiers. When you declare a class helper, you state the helper name, and the name of the class you are going to extend with the helper. You can use the class helper any place where you can legally use the extended class. The compiler's resolution scope then becomes the original class, plus the class helper.&nbsp;</p>
+<p class="Element10">
+Class helpers provide a way to extend a class; they are used to provide language and platform RTL bindings. On the .NET platform, variants are an alias of System.Object. Variants rely on boxing and unboxing of data into an object wrapper, as well as Delphi helper classes to implement the variant-related RTL functions.&nbsp;</p>
+<p class="Element10">
+For the .Net platform, TIdStreamHelper is an alias for the <a href="TIdStreamHelperNET.html" target="topic">TIdStreamHelperNET</a> class helper. For platforms supporting VCL, TIdStreamHelper is an alias for the <a href="TIdStreamHelperVCL.html" target="topic">TIdStreamHelperVCL</a> class helper. Both classes implement the ReadBytes and the Write class methods used to perform input or output operations for a <a href="TIdStream.html" target="topic">TIdStream</a> instance using a buffer of the <a href="TIdBytes.html" target="topic">TIdBytes</a> data type.&nbsp;</p>
+<p class="Element10">
+An example of using the TIdStreamHelper alias can be found in the <a href="ReadTIdBytesFromStream@TIdStream@TIdBytes@Integer.html" target="topic">ReadTIdBytesFromStream</a> and <a href="WriteTIdBytesToStream@TIdStream@TIdBytes.html" target="topic">WriteTIdBytesToStream</a> routines in <a href="IdGlobal_pas.html" target="topic">IdGlobal.pas</a>.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdStreamHelperNET.html" target="topic">TIdStreamHelperNET</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdStreamHelperVCL.html" target="topic">TIdStreamHelperVCL</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdStream.html" target="topic">TIdStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdBuffer.html" target="topic">TIdBuffer</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdBytes.html" target="topic">TIdBytes</a>&nbsp;</p>
+<p class="Section9">
+ <a href="ReadTIdBytesFromStream@TIdStream@TIdBytes@Integer.html" target="topic">ReadTIdBytesFromStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="WriteTIdBytesToStream@TIdStream@TIdBytes.html" target="topic">WriteTIdBytesToStream</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

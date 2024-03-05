@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Changes to the Object Hierarchy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'ChangesObjectHierarchy.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="MigratingIndy10.html" target="topic">Migrating to Indy.Sockets Version 10</a> &gt; <a href="ChangesObjectHierarchy.html" target="topic">Changes to the Object Hierarchy</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="MigratingIndy10Packages.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="MigratingIndy10.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="EComponentError.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Changes to the Object Hierarchy</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+In this section, we will review some specific changes made to the object hierarchy in Indy 10. These changes will have an impact on any code migrated from Indy 9.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdInitializerComponent</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdInitializerComponent is a TComponent descendant that acts as the ancestor class for Indy visual components. TIdInitializerComponent is used to consolidate differences between constructors as implemented in the .Net and VCL environments.&nbsp;</p>
+<p class="Element10">
+In the .Net environment, constructors (for visual components) are generally called without arguments. In the VCL environment, constructors (for visual components) are generally called with an owner for free notifications. TIdInitializerComponent accounts for these differences by implementing overloaded constructors for both platforms that accept the expected arguments.&nbsp;</p>
+<p class="Element10">
+TIdInitializerComponent also implements the protected virtual procedure InitComponent which eliminates the need for overridden constructors in descendant classes used as visual components. Descendant classes should override the virtual InitComponent method to perform component initialization operations that were traditionally reserved for overridden (or overloaded) constructors.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdTCPConnection</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+There have been some subtle (or not so subtle - depending on your point of view) revisions to the TIdTCPConnection interface in Indy 10. These changes revolve around refactoring involving the IOHandler and Intercept properties.&nbsp;</p>
+<p class="Element10">
+Indy 9 introduced the concept of the IOHandler, which was designed to encapsulate the input and output mechanism used for connecting, disconnecting, sending, and receiving data on the connection. The idea was to provide an interface for IO mechanisms that use streams, files, et al. The difficulty was that methods used to read and write using the IOHandler were included in TIdTCPConnection. Methods often needed to be overloaded in order to accept the correct argument types, and forward the method request to the correct method in the IOHandler property.&nbsp;</p>
+<p class="Element10">
+In Indy 10, this encapsulation has been improved and extended by moving the methods that read or write data into the IOHandler class instance. The same general refactoring has been made for the Intercept property. As a result, code that accessed methods formerly in TIdTCPConnection may need to be updated to use methods that are now located in the TIdTCPConnection.IOHandler or TIdTCPConnection.Intercept properties. In addition, Write methods that included the data type for the buffer argument as part of the method name (like WriteString, WriteInteger, et al.) have been converted to overloaded methods with the name Write.&nbsp;</p>
+<p class="Element10">
+As an example, for the following Indy 9 code:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AConnection.WriteLn('QUIT');
+  AConnection.WriteInteger(Length(AShortString));
+  AConnection.WriteString(AString);</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Use the following code in Indy 10:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AConnection.IOHandler.WriteLn('QUIT');
+  AConnection.IOHandler.Write(Integer(Length(AShortString)));
+  AConnection.IOHandler.Write(AString);</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+TIdTCPServer</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+There have also been changes in both the architecture and the interface for TIdTCPServer. First, the basic TCP/IP based server has been revised to use a new threading architecture for the client connections to the server. This architecture handles both native Win32 threads and lightweight threads in the Win32 Fiber API. (Please note that this feature requires use of the optional IndySuperCore package and is supported on Delphi 7 only).&nbsp;</p>
+<p class="Element10">
+To accommodate the different types of executable client tasks, TIdTCPServer has gained a Scheduler architecture that handles creation, execution, and termination of tasks for client connections. These executable tasks are now derived from the TIdContext class instead of TIdPeerThread.&nbsp;</p>
+<p class="Element10">
+Executing client connections are now stored in the Contexts property, instead of the ActiveThreads property. Contexts will contain instances of the class indicated in ContextClass. The ContextClass property indicates the type of executable task created in listener threads for client connections and added to the Contexts property. TIdContext essentially replaces the TIdPeerThread class used in Indy 9, and extends the concept to support fibers as well as native threads.&nbsp;</p>
+<p class="Element10">
+The Scheduler replaces the ThreadMgr used in Indy 9. There are basically two types of Schedulers available for TIdTCPServer: Thread-based and Fiber-based. Each is designed to work with a specific type of executable task that represents the client connections. There are further Scheduler refinements that allow a pool of pre-allocated Threads, or Threads which perform scheduling for dependent Fibers.&nbsp;</p>
+<p class="Element10">
+The default Scheduler implementation in TIdTCPServer uses a Thread to represent each client connection. Threads are a common feature found on all platforms and Operating Systems hosting the Indy library.&nbsp;</p>
+<p class="Element10">
+While TIdTCPServer does not use Fibers unless a Scheduler supporting Fibers is assigned (TIdSchedulerOfFiber), the Yarn abstraction is an important one that is central to the use of the Scheduler. When the Scheduler supports Threads, it deals only with a Yarn at the Thread level. When the Scheduler supports Fibers, it deals with a Yarn at the Fiber level.&nbsp;</p>
+<p class="Element10">
+As a result of the change from TIdPeerThread to TIdContext, most code that implements an event handler procedure will need to be updated. Since the type passed as an argument for the thread of execution has changed, the procedure must be updated to accept the new argument type.&nbsp;</p>
+<p class="Element10">
+For example, the Indy 9 code for an OnExecute event handler:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  procedure TMyForm.ServerExecute(AThread: TIdPeerThread);
+  begin
+  ...</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The Indy 10 code for an OnExecute event handler:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  procedure TMyForm.ServerExecute(AContext: TIdContext);
+  begin
+  ...</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required when accessing methods for the Connection in TIdContext - especially those that access methods moved from the connection to its IOHandler.&nbsp;</p>
+<p class="Element10">
+Another change in TIdTCPServer is the removal of TIdCommandHandler support. Support for command handlers in TIdTCPServer represented unwanted and unnecessary overhead in servers that did not implement the feature. To reduce this overhead, and to simplify implementation details, use and support for the command handlers collection has been moved to a TIdTCPServer descendant called TIdCmdTCPServer.&nbsp;</p>
+<p class="Element10">
+Both clients and servers in Indy 10 have gained support for IP version 6 address formats. Use the IPVersion property in socket handles and bindings to indicate IP address family supported for the connection.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Protocol Clients and Servers</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy 10, clients and servers that implement Internet Standard protocols (like TIdHTTP, TIdFTP, etc.) have ungone some interface revisions. Some changes were required to implement the .Net compatibility provided in the IndySystem and Indy Core packages. Other changes allowed use of IP version 6 addresses in the protocol clients. Some clients and servers were modified to implement new features or capabilities like SASL authentication, ZLib compression/decompression, TLS (Transport Level Security), OTP (One-Time Password) support, and the like.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+HTTP Client and Server</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Aside from changes required in the IndyCore package for .Net compatibility, the HTTP Client in Indy 10 (TIdHTTP) has not undergone a lot of revisions in the interface for the client. Overloaded variants of the Get, Put, Post, and Trace methods were added to accommodate use of different argument types. Properties were added for using compression and decompression in accordance with the HTTP protocol (Compressor), and limiting the effects of sites that might use header-bombing in an HTTP response (MaxHeaderLines).&nbsp;</p>
+<p class="Element10">
+More detailed information, please refer to the TIdHTTP documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+The HTTP server component (TIdHTTPServer) is unchanged in Indy 10.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+FTP Client and FTP Server</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In Indy 10, the FTP client (TIdFTP) has gained a lot of new features. For instance:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Better detection and parsing of directory listings.</li>
+<li class="Element601">Compression and decompression using the IOHandler for MODE Z connections.</li>
+<li class="Element601">Support for STARTSSL.</li>
+<li class="Element601">Support for SASL and other authentication types.</li>
+<li class="Element601">Support for CRC calculations.</li>
+<li class="Element601">Support for FXP or server-to-server transfers.</li>
+<li class="Element601">Support for FTP SITE ZONE.</li>
+<li class="Element601">Better proxy server support.</li>
+<li class="Element601">Better data channel transfer timeout support.</li>
+<li class="Element601">Additional event handlers for directory listing and file retrieval.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+While these changes have required properties or methods to be added, the basic interface for the FTP client remains the same. There have been changes in the TIdFTPListOutput properties stored in the DirectoryListing collection.&nbsp;</p>
+<p class="Element10">
+The FTP server components (TIdFTPServer) and its associated classes have seen a lot revisions. Some of these changes are related to the change from TIdPeerThread to TIdContent as the ancestor for client connections. Many changes were made to accommodate new features (as implemented in the client).&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Messaging Architecture</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Components used in the implementation of message-based protocol clients and servers have been updated in Indy 10. Like other functional areas in the library, some changes were required to maintain platform compatibility for .Net. Other changes were improve the internal implementation and handling of messages and message parts, and to provide new features. Most changes, though, have been made to improve compliance with the relevant RFC standards.&nbsp;</p>
+<p class="Element10">
+Some of the changes are transparent and involve only the implementation code (as in message encoders and decoders). Others do affect the public and published interfaces for classes used in or by the client and server components.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdMessage</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdMessage is the class used to represent messages in the protocol-based message clients and servers. In Indy 10, code for TIdMessage has been reorganized and may require updates to the code as well as the Uses clause for units using the message or message parts.&nbsp;</p>
+<p class="Element10">
+These changes were required to allow implementing better and more extensive support for message parts in the message construct. This includes better handling of the MIMEBoundary and it's use in related message parts. TIdMessage now allows a hierarchical relationship between related message parts starting with the new ParentPart property, and cascading through the MessageParts maintained for the message instance.&nbsp;</p>
+<p class="Element10">
+The internal mechanisms used to store and retrieve message parts have been enhanced, as well. These enhancements include the capability to use memory- or file-based attachment message parts in the message instance, and to control the default attachment type using the new OnCreateAttachment event handler.&nbsp;</p>
+<p class="Element10">
+Other subtle changes have been made to TIdMessage that may affect the default behavior when handling message instances. As an example, temporary files created for storing attachments in the message are now deleted when the message is freed. This is a change from previous versions of Indy, and can result in data loss if message storage is not fully implemented in application code. Use the new DeleteTempFiles property to alter the default behavior.&nbsp;</p>
+<p class="Element10">
+Another subtle change to TIdMessage is the ability to store one or more email addresses in the From: header for the message. In previous version of Indy, this property maintained a single email address. Use the new FromList property to maintain a list of addresses where the message originated.&nbsp;</p>
+<p class="Element10">
+Use the following code in Indy 10:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  with AMessage.FromList.Add do
+  begin
+    Text := '&quot;John Doe&quot; &lt;jdoe@somedomain.org&gt;';
+  end;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+or:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  with AMessage.FromList.Add do
+  begin
+    User := 'John Doe';
+    Address := 'jdoe@somedomain.org';
+  end;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+As indicated in the preceeding example, items added to the email address list should now use the User property (instead of Name). This avoids any conflict that might occur with the collection item name used in the object inspector.&nbsp;</p>
+<p class="Element10">
+Other properties added to TIdMessage include the following:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">InReplyTo</li>
+<li class="Element601">LastGeneratedHeaders</li>
+<li class="Element601">ConvertPreamble</li>
+<li class="Element601">GenerateBCCListInHeader</li>
+<li class="Element601">IsMsgSinglePartMime</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Message Parts</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Another area of improvement in Indy 10 is the architecture and handling of messsage parts used in TIdMessage. The architecture has been updated to allow stream-based operations for loading, storing, transmitting, and receiveing the message parts. The object hierarchy has also changed to implement the memory- or file-based storage used for message parts.&nbsp;</p>
+<p class="Element10">
+As a result, TIdAttachment is now an abstract ancestor class for attachment message parts. Applications should use TIdAttachmentFile or TIdAttachmentMemory when creating attachment message parts, or allow the TIdMessage instance to implement a default behavior using its OnCreateAttachment event handler. Applications will still use TIdText to represent text-based message parts.&nbsp;</p>
+<p class="Element10">
+Each of the message part classes has a new PartType value that indicates if the message part represents a text part or a binary attachment. In addition, ContentID and ContentLocation can now be maintained for the message part instances in a given message.&nbsp;</p>
+<p class="Element10">
+Another facet of the messaging architecture that has been revised in Indy 10 is the representation of related message parts in a message, as used in &quot;multipart/alternative&quot; and &quot;multipart/mime&quot; messages. Indy 10 has altered its implementation of the message parts collection to allow representation of nested MIME message parts. This includes better use and recognition of the MIME boundary for message parts. The ParentPart property in TIdMessage and TIdAttachment descendants is used to express the relationship among the various message parts.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Messaging Clients and Servers</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Most of the clients and servers that use message-based transmission protocols (such as POP3, SMTP, IMAP4, and NNTP) have been revised in Indy 10. Some of these changes were required to maintain cross platform compatibility as a result of .Net support. For the most part, these revisions were performed to provide additional functionality in the client or server. The notable exception is the IMAP4 client (TIdIMAP4); because of the complexity of the IMAP protocol and implementation &quot;issues&quot; present in Indy 9, this client was essentially rewritten.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdMessageClient</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdMessageClient is the common ancestor for all client that handle message-based protocol transmissions and receipts. In Indy 10, TIdMessageClient has a new ancestor class (TIdExplicitTLSClient) that provides support for TLS (Transport Level Security) in all of the descendant class that require the capability. Properties in TIdExplicitTLSClient indicate if use of TLS is allowed, required, or implied. Methods in TIdExplicitTLSClient perform the handshaking and negotiation needed to establish the secure transport and list the capabilities supported for the connection to the remote server. Event handlers are also provided that the actions to perform when TLS is requested but not available due to handshaking or feature negotiation errors in protocol exchanges.&nbsp;</p>
+<p class="Element10">
+The TIdMessageClient interface has been altered to include MsgLineLength and MsgLineFold properties used when transmitting MIME-enabled messages.&nbsp;</p>
+<p class="Element10">
+For a detail explanation of these new properties, please refer to the TIdMessageClient documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdSMTP</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The TIdSMTP client is used to transmit or post mail messages and newsgroup articles. In Indy 10, additional properties and methods have been introduced to support new features including:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">TLS Support</li>
+<li class="Element601">SMTP Extension Commands</li>
+<li class="Element601">SASL Authentication</li>
+<li class="Element601">Command Pipelining</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdSMTP documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdPOP3</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The TIdPOP3 client is used to access mail stored on a remote server using the POP3 protocol. In Indy 10, TIdPOP3 has been extended to include additional features that include:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">AUTH Command Support</li>
+<li class="Element601">APOP Command Support</li>
+<li class="Element601">SASL Support</li>
+<li class="Element601">TLS Support</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+There are some subtle changes in the implementation of TIdPOP3 that may result in behavior that differs from the default Indy 9 implementation. First of all, the Connect methods no longer accepts a timeout value as an argument; use the ConnectTimeout property for this purpose.&nbsp;</p>
+<p class="Element10">
+For example, the following code in Indy 9:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AIdPOP3.Connect(5000);</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Should be coded as the following in Indy 10:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AIdPOP3.ConnectTimeout := 5000;
+  AIdPOP3.Connect;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Secondly, the Connect method automatically calls the Login method when AutoLogin contains True (the default value). Make sure that all properties required to establish the POP3 session are set prior to calling the Connect method.&nbsp;</p>
+<p class="Element10">
+For example, the following code in Indy 9:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AIdPOP3.Connect(5000);</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Could be coded as the following in Indy 10:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  AIdPOP3.AutoLogin := False;
+  AIdPOP3.ConnectTimeout := 5000;
+  AIdPOP3.Connect;
+
+  // do some things here before logging in to the server
+
+  if AIdPOP3.Connected then AIdPOP3.Login;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Finally, Indy 10 clears any existing values in the TIdMessage class instance used in methods that retrieve message content. This is a change to the default behavior in Indy 9, and could cause problems if reuse of header values (or custom headers) in the message instance is expected.&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdPOP3 documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdIMAP4</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdIMAP4 is the messaging client that implements support for the IMAP version 4 protocol. IMAP is a fairly complicated protocol, and the client delivered in Indy 9 did not properly support some aspects of the protocol or it's idiosyncracies when handling mailboxes and messages. To correct these issues, much (actually most) of the code for the TIdIMAP4 client in Indy 10 has be rewritten.&nbsp;</p>
+<p class="Element10">
+While some of these changes are isolated to the implementation of procedures and methods, others are reflected in the public and published interface for TIdIMAP4. Code calling methods from the previous version may require alteration because of new method signatures in Indy 10 (different types used for arguments, or completely new overloaded methods).&nbsp;</p>
+<p class="Element10">
+Some of the revisions in TIDIMAP4 include the following:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Modified UTF-7 encoding and decoding for mailbox names,</li>
+<li class="Element601">Additional methods to support message access using UID.</li>
+<li class="Element601">Improved support for accessing message or message parts.</li>
+<li class="Element601">Added Raw message retrieval using relative message numbers or UID.</li>
+<li class="Element601">Support for SASL authentication.</li>
+<li class="Element601">Support for TLS.</li>
+<li class="Element601">Improved parsing and handling of IMAP server responses.</li>
+<li class="Element601">Added support for BinHex-encoded message parts.</li>
+<li class="Element601">Added work event handlers for message parts.</li>
+<li class="Element601">Added OnAlert event for warnings attached to messages.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdNNTP</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdNNTP is the messaging client used for NNTP messages. In Indy 10, additional event handlers, properties, and methods have been added to better support the NNTP protocol.&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Support for SSL.</li>
+<li class="Element601">Support for TLS.</li>
+<li class="Element601">Support for NNTP AUTH.</li>
+<li class="Element601">Support for NNTP LIST EXTENSIONS.</li>
+<li class="Element601">Added OnXHdr and OnXOVER event handlers.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdNNTP documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Server-specific Revisions</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In general, all of the servers in Indy have received revisions to both their published/published interface, and their implementation. This comes as a result of the changes required to maintain cross platform compatibility (for .Net), and use of TIdContext for execution of connections to the servers.&nbsp;</p>
+<p class="Element10">
+Code written for event handles in Indy 9 may no longer compile under Indy 10. This comes as a result of changes to method signatures - where new or different types are used in arguments to the event handler.&nbsp;</p>
+<p class="Element10">
+Other changes may be required when accessing methods moved to the IOHandler for the socket connection. Please refer to the preceeding sections on TIdTCPServer and TIdTCPConnection, or the corresponding documentation in the Reference section for more details.&nbsp;</p>
+<p class="Element10">
+For developers creating protocol servers, or deriving classes from Indy 10 protocol server, please be aware that the object hierarchy has changed. Most servers that implement high-level protocol support are now derived from TIdExplicitTLSServer. This provides common functionality required for TLS (Transport Level Security) in all of the messaging servers.&nbsp;</p>
+<p class="Element10">
+For instance, the following indicates the new ancestry for TIdNNTPServer:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  TIdNNTPServer = class(TIdExplicitTLSServer)</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+While this change is largely transparent (other that providing access to additional properties, methods, and events), it may have an impact on descendant classes.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdSMTPServer</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In Indy 10, TIdSMTPServer has been changed (as discussed in the previous section), and includes other SMTP-specific enhancements. Most revisions involve features added for TLS and SASL authentication, but also include enhanced error reporting for the SMTP client contexts. TIdSMTPServer includes a default implementation for command handler procedures like CommandNOOP, CommandQUIT, and CommandStartTLS, etc.&nbsp;</p>
+<p class="Element10">
+In addition, TIdSMTPServer now supports command pipelining. Pipelining is an SMTP extension where the client can send groups of SMTP commands without waiting for a response to each individual command. The server implementation must still provide event handlers (like OnMsgReceive, OnUserLogin, OnMailFrom, OnRcptTo, and OnReceived) that make use of the pipelining capability, in accordance with the SMTP specifications.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdPOP3Server</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In Indy 10, TIdPOP3Server has been changed (as discussed in the previous section), and includes other POP-specific enhancements. Most revisions involve features added for TLS and SASL authentication, but also include enhanced capabilities for the POP3 client contexts like the APOP challenge prompt.&nbsp;</p>
+<p class="Element10">
+TIdPOP3Server also includes support for command handler procedures (like OnLIST, OnRETR, OnDELE, OnUIDL, OnSTAT, etc).&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdPOP3Server documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdIMAP4Server</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In Indy 10, TIdIMAP4Server has been changed (as discussed in the previous section), and includes other IMAP-specific enhancements. Most revisions involve features added for TLS and SASL authentication, but also includes enhanced capabilities for the IMAP client contexts. For instance, TIdIMAP4PeerContext includes properties to represent the connection state and the selected mailbox for the IMAP client.&nbsp;</p>
+<p class="Element10">
+TIdIMAP4Server now includes support for command handler procedures (like OnCommandCAPABILITY, OnCommandNOOP, OnCommandLOGOUT, OnCommandAUTHENTICATE, OnCommandLOGIN, OnCommandSELECT, etc). A default implementation for command handlers used in the server are provided, but can be overridden using event handler procedures in the server implementation.&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdIMAP4Server documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+TIdNNTPServer</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In Indy 10, TIdNNTPServer has been changed (as discussed in the previous section), and includes other NNTP-specific enhancements. Most revisions involve features added for TLS and SASL authentication, but also includes enhanced capabilities for the NNTP client contexts.&nbsp;</p>
+<p class="Element10">
+TIdNNTPServer now includes support for command handler procedures (like OnCommandCAPABILITY, OnCommandNOOP, OnCommandLOGOUT, OnCommandAUTHENTICATE, OnCommandLOGIN, OnCommandSELECT, etc). A default implementation for command handlers used in the server are provided, but can be overridden using event handler procedures in the server implementation. TIdNNTPServer also includes support for NNTP extension commands, as per the relevant RFCs.&nbsp;</p>
+<p class="Element10">
+For existing Indy 9 code, most changes involve new method signatures for server methods and event handler declarations. Most of these changes are required to maintain cross platform compatibility, but some are directory related to type changes in methods or event types.&nbsp;</p>
+<p class="Element10">
+Additional code changes may be required to maintain cross platform compatibility, as discussed in previous sections.&nbsp;</p>
+<p class="Element10">
+For a detailed explanation of new properties, please refer to the TIdNNTPServer documentation in the Reference section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdDICT.Define Method (String, TIdDefinitions, Boolean)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdDICT_Define@String@TIdDefinitions@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdDICT.html" target="topic">TIdDICT Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdDICT.html" target="topic">TIdDICT Methods</a> &gt; <a href="!!OVERLOADED_Define_TIdDICT.html" target="topic">Define Method</a> &gt; <a href="TIdDICT_Define@String@TIdDefinitions@Boolean.html" target="topic">Define Method (String, TIdDefinitions, Boolean)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdDICT_Define@String@String@TIdDefinitions.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Define_TIdDICT.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdDICT_Destroy.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdDICT.Define Method (String, TIdDefinitions, Boolean)</div>
+<div class="Element7">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves definitions from the DICT server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Define(
+    <strong>const</strong> AWord: <strong>String</strong>; 
+    AResults: TIdDefinitions; 
+    <strong>const</strong> AGetAll: Boolean = True
+); <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AWord&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Word definition to search for in the databases.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AResults&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Container for definitions returned by the DICT server.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AGetAll&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Indictes if all word matches are included in the results.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Define is an overloaded method used to implement the DICT DEFINE command. Define performs a lookup for the definition of the specified word in the databases on the DICT server.&nbsp;</p>
+<p class="Element10">
+AWord indicates the word to lookup in the databases on the DICT server.&nbsp;</p>
+<p class="Element10">
+AResults is the <a href="TIdDefinitions.html" target="topic">TIdDefinitions</a> instance used to store definitions retrieved from the DICT server.&nbsp;</p>
+<p class="Element10">
+AGetAll indicates that all word matches in all databases will be included in the definitions returned to the client. When AGetAll contains False, a single <a href="TIdDICT_Match@String@String@String@TIdMatchList.html" target="topic">match</a> from all databases is returned.&nbsp;</p>
+<p class="Element10">
+Define will normally result in the following status codes being returned to the client:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="11%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="89%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="11%">
+<div class="Element68">
+552&nbsp;</div></td><td class="Element67" valign="top" width="89%">
+<div class="Element68">
+No <a href="TIdDICT_Match@String@String@String@TIdMatchList.html" target="topic">match</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="11%">
+<div class="Element68">
+150&nbsp;</div></td><td class="Element67" valign="top" width="89%">
+<div class="Element68">
+n definitions retrieved - definitions follow&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="11%">
+<div class="Element68">
+151&nbsp;</div></td><td class="Element67" valign="top" width="89%">
+<div class="Element68">
+word database name - text follows&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="11%">
+<div class="Element68">
+250&nbsp;</div></td><td class="Element67" valign="top" width="89%">
+<div class="Element68">
+ok (optional timing information here)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Definitions returned with response code 151 are captured and stored in the AResults.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+TIdDICT.Define&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDefinitions.html" target="topic">TIdDefinitions</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDefinition.html" target="topic">TIdDefinition</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a><br /><a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

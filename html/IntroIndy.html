@@ -1,0 +1,744 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Introduction to Indy</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IntroIndy.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="IntroToIndy.html" target="topic">Introduction to the Indy Project</a> &gt; <a href="IntroIndy.html" target="topic">Introduction to Indy</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IndySockets.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="IntroToIndy.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="IndyLicenses.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Introduction to Indy</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+An introduction to Internet Direct (Indy) written by the project Coordinator (and original author).&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Introductory Note</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+I originally wrote this article in the days of Indy 8.0. Most of the article still applies and is very useful for newer versions of Indy. If you like this article and would like to read many more in depth articles, please check out Indy in Depth.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Author: Chad Z. Hower (aka &quot;Kudzu&quot;)</li>
+<li class="Element600"><a href="http://www.atozedsoftware.com">Home Page</a></li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy is Blocking</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy uses blocking socket calls. Blocking calls are much like reading and writing to a file. When you read data, or write data, the function will not return until the operation is complete. The difference from working with files is that the call may take much longer as data may not be immediately ready for reading or writing (It can only operate as fast as the network or the modem can handle the data).&nbsp;</p>
+<p class="Element10">
+For example, to connect simply call the connect method and wait for it to return. If it succeeds, it will return when it does. If it fails, it will raise an exception.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Blocking is NOT Evil</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Blocking sockets have been repeatedly attacked with out warrant. Contrary to popular belief, blocking sockets are not evil.&nbsp;</p>
+<p class="Element10">
+When Winsock was &quot;ported&quot; to Windows, a problem quickly arose. In Unix it was common to fork (kind of like multi threading, but with separate processes instead of threads). Unix clients and daemons would fork processes, which would run, and use blocking sockets. Windows 3.x could not fork and did not support multi threading. Using the blocking interface &quot;locked&quot; user interfaces and made programs unresponsive. So asynchronous extensions were added to WinSock to allow Windows 3.x with its shortcomings to use Winsock without &quot;locking&quot; the main and only thread of a program. This however required a different way of programming., and Microsoft and others vilified blocking vehemently so as to mask the shortcomings of Windows 3.x.&nbsp;</p>
+<p class="Element10">
+Then along came Win32 which could properly multi-thread. But at this point, everyone's mind had been changed (i.e. Developers believed blocking sockets were evil), and it is hard to &quot;backtrack&quot; once a statement has been made. So the continued vilification of blocking sockets continues.&nbsp;</p>
+<p class="Element10">
+In reality, blocking sockets are the ONLY way Unix does sockets. Blocking sockets also offer other advantages, and are much better for threading, security, and other aspects. Some extensions have been added for non-blocking sockets in Unix. However they work quite differently than in Windows. They also are not standard, and not in wide use. Blocking sockets under Unix still are used in almost every case, and will continue to be so.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Pros of Blocking</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+Easy to program&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Blocking is very easy to program. All user code can exist in one place, and in a sequential order.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+Easy to port&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Since Unix uses blocking sockets, portable code can be written easily. Indy uses this fact to achieve its single source solution.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+Work well in threads&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Since blocking sockets are sequential they are inherently encapsulated and therefore very easily used in threads.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Cons of Blocking</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+User Interface &quot;Freeze&quot;&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Blocking socket calls do not return until they have accomplished their task. When such calls are made in the main thread of an application, the application cannot process the user interface messages. This causes the User Interface to &quot;freeze&quot; because the update, repaint and other messages cannot be processed until the blocking socket calls return control to the applications message processing loop.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+TIdAntiFreeze</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy has a special component that solves the User Interface freeze problem transparently. Simply add one TIdAntiFreeze anywhere in your application, and you can perform standard blocking Indy calls in your program without the User Interface being frozen.&nbsp;</p>
+<p class="Element10">
+The TIdAntiFreeze works by internally timing out calls to the stack and calling Application.ProcessMessages during timeouts. The external calls to Indy continue to block, and thus work exactly as without a TIdAntiFreeze otherwise. Use of a TIdAntiFreeze allows for all the advantages of blocking sockets, without the most prominent disadvantage.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Threading</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Threading is almost always used with blocking sockets. Non-blocking sockets can be threaded as well, but they require some extra handling and their advantages are lost with blocking sockets. Threading will be discussed briefly as it is important in writing blocking socket servers. Threading can also be used to write advanced blocking clients.&nbsp;</p>
+<p class="Element10">
+Threading Advantages&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Prioritization&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Individual threads priorities can be adjusted. This allows individual server tasks or individual connections to be given more or less CPU time.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Encapsulation&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Each connection will be self-contained and less likely to interfere with other connections.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Security&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Each thread can have different security attributes.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Multiple Processors&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Threading automatically will take advantage of multiple processors.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+No Serialization&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Threading provides true concurrency. Without threading all requests must be handled by a single thread. For this to work each task to be performed must be broken up into small pieces that can always execute quickly. If any task part blocks or takes time to execute all other task parts will be put on hold until it is complete. After each task part is complete, the next one is processed, etc. With threading, each task can be programmed as a complete task and the operating system will divide CPU time among the tasks.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Thread Pooling</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The creation and destruction of threads can be resource intensive. This is especially evident with servers that have short-lived connections. Such servers create a thread use it for very brief time and then destroy it. This causes for a very high frequency of creation and destruction of threads. An example of this is a time or even and web server. A single request is sent, and a simple answer returned. When using a browser to browse a web site hundreds of connections and disconnections to the server may occur.&nbsp;</p>
+<p class="Element10">
+Thread pooling can alleviate such situations. Instead of creating and destroying threads on demand, threads are borrowed from a list of inactive but already created list (pool). When a thread is no longer needed it is redeposited into the pool instead of being destroyed. While threads are in the pool they are marked inactive and thus do not consume CPU cycles. For a further improvement, the size of the pool can be adjusted dynamically to meet the current needs of the system.&nbsp;</p>
+<p class="Element10">
+Indy supports thread pooling using specialized schedulers for server components.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Hundreds of Threads</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+With a busy server hundreds or even thousands of threads can easily be needed. There is a common misconception that hundreds of threads will instantly kill your system. This is a false belief.&nbsp;</p>
+<p class="Element10">
+With most servers threads spend most of their time waiting on data. While waiting on blocking calls the thread will be inactive. Thus in a server with 500 threads only 50 may be active at a single time.&nbsp;</p>
+<p class="Element10">
+The number of threads that your system has running now may surprise you. With only minimal services started and the following applications running:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+My system has 333 threads currently created:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Even with 333 threads you can see that my CPU utilization is only at 1%. A heavily used IIS (Microsoft Internet Information Server) will create hundreds or thousands more threads.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Threads and Global Sections</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Whenever multiple threads need to access data in a read/write fashion they must control access to the data to protect its integrity. This can be intimidating to programmers new to threading. However most servers do not require global data. Most servers perform compartmentalized functions. That is each thread performs an isolated task. Global read/write sections are an issue for many multi threaded applications, but global read/write sections typically are not an issue for most socket servers.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Indy Methodology</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy is different than other Winsock components you may be familiar with. If you've worked with other components, the best approach for you may be to forget how they work. Nearly all other components use non-blocking (asynchronous) calls and act asynchronously. They require you to respond to events, set up state machines, and often perform wait loops.&nbsp;</p>
+<p class="Element10">
+For example, with other components, when you call connect you must wait for a connect event to fire, or loop until a property indicates that you are connected. With Indy you merely call Connect, and wait for it to return. If it succeeds, it will return when it does. If it fails, it will raise an exception. Working with Indy is very much like working with files. Indy allows you to put all your code in one place, instead of scattered throughout different events. In addition, Indy is much easier and more suited to threading.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+How Indy is Different Quick Overview</div>
+<p class="Element10">
+&nbsp;</p>
+
+<ul class="Element630">
+<li class="Element600">Uses blocking calls</li>
+<li class="Element600">Does not rely on events - Indy has events that can be used for informational purposes, but are not required.</li>
+<li class="Element600">Designed to be threaded - Indy is designed with threading in mind. Indy can be used without threading however.</li>
+<li class="Element600">Sequential programming</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Details</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy not only uses blocking calls (synchronous) but it acts as such. A typical Indy session looks like this:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00001');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00001"><pre class="Element12">  <strong>with</strong> AnIndyClient <strong>do</strong>
+  <strong>begin</strong>
+    Connect;
+    <strong>try</strong>
+      <i>// Do your stuff here</i>
+    <strong>finally</strong>
+      Disconnect;
+    <strong>end</strong>;
+  <strong>end</strong>;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Other components may look something similar to this:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00002');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00002"><pre class="Element12">  <strong>procedure</strong> TFormMain.TestOnClick(Sender: TComponent);
+  <strong>begin</strong>
+    <strong>with</strong> SocketComponent <strong>do</strong>
+    <strong>begin</strong>
+      Connect;
+      <strong>try</strong>
+        <strong>while</strong> <strong>not</strong> Connected <strong>do</strong>
+        <strong>begin</strong>
+          <strong>if</strong> IsError <strong>then</strong>
+          <strong>begin</strong>
+            Abort;
+          <strong>end</strong>;
+          Application.ProcessMessages;
+
+        OutData := 'Data To send';
+        <strong>while</strong> length(OutData) &gt; 0 <strong>do</strong>
+        <strong>begin</strong>
+          Application.ProcessMessages;
+        <strong>end</strong>;
+      <strong>finally</strong>
+        Disconnect;
+      <strong>end</strong>;
+    <strong>end</strong>;
+  <strong>end</strong>;
+
+  <strong>procedure</strong> TFormMain.OnConnectError;
+  <strong>begin</strong>
+    IsError := True;
+  <strong>end</strong>;
+
+  <strong>procedure</strong> TFormMain.OnRead;
+  <strong>var</strong>
+    i: Integer;
+  <strong>begin</strong>
+    i := SocketComponent.Send(OutData);
+    OutData := Copy(OutData, i + 1, MaxInt);
+  <strong>end</strong>;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Most components do not do a very good job of isolating the programmer from stack. Many components instead of isolating the user from the complexities of stack merely pass them on or provide a Delphi/CB wrapper for the stack. The Indy Way&nbsp;</p>
+<p class="Element10">
+Indy is designed from the ground up to be threadable. Building servers and clients in Indy is similar to the way Unix servers and clients are built, except that it is much easier, because you have Indy and Delphi. Unix apps typically call the stack directly with little or no abstraction layer.&nbsp;</p>
+<p class="Element10">
+Typically Unix servers have one or more &quot;listener&quot; processes which looks for incoming client requests. For each client that it needs to serve, it will fork a new process to handle each client. This make programming very easy as each process deals with only one client. The process also runs in its own security context, which can be set by the listener or the process based on credentials, authentication, or other means.&nbsp;</p>
+<p class="Element10">
+Indy servers work very similarly. Windows unlike Unix does not fork well, but it does thread well. Indy servers allocate a thread for each client connection.&nbsp;</p>
+<p class="Element10">
+Indy servers set up a listening thread that is separate from the main thread of the program. The listener thread listens for incoming client requests. For each client that it answers, it spawns a new thread to service that client. The appropriate events are then fired within the context of that thread. Overview of Indy Clients&nbsp;</p>
+<p class="Element10">
+Indy is designed to provide a very high level of abstraction. Intricacies and details of the TCP/IP stack are hidden from the Indy programmer. A typical Indy client session looks like this:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00003');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00003"><pre class="Element12">  <strong>with</strong> IndyClient <strong>do</strong>
+  <strong>begin</strong>
+    Host := 'zip.pbe.com'; <i>// Host to call</i>
+    Port := 6000; <i>// Port to call the server on</i>
+    Connect;
+    <strong>try</strong>
+      <i>// Do your stuff here</i>
+    <strong>finally</strong>
+      Disconnect;
+    <strong>end</strong>;
+  <strong>end</strong>;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Overview of Indy Servers</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy server components create a listener thread that is separate from the main thread of the program. The listener thread listens for incoming client requests. For each client that it answers, it then spawns a new thread to service that client. The appropriate events are then fired within the context of that thread.&nbsp;</p>
+<p class="Element10">
+<img src="ServerDiagram.gif" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Practical Examples</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The following examples should normally be encapsulated into descendant components for easy reuse, but for the sake of demonstration the examples will be done as simple applications. Several projects will be presented to show a variety of situations. These examples are also available as a zip file.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Example 1 - Zip Code Lookup</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The first project has been designed to be as simple as possible. Zip Code Lookup will allow a client to ask a server what city and state a zip code is for.&nbsp;</p>
+<p class="Element10">
+For those of you outside the United State who may not know what a zip code is, a zip code is a US postal code that specifies a postal delivery area. Zip codes are numeric and 5 digits long.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Protocol</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The first step in building a client or server is to understand the protocol. For standard protocols this is done by reading the appropriate RFC. For Zip Code Lookup a protocol has been defined and is below.&nbsp;</p>
+<p class="Element10">
+Most protocols are conversational and plain text. Conversational means that a command is given, a status response follows, and possibly data. Protocols that are very limited are often not conversational, but are still plain text. Zip Code Lookup is plain text, but not conversational. Plain text makes protocols much easier to debug, and also to interface to using different programming languages and operating systems.&nbsp;</p>
+<p class="Element10">
+Upon connection the server will respond with a welcome message, then accept a command. That command can be &quot;ZipCode x&quot; (Where x is the zip code) or &quot;Quit&quot;. A ZipCode command will be responded to with a single line response, or an empty line if no entry exists. Quit will cause the server to disconnect the connection. The server will accept multiple commands, until a Quit command is received.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Server Source Code</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00004');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00004"><pre class="Element12"><strong>unit</strong> ServerMain;
+
+<strong>interface</strong>
+
+<strong>uses</strong>
+  Windows, Messages, SysUtils, Classes,
+  Graphics, Controls, Forms, Dialogs,
+  IdBaseComponent, IdComponent, IdTCPServer;
+
+<strong>type</strong>
+  TformMain = <strong>class</strong>(TForm)
+    IdTCPServer1: TIdTCPServer;
+    <strong>procedure</strong> FormCreate(Sender: TObject);
+    <strong>procedure</strong> FormDestroy(Sender: TObject);
+    <strong>procedure</strong> IdTCPServer1Connect(AThread: TIdPeerThread);
+    <strong>procedure</strong> IdTCPServer1Execute(AThread: TIdPeerThread);
+  <strong>private</strong>
+    ZipCodeList: TStrings;
+  <strong>public</strong>
+  <strong>end</strong>;
+
+<strong>var</strong>
+  formMain: TformMain;
+
+<strong>implementation</strong>
+
+<i>{R *.DFM}</i>
+
+<strong>procedure</strong> TformMain.IdTCPServer1Connect(AThread: TIdPeerThread);
+<strong>begin</strong>
+  AThread.Connection.WriteLn('Indy Zip Code Server Ready.');
+<strong>end</strong>;
+
+<strong>procedure</strong> TformMain.IdTCPServer1Execute(AThread: TIdPeerThread);
+<strong>var</strong>
+  sCommand: <strong>string</strong>;
+<strong>begin</strong>
+  <strong>with</strong> AThread.Connection <strong>do</strong>
+  <strong>begin</strong>
+    sCommand := ReadLn;
+    <strong>if</strong> SameText(sCommand, 'QUIT') <strong>then</strong>
+    <strong>begin</strong>
+      Disconnect;
+    <strong>end</strong>
+    <strong>else</strong> <strong>if</strong> SameText(Copy(sCommand, 1, 8), 'ZipCode ') <strong>then</strong>
+    <strong>begin</strong>
+      WriteLn(ZipCodeList.Values[Copy(sCommand, 9, MaxInt)]);
+    <strong>end</strong>;
+  <strong>end</strong>;
+<strong>end</strong>;
+
+<strong>procedure</strong> TformMain.FormCreate(Sender: TObject);
+<strong>begin</strong>
+  ZipCodeList := TStringList.Create;
+  ZipCodeList.LoadFromFile(ExtractFilePath(Application.EXEName) +
+    'ZipCodes.dat');
+<strong>end</strong>;
+
+<strong>procedure</strong> TformMain.FormDestroy(Sender: TObject);
+<strong>begin</strong>
+  ZipCodeList.Free;
+<strong>end</strong>;
+
+<strong>end</strong>.</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The only parts that are Indy specific are the IdTCPServer1 component, IdTCPServer1Connect method, and the IdTCPServer1Execute method.&nbsp;</p>
+<p class="Element10">
+IdTCPServer1 is a TIdTCPServer and is a component on the form. The following properties were altered from the default:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Active = True - Set the server to listen when the application is run.</li>
+<li class="Element600">DefaultPort = 6000 - An arbitrary number for this demo. This is the port the listener will listen on for incoming client requests.</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IdTCPServer1Execute method is hooked to the OnExecute event of the server. The OnExecute event is fired by the server after a client connection has been accepted. The OnExecute event is uniquely different from other events you may be familiar with. OnExecute is executed in the context of a thread. The thread the event is called from is passed in the AThread argument of the method. This is important as many OnExecute events may be executing at the same time. This was done with an event so that a server could be built without the requirement of building a new component. There are also methods that can be overridden when descendant components are created.&nbsp;</p>
+<p class="Element10">
+The OnConnect is called after a connection has been accepted, and a thread created for it. In this server it is used to send the welcome message to the client. This could also be done in the OnExecute event if desired.&nbsp;</p>
+<p class="Element10">
+The OnExecute event will be called repeatedly until the connection is disconnected or broken. This eliminates the need to check the connection and loop inside the event.&nbsp;</p>
+<p class="Element10">
+IdTCPServer1Execute uses two basic Indy functions, ReadLn and WriteLn. ReadLn reads a line from the connection and WriteLn writes a line to the connection.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00005');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00005"><pre class="Element12">  sCommand := ReadLn;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The above line reads the command from the client and puts the input into the local string variable sCommand.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00006');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00006"><pre class="Element12">  <strong>if</strong> SameText(sCommand, 'QUIT') <strong>then</strong>
+  <strong>begin</strong>
+    Disconnect;
+  <strong>end</strong>
+  <strong>else</strong> <strong>if</strong> SameText(Copy(sCommand, 1, 8), 'ZipCode ') <strong>then</strong>
+  <strong>begin</strong>
+    WriteLn(ZipCodeList.Values[Copy(sCommand, 9, MaxInt)]);
+  <strong>end</strong>;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Next the input in sCommand is parsed to see which command the client issued.&nbsp;</p>
+<p class="Element10">
+If the command is &quot;Quit&quot; the connection is disconnected. No more reading or writing of the connection is permitted after a disconnect call. When the event is exited after this, the listener will not call it again. The listener will clean up the thread and the connection.&nbsp;</p>
+<p class="Element10">
+If the command is &quot;ZipCode&quot; the parameter after the command is extracted and used to look up the city and state. The city and state is then written to the connection, or an empty string if one a match for the parameter is not found.&nbsp;</p>
+<p class="Element10">
+Finally the method is exited. The server will recall the event again as long as the connection is connected, allowing the client to issue multiple commands.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Client Source Code</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00007');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00007"><pre class="Element12"><strong>unit</strong> ClientMain;
+
+<strong>interface</strong>
+
+<strong>uses</strong>
+  Windows, Messages, SysUtils, Classes,
+  Graphics, Controls, Forms, Dialogs, StdCtrls, ExtCtrls,
+  IdAntiFreezeBase, IdAntiFreeze, IdBaseComponent, IdComponent,
+  IdTCPConnection, IdTCPClient;
+
+<strong>type</strong>
+  TformMain = <strong>class</strong>(TForm)
+    Client: TIdTCPClient;
+    IdAntiFreeze1: TIdAntiFreeze;
+    Panel1: TPanel;
+    Panel2: TPanel;
+    memoInput: TMemo;
+    lboxResults: TListBox;
+    Panel3: TPanel;
+    Button1: TButton;
+    Button2: TButton;
+    Label1: TLabel;
+    <strong>procedure</strong> Button2Click(Sender: TObject);
+    <strong>procedure</strong> Button1Click(Sender: TObject);
+  <strong>private</strong>
+  <strong>public</strong>
+  <strong>end</strong>;
+
+<strong>var</strong>
+  formMain: TformMain;
+
+<strong>implementation</strong>
+
+<i>{R *.DFM}</i>
+
+<strong>procedure</strong> TformMain.Button2Click(Sender: TObject);
+<strong>begin</strong>
+  memoInput.Clear;
+  lboxResults.Clear;
+<strong>end</strong>;
+
+<strong>procedure</strong> TformMain.Button1Click(Sender: TObject);
+<strong>var</strong>
+  i: integer;
+  s: <strong>string</strong>;
+<strong>begin</strong>
+  butnLookup.Enabled := true;
+  <strong>try</strong>
+    lboxResults.Clear;
+    <strong>with</strong> Client <strong>do</strong>
+    <strong>begin</strong>
+      Connect;
+      <strong>try</strong>
+        lboxResults.Items.Add(ReadLn);
+        <strong>for</strong> i := 0 <strong>to</strong> memoInput.Lines.Count - 1 <strong>do</strong>
+        <strong>begin</strong>
+          WriteLn('ZipCode ' + memoInput.Lines[i]);
+          lboxResults.Items.Add(memoInput.Lines[i]);
+          s := ReadLn;
+          <strong>if</strong> s = '' <strong>then</strong>
+          <strong>begin</strong>
+            s := '-- No entry found for this zip code.';
+          <strong>end</strong>;
+          lboxResults.Items.Add(s);
+          lboxResults.Items.Add('');
+        <strong>end</strong>;
+        WriteLn('Quit');
+      <strong>finally</strong>
+        Disconnect;
+      <strong>end</strong>;
+    <strong>end</strong>;
+  <strong>finally</strong>
+    butnLookup.Enabled := true;
+  <strong>end</strong>;
+<strong>end</strong>;
+
+<strong>end</strong>.</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The only parts that are Indy specific are the Client component and the Button1Click method.&nbsp;</p>
+<p class="Element10">
+Client is a TIdTCPClient and is a component on the form. The following properties were altered from the default:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Host = 127.0.0.1 - Host was set to contact a server on the same machine as the client.</li>
+<li class="Element600">Port = 6000 - An arbitrary number for this demo. This is the port that the client will contact the server with.</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Button1Click is a method that is hooked to the OnClick event of Button1. When the button is clicked it executes this method. The Indy portion of this method can be reduced to the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ol class="Element630">
+<li value="1" class="Element600">Connect to Server ( Connect; )</li>
+<li value="2" class="Element600">Read welcome message from the</li>
+</ol><p class="Element10">
+server.</p>
+<ol class="Element630">
+<li value="3" class="Element600">For each line the user entered in the TMemo:</li>
+<li value="1" class="Element600">Send request to server (WriteLn('ZipCode ' + memoInput.Lines[i]);)</li>
+<li value="2" class="Element600">Read response from server (s := ReadLn;)</li>
+<li value="4" class="Element600">Send Quit command ( WriteLn('Quit'); )</li>
+<li value="5" class="Element600">Disconnect (Disconnect;)</li>
+</ol><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Testing</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+These demos were pre-tested and will work as long as TCP/IP is installed and active on your system. You can change this to run across the network from one computer to another by running the server on another computer and changing the host property of the client to the IP or TCP/IP name of the machine the server is running on. Otherwise it will look for the server on the same computer as the client.&nbsp;</p>
+<p class="Element10">
+To test the projects, compile and run the server. Then compile and run the client. Enter a zip code(s) into the memo field on the left and click lookup.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Debugging</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Plain text protocols can be debugged easily because they can be tested using a telnet session. To do this you merely need to know what port the server is running on. Zip Code Lookup Server listens on port 6000.&nbsp;</p>
+<p class="Element10">
+Run Zip Code Lookup Server again. Next open a command window (a.k.a Dos Window). Now type:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  telnet 127.0.0.1 6000 &lt;enter&gt;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+You are now connected to the Zip Code Lookup Server. Some servers will greet you with a welcome message. This one does not. You will not see your keystrokes. Most servers do not echo the commands as it would be a waste of bandwidth. You can however change your telnet settings by setting &quot;Echo On&quot;. Different telnet clients will call this feature different things. A few do not even have this option. Now type:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  zipcode 37642 &lt;enter&gt;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+You will see the server respond with:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  CHURCH HILL, TN</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+To disconnect from the server enter:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  quit &lt;enter&gt;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Example 2 - DB Access</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+This demo will simulate a server that must perform a blocking task other than a socket call. Many servers have this requirement. Servers that need to make database calls, calls to external routines, or calculations often cannot break up the logic of the calls as they are external calls, or complexity defies this. Calls to a database cannot be broken up into smaller calls and the developer must wait for the database call to return. This is not limited to database calls. Compression, calculations, or other processing can all fall into this category.&nbsp;</p>
+<p class="Element10">
+For the sake of demonstration, imagine that this server makes a call to a database with a SQL statement that takes 5 seconds to execute. To simplify the demo, a Sleep(5000) has been substituted.&nbsp;</p>
+<p class="Element10">
+This example will also be covered in much less detail than the previous example as many of the concepts should now be understandable.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Source Code</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00008');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00008"><pre class="Element12"><strong>unit</strong> main;
+
+<strong>interface</strong>
+
+<strong>uses</strong>
+  Windows, Messages, SysUtils, Classes,
+  Graphics, Controls, Forms, Dialogs,
+  IdBaseComponent, IdComponent, IdTCPServer;
+
+<strong>type</strong>
+  TformMain = <strong>class</strong>(TForm)
+    IdTCPServer1: TIdTCPServer;
+    <strong>procedure</strong> IdTCPServer1Execute(AThread: TIdPeerThread);
+  <strong>private</strong>
+  <strong>public</strong>
+  <strong>end</strong>;
+
+<strong>var</strong>
+  formMain: TformMain;
+
+<strong>implementation</strong>
+<i>{R *.DFM}</i>
+
+<strong>procedure</strong> TformMain.IdTCPServer1Execute(AThread: TIdPeerThread);
+<strong>var</strong>
+  i: integer;
+<strong>begin</strong>
+  <strong>with</strong> AThread.Connection <strong>do</strong>
+  <strong>begin</strong>
+    WriteLn('Hello. DB Server ready.');
+    i := StrToIntDef(ReadLn, 0);
+    <i>// Sleep is substituted for a long DB or other call</i>
+    Sleep(5000);
+    WriteLn(IntToStr(i * 7));
+    Disconnect;
+  <strong>end</strong>;
+<strong>end</strong>;
+
+<strong>end</strong>.</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Since the Execute event occurs within the context of a thread, the processing code can take as long as necessary. Each client will have its own thread and will not block other clients.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Testing</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+To test the DB Server, compile and run it. Telnet to it on port 6001. The server will respond with a welcome message. Enter a number. The server will &quot;process&quot; your request and return 5 seconds later with the answer.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+More!</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+This article is an extract from the book Indy in Depth. Indy in Depth is an e-book which you can subscribe to and receive the complete book by e-mail. Also check out the Atozed Indy Portal at www.atozedsoftware.com.&nbsp;</p>
+<p class="Element10">
+Additional information is available at the following sites:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600"><a href="http://www.amazon.com/exec/obidos/ASIN/0072129476/kudzuworld-20"> Building Kylix Applications</a></li>
+<li class="Element600"><a href="http://www.swissdelphicenter.ch/article_data/ch20.pdf"> Chapter 20 - Overview of Internet Direct</a></li>
+<li class="Element600"><a href="http://www.swissdelphicenter.ch/article_data/ch21.pdf"> Chapter 21 - Using Internet Direct</a></li>
+<li class="Element600"><a href="http://www.jensendatasystems.com/bka_book.htm"> Building Kylix Applications Website</a></li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+About the Author</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Chad Z. Hower, a.k.a. &quot;Kudzu&quot; is the original author and project coordinator for Internet Direct (Indy). Indy consists of over 110 components and is included as a part of Delphi, Kylix and C++ Builder. Chad's background includes work in the employment, security, chemical, energy, trading, telecommunications, wireless, and insurance industries. Chad's area of specialty is TCP/IP networking and programming, inter-process communication, distributed computing, Internet protocols, and object-oriented programming. When not programming, he likes to cycle, kayak, hike, downhill ski, drive, and do just about anything outdoors. Chad, whose motto is &quot;Programming is an art form that fights back&quot;, also posts free articles, programs, utilities and other oddities at Kudzu World at http://www.Hower.org/Kudzu/. Chad is an American ex-patriate who currently spends his summers in St. Petersburg, Russia and his winters in Limassol, Cyprus. Chad can be reached using this form.&nbsp;</p>
+<p class="Element10">
+Chad works as a Senior Developer for Atozed Software. </p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

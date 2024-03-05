@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdBuffer.ExtractToBytes Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdBuffer_ExtractToBytes@TIdBytes@Integer@Boolean@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdBuffer.html" target="topic">TIdBuffer Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdBuffer.html" target="topic">TIdBuffer Methods</a> &gt; <a href="TIdBuffer_ExtractToBytes@TIdBytes@Integer@Boolean@Integer.html" target="topic">ExtractToBytes Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdBuffer_ExtractToByte@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdBuffer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdBuffer_ExtractToCardinal@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdBuffer.ExtractToBytes Method</div>
+<div class="Element7">
+<a href="TIdBuffer.html" target="topic">TIdBuffer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdBuffer.html" target="topic">TIdBuffer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads and optionally removes byte values from the internal storage for the buffer.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> ExtractToBytes(
+    <strong>var</strong> VBytes: TIdBytes; 
+    AByteCount: Integer = -1; 
+    AAppend: Boolean = True; 
+    AIndex: Integer = -1
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+VBytes&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Storage for values extracted from the buffer.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AByteCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Number of bytes requested from the buffer. Default value is -1.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AAppend&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Causes bytes from the buffer to be appended to the byte storage. Default value is True.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AIndex&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Initial position where extracted bytes are stored in the data type. Default value is -1.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ExtractToBytes is a procedure used to copy and optionally <a href="TIdBuffer_Remove@Integer.html" target="topic">remove</a> values from the internal storage for the buffer into a <a href="TIdBytes.html" target="topic">TIdBytes</a> data type.&nbsp;</p>
+<p class="Element10">
+VBytes is the <a href="TIdBytes.html" target="topic">TIdBytes</a> data type to use as storage for values extracted from the buffer.&nbsp;</p>
+<p class="Element10">
+AByteCount indicates the number of bytes requested from the buffer. The default value is -1, and causes the number of bytes in <a href="TIdBuffer_Size.html" target="topic">Size</a> to be extracted into VBytes. When AByteCount contains a positive non-zero value, the requested number of bytes must already exist in the buffer or an <a href="EIdNotEnoughDataInBuffer.html" target="topic">EIdNotEnoughDataInBuffer</a> will be raised.&nbsp;</p>
+<p class="Element10">
+AAppend indicates if bytes from the buffer should be appended to any existing values found in VBytes. The default value is True, and causes VBytes to be resized to accomodate the additional number of bytes required in <a href="TIdBuffer_Size.html" target="topic">Size</a> or AByteCount.&nbsp;</p>
+<p class="Element10">
+AIndex marks the initial position where bytes extracted from the buffer are stored in VBytes. The default value is -1, and indicates that byte values should be stored sequentially starting at the lowest position in the VBytes byte array. This value also causes the requested number of bytes to be Removed from the contents of the buffer using the <a href="TIdBuffer_Remove@Integer.html" target="topic">Remove</a> method. When AIndex contains zero or a positive value, the existing content in the buffer is not removed after the copy operation.&nbsp;</p>
+<p class="Element10">
+ExtractToBytes calls the <a href="CopyTIdBytes@TIdBytes@Integer@TIdBytes@Integer@Integer.html" target="topic">CopyTIdBytes</a> routine to perform the copy operation required for the method.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdNotEnoughDataInBuffer.html" target="topic">EIdNotEnoughDataInBuffer</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised when the buffer does not contain enough data for the requested number of bytes.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdBytes.html" target="topic">TIdBytes</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdNotEnoughDataInBuffer.html" target="topic">EIdNotEnoughDataInBuffer</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdBuffer_Size.html" target="topic">Size</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdBytes@TIdBytes@Integer@TIdBytes@Integer@Integer.html" target="topic">CopyTIdBytes</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdBuffer_Remove@Integer.html" target="topic">Remove</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdBuffer.html" target="topic">TIdBuffer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdBuffer.html" target="topic">TIdBuffer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

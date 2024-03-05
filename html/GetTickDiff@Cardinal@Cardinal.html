@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>GetTickDiff Function</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'GetTickDiff@Cardinal@Cardinal.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Functions &gt; <a href="GetTickDiff@Cardinal@Cardinal.html" target="topic">GetTickDiff Function</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="GetThreadHandle@TIdNativeThread.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="GetUniqueFileName@String@String@String.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+GetTickDiff Function</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Calculates the elapsed tick count from two tick count values.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdGlobal_pas.html" target="topic">IdGlobal</a></p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> GetTickDiff(
+    <strong>const</strong> AOldTickCount: Cardinal; 
+    <strong>const</strong> ANewTickCount: Cardinal
+): Cardinal;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AOldTickCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Time value for the comparision.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ANewTickCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Time value for the comparision.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Cardinal - Elapsed tick count for the specified arguments.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GetTickDiff is a Cardinal function that calculates the elapsed tick count using the values in AOldTickCount and ANewTickCount. AOldTickCount and ANewTickCount are the starting and ending tick counts as returned by the <a href="Ticks.html" target="topic">Ticks</a> function. GetTickDiff exists because a <a href="Ticks.html" target="topic">Ticks</a> value can rollover to zero (0) when it exceeds the maximum value represented in the Cardinal data type.&nbsp;</p>
+<p class="Element10">
+GetTickDiff handles this situation in calculating the elapsed tick count. When ANewTickCount is greater than (or equal to) AOldTickCount, the return value is calculated using:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00077');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00077"><pre class="Element12">  ANewTickCount - AOldTickCount;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+When ANewTickCount is less than AOldTickCount, the return value is adjusted and calculated using:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00078');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00078"><pre class="Element12">  High(Cardinal) - AOldTickCount + ANewTickCount;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+GetTickDiff is used when calculating the values returned in <a href="TIdEcho_EchoTime.html" target="topic">TIdEcho.EchoTime</a> and <a href="TIdEchoUDP_EchoTime.html" target="topic">TIdEchoUDP.EchoTime</a>, as well as the values returned in <a href="TIdTime_RoundTripDelay.html" target="topic">TIdTime.RoundTripDelay</a> and <a href="TIdTimeUDP_RoundTripDelay.html" target="topic">TIdTimeUDP.RoundTripDelay</a>.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="Ticks.html" target="topic">Ticks</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEcho_EchoTime.html" target="topic">TIdEcho.EchoTime</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEchoUDP_EchoTime.html" target="topic">TIdEchoUDP.EchoTime</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTime_RoundTripDelay.html" target="topic">TIdTime.RoundTripDelay</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTimeUDP_RoundTripDelay.html" target="topic">TIdTimeUDP.RoundTripDelay</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

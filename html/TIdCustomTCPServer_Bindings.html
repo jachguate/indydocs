@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCustomTCPServer.Bindings Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCustomTCPServer_Bindings.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Properties</a> &gt; <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdCustomTCPServer_Active.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdCustomTCPServer_ContextClass.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCustomTCPServer.Bindings Property</div>
+<div class="Element7">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Container for socket handles allocated by the server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> Bindings: TIdSocketHandles;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Bindings is a <a href="TIdSocketHandles.html" target="topic">TIdSocketHandles</a> property that represents a collection of <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances used in the server. Items in the Bindings collection are used in listener thread(s) (<a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> instances) to access the socket handle for listening for and accepting new connection requests, as well as establishing the <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> for client connections accepted by the server.&nbsp;</p>
+<p class="Element10">
+Resources for the Bindings property are allocated during initialization of the component instance, and freed in the <a href="TIdCustomTCPServer_Destroy.html" target="topic">Destroy</a> method.&nbsp;</p>
+<p class="Element10">
+Bindings is used when reading and writing the value for the <a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a> property. Reading the value in the <a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a> property retrieves the property value stored in the Bindings collection. Changing the value in the <a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a> property causes the property value in Bindings to be updated.&nbsp;</p>
+<p class="Element10">
+Change the value in <a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a> or Bindings.<a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a> prior to creating <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances in the collection or setting <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a> to True. Changes to the property value are not automatically assigned to existing <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances.&nbsp;</p>
+<p class="Element10">
+Bindings is used during startup of the server (when <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a> is set to True). <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances are added to Bindings when no existing socket handles are defined. A <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instance is created for each Internet address family (IPv4, IPv6) supported on the protocol stack for the platform hosting the Indy library.&nbsp;</p>
+<p class="Element10">
+Multiple listener threads can be defined in Bindings for multi-homed servers, or servers that listen on multiple ports. <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances can be added to Bindings (either in code, or using the IDE) for each network adapter IP address, IP address family, and port combination to use in detecting connection requests.&nbsp;</p>
+<p class="Element10">
+During startup, <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances in Bindings are allocated socket handles with the socket options specified in the <a href="TIdCustomTCPServer_ReuseSocket.html" target="topic">ReuseSocket</a> property. The socket handles are then bound using the the IP address, IP address family, and port number for the <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances.&nbsp;</p>
+<p class="Element10">
+When all socket handles in Bindings are successfully bound, each <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instance is instructed to listen for client connection request using the backlog indicated in <a href="TIdCustomTCPServer_ListenQueue.html" target="topic">ListenQueue</a>. A <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> instance is created for each of the <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a> instances in Bindings. Listener threads are added to the internal list maintained by the server, and execution of each listener thread is started.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCustomTCPServer_Active.html" target="topic">Active</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandles.html" target="topic">TIdSocketHandles</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandler Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandler.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdInterfacedObject__Release.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandler Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdIOHandler.html" target="topic">TIdIOHandler Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Defines the framework for input and output using Indy components.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdIOHandler_pas.html" target="topic">IdIOHandler</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdIOHandler.png" border="0" alt="" title="" usemap="#TIdIOHandler"><map class="Element150" name="TIdIOHandler"><area class="Element150" shape="rect" coords="139,0,257,15" href="TIdInitializerComponent.html"><area class="Element150" shape="rect" coords="287,0,388,15" href="TIdBaseComponent.html"><area class="Element150" shape="rect" coords="418,0,499,15" href="TIdComponent.html"><area class="Element150" shape="rect" coords="529,0,606,15" href="TIdIOHandler.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdIOHandler = <strong>class</strong>(TIdComponent);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdIOHandler is a <a href="TIdComponent.html" target="topic">TIdComponent</a> descendant that defines the framework used to perform input and output operations for Indy components.&nbsp;</p>
+<p class="Element10">
+TIdIOHandler defines the mechanism used to provide buffered access to data read from or written to a connection using <a href="TIdBuffer.html" target="topic">TIdBuffer</a>. Special purpose buffers are also available for sending and receiving large chunks of data, and accumulating data written to a connection for less frequent transmission.&nbsp;</p>
+<p class="Element10">
+TIdIOHandler implements the common method required to perform IO operations for a connection. These methods include reading and writing common data types using its buffering mechanism. TIdIOHandler also includes methods for direct reads and writes that bypass the buffering mechanism.&nbsp;</p>
+<p class="Element10">
+TIdIOHandler also specifies convenience methods used to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> an IOHandler for a client connection, determine when an IOHandler is ready to perform an IO operation, and trigger events when data is sent and received using the IO handler.&nbsp;</p>
+<p class="Element10">
+The properties, methods, and events in TIdIOHandler generally belong to the following usage categories:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="14%">
+<div class="Element66">
+Category&nbsp;</div></td><td class="Element65" valign="top" width="86%">
+<div class="Element66">
+Property, Method, or Event&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+Configuration&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Destination.html" target="topic">Destination</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Host.html" target="topic">Host</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_MaxCapturedLines.html" target="topic">MaxCapturedLines</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_MaxLineLength.html" target="topic">MaxLineLength</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Port.html" target="topic">Port</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ConnectTimeout.html" target="topic">ConnectTimeout</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadTimeout.html" target="topic">ReadTimeout</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_RecvBufferSize.html" target="topic">RecvBufferSize</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_SendBufferSize.html" target="topic">SendBufferSize</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+Connection State&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_CheckForDataOnSource@Integer.html" target="topic">CheckForDataOnSource</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_CheckForDisconnect@Boolean@Boolean.html" target="topic">CheckForDisconnect</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Close.html" target="topic">Close</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_CloseGracefully.html" target="topic">CloseGracefully</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ClosedGracefully.html" target="topic">ClosedGracefully</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Connected.html" target="topic">Connected</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Open.html" target="topic">Open</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Opened.html" target="topic">Opened</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadLnTimedout.html" target="topic">ReadLnTimedout</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Readable@Integer.html" target="topic">Readable</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+Buffers and Buffering&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_InputBufferAsString.html" target="topic">InputBufferAsString</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_InputBufferIsEmpty.html" target="topic">InputBufferIsEmpty</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_InputBufferToStream@TIdStream@Integer.html" target="topic">InputBufferToStream</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferCancel.html" target="topic">WriteBufferCancel</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferClear.html" target="topic">WriteBufferClear</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferClose.html" target="topic">WriteBufferClose</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferFlush.html" target="topic">WriteBufferFlush</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferOpen.html" target="topic">WriteBufferOpen</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferThreshhold.html" target="topic">WriteBufferThreshhold</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteBufferingActive.html" target="topic">WriteBufferingActive</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+Read Operations&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_AllData.html" target="topic">AllData</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Capture@TIdStream.html" target="topic">Capture</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_InputLn@String@Boolean@Integer@Integer.html" target="topic">InputLn</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadBytes@TIdBytes@Integer@boolean.html" target="topic">ReadBytes</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadCardinal@Boolean.html" target="topic">ReadCardinal</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadChar.html" target="topic">ReadChar</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadInt64@Boolean.html" target="topic">ReadInt64</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadInteger@Boolean.html" target="topic">ReadInteger</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadLn.html" target="topic">ReadLn</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadLnSplit@Boolean@string@Integer@Integer.html" target="topic">ReadLnSplit</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadLnWait@Integer.html" target="topic">ReadLnWait</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadSmallInt@Boolean.html" target="topic">ReadSmallInt</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadStream@TIdStream@Int64@Boolean.html" target="topic">ReadStream</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadString@Integer.html" target="topic">ReadString</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_ReadStrings@TIdStrings@Integer.html" target="topic">ReadStrings</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WaitFor@string@Boolean@Boolean.html" target="topic">WaitFor</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+<a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">Write</a> Operations&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">Write</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteDirect@TIdBytes.html" target="topic">WriteDirect</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteLn@string.html" target="topic">WriteLn</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_WriteFile@String@Boolean.html" target="topic">WriteFile</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+Connection Events&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_MaxLineAction.html" target="topic">MaxLineAction</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="14%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="86%">
+<div class="Element68">
+<a href="TIdIOHandler_Intercept.html" target="topic">Intercept</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdIOHandler contains abstract methods. Applications normally <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> instances of a descendant class, like <a href="TIdIOHandlerSocket.html" target="topic">TIdIOHandlerSocket</a>, <a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack</a>, or <a href="TIdIOHandlerStream.html" target="topic">TIdIOHandlerStream</a> that implement the abstract virtual methods of this ancestor class.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdComponent.html" target="topic">TIdComponent</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerSocket.html" target="topic">TIdIOHandlerSocket</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerStream.html" target="topic">TIdIOHandlerStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdIOHandler.html" target="topic">TIdIOHandler Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

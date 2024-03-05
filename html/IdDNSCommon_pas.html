@@ -1,0 +1,835 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdDNSCommon.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdDNSCommon_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdDNSCommon_pas.html" target="topic">IdDNSCommon.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdDiscardUDPServer_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdDNSResolver_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdDNSCommon.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,Classes,Enumerations,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,Classes,Enumerations,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains Classes, Types, Procedures, and Functions needed to define and implement common facilities required for DNS protocol resolvers and servers.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdDNSCommon.pas contains Classes, Types, Procedures, and Functions needed to define and implement common facilities required for DNS protocol resolvers and servers.&nbsp;</p>
+<p class="Element10">
+The DNS protocol is described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1034.txt"> RFC 1034 - Domain Names Concepts and Facilities </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1035.txt"> RFC 1035 - Domain Names - Implementation and Specification </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1591.txt"> RFC 1591 - Domain Name System Structure and Delegation </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1183.txt"> RFC 1183 - New DNS RR Definitions </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2181.txt"> RFC 2181 - Clarifications to the DNS Specification. </a>&nbsp;</p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdDNSServerSettingException.html" target="topic">EIdDNSServerSettingException</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdDNSServerSyncException.html" target="topic">EIdDNSServerSyncException</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TDNSHeader.html" target="topic">TDNSHeader</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the Header section in a DNS message packet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_A.html" target="topic">TIdRR_A</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_AAAA.html" target="topic">TIdRR_AAAA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_CName.html" target="topic">TIdRR_CName</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_Error.html" target="topic">TIdRR_Error</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_HINFO.html" target="topic">TIdRR_HINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_MB.html" target="topic">TIdRR_MB</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_MG.html" target="topic">TIdRR_MG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_MINFO.html" target="topic">TIdRR_MINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_MR.html" target="topic">TIdRR_MR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_MX.html" target="topic">TIdRR_MX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_NS.html" target="topic">TIdRR_NS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_PTR.html" target="topic">TIdRR_PTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_SOA.html" target="topic">TIdRR_SOA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_TXT.html" target="topic">TIdRR_TXT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRR_WKS.html" target="topic">TIdRR_WKS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdTextModeResourceRecord.html" target="topic">TIdTextModeResourceRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdTextModeRRs.html" target="topic">TIdTextModeRRs</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cA.html" target="topic">cA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cAAAA.html" target="topic">cAAAA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cAt.html" target="topic">cAt</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cAXFR.html" target="topic">cAXFR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cCName.html" target="topic">cCName</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cHINFO.html" target="topic">cHINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cInclude.html" target="topic">cInclude</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cIXFR.html" target="topic">cIXFR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cLOC.html" target="topic">cLOC</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMB.html" target="topic">cMB</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMD.html" target="topic">cMD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMF.html" target="topic">cMF</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMG.html" target="topic">cMG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMINFO.html" target="topic">cMINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMR.html" target="topic">cMR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cMX.html" target="topic">cMX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cNS.html" target="topic">cNS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cNSAP.html" target="topic">cNSAP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cNSAP_PTR.html" target="topic">cNSAP_PTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cNULL.html" target="topic">cNULL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cOrigin.html" target="topic">cOrigin</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cPTR.html" target="topic">cPTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeFormatErr.html" target="topic">cRCodeFormatErr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeNameErr.html" target="topic">cRCodeNameErr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeNoError.html" target="topic">cRCodeNoError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeNotImplemented.html" target="topic">cRCodeNotImplemented</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryCacheFindError.html" target="topic">cRCodeQueryCacheFindError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryCacheOK.html" target="topic">cRCodeQueryCacheOK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryNotFound.html" target="topic">cRCodeQueryNotFound</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryNotImplement.html" target="topic">cRCodeQueryNotImplement</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryOK.html" target="topic">cRCodeQueryOK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeQueryReturned.html" target="topic">cRCodeQueryReturned</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeRefused.html" target="topic">cRCodeRefused</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeServerErr.html" target="topic">cRCodeServerErr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cRCodeStrs.html" target="topic">cRCodeStrs</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cSOA.html" target="topic">cSOA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cSTAR.html" target="topic">cSTAR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cTXT.html" target="topic">cTXT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="cWKS.html" target="topic">cWKS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iAA_Authoritative.html" target="topic">iAA_Authoritative</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iAA_NotAuthoritative.html" target="topic">iAA_NotAuthoritative</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdDNSServerVersion.html" target="topic">IdDNSServerVersion</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iQr_Answer.html" target="topic">iQr_Answer</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iQr_Question.html" target="topic">iQr_Question</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeFormatError.html" target="topic">iRCodeFormatError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeNameError.html" target="topic">iRCodeNameError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeNoError.html" target="topic">iRCodeNoError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeNotImplemented.html" target="topic">iRCodeNotImplemented</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeQueryNotFound.html" target="topic">iRCodeQueryNotFound</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeQueryNotImplement.html" target="topic">iRCodeQueryNotImplement</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeQueryOK.html" target="topic">iRCodeQueryOK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeQueryReturned.html" target="topic">iRCodeQueryReturned</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeRefused.html" target="topic">iRCodeRefused</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="iRCodeServerFailure.html" target="topic">iRCodeServerFailure</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="RSDNSServerAXFRError_QuerySequenceError.html" target="topic">RSDNSServerAXFRError_QuerySequenceError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="RSDNSServerSettingError_MappingHostError.html" target="topic">RSDNSServerSettingError_MappingHostError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="RSQueryMustProvideSOARecord.html" target="topic">RSQueryMustProvideSOARecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+This is constant RSQueryMustProvideSOARecord.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_A.html" target="topic">TypeCode_A</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_AAAA.html" target="topic">TypeCode_AAAA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_AFSDB.html" target="topic">TypeCode_AFSDB</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_AXFR.html" target="topic">TypeCode_AXFR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_CERT.html" target="topic">TypeCode_CERT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_CName.html" target="topic">TypeCode_CName</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_DNAME.html" target="topic">TypeCode_DNAME</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_Error.html" target="topic">TypeCode_Error</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_HINFO.html" target="topic">TypeCode_HINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_ISDN.html" target="topic">TypeCode_ISDN</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_IXFR.html" target="topic">TypeCode_IXFR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_KEY.html" target="topic">TypeCode_KEY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_KX.html" target="topic">TypeCode_KX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_LOC.html" target="topic">TypeCode_LOC</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MB.html" target="topic">TypeCode_MB</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MD.html" target="topic">TypeCode_MD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MF.html" target="topic">TypeCode_MF</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MG.html" target="topic">TypeCode_MG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MINFO.html" target="topic">TypeCode_MINFO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MR.html" target="topic">TypeCode_MR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_MX.html" target="topic">TypeCode_MX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NAPTR.html" target="topic">TypeCode_NAPTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NS.html" target="topic">TypeCode_NS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NSAP.html" target="topic">TypeCode_NSAP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NSAP_PTR.html" target="topic">TypeCode_NSAP_PTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NULL.html" target="topic">TypeCode_NULL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_NXT.html" target="topic">TypeCode_NXT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_OPTIONAL.html" target="topic">TypeCode_OPTIONAL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_PTR.html" target="topic">TypeCode_PTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_PX.html" target="topic">TypeCode_PX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_QPOS.html" target="topic">TypeCode_QPOS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_R31.html" target="topic">TypeCode_R31</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_R32.html" target="topic">TypeCode_R32</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_R34.html" target="topic">TypeCode_R34</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_R40.html" target="topic">TypeCode_R40</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_RP.html" target="topic">TypeCode_RP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_RT.html" target="topic">TypeCode_RT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_Service.html" target="topic">TypeCode_Service</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_SIG.html" target="topic">TypeCode_SIG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_SOA.html" target="topic">TypeCode_SOA</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_STAR.html" target="topic">TypeCode_STAR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_TXT.html" target="topic">TypeCode_TXT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_V6Addr.html" target="topic">TypeCode_V6Addr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_WKS.html" target="topic">TypeCode_WKS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TypeCode_X25.html" target="topic">TypeCode_X25</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Enumerations"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Enumerations');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgEnumerations">Enumerations</a></div>
+<div id="divEnumerations">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Enumeration&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TDNSQueryRecordTypes.html" target="topic">TDNSQueryRecordTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Identifies resource record types that can be requested in a DNS query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TDNSServerTypes.html" target="topic">TDNSServerTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates if the DNS server is operating as a Primary or a Secondary server.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Functions"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Functions');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgFunctions">Functions</a></div>
+<div id="divFunctions">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ConvertToCanonical6IP@String.html" target="topic">ConvertToCanonical6IP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ConvertToValidv6IP@String.html" target="topic">ConvertToValidv6IP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DomainNameToDNSStr@String.html" target="topic">DomainNameToDNSStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="GetErrorStr@Integer@Integer.html" target="topic">GetErrorStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="GetRCodeStr@Integer.html" target="topic">GetRCodeStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IPAddrToDNSStr@String.html" target="topic">IPAddrToDNSStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IPv6AAAAToDNSStr@String.html" target="topic">IPv6AAAAToDNSStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsBig5@char@char.html" target="topic">IsBig5</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidIPv6@String.html" target="topic">IsValidIPv6</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="NormalStrToDNSStr@String.html" target="topic">NormalStrToDNSStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ReplaceSpecString@string@string@string@boolean.html" target="topic">ReplaceSpecString</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

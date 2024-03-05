@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdThread Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdThread.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdThread.html" target="topic">TIdThread Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdTextModeRRs_Items.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdThread.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdThread Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdThread.html" target="topic">TIdThread Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdThread.html" target="topic">TIdThread Properties</a> &nbsp; <a href="!!MEMBERTYPE_Events_TIdThread.html" target="topic">TIdThread Events</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdThread.html" target="topic">TIdThread Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Ancestor for threads used in the Indy library.&nbsp;</p>
+<p class="Element10">
+term or function-specific client connections to a multi-threaded TCP server.&nbsp;</p>
+<p class="Element10">
+The following diagram represents the general sequence of events during execution of the Thread without an inner loop.&nbsp;</p>
+<p class="Element10">
+<img src="ThreadNoLoop.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+Using the <a href="TIdThread_Loop.html" target="topic">Loop</a> property in the proper manner allows the code written for the <a href="TIdTCPServer_OnExecute.html" target="topic">TIdTCPServer.OnExecute</a> event handler procedure to be written in a more straight-forward manner.&nbsp;</p>
+<p class="Element10">
+An exception handling mechanism is provided that allows handling runtime exceptions occurring when the Run method is called. An unhandled exception raised during execution of the thread will cause <a href="TIdThread_TerminatingException.html" target="topic">TerminatingException</a> to be assigned with the content from the exception. The exception is re-raised and causes termination of the thread.&nbsp;</p>
+<p class="Element10">
+TIdThread also implements a CleanUp method that manages the <a href="TIdThread_Data.html" target="topic">Data</a> property in the thread instance based on settings in the Options property.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Advanced Server Features</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdThread includes a <a href="TIdThread_Yarn.html" target="topic">Yarn</a> property that provides support for some of the advanced features available for servers in the Indy 10 library.&nbsp;</p>
+<p class="Element10">
+<a href="TIdTCPServer.html" target="topic">TIdTCPServer</a> introduces an abstract representation for executable tasks for client connections to a multi-threaded TCP server. This abstraction, called a <a href="TIdThread_Yarn.html" target="topic">Yarn</a>, allows the use either threads or fibers for execution of client connections to the server. Each client connection, or <a href="TIdThread_Yarn.html" target="topic">Yarn</a>, represents a task that is managed by the Scheduler for the server.&nbsp;</p>
+<p class="Element10">
+There are basically two types of Schedulers available for <a href="TIdTCPServer.html" target="topic">TIdTCPServer</a>: Thread-based and Fiber-based. Each is designed to work with a specific type of executable task (or <a href="TIdThread_Yarn.html" target="topic">Yarn</a>) that represents the client connections.&nbsp;</p>
+<p class="Element10">
+<a href="TIdScheduler.html" target="topic">TIdScheduler</a> specifies (and in some cases - implements) methods that handle creation, execution, and termination of tasks for client connections. Applications must use an instance of a descendant class (like <a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault</a>, <a href="TIdSchedulerOfThreadPool.html" target="topic">TIdSchedulerOfThreadPool</a>, or TIdSchedulerOfFiber) that implements the mechanism for managing the <a href="TIdYarn.html" target="topic">TIdYarn</a> for the executable task.&nbsp;</p>
+<p class="Element10">
+The <a href="TIdThread_Yarn.html" target="topic">Yarn</a> property in TIdThread is provided to store a reference to the mechanism used in scheduling the thread. TIdThread frees the reference in <a href="TIdThread_Yarn.html" target="topic">Yarn</a> in its protected Execute method following a call to AfterRun in the thread execution model.&nbsp;</p>
+<p class="Element10">
+TIdThread descendants should override the abstract Run and HandleRunException methods, and implement the virtual methods BeforeExecute, BeforeRun, AfterRun and AfterExecute.&nbsp;</p>
+<p class="Element10">
+Do not access properties and methods of objects shared among threads directly in the Run method of a thread. Use the <a href="TIdThread_Synchronize@TIdThreadMethod.html" target="topic">Synchronize</a> method to call a procedure that can access objects and resources which are not thread-safe.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdThread_pas.html" target="topic">IdThread</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdThread.png" border="0" alt="" title="" usemap="#TIdThread"><map class="Element150" name="TIdThread"><area class="Element150" shape="rect" coords="120,0,182,15" href="TIdThread.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdThread = <strong>class</strong>(TIdNativeThread);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdThread is a descendant of the Delphi TThread class, and the ancestor of thread classes used in Indy. <a href="TIdThread_Create@Boolean@Boolean@string.html" target="topic">Create</a> a descendant of TIdThread to represent a thread of execution in a multi-threaded application.&nbsp;</p>
+<p class="Element10">
+TIdThread extends the functionality of TThread to include flexible methods for monitoring and control of thread state, as well as notification of changes to thread state. Reading or writing a property value in TIdThread uses an internal <a href="TIdCriticalSection.html" target="topic">TIdCriticalSection</a> instance to ensure that the operation is thread-safe.&nbsp;</p>
+<p class="Element10">
+TIdThread overrides and/or implements properties, methods, and events that provide facilities not found in the basic TThread, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Name.html" target="topic">Name</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Data.html" target="topic">Data</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Loop.html" target="topic">Loop</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Options&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_ReturnValue.html" target="topic">ReturnValue</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_StopMode.html" target="topic">StopMode</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Stopped.html" target="topic">Stopped</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_OnStopped.html" target="topic">OnStopped</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_TerminatingException.html" target="topic">TerminatingException</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_OnException.html" target="topic">OnException</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Start.html" target="topic">Start</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Stop.html" target="topic">Stop</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Terminate.html" target="topic">Terminate</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_TerminateAndWaitFor.html" target="topic">TerminateAndWaitFor</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_Synchronize@TIdThreadMethod.html" target="topic">Synchronize</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdThread includes many properties and methods that represent the thread execution model implemented for the Indy library. The thread execution model is implemented largely using protected methods and the public properties of the thread descendant. The protected methods (which are also declared as virtual for descendant classes) provide fine-grained control during execution of the thread.&nbsp;</p>
+<p class="Element10">
+TIdThread implements a protected Execute method that coordinates execution of the thread using the facilities provided in the Indy framework. The implementation of Execute calls methods in TIdThread that can be used to control the configuration and behavior of the executing thread, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+BeforeExecute&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdThread_OnStopped.html" target="topic">OnStopped</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+BeforeRun&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Run&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+AfterRun&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+CleanUp&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+AfterExecute&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The Execute method allows the Run method to be called inside a loop when the <a href="TIdThread_Loop.html" target="topic">Loop</a> property contains True. This is the default behavior for TIdThread, but can be specified using a parameter value passed to the constructor for the thread instance. This mechanism is consistent with threads created for long-running or conversational client connections to a multi-threaded TCP server.&nbsp;</p>
+<p class="Element10">
+The following diagram represents the general sequence of events during execution of the Thread with an inner loop.&nbsp;</p>
+<p class="Element10">
+<img src="ThreadLoop.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+When <a href="TIdThread_Loop.html" target="topic">Loop</a> contains False, the Run method is called only once for the executing thread. This mechanism is consistent with threads created for</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCriticalSection.html" target="topic">TIdCriticalSection</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdYarn.html" target="topic">TIdYarn</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPServer_OnExecute.html" target="topic">TIdTCPServer.OnExecute</a>&nbsp;</p>
+<p class="Section9">
+ TIdTCPServer.Scheduler&nbsp;</p>
+<p class="Section9">
+ TIdTCPServer.Contexts&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdThread.html" target="topic">TIdThread Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdThread.html" target="topic">TIdThread Properties</a><br /><a href="!!MEMBERTYPE_Events_TIdThread.html" target="topic">TIdThread Events</a><br /><a href="!!MEMBEROVERVIEW_TIdThread.html" target="topic">TIdThread Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

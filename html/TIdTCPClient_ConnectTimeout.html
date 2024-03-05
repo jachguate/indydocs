@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdTCPClient.ConnectTimeout Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdTCPClient_ConnectTimeout.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdTCPClient.html" target="topic">TIdTCPClient Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdTCPClient.html" target="topic">TIdTCPClient Properties</a> &gt; <a href="TIdTCPClient_ConnectTimeout.html" target="topic">ConnectTimeout Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdTCPClient_BoundPort.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdTCPClient.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdTCPClient_Host.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdTCPClient.ConnectTimeout Property</div>
+<div class="Element7">
+<a href="TIdTCPClient.html" target="topic">TIdTCPClient Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdTCPClient.html" target="topic">TIdTCPClient Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Millseconds to wait for successful completion of a connection attempt.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> ConnectTimeout: Integer;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ConnectTimeout is an Integer property that indicates the maximum number of milliseconds to wait for successful completion of a connection attempt on the client. The default value for ConnectTimeout is 0, and indicates that the timeout value for the underlying protocol stack implementation should be used when establishing the client connection.&nbsp;</p>
+<p class="Element10">
+The value in ConnectTimeout is used, along with properties like <a href="TIdTCPClient_Host.html" target="topic">Host</a>, <a href="TIdTCPClient_Port.html" target="topic">Port</a>, and <a href="TIdTCPClient_ReadTimeout.html" target="topic">ReadTimeout</a>, when the <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a> for the client is allocated in the <a href="TIdTCPClientCustom_Connect.html" target="topic">Connect</a> method. If the time period in ConnectTimeout has elapsed before successful completion of the <a href="TIdTCPClientCustom_Connect.html" target="topic">Connect</a> method call, an exception relevant to the <a href="TIdIOHandler.html" target="topic">TIdIOHandler</a> is raised.&nbsp;</p>
+<p class="Element10">
+Setting the value in the ConnectTimeout property causes the corresponding property to be updated in an existing <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a>. The new property value will be available for use in subsequent calls to the <a href="TIdTCPClientCustom_Connect.html" target="topic">Connect</a> method.&nbsp;</p>
+<p class="Element10">
+Please note that ConnectTimeout is not used in all <a href="TIdIOHandler.html" target="topic">TIdIOHandler</a> descendants, and is provided for compatibility purposes across all <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a> implementations. ConnectTimeout allows a client using a socket-based <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a>, like <a href="TIdIOHandlerSocket.html" target="topic">TIdIOHandlerSocket</a> or <a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack</a>, to access the protocol stack mechanisms used to control the connection timeout value.</p></div>
+</div>
+</div>
+<a name="Example"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Example');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExample">Example</a></div>
+<div id="divExample">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+[Delphi]&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00064');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00064"><pre class="Element12">  <i>// var AClient: TIdTCPClient;</i>
+
+  AClient.Host := '192.168.0.42'; <i>// host on intranet</i>
+  AClient.Port := 2112;
+  AClient.ConnectTimeout := 2500; <i>// 2.5 sec</i>
+  AClient.ReadTimeout := 1000;    <i>// 1.0 sec</i>
+
+  <strong>try</strong>
+    AClient.Connect;
+    AClient.SendCmd('auth guest secret', 'OK');
+    <i>// ...</i>
+    AClient.Disconnect;
+  <strong>except</strong>
+    on E: Exception <strong>do</strong>
+    <strong>begin</strong>
+    <i>// handle exception(s)</i>
+    <strong>end</strong>;
+  <strong>end</strong>;</pre></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPClient_Host.html" target="topic">Host</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPClient_Port.html" target="topic">Port</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPClient_ReadTimeout.html" target="topic">ReadTimeout</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPClientCustom_Connect.html" target="topic">Connect</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler.html" target="topic">TIdIOHandler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerSocket.html" target="topic">TIdIOHandlerSocket</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdTCPClient.html" target="topic">TIdTCPClient Class</a><br /><a href="!!MEMBEROVERVIEW_TIdTCPClient.html" target="topic">TIdTCPClient Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

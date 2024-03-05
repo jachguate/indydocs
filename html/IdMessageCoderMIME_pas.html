@@ -1,0 +1,541 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdMessageCoderMIME.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdMessageCoderMIME_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdMessageCoderMIME_pas.html" target="topic">IdMessageCoderMIME.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdMessageCoder_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdMessageCoderQuotedPrintable_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdMessageCoderMIME.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('See_Also,Classes,Variables,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('See_Also,Classes,Variables,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains types, classes, procedures, functions, and constant variables used to implement coders and decoders for RFC 2822-compliant MIME message parts. Description IdMessageCoderMIME.pas contains types, classes, procedures, functions, and constant variables used to implement coders and decoders for RFC-2822 compliant MIME message parts.&nbsp;</p>
+<p class="Element10">
+MIME encoding allows data to be represented in a 7-bit textual representation, called Base64, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2045.txt">RFC 2045 - Multipurpose Internet Mail Extensions (MIME), Part One: Format of Internet Message Bodies, Section 6.8 Base64 Content-Transfer-Encoding</a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2046.txt">RFC 2046 - Multipurpose Internet Mail Extensions (MIME), Part Two: Media Types</a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2047.txt">RFC 2047 - MIME (Multipurpose Internet Mail Extensions) Part Three: Message Header Extensions for Non-ASCII Text </a>&nbsp;</p>
+<p class="Element10">
+The MIME, or Base64, encoding mechanism is designed to represent arbitrary sequences of byte data in a form that need not be humanly readable. Base64 encoding is almost identical to the mechanism used in Privacy Enhanced Mail (PEM) applications, as defined in:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1421.txt"> RFC 1421 - Privacy Enhancement for Internet Electronic Mail, Part I: Message Encryption and Authentication Procedures </a>&nbsp;</p>
+<p class="Element10">
+Base64 encoding uses a 64-character subset of US-ASCII, enabling 6 bits to be represented per printable character. An extra character (&quot;=&quot;) has special significance in Base64 encoding. Base64 encoding can represent all version of ISO 646, including US-ASCII, and all characters in the subset are also represented identically in EBCDIC.&nbsp;</p>
+<p class="Element10">
+Base64 encoding represents 24-bit groups of input as output strings of 4 encoded characters. Proceeding from left to right, a 24-bit input group is formed by concatenating 3 8-bit input groups. These 24 bits are then treated as 4 concatenated 6-bit groups, each of which is translated into a single digit in the base64 alphabet.&nbsp;</p>
+<p class="Element10">
+Each 6-bit group is used as an index into an array of 64 printable characters. The character referenced by the index is placed in the output string. These characters are selected to be universally representable, and the set excludes characters with particular significance to SMTP (&quot;.&quot;, <a href="CR.html" target="topic">CR</a>, <a href="LF.html" target="topic">LF</a>) and to the multipart boundary delimiters (&quot;-&quot;) defined in:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2046.txt"> RFC 2046 - Multipurpose Internet Mail Extensions (MIME), </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2046.txt">Part Two: Media Types </a>&nbsp;</p>
+<p class="Element10">
+The following table identifies characters and encodings for the Base64 Alphabet:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="29%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="19%">
+<div class="Element66">
+Encoding&nbsp;</div></td><td class="Element65" valign="top" width="32%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="19%">
+<div class="Element66">
+Encoding&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+A&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+34&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+i&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+B&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+35&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+j&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+2&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+C&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+36&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+k&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+3&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+D&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+37&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+l&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+4&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+E&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+38&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+m&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+5&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+F&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+39&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+n&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+6&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+G&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+40&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+o&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+7&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+H&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+41&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+p&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+8&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+I&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+42&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+q&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+9&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+J&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+43&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+r&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+10&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+K&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+44&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+s&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+11&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+L&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+45&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+t&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+12&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+M&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+46&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+u&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+13&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+N&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+47&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+v&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+14&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+O&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+48&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+w&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+15&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+P&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+49&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+x&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+16&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Q&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+50&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+y&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+17&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+R&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+51&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+z&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+18&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+S&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+52&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+0&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+19&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+T&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+53&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+1&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+20&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+U&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+54&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+2&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+21&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+V&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+55&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+3&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+22&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+W&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+56&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+4&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+23&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+X&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+57&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+5&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+24&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Y&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+58&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+6&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+25&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Z&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+59&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+7&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+26&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+a&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+60&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+8&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+27&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+b&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+61&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+9&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+28&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+c&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+62&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
++&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+29&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+d&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+63&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+/&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+30&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+e&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+(pad)&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+=&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+31&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+f&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+32&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+g&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+33&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+h&nbsp;</div></td><td class="Element67" valign="top" width="32%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Base64-encoded output must be represented in lines of no more than 76 characters each. All line breaks or other characters not found in the Base64 alphabet must be ignored by decoding software.&nbsp;</p>
+<p class="Element10">
+Special processing is performed if fewer than 24 bits are available at the end of the data being encoded. A full encoding quantum is always completed at the end of a body. When fewer than 24 input bits are available in an input group, zero bits are added (on the right) to form an integral number of 6-bit groups. Padding at the end of the data is performed using the &quot;=&quot; character.&nbsp;</p>
+<p class="Element10">
+Because it is used only for padding at the end of the data, the occurrence of any &quot;=&quot; characters may be taken as evidence that the end of the data has been reached (without truncation in transit). No such assurance is possible, however, when the number of octets transmitted was a multiple of three and no &quot;=&quot; characters are present.&nbsp;</p>
+<p class="Element10">
+Any characters outside of the Base64 alphabet are to be ignored when present in Base64-encoded data.&nbsp;</p>
+<p class="Element10">
+Base64 encoding is commonly used in E-Mail and Usenet messages.</p></div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="IdMessageCoder_pas.html" target="topic">IdMessageCoder.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdMessageCoderUUE_pas.html" target="topic">IdMessageCoderUUE.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdMessageCoderXXE_pas.html" target="topic">IdMessageCoderXXE.pas</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdMessageDecoderInfoMIME.html" target="topic">TIdMessageDecoderInfoMIME</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a registered decoder class and detects the decoder boundary marker in a message part.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdMessageDecoderMIME.html" target="topic">TIdMessageDecoderMIME</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a decoder for RFC 2822-compliant MIME message parts.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdMessageEncoderInfoMIME.html" target="topic">TIdMessageEncoderInfoMIME</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the registered encoder class and updates properties for an associated message.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdMessageEncoderMIME.html" target="topic">TIdMessageEncoderMIME</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements an encoder for RFC 2822-compliant MIME message parts.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdMIMEBoundaryStrings.html" target="topic">TIdMIMEBoundaryStrings</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a class for generating and storing MIME boundary markers.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="InvalidWindowsFilenameChars.html" target="topic">InvalidWindowsFilenameChars</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Identifies characters which cannot be used in folder path names, shortcuts, or file names on the Windows platform.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MIME7Bit.html" target="topic">MIME7Bit</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the MIME content-transfer-encoding for US-ASCII data.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MIMEGenericMultiPart.html" target="topic">MIMEGenericMultiPart</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MIMEGenericText.html" target="topic">MIMEGenericText</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the MIME content-type family for textual data.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Variables"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Variables');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgVariables">Variables</a></div>
+<div id="divVariables">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdMIMEBoundaryStrings.html" target="topic">IdMIMEBoundaryStrings</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+MIME boundary strings used in Indy message encoder classes.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,209 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdStackLinux.SetSocketOption Method (TIdStackSocketHandle, TIdSocketOptionLevel, TIdSocketOption, Integer)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdStackLinux_SetSocketOption@TIdStackSocketHandle@TIdSocketOptionLevel@TIdSocketOption@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdStackLinux.html" target="topic">TIdStackLinux Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdStackLinux.html" target="topic">TIdStackLinux Methods</a> &gt; <a href="!!OVERLOADED_SetSocketOption_TIdStackLinux.html" target="topic">SetSocketOption Method</a> &gt; <a href="TIdStackLinux_SetSocketOption@TIdStackSocketHandle@TIdSocketOptionLevel@TIdSocketOption@Integer.html" target="topic">SetSocketOption Method (TIdStackSocketHandle, TIdSocketOptionLevel, TIdSocketOption, Integer)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdStackLinux_SetSocketOption@TIdStackSocketHandle@Integer@Integer@PChar@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_SetSocketOption_TIdStackLinux.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdStackLinux_SupportsIPv6.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdStackLinux.SetSocketOption Method (TIdStackSocketHandle, TIdSocketOptionLevel, TIdSocketOption, Integer)</div>
+<div class="Element7">
+<a href="TIdStackLinux.html" target="topic">TIdStackLinux Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdStackLinux.html" target="topic">TIdStackLinux Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Sets socket options for the socket handle.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> SetSocketOption(
+    ASocket: TIdStackSocketHandle; 
+    ALevel: TIdSocketOptionLevel; 
+    AOptName: TIdSocketOption; 
+    AOptVal: Integer
+); <strong>override</strong>; <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASocket&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Socket handle used to set the indicates options.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ALevel&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Level where the socket option is defined.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AOptName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Option name for the indicated value.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AOptVal&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Option value for the indicated name.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+SetSocketOption is an overloaded abstract virtual procedure used to access the SetSockOpt() API for a protocol stack implementation.&nbsp;</p>
+<p class="Element10">
+SetSocketOption sets the current value for a named socket option associated with the socket handle in ASocket.&nbsp;</p>
+<p class="Element10">
+There are two types of socket options: Boolean options that enable or disable a feature or behavior, and options that require an integer value or structure. To enable a Boolean option, optval points to a nonzero integer. To disable the option optval points to an integer equal to zero. The optlen parameter should be equal to sizeof(int) for Boolean options. For other options, optval points to the an integer or structure that contains the desired value for the option, and optlen is the length of the integer or structure.&nbsp;</p>
+<p class="Element10">
+The following options are supported for SetSocketOption. The Type identifies the type of data addressed by AOptVal.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Level Name Type Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+--------- --------------------- ------- ----------------------------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_BROADCAST BOOL Allows transmission of broadcast messages on the socket.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_CONDITIONAL_ACCEPT BOOL Enables sockets to delay the acknowledgment of a connection until after Accept is called.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_DEBUG BOOL Records debugging info.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_DONTLINGER BOOL Does not block close waiting for unsent data to be sent. Setting this option is equivalent to setting SO_LINGER with l_onoff set to zero.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_DONTROUTE BOOL Does not route: sends directly to the network interface.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_GROUP_PRIORITY int Reserved.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_KEEPALIVE BOOL Sends keep-alives.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_LINGER LINGER Lingers on close if unsent data is present.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_OOBINLINE BOOL Receives OOB data in the normal data stream.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_RCVBUF int Specifies the total per-socket buffer space reserved for receives. This is unrelated to SO_MAX_MSG_SIZE or the size of a TCP window.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_REUSEADDR BOOL Allows the socket to be bound to an address that is already in use.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_EXCLUSIVEADDRUSE BOOL Enables a socket to be bound for exclusive access. Does not require administrative privilege.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+SOL_SOCKET SO_SNDBUF int Specifies the total per-socket buffer space reserved for sends. This is unrelated to SO_MAX_MSG_SIZE or the size of a TCP window.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+IPPROTO_TCP TCP_NODELAY BOOL Disables the Nagle algorithm for send coalescing.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+TIdStack.SetSocketOption</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdStackLinux.html" target="topic">TIdStackLinux Class</a><br /><a href="!!MEMBEROVERVIEW_TIdStackLinux.html" target="topic">TIdStackLinux Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

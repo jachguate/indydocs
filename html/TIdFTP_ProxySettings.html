@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.ProxySettings Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_ProxySettings.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic">TIdFTP Properties</a> &gt; <a href="TIdFTP_ProxySettings.html" target="topic">ProxySettings Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_Port.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_ReadTimeout.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.ProxySettings Property</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Indicates the settings to use for connections opened using an FTP proxy server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> ProxySettings: TIdFtpProxySettings;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ProxySettings is a <a href="TIdFtpProxySettings.html" target="topic">TIdFtpProxySettings</a> property that represent settings to use for connections opened using an FTP proxy server. Use of ProxySettings are required only when proxied connections to the FTP server are needed.&nbsp;</p>
+<p class="Element10">
+ProxySettings contains properties that indicate the <a href="TIdFtpProxyType.html" target="topic">TIdFtpProxyType</a> to use when establishing the proxied connection using the <a href="TIdFTP_Host.html" target="topic">Host</a>, <a href="TIdFTP_Port.html" target="topic">Port</a>, <a href="TIdFTP_Username.html" target="topic">Username</a>, and <a href="TIdFTP_Password.html" target="topic">Password</a> property values located in ProxySettings.&nbsp;</p>
+<p class="Element10">
+The <a href="TIdFTP_Host.html" target="topic">Host</a> and <a href="TIdFTP_Port.html" target="topic">Port</a> values in ProxySettings are used in <a href="TIdFTP_Connect.html" target="topic">Connect</a> to establish the control channel connection for the FTP client when ProxySettings.ProxyType contains a value other than fpcmNone.&nbsp;</p>
+<p class="Element10">
+ProxySettings.ProxyType also indicates both the method and values used for authenticating the proxied connection to the FTP server in <a href="TIdFTP_Login.html" target="topic">Login</a>, according to the following proxy type values and methodologies:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="10%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="90%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmNone&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Sends the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> found in the FTP client.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmUserSite&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Sends the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> in ProxySettings, followed immediately by the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> found in the FTP client.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmSite&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Sends the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> in ProxySettings, the SITE command and the value in the <a href="TIdFTP_Host.html" target="topic">Host</a> property, and the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> in the FTP client.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmOpen&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Sends the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> in ProxySettings, sends the OPEN command with the value in <a href="TIdFTP_Host.html" target="topic">Host</a>, and the <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a> for the FTP client.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmUserPass&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Calls <a href="TIdTCPConnection_SendCmd@string@SmallInt.html" target="topic">SendCmd</a> with the command USER user@proxyuser@host, calls <a href="TIdTCPConnection_SendCmd@string@SmallInt.html" target="topic">SendCmd</a> with the command PASS pwd@proxypwd, or optionally PASS pwd.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmTransparent&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Sends the ProxySettings <a href="TIdFTP_Username.html" target="topic">Username</a> and optional <a href="TIdFTP_Password.html" target="topic">Password</a>, followed immediately by the FTP client <a href="TIdFTP_Username.html" target="topic">Username</a> and optional password.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmHttpProxyWithFtp&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Not implemented at this time.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+fpcmCustomProxy&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Signals the <a href="TIdFTP_OnCustomFTPProxy.html" target="topic">OnCustomFTPProxy</a> event handler to perform the FTP protocol exchange.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Resources allocated to the ProxySettings property are freed in the <a href="TIdFTP_Destroy.html" target="topic">Destroy</a> method.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdFtpProxySettings.html" target="topic">TIdFtpProxySettings</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Destroy.html" target="topic">Destroy</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Connect.html" target="topic">Connect</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Login.html" target="topic">Login</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Username.html" target="topic">Username</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Password.html" target="topic">Password</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Host.html" target="topic">Host</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Port.html" target="topic">Port</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

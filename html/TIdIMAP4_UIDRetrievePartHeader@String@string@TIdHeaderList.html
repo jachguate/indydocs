@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIMAP4.UIDRetrievePartHeader Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIMAP4_UIDRetrievePartHeader@String@string@TIdHeaderList.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic">TIdIMAP4 Methods</a> &gt; <a href="TIdIMAP4_UIDRetrievePartHeader@String@string@TIdHeaderList.html" target="topic">UIDRetrievePartHeader Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIMAP4_UIDRetrievePart@String@string@TIdStream@string.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!OVERLOADED_UIDRetrievePartPeek_TIdIMAP4.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIMAP4.UIDRetrievePartHeader Method</div>
+<div class="Element7">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves RFC headers for a specified message and message part.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> UIDRetrievePartHeader(
+    <strong>const</strong> AMsgUID: <strong>String</strong>; 
+    <strong>const</strong> APartNum: <strong>string</strong>; 
+    AHeaders: TIdHeaderList
+): Boolean;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AMsgUID&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Unique identifier for the message.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+APartNum&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Relative message part number for retrieved headers.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AHeaders&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Header values retrieved from the message and message part.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Boolean - True on Success.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+UIDRetrievePartHeader is a Boolean function used to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> RFC-compliant headers for a specific message part using the unique identifier for the message in the current mailbox.&nbsp;</p>
+<p class="Element10">
+AMsgUID specifies the unique identifier (UID) for the message as stored in the current mailbox on the remote IMAP4 server.&nbsp;</p>
+<p class="Element10">
+APartNum indicates the relative message part number to be used for retrieval of RFC-compliant message headers. APartNum is the ordinal position of the message part as indicated by <a href="TIdIMAP4_RetrieveStructure@Integer@TIdImapMessageParts.html" target="topic">RetrieveStructure</a> or <a href="TIdIMAP4_UIDRetrieveStructure@String@TIdImapMessageParts.html" target="topic">UIDRetrieveStructure</a>.&nbsp;</p>
+<p class="Element10">
+AHeaders is used to store the RFC-compliant message headers retrieved for the specified message and message part.&nbsp;</p>
+<p class="Element10">
+UIDRetrievePartHeader validates the message identifier in AMsgUID to ensure that it contains a valid value, and raises an <a href="EIdNumberInvalid.html" target="topic">EIdNumberInvalid</a> exception if the requirement is not met.&nbsp;</p>
+<p class="Element10">
+UIDRetrievePartHeader requires that <a href="TIdIMAP4_ConnectionState.html" target="topic">ConnectionState</a> contain the value csSelected, or an <a href="EIdConnectionStateError.html" target="topic">EIdConnectionStateError</a> exception will be raised. Use <a href="TIdIMAP4_SelectMailBox@String.html" target="topic">SelectMailBox</a> or <a href="TIdIMAP4_ExamineMailBox@String@TIdMailBox.html" target="topic">ExamineMailBox</a> to select a mailbox prior to calling <a href="TIdIMAP4_RetrievePartHeader@Integer@string@TIdHeaderList.html" target="topic">RetrievePartHeader</a> or UIDRetrievePartHeader.&nbsp;</p>
+<p class="Element10">
+UIDRetrievePartHeader sends the IMAP4 FETCH command with the relative message number and data element requests needed to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> the message headers for a message part.&nbsp;</p>
+<p class="Element10">
+The return value for the UIDRetrievePartHeader. method indicates if message headers were successfully retrieved using the specified message identifier and message part number. The return value will be False if a protocol error response (a value other than <a href="IMAP_OK.html" target="topic">IMAP_OK</a>) is received during processing in the method.&nbsp;</p>
+<p class="Element10">
+Text returned in the IMAP4 server response is parsed to determine the size of the message headers for the specified message part. Instances of <a href="TIdTCPStream.html" target="topic">TIdTCPStream</a> and <a href="TIdStreamVCL.html" target="topic">TIdStreamVCL</a> are created for internal use during retrieval and storage of the message headers in the server response.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_OnWorkForPart.html" target="topic">OnWorkForPart</a> to respond to work events occurring during retrieval of the message part headers.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_RetrievePartHeader@Integer@string@TIdHeaderList.html" target="topic">RetrievePartHeader</a> to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> message headers for a specified message part using the relative message number for the message.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_RetrieveStructure@Integer@TIdImapMessageParts.html" target="topic">RetrieveStructure</a> or <a href="TIdIMAP4_UIDRetrieveStructure@String@TIdImapMessageParts.html" target="topic">UIDRetrieveStructure</a> to determine all of the message parts available in a message stored on the remote IMAP4 server.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_RetrievePart@Integer@Integer@PChar@Integer@string.html" target="topic">RetrievePart</a> or <a href="TIdIMAP4_UIDRetrievePart@String@Integer@PChar@Integer@string.html" target="topic">UIDRetrievePart</a> to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> the headers and the content for a specified message part.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_RetrievePartPeek@Integer@Integer@PChar@Integer@string.html" target="topic">RetrievePartPeek</a>, <a href="TIdIMAP4_RetrievePartToFilePeek@Integer@Integer@Integer@string@string.html" target="topic">RetrievePartToFilePeek</a>, <a href="TIdIMAP4_UIDRetrievePartPeek@String@Integer@PChar@Integer@string.html" target="topic">UIDRetrievePartPeek</a>, <a href="TIdIMAP4_UIDRetrievePartToFilePeek@String@Integer@Integer@string@string.html" target="topic">UIDRetrievePartToFilePeek</a> to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> a message part without affecting the message flags for the message.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIMAP4_ConnectionState.html" target="topic">ConnectionState</a> <a href="TIdIMAP4_SelectMailBox@String.html" target="topic">SelectMailBox</a> <a href="TIdIMAP4_ExamineMailBox@String@TIdMailBox.html" target="topic">ExamineMailBox</a> <a href="TIdIMAP4_RetrievePart@Integer@Integer@PChar@Integer@string.html" target="topic">RetrievePart</a> <a href="TIdIMAP4_RetrievePartHeader@Integer@string@TIdHeaderList.html" target="topic">RetrievePartHeader</a> <a href="TIdIMAP4_RetrievePartPeek@Integer@Integer@PChar@Integer@string.html" target="topic">RetrievePartPeek</a> <a href="TIdIMAP4_RetrievePartToFilePeek@Integer@Integer@Integer@string@string.html" target="topic">RetrievePartToFilePeek</a> <a href="TIdIMAP4_RetrieveStructure@Integer@TIdImapMessageParts.html" target="topic">RetrieveStructure</a> <a href="TIdIMAP4_UIDRetrievePart@String@Integer@PChar@Integer@string.html" target="topic">UIDRetrievePart</a> UIDRetrievePartHeader <a href="TIdIMAP4_UIDRetrievePartPeek@String@Integer@PChar@Integer@string.html" target="topic">UIDRetrievePartPeek</a> <a href="TIdIMAP4_UIDRetrievePartToFilePeek@String@Integer@Integer@string@string.html" target="topic">UIDRetrievePartToFilePeek</a> <a href="TIdIMAP4_UIDRetrieveStructure@String@TIdImapMessageParts.html" target="topic">UIDRetrieveStructure</a> <a href="TIdIMAP4_OnWorkForPart.html" target="topic">OnWorkForPart</a> <a href="EIdNumberInvalid.html" target="topic">EIdNumberInvalid</a> <a href="EIdConnectionStateError.html" target="topic">EIdConnectionStateError</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

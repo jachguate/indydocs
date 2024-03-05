@@ -1,0 +1,398 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Installing and Un-installing</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'InstallUninstall.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="IntroIndy10.html" target="topic">Introduction to Indy.Sockets version 10</a> &gt; <a href="InstallUninstall.html" target="topic">Installing and Removing</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="PackagesAndAssemblies.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="IntroIndy10.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="MigratingIndy10.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Installing and Un-installing</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+An overview of Installing and Removing Internet Direct (Indy) packages using various IDEs.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Installation in Borland IDEs</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Installing Indy.Sockets in a Borland IDE involves using the run-time and design-time packages files for the target platform (Win32 or .NET) to compile the source code in the library. After compiling the packages and source code, design-time packages are installed in the IDE to make the components available on the component palette.&nbsp;</p>
+<p class="Element10">
+Make sure that any previous version of Indy is removed before installing the new version (see below).&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Paths and Options</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy source code is normally stored in a directory in a path used for source code for the compiler. For instance:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\bds\3.0\source\Indy10&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\bds\3.0\source\Indy10\System&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\bds\3.0\source\Indy10\Core&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\bds\3.0\source\Indy10\Protocols&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The actual directory names can differ if you're using a version of Indy installed as part of the Borland IDE Installation. The directory names may need to be changed if you want to use a different path, or a path that is shared between several IDE versions.&nbsp;</p>
+<p class="Element10">
+When building Packages, there are project/package options that allow the end-user to specify where the compiled output of the package and its units are stored.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="5%">
+<div class="Element66">
+Option&nbsp;</div></td><td class="Element65" valign="top" width="95%">
+<div class="Element66">
+Usage&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+Output directory&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies where the compiler should put the Delphi compiled units and the executable file.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+Unit output directory&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies a separate directory to contain the .dcu (Win32) or .dcuil (.NET) files. The location of these files can be changed on the <strong>Tools -&gt; Delphi -&gt; Options -&gt; Library</strong> menu by setting the DCP/DCPIL output directory path.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+Search path&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies the location of your source files. Only those files on the compiler's search path or the library search path will be included in the build. If you try to build your project with a file not on the search path, you will receive a compiler error. You must include the entire search path. Separate multiple directory path names with a semicolons. Whitespace before or after the semicolon is allowed but not required. Relative and absolute path names are allowed, including path names relative to the current position. If you check the Use Debug DCUILs option on the <strong>Project -&gt; Options -&gt; Compiler</strong> menu, the Debug DCUIL path from <strong>Tools -&gt; Debugger -&gt; Options -&gt; Borland .NET Debugger</strong> is prepended to this search path.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+Debug source path&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies the search path for the debugger. The debugger searches paths defined by the compiler by default. If the directory structure has changed since the last compile, a path can be entered here to include a file in the debugging session. For Win32 and .NET Delphi language projects, additional directories will be searched in the following order:</p>
+<ol class="Element630">
+<li value="1" class="Element600">Debug Source path (this option).</li>
+<li value="2" class="Element600">Browsing path, specified on the</li>
+</ol><p class="Element68">
+<strong>Tools -&gt; Options -&gt; Delphi -&gt; Options -&gt; Library</strong> menu.</p>
+<ol class="Element630">
+<li value="3" class="Element600">Debug Source path, specified on the</li>
+</ol><p class="Element68">
+<strong>Tools -&gt; Options -&gt; Debugger -&gt; Options -&gt; Borland Debuggers</strong> menu.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+Package output directory&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies where the compiler puts generated package files.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="5%">
+<div class="Element68">
+DCP/DCPIL output dir&nbsp;</div></td><td class="Element67" valign="top" width="95%">
+<div class="Element68">
+Specifies where the .dcp (Win32) or .dcpil (.NET) file is placed at compilation time. If left blank, the global DCP/DCPIL output directory specified in the <strong>Tools -&gt; Options -&gt; Environment -&gt; Options -&gt; Delphi -&gt; Options -&gt; Library</strong> menu is used instead.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+You must manually add any paths changed using the project/package options using the <strong>Tools -&gt; Environment Options -&gt; Delphi Options -&gt; Library</strong> menu options. These need to be specified separately for Win32 and .NET usage. These options allow you to specify directories, compiler, and linker options for all packages.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="7%">
+<div class="Element66">
+Item&nbsp;</div></td><td class="Element65" valign="top" width="93%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Library path&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Specifies search paths where compiler can find the source files for the package. The compiler can find only those files listed in the library path. If you try to build your package with a file not on the library path, you will receive a compiler error.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Package output directory&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Specifies where the compiler should put compiled packages files.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+DCP/DCPIL output directory&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Specifies a separate directory to contain the .dcp (Win32) or .dcpil (.NET) files.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Browsing path&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+Specifies the directories where the Project Browser looks for unit files when it cannot find an identifier on the project search path or source path. For Win32 and .NET Delphi language projects, the directories specified with this option are appended to the debug source path for the project. So the debugger search order for unit files is determined by the following path settings:&nbsp;</p>
+<ol class="Element630">
+<li value="1" class="Element600">The Debug Source path, specified on</li>
+</ol><p class="Element68">
+the <strong>Project -&gt; Options -&gt; Directories/Conditionals</strong> menu.</p>
+<ol class="Element630">
+<li value="2" class="Element600">Browsing path</li>
+<li value="3" class="Element600">The Debug Source path, specified on</li>
+</ol><p class="Element68">
+the <strong>Tools -&gt; Options -&gt; Debugger Options -&gt; Borland Debuggers</strong> menu.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="7%">
+<div class="Element68">
+Debug DCU/DCUIL path&nbsp;</div></td><td class="Element67" valign="top" width="93%">
+<div class="Element68">
+To use this option, you must set Use Debug DCU/DCUILs on the ProjectOptionsCompiler page. When that option is set and a path is given, the debugger looks for the .dcu (Win32) or .dcuil (.NET) files in this path before looking in the unit search path.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Make sure that the <strong>Browsing Path</strong> option includes the directories where the Indy.Sockets source code is located, and that the <strong>Library</strong> option includes a path to the compiler output for the Indy.Sockets packages. <strong>Debug Path</strong> is required only when a separate pre-compiled version of debug DCUs are stored on your system.&nbsp;</p>
+<p class="Element10">
+For example, add the following to the <strong>Browsing</strong> path for Borland Delphi 2005 and above:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\source\Indy10\System&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\source\Indy10\Core&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\source\Indy10\Protocols&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Add the following to the <strong>Library</strong> path for Borland Delphi 2005 and above:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Add the following to the <strong>Debug</strong> path for Borland Delphi 2005 and above:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi and C++ Builder Installation</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Installing Indy.Sockets in a Borland IDE involves using the run-time and design-time packages files to compile the source code in the library. After compiling the packages and source code, design-time packages are installed in the IDE to make the components available on the component palette.&nbsp;</p>
+<p class="Element10">
+For Delphi and C++ Builder, the run-time package files should be opened and compiled in the following order:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">IndySystem (in Lib\System)</li>
+<li class="Element600">IndyCore (in Lib\Core)</li>
+<li class="Element600">IndyProtocols (in Lib\Protocols)</li>
+<li class="Element600">IndySuperCore (in Lib\SuperCore) (for Delphi 7 only)</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For Delphi and C++ Builder, the design-time package files should be opened, compiled, and installed in the following order:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">dclIndyCore (in Lib\Core)</li>
+<li class="Element600">dclIndyProtocols (in Lib\Protocols)</li>
+<li class="Element600">dclSuperCore (in Lib\SuperCore) (for Delphi 7 only)</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Installation in Kylix</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For the Kylix IDE, the run-time package files should be opened and compiled in the following order:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">IndySystemK3 (in Lib\System)</li>
+<li class="Element600">IndyCoreK3 (in Lib\Core)</li>
+<li class="Element600">IndyProtocolsK3 (in Lib\Protocols)</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For the Kylix IDE, the design-time package files should be opened, compiled, and installed in the following order:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">dclIndyCoreK3 (in Lib\Core)</li>
+<li class="Element600">dclIndyProtocolsK3 (in Lib\Protocols)</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Please note that Kylix (and Linux in general) is case sensitive and you may have to adjust certain paths or filenames to match your system.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Installation for Visual Studio.NET</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+To use Indy.Sockets in the Visual Studio.NET IDE (or with Mono), you must have the pre-compiled Indy.Sockets.DLL assembly available on the Indy website. Indy.Sockets is developed using the Delphi (formerly known as Object Pascal) language, so the assembly cannot be rebuilt from the source code using these IDEs.&nbsp;</p>
+<p class="Element10">
+Store the Indy.Sockets.DLL assembly in a path where you can add an Assembly Reference to the project or solution for the file Indy.Sockets.dll.&nbsp;</p>
+<p class="Element10">
+Please not that the Indy.Sockets assembly for .NET does not contain all Indy features and protocols yet. We are adding more and more of them each week. Currently it contains about 95% of the functionality including TCP clients and servers, UDP, FTP, NNTP, SMTP, POP3, IMAP4 (client), and more.&nbsp;</p>
+<p class="Element10">
+Visual Studio .NET Requirements&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">.NET Framework version 1.1</li>
+<li class="Element600">Visual Studio.NET 2003, or any other .NET Development environment. Visual Studio.NET 2002 cannot be used because it does not support the 1.1 framework.</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Removing Indy.Sockets from a Borland IDE</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Removing Indy.Sockets from a Borland IDE generally requires removing the run-time and design-time packages from the list of installed packages in the IDE.&nbsp;</p>
+<p class="Element10">
+If you are using a version of Indy.Sockets that was installed as part of the installation process for the Borland IDE, you will need to use the Borland Installer to remove the components (or use the Add/Remove Program option in the Control Panel). The Borland Installer also includes debug versions of the .OBJ and/or .DCU files which need to be manually deleted.&nbsp;</p>
+<p class="Element10">
+In general, deleting the following files from the specified directories will ensure that the Indy.Sockets version 10 library has been removed.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndySystem*.bpl&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndyCore*.bpl&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndyProtocols*.bpl&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\dclIndyCore*.bpl&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\dclIndyProtocols*.bpl&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndySystem*.dll&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndyCore*.dll&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\bin\IndyProtocols*.dll&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10\Id*.dcu&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10\Id*.dcuil&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10\Id*.dcpil&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10\Indy*.dcp&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\Indy10\Indy*.dcpil&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10\Id*.dcu&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10\Id*.dcuil&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10\Id*.dcpil&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10\Indy*.dcp&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+($BDS)\lib\debug\Indy10\Indy*.dcpil&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Please note that using the Project/Package options to change paths will result in the previous list being invalid for your Indy.Sockets installation. Use the Browsing, Library, and Debug paths indicated in the Project/Package options when deleting files.&nbsp;</p>
+<p class="Element10">
+Make sure that you also remove any Library path settings in the IDE search paths using the <strong>Tools -&gt; Environment Options -&gt; Library</strong> menu options.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

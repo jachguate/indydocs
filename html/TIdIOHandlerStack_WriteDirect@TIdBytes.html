@@ -1,0 +1,172 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandlerStack.WriteDirect Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandlerStack_WriteDirect@TIdBytes.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Methods</a> &gt; <a href="TIdIOHandlerStack_WriteDirect@TIdBytes.html" target="topic">WriteDirect Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIOHandlerStack_Readable@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIOHandlerStack.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdIOHandlerStack.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandlerStack.WriteDirect Method</div>
+<div class="Element7">
+<a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Performs physical writes to the socket handle for the IOHandler.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> WriteDirect(
+    <strong>var</strong> aBuffer: TIdBytes
+); <strong>override</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+aBuffer&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Values to be written using the socket-based IOHandler.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+WriteDirect is an overridden procedure used to implement physical writes to the socket-based IOHandler. WriteDirect is called in methods like <a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">Write</a> and <a href="TIdIOHandler_WriteBufferFlush.html" target="topic">WriteBufferFlush</a> to move data directly to the socket handle used for network-level access.&nbsp;</p>
+<p class="Element10">
+WriteDirect calls the inherited WriteDirect method.&nbsp;</p>
+<p class="Element10">
+An <a href="EIdNotConnected.html" target="topic">EIdNotConnected</a> exception is raised when <a href="TIdIOHandlerSocket_BindingAllocated.html" target="topic">BindingAllocated</a> contains False, indicating that the socket handle in <a href="TIdIOHandlerSocket_Binding.html" target="topic">Binding</a> is not valid.&nbsp;</p>
+<p class="Element10">
+WriteDirect determines the size of ABuffer, and uses <a href="TIdIOHandlerSocket_Binding.html" target="topic">Binding</a> to <a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">write</a> values in ABuffer until all values have been transmitted using the socket handle. An assigned <a href="TIdAntiFreeze.html" target="topic">TIdAntiFreeze</a> instance will be used to determine if CPU cycles should be yielded during the <a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">write</a> operation.&nbsp;</p>
+<p class="Element10">
+WriteDirect updates the value in <a href="TIdIOHandler_ClosedGracefully.html" target="topic">ClosedGracefully</a> to True when the number of bytes sent on the socket handle in <a href="TIdIOHandlerSocket_Binding.html" target="topic">Binding</a> is 0 (zero), and calls <a href="TIdIOHandlerStack_CheckForDisconnect@Boolean@Boolean.html" target="topic">CheckForDisconnect</a> to determine if the IOHandler is actively <a href="TIdIOHandlerStack_Connected.html" target="topic">connected</a> to the endpoint for the transfer.&nbsp;</p>
+<p class="Element10">
+WriteDirect triggers the <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a> event handler for the number of bytes written to the socket handle in <a href="TIdIOHandlerSocket_Binding.html" target="topic">Binding</a>.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdNotConnected.html" target="topic">EIdNotConnected</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised with the message <a href="RSNotConnected.html" target="topic">RSNotConnected</a> when the socket handle for the IOHandler is no longer allocated.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIOHandler_Write@Cardinal@Boolean.html" target="topic">Write</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_WriteBufferFlush.html" target="topic">WriteBufferFlush</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdAntiFreeze.html" target="topic">TIdAntiFreeze</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_ClosedGracefully.html" target="topic">ClosedGracefully</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerSocket_BindingAllocated.html" target="topic">BindingAllocated</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerSocket_Binding.html" target="topic">Binding</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandlerStack.html" target="topic">TIdIOHandlerStack Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

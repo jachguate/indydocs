@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdASN1Util.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdASN1Util_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdASN1Util_pas.html" target="topic">IdASN1Util.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdAntiFreezeBase_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdAssignedNumbers_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdASN1Util.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Constants and functions for ASN.1 support.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdASN1Util.pas contains constants and functions used to implement Abstract Syntax Notation version 1 (ASN.1) encoding and decoding.&nbsp;</p>
+<p class="Element10">
+The term ASN.1 “Abstract Syntax Notation One” is commonly used to specify both the formal notation and the associated encoding rules defined to exchange structured data between heterogeneous systems independently of a given hardware, or programming language, or programming language compiler. The formal notation is used to specify data-structures at an abstract level.&nbsp;</p>
+<p class="Element10">
+ASN.1 encoding rules are used to represent the values of these data-structures to be transferred over a computer or telecommunication network. Several encoding rules are standardized: Packed Encoding Rules (PER), Basic Encoding Rules (BER), Distinguished Encoding Rules (DER), XML Encoding Rules (XER).&nbsp;</p>
+<p class="Element10">
+The ASN.1 formal notation intrinsically ensures the completeness and the preciseness of the data specifications. Moreover, it facilitates the readability and the understandability of the data specification by avoiding ambiguous definitions.&nbsp;</p>
+<p class="Element10">
+The need for Abstract Syntax Notation 1 (ASN.1) arises because different computer systems represent information in different ways. For example, one computer can use EBCDIC character representation while another can use ASCII. To transfer a file of characters from one system to another, common representation must be used during the transfer. This transfer can be one representation or the other, or some mutually agreed upon representation negotiated by the two systems. Similarly, floating-point values, integers, and other types of data can be stored internally in different ways. To exchange information, a common format must be agreed to before information can be exchanged.&nbsp;</p>
+<p class="Element10">
+The translation of EBCDIC to ASCII characters can seem like a trivial problem, but that leaves the larger issue of mapping between the many diverse representations that can exist within a network environment. To address this need, the ISO standards committee defined ASN.1 and Basic Encoding Rules.&nbsp;</p>
+<p class="Element10">
+ASN.1 is based on the idea that the aspects of transferred information that are preserved are type, length, and value. Data types are collections of values distinguished for some reason, such as characters, integers, and floating-point values. Records and structure types become more complex when they combine several types into a single structure.&nbsp;</p>
+<p class="Element10">
+ASN.1 provides a way to group types into abstract syntaxes. An abstract syntax is a named group of types. The standard defines abstract syntax as the notation rules that are independent of the encoding technique used to represent them. Abstract syntax does not specify how to represent values of types, but merely defines the types that make up the group of types.&nbsp;</p>
+<p class="Element10">
+Abstract syntaxes are not enough to define how values of the data types in a specific abstract syntax are to be represented during communications. For this reason, ISO further defines a transfer syntax for each abstract syntax. A transfer syntax is a set of rules for encoding values of some specified group of types.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_COUNTER.html" target="topic">ASN1_COUNTER</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_GAUGE.html" target="topic">ASN1_GAUGE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_INT.html" target="topic">ASN1_INT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_IPADDR.html" target="topic">ASN1_IPADDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_NULL.html" target="topic">ASN1_NULL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_OBJID.html" target="topic">ASN1_OBJID</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_OCTSTR.html" target="topic">ASN1_OCTSTR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_OPAQUE.html" target="topic">ASN1_OPAQUE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_SEQ.html" target="topic">ASN1_SEQ</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ASN1_TIMETICKS.html" target="topic">ASN1_TIMETICKS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Functions"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Functions');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgFunctions">Functions</a></div>
+<div id="divFunctions">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNDecLen@Integer@string.html" target="topic">ASNDecLen</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNDecOIDItem@Integer@string.html" target="topic">ASNDecOIDItem</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNEncInt@Integer.html" target="topic">ASNEncInt</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNEncLen@Integer.html" target="topic">ASNEncLen</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNEncOIDItem@Integer.html" target="topic">ASNEncOIDItem</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNEncUInt@Integer.html" target="topic">ASNEncUInt</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNItem@Integer@string@Integer.html" target="topic">ASNItem</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ASNObject@string@Integer.html" target="topic">ASNObject</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IdToMib@string.html" target="topic">IdToMib</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IntMibToStr@string.html" target="topic">IntMibToStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="MibToId@string.html" target="topic">MibToId</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.Get Method (string, TIdStream, Boolean)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_Get@string@TIdStream@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &gt; <a href="!!OVERLOADED_Get_TIdFTP.html" target="topic">Get Method</a> &gt; <a href="TIdFTP_Get@string@TIdStream@Boolean.html" target="topic">Get Method (string, TIdStream, Boolean)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!OVERLOADED_Get_TIdFTP.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Get_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_Get@string@string@boolean@Boolean.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.Get Method (string, TIdStream, Boolean)</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves a file using the FTP protocol.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Get(
+    <strong>const</strong> ASourceFile: <strong>string</strong>; 
+    ADest: TIdStream; 
+    AResume: Boolean = false
+); <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASourceFile&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+File name on the FTP server.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADest&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stream where file data will be written.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AResume&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Partial download can be completed.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Get is an overloaded procedure that allows the FTP client to retrieve a file with the name specified in ASourceFile from the FTP server using the FTP RETR command.&nbsp;</p>
+<p class="Element10">
+Values retrieved from the server are stored locally in the stream specified in ADest.&nbsp;</p>
+<p class="Element10">
+Get allows continuing a previous partial download or appending data to an existing file on the local file system when AResume is True and <a href="TIdFTP_CanResume.html" target="topic">CanResume</a> indicates that the FTP server implementation allows the FTP REST command verb.&nbsp;</p>
+<p class="Element10">
+Internal processing for the Get method will also trigger the <a href="TIdComponent_OnStatus.html" target="topic">OnStatus</a> event handler with the ftpTransfer <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a> value, reads data from the FTP server, and signals the the <a href="TIdComponent_OnStatus.html" target="topic">OnStatus</a> event handler with the ftpReady <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a> value on completion. <a href="TIdComponent_OnStatus.html" target="topic">OnStatus</a> may be triggered with the value ftpAborted if the response code from the FTP server is the numeric values 225 or 226.&nbsp;</p>
+<p class="Element10">
+During data retrieval, Get calls methods that initialize the DataChannel for the FTP client using the connection type specificed in <a href="TIdFTP_Passive.html" target="topic">Passive</a>.&nbsp;</p>
+<p class="Element10">
+When <a href="TIdFTP_Passive.html" target="topic">Passive</a> contains True, the FTP PASV or EPSV commands are used to configure the IP address and <a href="TIdFTP_Port.html" target="topic">Port</a> number for the data channel. When <a href="TIdFTP_Passive.html" target="topic">Passive</a> contains False, the FTP PORT or EPRT commands are used to configure the IP address and <a href="TIdFTP_Port.html" target="topic">Port</a> number for the data channel using the value indicated in <a href="TIdFTP_DataPort.html" target="topic">DataPort</a>, <a href="TIdFTP_DataPortMin.html" target="topic">DataPortMin</a>, and <a href="TIdFTP_DataPortMax.html" target="topic">DataPortMax</a>. <a href="TIdFTP_UsingExtDataPort.html" target="topic">UsingExtDataPort</a> indicates if the FTP EPORT command is required.&nbsp;</p>
+<p class="Element10">
+The <a href="TIdFTP_OnDataChannelCreate.html" target="topic">OnDataChannelCreate</a> event handler is signaled prior to opening the data channel connection.&nbsp;</p>
+<p class="Element10">
+When both AResume and <a href="TIdFTP_CanResume.html" target="topic">CanResume</a> contain True, the FTP REST command is sent using the existing length of aDestFile as the initial position for the resumed data transfer.&nbsp;</p>
+<p class="Element10">
+A secure socket transport for the data channel is updated based on values in <a href="TIdFTP_DataPortProtection.html" target="topic">DataPortProtection</a> and <a href="TIdFTP_UsingSFTP.html" target="topic">UsingSFTP</a> prior to tranmission of data.&nbsp;</p>
+<p class="Element10">
+The current value in <a href="TIdFTP_TransferMode@TIdFTPTransferMode.html" target="topic">TransferMode</a> is used to determine if ZLib compression has been applied to data during transmission. When <a href="TIdFTP_TransferMode@TIdFTPTransferMode.html" target="topic">TransferMode</a> contains dmDeflate, the <a href="TIdFTP_Compressor.html" target="topic">Compressor</a> object instance is used to read compressed data on the data channel socket transport. When <a href="TIdFTP_TransferMode@TIdFTPTransferMode.html" target="topic">TransferMode</a> contains dmStream, data is read from the transport using the IPOHandler for the data channel.&nbsp;</p>
+<p class="Element10">
+After completion of the retrieval process, Get signals the <a href="TIdFTP_OnDataChannelDestroy.html" target="topic">OnDataChannelDestroy</a> event handler and frees the data channel for the FTP client.&nbsp;</p>
+<p class="Element10">
+Get also signals the <a href="TIdFTP_OnAfterGet.html" target="topic">OnAfterGet</a> event handler following completion of the data transfer.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> to transfer data from the FTP client to the FTP server.</p></div>
+</div>
+</div>
+<a name="Todo"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Todo');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTodo">Todo</a></div>
+<div id="divTodo">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Discuss enabling LargeStream support in IOHandlers using <a href="TIdFTP_OnDataChannelCreate.html" target="topic">OnDataChannelCreate</a></p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+Get&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_CanResume.html" target="topic">CanResume</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_OnAfterGet.html" target="topic">OnAfterGet</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_OnDataChannelCreate.html" target="topic">OnDataChannelCreate</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_OnDataChannelDestroy.html" target="topic">OnDataChannelDestroy</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdComponent_OnStatus.html" target="topic">OnStatus</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Passive.html" target="topic">Passive</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_TransferMode@TIdFTPTransferMode.html" target="topic">TransferMode</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Compressor.html" target="topic">Compressor</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_DataPortProtection.html" target="topic">DataPortProtection</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_UsingSFTP.html" target="topic">UsingSFTP</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdFTPFileAlreadyExists.html" target="topic">EIdFTPFileAlreadyExists</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

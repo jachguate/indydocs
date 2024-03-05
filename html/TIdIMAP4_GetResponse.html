@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIMAP4.GetResponse Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIMAP4_GetResponse.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic">TIdIMAP4 Methods</a> &gt; <a href="TIdIMAP4_GetResponse.html" target="topic">GetResponse Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIMAP4_GetInternalResponse@String@array_of_String@Boolean@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIMAP4_GetUID@Integer@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIMAP4.GetResponse Method</div>
+<div class="Element7">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves and checks a multiple line IMAP4 server response.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> GetResponse: <strong>string</strong>; <strong>overload</strong>; <strong>reintroduce</strong>;</pre></div></div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+String - The initial word from the server response.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GetResponse is a reintroduced string function in <a href="TIdIMAP4.html" target="topic">TIdIMAP4</a> that implements retrieval and processing of IMAP4 server responses. GetResponse is used to read and accumulate response lines from the remote IMAP4 server until a line that has a valid response that terminates the response.&nbsp;</p>
+<p class="Element10">
+GetResponse handles server response that include the following:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Simple tagged responses</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  C41 <a href="OK.html" target="topic">OK</a> Completed</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Untagged responses followed by a tagged response:</li>
+</ul>&nbsp;</p>
+<div class="Element103"><div class="Element102"><pre class="Element102">  * LIST (UnMarked) &quot;/&quot; INBOX
+  * LIST (UnMarked) &quot;/&quot; Junk
+  * LIST (UnMarked) &quot;/&quot; Junk/Subbox1
+  C42 <a href="OK.html" target="topic">OK</a> Completed</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Untagged success or failure reponses:</li>
+</ul>&nbsp;</p>
+<div class="Element103"><div class="Element102"><pre class="Element102">  * <a href="OK.html" target="topic">OK</a> CommuniGate Pro IMAP Server 3.5.7 ready</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Untagged message literals:</li>
+</ul>&nbsp;</p>
+<div class="Element103"><div class="Element102"><pre class="Element102">  + Send the additional command text</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">Completion responses:</li>
+</ul>&nbsp;</p>
+<div class="Element103"><div class="Element102"><pre class="Element102">  <a href="OK.html" target="topic">OK</a> - search completed
+  NO - search error: can't search that [CHARSET] or criteria
+  BAD - command unknown or arguments invalid</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Because you may get data first, which you need to skip, you need to accept all the above possibilities.&nbsp;</p>
+<p class="Element10">
+We MUST stop when we find a valid response code, like <a href="OK.html" target="topic">OK</a>.&nbsp;</p>
+<p class="Element10">
+GetResponse sets the formatted reply in <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a> using the initial tagged or completion response accumulated from the server.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIMAP4_GetInternalResponse@String@array_of_String@Boolean@Boolean.html" target="topic">GetInternalResponse</a> <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

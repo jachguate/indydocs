@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdStackWindows.RecvFrom Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdStackWindows_RecvFrom@TIdStackSocketHandle@@Integer@Integer@string@Integer@TIdIPVersion.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdStackWindows.html" target="topic">TIdStackWindows Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdStackWindows.html" target="topic">TIdStackWindows Methods</a> &gt; <a href="TIdStackWindows_RecvFrom@TIdStackSocketHandle@@Integer@Integer@string@Integer@TIdIPVersion.html" target="topic">RecvFrom Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdStackWindows_ReceiveMsg@TIdStackSocketHandle@TIdBytes@TIdPacketInfo@TIdIPVersion.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdStackWindows.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdStackWindows_SetBlocking@TIdStackSocketHandle@Boolean.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdStackWindows.RecvFrom Method</div>
+<div class="Element7">
+<a href="TIdStackWindows.html" target="topic">TIdStackWindows Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdStackWindows.html" target="topic">TIdStackWindows Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Receives a datagram and stores the origin address.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> RecvFrom(
+    <strong>const</strong> ASocket: TIdStackSocketHandle; 
+    <strong>var</strong> VBuffer; 
+    <strong>const</strong> ALength: Integer; 
+    <strong>const</strong> AFlags: Integer; 
+    <strong>var</strong> VIP: <strong>string</strong>; 
+    <strong>var</strong> VPort: Integer; 
+    AIPVersion: TIdIPVersion = ID_DEFAULT_IP_VERSION
+): Integer; <strong>override</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASocket&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Socket handle for the read operation.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ALength&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Sized of the buffer.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AFlags&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Flags for the RecvFrom() API.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+VIP&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+IP address for the remote network sending the data.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+VPort&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Port number for the remote network sending the data.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AIPVersion&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+IP version for the connection. Default is <a href="ID_DEFAULT_IP_VERSION.html" target="topic">ID_DEFAULT_IP_VERSION</a>.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ABuffer&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stores values read from the sockt handle.<br>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Integer - Number of bytes read from the socket handle and remote destination.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+RecvFrom is an overridden Integer function that implements the interface used to access the RecvFrom() API for the protocol stack implementation.&nbsp;</p>
+<p class="Element10">
+RecvFrom provides access to low-level options and flags not available in <a href="TIdStackBSDBase_ReceiveFrom@TIdStackSocketHandle@TIdBytes@string@Integer@TIdIPVersion.html" target="topic">ReceiveFrom</a>.&nbsp;</p>
+<p class="Element10">
+RecvFrom is used to <a href="TIdStackBSDBase_Receive@TIdStackSocketHandle@TIdBytes.html" target="topic">receive</a> a datagram and to store the origin address in VIP and VPort. RecvFrom reads incoming data on both connected and unconnected socket handles.&nbsp;</p>
+<p class="Element10">
+For stream-oriented sockets such as those of type SOCK_STREAM, a call to recvfrom returns as much information as is currently available—up to the size of the buffer specified.&nbsp;</p>
+<p class="Element10">
+If the socket has been configured for inline reception of OOB data (socket option SO_OOBINLINE) and OOB data is yet unread, only OOB data will be returned. The application can use the ioctlsocket or WSAIoctl SIOCATMARK command to determine whether any more OOB data remains to be read. The from and fromlen parameters are ignored for connection-oriented sockets.&nbsp;</p>
+<p class="Element10">
+For message-oriented sockets, data is extracted from the first enqueued message, up to the size of the buffer specified. If the datagram or message is larger than the buffer specified, the buffer is filled with the first part of the datagram, and recvfrom generates the error WSAEMSGSIZE. For unreliable protocols (for example, UDP) the excess data is lost.&nbsp;</p>
+<p class="Element10">
+If the from parameter is nonzero and the socket is not connection oriented, (type SOCK_DGRAM for example), the network address of the peer that sent the data is copied to the corresponding sockaddr structure. The value pointed to by fromlen is initialized to the size of this structure and is modified, on return, to indicate the actual size of the address stored in the sockaddr structure.&nbsp;</p>
+<p class="Element10">
+If no incoming data is available at the socket, the recvfrom function blocks and waits for data to arrive according to the blocking rules defined for WSARecv with the MSG_PARTIAL flag not set unless the socket is nonblocking. In this case, a value of SOCKET_ERROR is returned with the error code set to WSAEWOULDBLOCK. The select, WSAAsyncSelect, or WSAEventSelect can be used to determine when more data arrives.&nbsp;</p>
+<p class="Element10">
+If the socket is connection oriented and the remote side has shut down the connection gracefully, the call to recvfrom will complete immediately with zero bytes received. If the connection has been reset recvfrom will fail with the error WSAECONNRESET.&nbsp;</p>
+<p class="Element10">
+The flags parameter can be used to influence the behavior of the function invocation beyond the options specified for the associated socket. The semantics of this function are determined by the socket options and the flags parameter. The latter is constructed by using the bitwise OR operator with any of the following values.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="4%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="96%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+MSG_PEEK&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+Peeks at the incoming data. The data is copied into the buffer but is not removed from the input queue. The function subsequently returns the amount of data that can be read in a single call to the recvfrom (or recv) function, which may not be the same as the total amount of data queued on the socket. The amount of data that can actually be read in a single call to the recvfrom (or recv) function is limited to the data size written in the <a href="TIdStackBSDBase_Send@TIdStackSocketHandle@TIdBytes@Integer@Integer.html" target="topic">send</a> or <a href="TIdStackBSDBase_SendTo@TIdStackSocketHandle@TIdBytes@Integer@string@integer@TIdIPVersion.html" target="topic">sendto</a> function call.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+MSG_OOB&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+Processes OOB data.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdStackWindows.html" target="topic">TIdStackWindows Class</a><br /><a href="!!MEMBEROVERVIEW_TIdStackWindows.html" target="topic">TIdStackWindows Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

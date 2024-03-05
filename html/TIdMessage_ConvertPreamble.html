@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMessage.ConvertPreamble Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMessage_ConvertPreamble.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMessage.html" target="topic">TIdMessage Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdMessage.html" target="topic">TIdMessage Properties</a> &gt; <a href="TIdMessage_ConvertPreamble.html" target="topic">ConvertPreamble Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMessage_ContentType.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdMessage.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdMessage_Date.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMessage.ConvertPreamble Property</div>
+<div class="Element7">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Indicates if a misplaced message body is converted prior to transmission.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> ConvertPreamble: Boolean;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ConvertPreamble is a Boolean property that indicates if a misplaced message body should be converted for multipart MIME-encoded messages prior to sending the message using <a href="TIdMessageClient.html" target="topic">TIdMessageClient</a>.&nbsp;</p>
+<p class="Element10">
+ConvertPreamble is an attempt by the Indy developers to save the programmer from knowing some of the more intricate rules about creating multipart MIME-encoded messages. For instance, a multipart MIME message is generally indicated by the following property values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="26%">
+<div class="Element66">
+Property&nbsp;</div></td><td class="Element65" valign="top" width="74%">
+<div class="Element66">
+Value&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="26%">
+<div class="Element68">
+<a href="TIdMessage_Encoding.html" target="topic">Encoding</a>&nbsp;</div></td><td class="Element67" valign="top" width="74%">
+<div class="Element68">
+meMIME&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="26%">
+<div class="Element68">
+<a href="TIdMessage_ContentType.html" target="topic">ContentType</a>&nbsp;</div></td><td class="Element67" valign="top" width="74%">
+<div class="Element68">
+'multipart/alternative', 'multipart/related', 'multipart/mixed'&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In this scenario, the <a href="TIdMessage_Body.html" target="topic">Body</a> in <a href="TIdMessage.html" target="topic">TIdMessage</a> is not supposed to be used for text that represents a message body. One or more <a href="TIdText.html" target="topic">TIdText</a> instances are supposed to be created that represent each of the message bodies. The reason? The <a href="TIdMessage_Body.html" target="topic">TIdMessage.Body</a> property is being populated during transmission with the MIME preamble represented by the SThisIsMultiPartMessageInMIMEFormat resource string.&nbsp;</p>
+<p class="Element10">
+In common usage, developers were creating message parts for some representations of message bodies and continuing to use <a href="TIdMessage_Body.html" target="topic">TIdMessage.Body</a> as a message body as well. Rather than continually insisting that programmers learn the rules for constructing multipart MIME messages, the Indy library has specified the ConvertPreamble property and implemented its use during message transmission.&nbsp;</p>
+<p class="Element10">
+When ConvertPreamble contains True (and the preceeding criteria has been met), any non-blank value in the <a href="TIdMessage_Body.html" target="topic">TIdMessage.Body</a> property is converted to a <a href="TIdText.html" target="topic">TIdText</a> instance and stored as the initial item in the <a href="TIdMessage_MessageParts.html" target="topic">MessageParts</a> property. The <a href="TIdText.html" target="topic">TIdText</a> instance is given the following property values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="60%">
+<div class="Element66">
+Property&nbsp;</div></td><td class="Element65" valign="top" width="40%">
+<div class="Element66">
+Value&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="60%">
+<div class="Element68">
+<a href="TIdMessage_ContentType.html" target="topic">ContentType</a>&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+'text/plain'&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="60%">
+<div class="Element68">
+ContentTransfer&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+'7bit'&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the default property values in the <a href="TIdText.html" target="topic">TIdText</a> instance are not appropriate for your usage, <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> a <a href="TIdText.html" target="topic">TIdText</a> in <a href="TIdMessage_MessageParts.html" target="topic">MessageParts</a> with the correct values and remove the contents of <a href="TIdMessage_Body.html" target="topic">TIdMessage.Body</a> that triggers this action.&nbsp;</p>
+<p class="Element10">
+The default value for ConvertPreamble is True, as assigned in the <a href="TIdMessage_ClearHeader.html" target="topic">ClearHeader</a> method.&nbsp;</p>
+<p class="Element10">
+If you want to set your own preamble text rather than the default SThisIsMultiPartMessageInMIMEFormat, then put your preamble text in <a href="TIdMessage_Body.html" target="topic">Body</a> and set ConvertPreamble to False.&nbsp;</p>
+<p class="Element10">
+ConvertPreamble is used in the TIdMessageClient.SendBody method.</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a><br /><a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

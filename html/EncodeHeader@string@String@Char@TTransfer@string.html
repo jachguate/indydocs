@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>EncodeHeader Function</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'EncodeHeader@string@String@Char@TTransfer@string.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Functions &gt; <a href="EncodeHeader@string@String@Char@TTransfer@string.html" target="topic">EncodeHeader Function</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="EncodeAddressItem@TIdEmailAddressItem@Char@TTransfer@string@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="EncodeString@TIdEncoderClass@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+EncodeHeader Function</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Encodes a message header that contains non-US-ASCII characters.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdCoderHeader_pas.html" target="topic">IdCoderHeader</a></p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> EncodeHeader(
+    <strong>const</strong> Header: <strong>string</strong>; 
+    <strong>const</strong> specials: <strong>String</strong>; 
+    <strong>const</strong> HeaderEncoding: Char; 
+    TransferHeader: TTransfer; 
+    MimeCharSet: <strong>string</strong>
+): <strong>string</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+Header&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Message header to be encoded.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+specials&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Special characters that require quoting.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+HeaderEncoding&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Content encoding for the message header.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+TransferHeader&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Transfer encoding for the message header.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+MimeCharSet&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+MIME character set for the message header.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+String - Value of the encoded message header.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+EncodeHeader is a String function that encodes a message header containing non-US-ASCII characters using the content encoding, transfer encoding, and character set specified in the input parameters.&nbsp;</p>
+<p class="Element10">
+Argument values are normally found in properties for a <a href="TIdMessage.html" target="topic">TIdMessage</a> instance. These values are passed to EncodeHeader when the message instance generates its' header values during transmission.&nbsp;</p>
+<p class="Element10">
+Specials indicates any characters in additional to the non-printable US-ASCII characters that may require encoding.&nbsp;</p>
+<p class="Element10">
+MimeCharSet is the MIME character set, and is used with HeaderEncoding to construct the encoding marker that start and encoded sequence of characters. Encoded sequences are subject to line folding, and cannot exceed 75 characters. Sequences longer than 75 characters are folded by inserting a CRLF and <a href="TAB.html" target="topic">TAB</a> sequence.&nbsp;</p>
+<p class="Element10">
+HeaderEncoding can contain one of the following values and associated meanings:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="20%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="80%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+B&nbsp;</div></td><td class="Element67" valign="top" width="80%">
+<div class="Element68">
+Base64&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+Q&nbsp;</div></td><td class="Element67" valign="top" width="80%">
+<div class="Element68">
+Quoted Printable&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+8&nbsp;</div></td><td class="Element67" valign="top" width="80%">
+<div class="Element68">
+8bit&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+7&nbsp;</div></td><td class="Element67" valign="top" width="80%">
+<div class="Element68">
+7bit&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+When HeaderEncoding contains an empty string (''), the Base64 encoding value 'B' is assumed.&nbsp;</p>
+<p class="Element10">
+TransferHeader is used mainly to apply transfer encoding for Japanese character sets.&nbsp;</p>
+<p class="Element10">
+Use <a href="DecodeHeader@string.html" target="topic">DecodeHeader</a> to reverse the processing performed in the method.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdMessage.html" target="topic">TIdMessage</a>&nbsp;</p>
+<p class="Section9">
+ <a href="DecodeHeader@string.html" target="topic">DecodeHeader</a>&nbsp;</p>
+<p class="Section9">
+ <a href="Encode2022JP@ansistring.html" target="topic">Encode2022JP</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

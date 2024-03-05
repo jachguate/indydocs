@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdEncoderQuotedPrintable.Encode Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdEncoderQuotedPrintable_Encode@TIdStream@integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Methods</a> &gt; <a href="TIdEncoderQuotedPrintable_Encode@TIdStream@integer.html" target="topic">Encode Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Methods_TIdEncoderQuotedPrintable.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdEncoderQuotedPrintable.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdEncoderUUE.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdEncoderQuotedPrintable.Encode Method</div>
+<div class="Element7">
+<a href="TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Applies the Quoted-Printable encoding scheme to values in a stream.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> Encode(
+    ASrcStream: TIdStream; 
+    <strong>const</strong> ABytes: integer = MaxInt
+): <strong>string</strong>; <strong>override</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASrcStream&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stream contain byte values to be encoded.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ABytes&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Number of bytes from the stream to be encoded. Default value is MaxInt.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+string - Values after applying the Quoted-Printable encoding.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Encode is an overridden String function used to apply the Quoted-Printable encoding scheme to values in a stream. The Quoted-Printable encoding scheme is described in the Internet Standards document:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2045.txt"> RFC 2045, Multipurpose Internet Mail Extensions (MIME), Part One: Format of Internet Message Bodies, Section 6.7 Quoted-Printable Content Transfer Encoding </a>.&nbsp;</p>
+<p class="Element10">
+ASrcStream is the stream containing the un-encoded values to be used in the encoding operation. When ASrcStream has a size of 0, no operation is performed by the Encode method.&nbsp;</p>
+<p class="Element10">
+ABytes indicates the number of bytes to read from the stream for use in the method. The default value is MaxInt, and indicates that all remaining byte values in the stream will receive the Quoted-Printable encoding. Please note that any value in ABytes is <strong>ignored</strong> in the current implementation.&nbsp;</p>
+<p class="Element10">
+Encode uses values starting at the current position in the stream; no stream positioning is performed prior to reading the un-encoded values from ASrcStream.&nbsp;</p>
+<p class="Element10">
+Encode reads data from the stream indicated by ASrcStream, and applies Quoted-Printable encoding for any characters not regarded as &quot;Safe Characters&quot; in the encoding scheme. The quoted-printable encoding algorithm does not perform any conversion for the following characters in the ranges 33-60 Decimal (inclusive) or 62-126 Decimal (inclusive).&nbsp;</p>
+<p class="Element10">
+The Encode method encodes any '.' (Period)(Decimal 46) character that appears at the beginning of an encoded line to it's quoted-printable hexidecimal representation (&quot;=2E&quot;).&nbsp;</p>
+<p class="Element10">
+Whitespace characters (Space and <a href="TAB.html" target="topic">TAB</a>) followed by an end-of-line character (<a href="CR.html" target="topic">CR</a> or <a href="LF.html" target="topic">LF</a>) are converted to their quoted-printable hexidecimal representations.&nbsp;</p>
+<p class="Element10">
+The Encode method applies line folding for individual lines of data that exceed 72 encoded characters. When the maximum line length is reached, a line-end marker (&quot;=&quot; Decimal 61) is inserted in the output and encoding resumes on the following line.&nbsp;</p>
+<p class="Element10">
+The Equal Sign (&quot;=&quot; Decimal 61) is reserved as the quoted-printable prefix marker and line-end marker. Any occurrences of this character found the AStream will be converted to the quoted-printable hexidecimal representation (&quot;=3D&quot;).&nbsp;</p>
+<p class="Element10">
+Please note that Encode does not reset the position of the stream in ASrcStream after the encoding operation.&nbsp;</p>
+<p class="Element10">
+The return value for the method contains the bytes read from ASrcStream and encoded using the Quoted-Printable encoding scheme.&nbsp;</p>
+<p class="Element10">
+Use the Decode method in <a href="TIdDecoderQuotedPrintable.html" target="topic">TIdDecoderQuotedPrintable</a> to convert values to their un-encoded form.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdDecoderQuotedPrintable_Decode@string@Integer@Integer.html" target="topic">TIdDecoderQuotedPrintable.Decode</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdStream.html" target="topic">TIdStream</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Class</a><br /><a href="!!MEMBEROVERVIEW_TIdEncoderQuotedPrintable.html" target="topic">TIdEncoderQuotedPrintable Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdPOP3Server.OnUIDL Event</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdPOP3Server_OnUIDL.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdPOP3Server.html" target="topic">TIdPOP3Server Class</a> &gt; <a href="!!MEMBERTYPE_Events_TIdPOP3Server.html" target="topic">TIdPOP3Server Events</a> &gt; <a href="TIdPOP3Server_OnUIDL.html" target="topic">OnUIDL Event</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdPOP3Server_OnTop.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Events_TIdPOP3Server.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdPOP3ServerContext.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdPOP3Server.OnUIDL Event</div>
+<div class="Element7">
+<a href="TIdPOP3Server.html" target="topic">TIdPOP3Server Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdPOP3Server.html" target="topic">TIdPOP3Server Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Event handler for the POP3 UIDL command.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> OnUIDL: TIdPOP3ServerMessageNumberEvent;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+OnUIDL is a <a href="TIdPOP3ServerMessageNumberEvent.html" target="topic">TIdPOP3ServerMessageNumberEvent</a> property that represents the event handler signalled when a threaded client connection performs the POP3 UIDL command verb.&nbsp;</p>
+<p class="Element10">
+OnUIDL allows the server to implement the optional POP3 command, and performs processing required to generate the unique identifier listing for one or more messages in the mail store for the client connection.&nbsp;</p>
+<p class="Element10">
+OnUIDL is responsible for generating the initial Positive POP3 response, followed by one or more lines containing information for the specified message(s). If no message number is specified, the response will contain multiple unique identifier lines.&nbsp;</p>
+<p class="Element10">
+To simplify POP3 client parsing, all POP3 servers are required to use a cokmon format for unique-id listings. A unique-id listing consists of the message-number of the message, followed by a single space and the unique-id of the message. No information follows the unique-id in the unique-id listing.&nbsp;</p>
+<p class="Element10">
+The unique-id of a message is an arbitrary server-determined string, consisting of one to 70 characters in the range 0x21 to 0x7E, which uniquely identifies a message within a maildrop and which persists across sessions. This persistence is required even if a session ends without entering the UPDATE state. The server should never reuse an unique-id in a given maildrop, for as long as the entity using the unique-id exists.&nbsp;</p>
+<p class="Element10">
+Messages marked for deletion are not included in a UIDL listing.&nbsp;</p>
+<p class="Element10">
+It is recommended to implement support for the UIDL command. It is generally preferable for server implementations to store arbitrarily assigned unique-ids in the maildrop, but it is permitted for unique-ids to be calculated as a hash of the message. Clients should be able to handle a situation where two identical copies of a message in a maildrop have the same unique-id.&nbsp;</p>
+<p class="Element10">
+OnUIDL is triggered by the command event handler that implements the <a href="TIdCommand.html" target="topic">TIdCommand</a> support for the POP3 UIDL command for the client connection. OnUIDL is not triggered for a client connection where TIdPOP3ServerThread.State contains a value other than Trans, or the event handler has not been assigned.&nbsp;</p>
+<p class="Element10">
+OnUIDL is responsible for writing the positive POP3 response to the client connection; Negative POP3 responses are written by the UIDL command handler when TIdPOP3ServerThread.State contains a value other than Trans or the OnTOP event handler has not been assigned.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdPOP3ServerMessageNumberEvent.html" target="topic">TIdPOP3ServerMessageNumberEvent</a> TIdPOP3ServerThread.State <a href="TIdCommandHandlers.html" target="topic">TIdCommandHandlers</a> <a href="TIdCommandHandler.html" target="topic">TIdCommandHandler</a> <a href="TIdCommand.html" target="topic">TIdCommand</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdPOP3Server.html" target="topic">TIdPOP3Server Class</a><br /><a href="!!MEMBEROVERVIEW_TIdPOP3Server.html" target="topic">TIdPOP3Server Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

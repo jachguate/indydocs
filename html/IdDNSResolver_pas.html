@@ -1,0 +1,320 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdDNSResolver.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdDNSResolver_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdDNSCommon_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdDNSServer_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdDNSResolver.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Classes,Enumerations,Types,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains Classes, Types, Procedures, and Functions needed to define and implement a resolver for DNS protocol queries.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdDNSResolver.pas contains Classes, Types, Procedures, and Functions needed to define and implement a resolver for DNS protocol queries. The DNS protocol is described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1034.txt"> RFC 1034 - Domain Names Concepts and Facilities </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1035.txt"> RFC 1035 - Domain Names Implementation and Specification </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1591.txt"> RFC 1591 - Domain Name System Structure and Delegation </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1183.txt"> RFC 1183 - New DNS RR Definitions </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1884.txt"> RFC 1884 - IP Version 6 Addressing Architecture </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1886.txt"> RFC 1886 - DNS Extensions to support IP version 6 </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1995.txt"> RFC 1995 - Incremental Zone Transfer in DNS </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2181.txt"> RFC 2181 - Clarifications to the DNS Specification. </a>&nbsp;</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdDNSResolver.html" target="topic">TIdDNSResolver</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TAAAARecord.html" target="topic">TAAAARecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a DNS AAAA resource record type for IPv6 addresses found in an DNS query response.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TARecord.html" target="topic">TARecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned by a DNS query that includes Host Address record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TCNRecord.html" target="topic">TCNRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes Canonical <a href="TResultRecord_Name.html" target="topic">Name</a> resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TErrorRecord.html" target="topic">TErrorRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="THINFORecord.html" target="topic">THINFORecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes Host Information resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdDNSResolver.html" target="topic">TIdDNSResolver</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a resolver for DNS queries.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TMINFORecord.html" target="topic">TMINFORecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes mailbox or mailing list resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TMXRecord.html" target="topic">TMXRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes Mail Exchange resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TNAMERecord.html" target="topic">TNAMERecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record in a DNS response that contains a Host name.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TNAPTRRecord.html" target="topic">TNAPTRRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TNSRecord.html" target="topic">TNSRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes <a href="TResultRecord_Name.html" target="topic">Name</a> Server resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TPTRRecord.html" target="topic">TPTRRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes Domain <a href="TResultRecord_Name.html" target="topic">Name</a> Pointer resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TQueryResult.html" target="topic">TQueryResult</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a container for values returned in a response to a DNS query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TRDATARecord.html" target="topic">TRDATARecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a resource record returned from a DNS query that includes Host Address record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TResultRecord.html" target="topic">TResultRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Collection item used to represent resource records returned by a DNS query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TSOARecord.html" target="topic">TSOARecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents resource records in a DNS response that include Start of Authority resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TSRVRecord.html" target="topic">TSRVRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TTextRecord.html" target="topic">TTextRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents resource records in a DNS response that include <a href="TTextRecord_Text.html" target="topic">Text</a> String resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TWKSRecord.html" target="topic">TWKSRecord</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents a Well Known Service Resource Record from a DNS Response packet.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Class_CHAOS.html" target="topic">Class_CHAOS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Class_IN.html" target="topic">Class_IN</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="QueryRecordCount.html" target="topic">QueryRecordCount</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="QueryRecordTypes.html" target="topic">QueryRecordTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Constant array containing values for resource record types.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="QueryRecordValues.html" target="topic">QueryRecordValues</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Numeric values used to represent resource record types requestd in a DNS query.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Enumerations"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Enumerations');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgEnumerations">Enumerations</a></div>
+<div id="divEnumerations">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Enumeration&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TQueryRecordTypes.html" target="topic">TQueryRecordTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Identifies resource record types that can be requested in a DNS query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TResultSection.html" target="topic">TResultSection</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Types"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Types');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTypes">Types</a></div>
+<div id="divTypes">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TQueryType.html" target="topic">TQueryType</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Set that contains <a href="TQueryRecordTypes.html" target="topic">TQueryRecordTypes</a> values requested for the DNS query.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TResultRecordClass.html" target="topic">TResultRecordClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TResultSections.html" target="topic">TResultSections</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

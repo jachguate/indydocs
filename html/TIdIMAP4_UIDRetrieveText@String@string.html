@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIMAP4.UIDRetrieveText Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIMAP4_UIDRetrieveText@String@string.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic">TIdIMAP4 Methods</a> &gt; <a href="TIdIMAP4_UIDRetrieveText@String@string.html" target="topic">UIDRetrieveText Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIMAP4_UIDRetrieveStructure@String@TIdMessage.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIMAP4.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIMAP4.UIDRetrieveText Method</div>
+<div class="Element7">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves the text that makes up the body of a message.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> UIDRetrieveText(
+    <strong>const</strong> AMsgUID: <strong>String</strong>; 
+    <strong>var</strong> AText: <strong>string</strong>
+): Boolean;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AMsgUID&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Unique identifier for the message.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AText&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+destination for text representing the body of the message.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Boolean - True on success.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+UIDRetrieveText is a Boolean function used to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> a message part for the specified message that represents the body of the message. UIDRetrieveText uses the IMAP4 BODY[TEXT] command to access the message part that represents the body for the message.&nbsp;</p>
+<p class="Element10">
+Please note that some IMAP4 servers do not correctly return the body text using this command. Some servers return the first unencoded attachment instead. Use <a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic">UIDRetrieveText2</a> for servers that exhibit this behavior.&nbsp;</p>
+<p class="Element10">
+UIDRetrieveText validates the message identifier in AMsgUID to ensure that it contains a valid value, and raises an <a href="EIdNumberInvalid.html" target="topic">EIdNumberInvalid</a> exception if the requirement is not met.&nbsp;</p>
+<p class="Element10">
+UIDRetrieveText requires that <a href="TIdIMAP4_ConnectionState.html" target="topic">ConnectionState</a> contain the value csSelected, or an <a href="EIdConnectionStateError.html" target="topic">EIdConnectionStateError</a> exception will be raised. Use <a href="TIdIMAP4_SelectMailBox@String.html" target="topic">SelectMailBox</a> or <a href="TIdIMAP4_ExamineMailBox@String@TIdMailBox.html" target="topic">ExamineMailBox</a> to select a mailbox prior to calling UIDRetrieveText or <a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic">UIDRetrieveText2</a>.&nbsp;</p>
+<p class="Element10">
+The return value for the method indicates if the body text was successfully retrieved. The return value is False if a protocol error response (any value other than <a href="IMAP_OK.html" target="topic">IMAP_OK</a>) is received, or the number of lines in the body text cannot be determined.&nbsp;</p>
+<p class="Element10">
+UIDRetrieveText captures and decodes the body lines in the IMAP4 server response, and stores the unencoded contents of the message part in the AText argument. UIDRetrieveText creates an instance of <a href="TIdTCPStream.html" target="topic">TIdTCPStream</a> for use in capturing the body text for the message, and assigns the <a href="TIdIMAP4_OnWorkForPart.html" target="topic">OnWorkForPart</a>, <a href="TIdIMAP4_OnWorkBeginForPart.html" target="topic">OnWorkBeginForPart</a>, and <a href="TIdIMAP4_OnWorkEndForPart.html" target="topic">OnWorkEndForPart</a> event handlers used to respond to work events triggered during retrieval of the message part.&nbsp;</p>
+<p class="Element10">
+Please note that some IMAP4 servers may truncate the initial body text found in the message structure if it contains non-textual data such as binary transfer-encoded data or multipart content with the subtype mixed, digest, or parallel. Use <a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic">UIDRetrieveText2</a> for servers exhibiting this behavior.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdIMAP4_RetrieveText@Integer@string.html" target="topic">RetrieveText</a> of <a href="TIdIMAP4_RetrieveText2@Integer@string.html" target="topic">RetrieveText2</a> to <a href="TIdIMAP4_Retrieve@Integer@TIdMessage.html" target="topic">retrieve</a> the body text for a message using the relative message number for the message.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIMAP4_ConnectionState.html" target="topic">ConnectionState</a> <a href="EIdConnectionStateError.html" target="topic">EIdConnectionStateError</a> <a href="EIdNumberInvalid.html" target="topic">EIdNumberInvalid</a> <a href="TIdIMAP4_ExamineMailBox@String@TIdMailBox.html" target="topic">ExamineMailBox</a> <a href="TIdIMAP4_OnWorkBeginForPart.html" target="topic">OnWorkBeginForPart</a> <a href="TIdIMAP4_OnWorkEndForPart.html" target="topic">OnWorkEndForPart</a> <a href="TIdIMAP4_OnWorkForPart.html" target="topic">OnWorkForPart</a> <a href="TIdIMAP4_RetrieveText@Integer@string.html" target="topic">RetrieveText</a> <a href="TIdIMAP4_RetrieveText2@Integer@string.html" target="topic">RetrieveText2</a> <a href="TIdIMAP4_SelectMailBox@String.html" target="topic">SelectMailBox</a> <a href="TIdTCPStream.html" target="topic">TIdTCPStream</a> <a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic">UIDRetrieveText2</a> <a href="TIdIMAP4_UIDRetrieveText2@String@string.html" target="topic">UIDRetrieveText2</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

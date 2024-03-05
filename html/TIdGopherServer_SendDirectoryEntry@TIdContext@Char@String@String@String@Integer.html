@@ -1,0 +1,247 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdGopherServer.SendDirectoryEntry Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdGopherServer_SendDirectoryEntry@TIdContext@Char@String@String@String@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdGopherServer.html" target="topic">TIdGopherServer Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdGopherServer.html" target="topic">TIdGopherServer Methods</a> &gt; <a href="TIdGopherServer_SendDirectoryEntry@TIdContext@Char@String@String@String@Integer.html" target="topic">SendDirectoryEntry Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdGopherServer_ReturnGopherItem@Char@String@String@String@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdGopherServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdGopherServer_SetTruncateLength@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdGopherServer.SendDirectoryEntry Method</div>
+<div class="Element7">
+<a href="TIdGopherServer.html" target="topic">TIdGopherServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdGopherServer.html" target="topic">TIdGopherServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Send a Gopher menu item to the client.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> SendDirectoryEntry(
+    AContext: TIdContext; 
+    ItemType: Char; 
+    UserFriendlyName: <strong>String</strong>; 
+    RealResourceName: <strong>String</strong>; 
+    HostServer: <strong>String</strong>; 
+    HostPort: Integer
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AContext&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+The client connection to receive the Gopher item.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ItemType&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+The Gopher item type constant.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+UserFriendlyName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Name to display on client menus.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+RealResourceName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Item selector or a hint for logging into a Telnet or TN3270 service.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+HostServer&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Gopher Server hosting the item.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+HostPort&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Port number for the host.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+SendDirectoryEntry is a procedure used to send a Gopher menu item to the client connection specified in AThread.&nbsp;</p>
+<p class="Element10">
+ItemType contains a constant that identifies the item type, as defined in GopherConsts.pas, and normally contains of the following values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="35%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="65%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Document.html" target="topic">IdGopherItem_Document</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a file&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Directory.html" target="topic">IdGopherItem_Directory</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a directory&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_CSO.html" target="topic">IdGopherItem_CSO</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a CSO phone-book server&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Error.html" target="topic">IdGopherItem_Error</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Error&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_BinHex.html" target="topic">IdGopherItem_BinHex</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a BinHexed Macintosh file&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_BinDOS.html" target="topic">IdGopherItem_BinDOS</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is DOS binary archive of some sort. Client must read until the TCP connection closes. Beware.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_UUE.html" target="topic">IdGopherItem_UUE</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a <a href="UNIX.html" target="topic">UNIX</a> uuencoded file&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Search.html" target="topic">IdGopherItem_Search</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is an Index-Search server&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Telnet.html" target="topic">IdGopherItem_Telnet</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item points to a text-based telnet session&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Binary.html" target="topic">IdGopherItem_Binary</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a binary file. Client must read until the TCP connection closes. Beware.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Redundant.html" target="topic">IdGopherItem_Redundant</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a redundant server&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_TN3270.html" target="topic">IdGopherItem_TN3270</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item points to a text-based tn3270 session&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_GIF.html" target="topic">IdGopherItem_GIF</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is a GIF format graphics file&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Image.html" target="topic">IdGopherItem_Image</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Item is some kind of image file Client decides how to display&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_HTML.html" target="topic">IdGopherItem_HTML</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Website&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_MIME.html" target="topic">IdGopherItem_MIME</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Mime encoded file&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="35%">
+<div class="Element68">
+<a href="IdGopherItem_Information.html" target="topic">IdGopherItem_Information</a>&nbsp;</div></td><td class="Element67" valign="top" width="65%">
+<div class="Element68">
+Not a file, just information&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdGopherServer.html" target="topic">TIdGopherServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdGopherServer.html" target="topic">TIdGopherServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

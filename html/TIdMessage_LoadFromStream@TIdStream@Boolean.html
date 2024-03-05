@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMessage.LoadFromStream Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMessage_LoadFromStream@TIdStream@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMessage.html" target="topic">TIdMessage Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdMessage.html" target="topic">TIdMessage Methods</a> &gt; <a href="TIdMessage_LoadFromStream@TIdStream@Boolean.html" target="topic">LoadFromStream Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMessage_LoadFromFile@string@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdMessage.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdMessage_ProcessHeaders.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMessage.LoadFromStream Method</div>
+<div class="Element7">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Loads message headers and message parts from an input stream.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> LoadFromStream(
+    AStream: TIdStream; 
+    <strong>const</strong> AHeadersOnly: Boolean = False
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStream&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Source used to read headers and message parts.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AHeadersOnly&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Indicates if only headers should be loaded. Default value is False.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+LoadFromStream is a procedure that allows loading of headers and optional message parts for the <a href="TIdMessage.html" target="topic">TIdMessage</a> instance from the stream identified in AStream.&nbsp;</p>
+<p class="Element10">
+AStream is a <a href="TIdStream.html" target="topic">TIdStream</a> descendant and represents the data source that will be used read values to be stored in the message instance. AStream can be any TStream descendant suitable for use in the as the input stream in a <a href="TIdIOHandlerStream.html" target="topic">TIdIOHandlerStream</a> instance.&nbsp;</p>
+<p class="Element10">
+The current position in AStream is not changed at any time during the LoadFromStream method. LoadFromStream uses the current stream position to perform the physical input operation, and leaves the stream at the position following the read operation.&nbsp;</p>
+<p class="Element10">
+AHeadersOnly indicates if only message headers should be loaded for the message instance. When AHeadersOnly is False, the entire message including all <a href="TIdMessage_Headers.html" target="topic">Headers</a> and <a href="TIdMessage_MessageParts.html" target="topic">MessageParts</a> will be loaded from AStream.&nbsp;</p>
+<p class="Element10">
+LoadFromStream creates an instance of <a href="TIdMessageClient.html" target="topic">TIdMessageClient</a>, and calls <a href="TIdMessageClient_ProcessMessage@TIdMessage@Boolean.html" target="topic">TIdMessageClient.ProcessMessage</a> to perform the physical input required to load values into the message instance. The <a href="TIdMessageClient.html" target="topic">TIdMessageClient</a> instance is freed prior to exiting from the method.&nbsp;</p>
+<p class="Element10">
+Both <a href="TIdMessage_LoadFromFile@string@Boolean.html" target="topic">LoadFromFile</a> and LoadFromStream are designed to handle messages written using the <a href="TIdMessage_SaveToStream@TIdStream@Boolean.html" target="topic">SaveToStream</a> or SavedToFile methods in the Indy <a href="TIdMessage.html" target="topic">TIdMessage</a> component. These methods <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> an encoded version of the message contents that matches the protocol tranmissions used when the message is transmitted using <a href="TIdSMTP.html" target="topic">TIdSMTP</a> including the message terminator characters (CRLF.CRLF). If you are trying to import .EML message files from MS Outlook Express, or another email client, make sure that the text file contains the message terminator sequence. An exception will be raised if <a href="TIdMessage_LoadFromFile@string@Boolean.html" target="topic">LoadFromFile</a> or LoadFromStream are used to load files that do not include the message terminator sequence.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdMessageCannotLoad.html" target="topic">EIdMessageCannotLoad</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised with the message <a href="RSIdMessageCannotLoad.html" target="topic">RSIdMessageCannotLoad</a> when the specified file name does not exist.<br>&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdException.html" target="topic">EIdException</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised with the message <a href="RSMsgClientUnkownMessagePartType.html" target="topic">RSMsgClientUnkownMessagePartType</a> when an unknown message part type is encountered when processing the body of a message part.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdMessage_MessageParts.html" target="topic">TIdMessage.MessageParts</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMessage_Headers.html" target="topic">TIdMessage.Headers</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandlerStream.html" target="topic">TIdIOHandlerStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMessageClient.html" target="topic">TIdMessageClient</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a><br /><a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

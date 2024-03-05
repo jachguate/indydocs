@@ -1,0 +1,152 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdEncoderMIME Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdEncoderMIME.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdEncoderMIME.html" target="topic">TIdEncoderMIME Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdEncoderBinHex4_EncodeFile@string@TIdStream@TIdStream.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="TIdEncoderQuotedPrintable.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdEncoderMIME Class</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,Example,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,Example,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements an encoder for MIME content using the Base64 encoding scheme.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdCoderMIME_pas.html" target="topic">IdCoderMIME</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdEncoderMIME.png" border="0" alt="" title="" usemap="#TIdEncoderMIME"><map class="Element150" name="TIdEncoderMIME"><area class="Element150" shape="rect" coords="139,0,257,15" href="TIdInitializerComponent.html"><area class="Element150" shape="rect" coords="287,0,388,15" href="TIdBaseComponent.html"><area class="Element150" shape="rect" coords="418,0,484,15" href="TIdEncoder.html"><area class="Element150" shape="rect" coords="514,0,598,15" href="TIdEncoder3to4.html"><area class="Element150" shape="rect" coords="628,0,720,15" href="TIdEncoderMIME.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdEncoderMIME = <strong>class</strong>(TIdEncoder3to4);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdEncoderMIME is a <a href="TIdEncoder3to4.html" target="topic">TIdEncoder3to4</a> descendant that implements an encoder for MIME content encoded using the Base64 encoding algorithm. TIdEncoderMIME enhances the ancestor class by overriding the protected InitComponent method to perform initalization that allow the encoder to utilize the Base64 alphabet identified in <a href="GBase64CodeTable.html" target="topic">GBase64CodeTable</a> and the special padding character &quot;=&quot; in the <a href="TIdEncoder3to4_FillChar.html" target="topic">FillChar</a> property.</p></div>
+</div>
+</div>
+<a name="Example"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Example');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExample">Example</a></div>
+<div id="divExample">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+[Delphi] Encoding data in a string.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00024');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00024"><pre class="Element12">  <strong>var</strong>
+    AEnc: TIdEncoderMime;
+    sInput: <strong>String</strong>;
+    sEncOutput: <strong>String</strong>;
+
+  ...
+
+  AEnc := TIdEncoderMIME.Create(<strong>Nil</strong>);
+  sEncOutput := AEnc.Encode(sInput);
+  AEnc.Free;</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+[Delphi] Encoding stream-based data.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00025');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00025"><pre class="Element12">  <strong>var</strong>
+    AEnc: TIdEncoderMime;
+    AStream: TIdStream;
+    sEncOutput: <strong>String</strong>;
+
+  ...
+
+  AEnc := TIdEncoderMIME.Create(<strong>Nil</strong>);
+  sEncOutput := AEnc.Encode(AStream, AStream.Size);
+  AEnc.Free;</pre></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdEncoder3to4.html" target="topic">TIdEncoder3to4</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEncoder3to4_FillChar.html" target="topic">TIdEncoder3to4.FillChar</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEncoder3to4_CodingTable.html" target="topic">TIdEncoder3to4.CodingTable</a>&nbsp;</p>
+<p class="Section9">
+ <a href="GBase64CodeTable.html" target="topic">GBase64CodeTable</a></p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

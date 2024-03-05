@@ -1,0 +1,429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMLSTFTPListItem.Facts Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMLSTFTPListItem_Facts.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Properties</a> &gt; <a href="TIdMLSTFTPListItem_Facts.html" target="topic">Facts Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMLSTFTPListItem_CreationDateGMT.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdMLSTFTPListItem.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdMLSTFTPListItem_LastAccessDate.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMLSTFTPListItem.Facts Property</div>
+<div class="Element7">
+<a href="TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents keyword-value pairs from an FTP <a href="MLST.html" target="topic">MLST</a> or MLSD response.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> Facts [<strong>const</strong> Name: <strong>string</strong>]: <strong>string</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Facts is an indexed read-only string property that represents keyword-value pairs returned in file or directory listings for the FTP <a href="MLST.html" target="topic">MLST</a> or MLSD commands. The indexer for the property is a string that represents the keyword desired, and the the property returns the fact value for the specified keyword.&nbsp;</p>
+<p class="Element10">
+The following keywords are allowed as indexer values for the Facts property:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="15%">
+<div class="Element66">
+Keyword&nbsp;</div></td><td class="Element65" valign="top" width="85%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+size&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+<a href="TIdFTPListItem_Size.html" target="topic">Size</a> in octets.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+modify&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Last modification time.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+<a href="TIdMLSTFTPListItem_Create@TIdCollection.html" target="topic">create</a>&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Creation time.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+type&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Entry type.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+unique&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Unique id of file/directory.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+perm&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+File permissions, whether read, write, execute is allowed for the login id.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+lang&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Language of the file name per <a href="IANA.html" target="topic">IANA</a>[12] registry.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+media-type&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+MIME media-type of file contents per <a href="IANA.html" target="topic">IANA</a> registry.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="15%">
+<div class="Element68">
+charset&nbsp;</div></td><td class="Element67" valign="top" width="85%">
+<div class="Element68">
+Character set per <a href="IANA.html" target="topic">IANA</a> registry (if not UTF-8)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Fact name keywords are not case sensitive; using the value '<a href="TIdFTPListItem_Size.html" target="topic">Size</a>', 'size', 'SIZE', and 'SiZe' will return same fact.&nbsp;</p>
+<p class="Element10">
+Additional operating system specific keywords could be specified by using the <a href="IANA.html" target="topic">IANA</a> operating system name as a prefix (examples only):&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="27%">
+<div class="Element66">
+Keyword&nbsp;</div></td><td class="Element65" valign="top" width="73%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="27%">
+<div class="Element68">
+OS/2.ea&nbsp;</div></td><td class="Element67" valign="top" width="73%">
+<div class="Element68">
+OS/2 extended attributes&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="27%">
+<div class="Element68">
+MACOS.rf&nbsp;</div></td><td class="Element67" valign="top" width="73%">
+<div class="Element68">
+MacIntosh resource forks&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="27%">
+<div class="Element68">
+UNIX.mode&nbsp;</div></td><td class="Element67" valign="top" width="73%">
+<div class="Element68">
+Unix file modes (permissions)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+FTP server implementations may define keywords for experimental, or private use. All such keywords begin with the two character sequence &quot;x.&quot;. As type names are case independent, &quot;x.&quot; and &quot;X.&quot; are equivalent. For example:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="32%">
+<div class="Element66">
+Keyword&nbsp;</div></td><td class="Element65" valign="top" width="68%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="32%">
+<div class="Element68">
+x.ver&nbsp;</div></td><td class="Element67" valign="top" width="68%">
+<div class="Element68">
+Version information&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="32%">
+<div class="Element68">
+x.desc&nbsp;</div></td><td class="Element67" valign="top" width="68%">
+<div class="Element68">
+File description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="32%">
+<div class="Element68">
+x.type&nbsp;</div></td><td class="Element67" valign="top" width="68%">
+<div class="Element68">
+File type&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Fact keyword-value pairs are not guaranteed to be present for all files and directories returned in a listing response. Some facts are not applicable for certain resource types, or may not be provided by the FTP server implementation.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The type Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The type fact indicates is the directory listing collection item represents a file or a directory. If it is a directory, is it the current directory, a regular directory, or a parent directory? The <a href="MLST.html" target="topic">MLST</a> specification makes this unambiguous using the type fact.&nbsp;</p>
+<p class="Element10">
+The type fact specifies information about the object listed in the <a href="MLST.html" target="topic">MLST</a>/MLSD response, and may contain one of the following values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="4%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="96%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+file&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+A file entry for a file containing data that is not host- or system-specific.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+cdir&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+The path name for the current listed directory (Returned only in MLSD responses). In a sense, it can be viewed as representing the title of the listing, in a machine friendly format.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+pdir&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+The path name for a parent directory (Returned only in MLSD responses).&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+dir&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+A name of a directory or sub-directory. It generally cannot be transferred from machine to machine, but can be used as a target for the MLSD command.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+OS.name=type&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+An OS or file system dependent file type. Name is any <a href="IANA.html" target="topic">IANA</a> registered operating system name, like <a href="UNIX.html" target="topic">UNIX</a>. the type portion provides system dependent information as to the type of the file listed.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+The unique Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The unique fact is used to present a unique identifier for a file or directory in the NVFS (Network Virtual File System) accessed via a server-FTP process. The value of this fact should be the same for any number of pathnames that refer to the same underlying file. The fact should have different values for names which reference distinct files. The mapping between files, and unique fact tokens should be maintained, and remain consistent, for at least the lifetime of the control connection from user-PI to server-PI.&nbsp;</p>
+<p class="Element10">
+This fact would normally be used by Server-FTPs whose host system allows things such as symbolic links so that the same file may be represented in more than one directory on the server. The only conclusion that should be drawn is that if two different names each have the same value for the unique fact, they refer to the same underlying object. The value of the unique fact (the token) should be considered an opaque string for comparison purposes, and is a case dependent value. The tokens &quot;A&quot; and &quot;a&quot; do not represent the same underlying object.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The modify Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The modify fact is used to determine the last time the content of the file (or directory) indicated was modified. Any change of substance to the file should cause this value to alter. That is, if a change is made to a file such that the results of a RETR command would differ, then the value of the modify fact should alter. User-PIs should not assume that a different modify fact value indicates that the file contents are necessarily different than when last retrieved. Some systems may alter the value of the modify fact for other reasons, though this is discouraged wherever possible. Also a file may alter, and then be returned to its previous content, which would often be indicated as two incremental alterations to the value of the modify fact.&nbsp;</p>
+<p class="Element10">
+For directories, this value should alter whenever a change occurs to the directory such that different file names would (or might) be included in MLSD output of that directory.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The create Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The <a href="TIdMLSTFTPListItem_Create@TIdCollection.html" target="topic">create</a> fact indicates when a file, or directory, was first created. The exact content of the <a href="TIdMLSTFTPListItem_Create@TIdCollection.html" target="topic">create</a> fact is not specified and may vary from server to server. About all that can be said about the value returned is that it can never indicate a later time than the modify fact.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The perm Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The perm fact is used to indicate access rights the current FTP user has for the object listed. Of the permission indicators currently defined, many are meaningful only when used with a particular type of object. The indicators are case independent, &quot;d&quot; and &quot;D&quot; are the same indicator. The perm value is always an unordered sequence of alphabetic characters, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="2%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="98%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;a&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to file object types, and indicates that the APPE (append) command may be applied to the file named.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;c&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to directory object types (dir, cdir, pdir), and indicates that may be created in the directory named using the STOR, STOU, APPE, and RNTO commands.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;d&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to all object types, and indicates that the named object may be deleted using the DELE or RMD commands (as appropriate).&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;e&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to directory object types (dir, cdir, pdir), and indicates that the path for the directory named can be entered using navigational commands like CWD and CDUP.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;f&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to objects that may be renamed, and indicates if can be renamed using the RNFR and RNTO commands.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;l&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to directory object types, and indicates that the listing commands LIST, <a href="NLST.html" target="topic">NLST</a>, and MLSD may be applied to the directory named.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;m&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to directory object types, and indicates that the new sub-directories can be made using the MKD command for the directory named.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;p&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to directory object types, and indicates that objects in the directory may be purged by the file system on the remote FTP server. Please note that it does not indicate that the RMD command may be used to remove the directory named itself; the &quot;d&quot; permission indicator indicates that.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;r&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to file objects types, and for some systems may apply to other types of objects, and indicates that the object named can be retrieved using the RETR command.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&quot;w&quot;&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Applies to file objects types, and for some systems may apply to other types of objects, and indicates that the object named can be written using the STOR command.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Please note that a permission indicator can never imply that the appropriate command is guaranteed to work; just that it might. Other system specific limitations, such as limitations on available space for storing files, may cause an operation to fail, where the permission flags may have indicated that it was likely to succeed. The permissions are a guide only.&nbsp;</p>
+<p class="Element10">
+Please note that te permissions are described here as they apply to FTP commands. They may not map easily into particular permissions available on the server's operating system. Servers are expected to synthesize these permission bits from the permission information available from operating system. For example, to correctly determine whether the &quot;D&quot; permission bit should be set on a directory for a server running on the <a href="UNIX.html" target="topic">UNIX</a>(TM) operating system, the server should check that the directory named is empty, and that the user has write permission on both the directory under consideration, and its parent directory.&nbsp;</p>
+<p class="Element10">
+Some systems may have more specific permissions than those listed here, such systems should map those to the flags defined as best they are able. Other systems may have only more broad access controls. They will generally have just a few possible permutations of permission flags, however they should attempt to correctly represent what is permitted.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The lang Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The lang fact describes the natural language of the file or directory name for use in displaying the listing to the end user. Values used in the lang fact should be taken from the language registry of the <a href="IANA.html" target="topic">IANA</a>.&nbsp;</p>
+<p class="Element10">
+Server-FTP implementations must not guess language values. Language values must be determined in an unambiguous way such as file system tagging of language or by user configuration. Note that the lang fact provides no information at all about the content of a file, only about the encoding of its name.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The size Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The size fact applies to non-directory file types and should always reflect the approximate size of the file. This should be as accurate as the server can make it, without going to extraordinary lengths, such as reading the entire file. The size is expressed in units of octets of data in the file.&nbsp;</p>
+<p class="Element10">
+Given limitations in some systems, Client-FTP implementations must understand this size may not be precise and may change between the time of a <a href="MLST.html" target="topic">MLST</a> and RETR operation.&nbsp;</p>
+<p class="Element10">
+Clients that need highly accurate size information for some particular reason should use the SIZE command. The most common need for this accuracy is likely to be in conjunction with the REST command. The size fact, on the other hand, should be used for purposes such as indicating to a human user the approximate size of the file to be transferred, and perhaps to give an idea of expected transfer completion time.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The media-type Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The media-type fact represents the <a href="IANA.html" target="topic">IANA</a> media type of the file named, and applies only to non-directory types. The list of values used must follow the guidelines set by the <a href="IANA.html" target="topic">IANA</a> registry.&nbsp;</p>
+<p class="Element10">
+Server-FTP implementations must not guess media type values. Media type values must be determined in an unambiguous way such as file system tagging of media-type or by user configuration. This fact gives information about the content of the file named. Both the primary media type, and any appropriate subtype should be given, separated by a slash &quot;/&quot; as is traditional.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The charset Fact</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The charset fact provides the <a href="IANA.html" target="topic">IANA</a> character set name, or alias, for the encoded pathnames in a <a href="MLST.html" target="topic">MLST</a> or MLSD response. The default character set is UTF-8 unless specified otherwise. FTP implementations should use UTF-8 if possible to encourage maximum inter-operability. The value of this fact applies to the pathname only, and provides no information about the contents of the file.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Required facts</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Servers are not required to support any particular set of the available facts. However, servers should, if conceivably possible, support at least the type, perm, size, unique, and modify facts.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+System Dependent and Local Facts</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+By using an system dependent fact, or a local fact, a server may communicate to the user information about the file named which is peculiar to the underlying file system.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+System Dependent Facts</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+System dependent fact names are labeled by prefixing a label identifying the specific information returned by the name of the appropriate operating system from the <a href="IANA.html" target="topic">IANA</a> maintained list of operating system names.&nbsp;</p>
+<p class="Element10">
+The value of an OS dependent fact may be whatever is appropriate to convey the information available. In order to allow reliable inter-operation between users of system dependent facts, the <a href="IANA.html" target="topic">IANA</a> will maintain a registry of system dependent fact names, their syntax, and the interpretation to be given to their values.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Local Facts</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Server implementations may also make available other facts of their own choosing. As the method of interpretation of such information will generally not be widely understood, servers should be aware that clients will typically ignore any local facts provided. As there is no registration of locally defined facts, it is entirely possible that different servers will use the same local fact name to provide vastly different information. Hence users should be hesitant about making any use of any information in a locally defined fact without some other specific assurance that the particular fact is one that they do comprehend.&nbsp;</p>
+<p class="Element10">
+Local fact names all begin with the sequence &quot;X.&quot;. The rest of the name is a &quot;token&quot;. The value of a local fact can be anything at all, provided it can be encoded as a token.</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Class</a><br /><a href="!!MEMBEROVERVIEW_TIdMLSTFTPListItem.html" target="topic">TIdMLSTFTPListItem Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCmdTCPServer Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCmdTCPServer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdCmdTCPClientListeningThread_RecvData.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdCmdTCPServer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCmdTCPServer Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Properties</a> &nbsp; <a href="!!MEMBERTYPE_Events_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Events</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements a multi-thread TCP/IP-based server with support for command handlers.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdCmdTCPServer_pas.html" target="topic">IdCmdTCPServer</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdCmdTCPServer.png" border="0" alt="" title="" usemap="#TIdCmdTCPServer"><map class="Element150" name="TIdCmdTCPServer"><area class="Element150" shape="rect" coords="139,0,257,15" href="TIdInitializerComponent.html"><area class="Element150" shape="rect" coords="287,0,388,15" href="TIdBaseComponent.html"><area class="Element150" shape="rect" coords="671,0,751,15" href="TIdTCPServer.html"><area class="Element150" shape="rect" coords="781,0,881,15" href="TIdCmdTCPServer.html"><area class="Element150" shape="rect" coords="418,0,499,15" href="TIdComponent.html"><area class="Element150" shape="rect" coords="529,0,641,15" href="TIdCustomTCPServer.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdCmdTCPServer = <strong>class</strong>(TIdTCPServer);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdCmdTCPServer is a <a href="TIdTCPServer.html" target="topic">TIdTCPServer</a> descendant that implements a multi-thread TCP/IP-based server with support for command handlers.&nbsp;</p>
+<p class="Element10">
+Command handlers provide an extensible mechanism for definition of the commands and their associated data as used in protocol exchanges for client connections to the server. Command handlers provide access to the properties and methods in the server and/or the client context that are affected in the processing required for the command.&nbsp;</p>
+<p class="Element10">
+Use of command handlers is an optional feature enabled when CommandHandlersEnabled is set to True. Descendant classes must implement the InitializeCommandHandlers method that creates the default command handlers needed to support the command, processing, and responses required for a specific protocol.&nbsp;</p>
+<p class="Element10">
+When CommandHandlersEnabled is set to False, the <a href="TIdTCPServer_OnExecute.html" target="topic">OnExecute</a> event handler in the server is used to implement execution of the task for a client connection.&nbsp;</p>
+<p class="Element10">
+TIdCmdTCPServer implements properties containing responses used in the server, including:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601"><a href="TIdCmdTCPServer_ExceptionReply.html" target="topic">ExceptionReply</a></li>
+<li class="Element601"><a href="TIdCmdTCPServer_HelpReply.html" target="topic">HelpReply</a></li>
+<li class="Element601"><a href="TIdCmdTCPServer_Greeting.html" target="topic">Greeting</a></li>
+<li class="Element601"><a href="TIdCmdTCPServer_MaxConnectionReply.html" target="topic">MaxConnectionReply</a></li>
+<li class="Element601"><a href="TIdCmdTCPServer_ReplyUnknownCommand.html" target="topic">ReplyUnknownCommand</a></li>
+<li class="Element601"><a href="TIdCmdTCPServer_ReplyTexts.html" target="topic">ReplyTexts</a></li>
+</ul>&nbsp;</p>
+<p class="Element10">
+During initialization of the server component, the standard reply classes (<a href="TIdReplyRFC.html" target="topic">TIdReplyRFC</a>, <a href="TIdRepliesRFC.html" target="topic">TIdRepliesRFC</a>) for the server are used to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> default response values in properties, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Property&nbsp;</div></td><td class="Element65" valign="top" width="10%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="51%">
+<div class="Element66">
+Text&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdCmdTCPServer_Greeting.html" target="topic">Greeting</a>&nbsp;</div></td><td class="Element67" valign="top" width="10%">
+<div class="Element68">
+200&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Welcome&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdCmdTCPServer_MaxConnectionReply.html" target="topic">MaxConnectionReply</a>&nbsp;</div></td><td class="Element67" valign="top" width="10%">
+<div class="Element68">
+300&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Too many connections. Try again later.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdCmdTCPServer_ReplyUnknownCommand.html" target="topic">ReplyUnknownCommand</a>&nbsp;</div></td><td class="Element67" valign="top" width="10%">
+<div class="Element68">
+400&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Unknown Command&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdCmdTCPServer_ExceptionReply.html" target="topic">ExceptionReply</a>&nbsp;</div></td><td class="Element67" valign="top" width="10%">
+<div class="Element68">
+500&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Unknown Internal Error&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="39%">
+<div class="Element68">
+<a href="TIdCmdTCPServer_HelpReply.html" target="topic">HelpReply</a>&nbsp;</div></td><td class="Element67" valign="top" width="10%">
+<div class="Element68">
+100&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Help follows&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+During activation of the server (when <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a> is set to True), command handlers are created using the InitializeCommandHandlers method. InitializeCommandHandlers must be called only at runtime, after component streaming, and when the command handler collection has not been previously initialized. When <a href="TIdCmdTCPServer_HelpReply.html" target="topic">HelpReply</a> is assigned, a command handler for the &quot;Help&quot; command is dynamically created for items in the command handler collection and added to the help response for the server.&nbsp;</p>
+<p class="Element10">
+One or more listener threads are created using the definitions found in the <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a> property for the server. Listener threads accept new connections to the server, and <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> the executable tasks used in the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a>.&nbsp;</p>
+<p class="Element10">
+<img src="ServerCmdHandlers.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+When CommandHandlersEnabled contains False, the <a href="TIdTCPServer_OnExecute.html" target="topic">OnExecute</a> event handler is used control executiuon of the client context for each connection. When CommandHandlersEnabled contains True, the server reads the command and data from the client context and provides the values to the command handlers for the server.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCustomTCPServer_Active.html" target="topic">Active</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_CommandHandlers.html" target="topic">CommandHandlers</a>&nbsp;</p>
+<p class="Section9">
+ CommandHandlersEnabled&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomTCPServer_Contexts.html" target="topic">Contexts</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_ExceptionReply.html" target="topic">ExceptionReply</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_Greeting.html" target="topic">Greeting</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_HelpReply.html" target="topic">HelpReply</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_MaxConnectionReply.html" target="topic">MaxConnectionReply</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_OnAfterCommandHandler.html" target="topic">OnAfterCommandHandler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_OnBeforeCommandHandler.html" target="topic">OnBeforeCommandHandler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPServer_OnExecute.html" target="topic">OnExecute</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCmdTCPServer_ReplyTexts.html" target="topic">ReplyTexts</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPServer.html" target="topic">TIdTCPServer</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdReplyRFC.html" target="topic">TIdReplyRFC</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Properties</a><br /><a href="!!MEMBERTYPE_Events_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Events</a><br /><a href="!!MEMBEROVERVIEW_TIdCmdTCPServer.html" target="topic">TIdCmdTCPServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

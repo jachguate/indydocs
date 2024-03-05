@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMessage.GenerateHeader Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMessage_GenerateHeader.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMessage.html" target="topic">TIdMessage Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdMessage.html" target="topic">TIdMessage Methods</a> &gt; <a href="TIdMessage_GenerateHeader.html" target="topic">GenerateHeader Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMessage_ExtractCharSet@string.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdMessage.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdMessage_InitializeISO@TTransfer@Char@String.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMessage.GenerateHeader Method</div>
+<div class="Element7">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Creates the list of headers for the message.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> GenerateHeader;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GenerateHeader is a procedure used to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> and populate the MIME-encoded list of message headers in <a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a>.&nbsp;</p>
+<p class="Element10">
+A number of operations are performed in GenerateHeader to prepare for generating headers for the message.&nbsp;</p>
+<p class="Element10">
+<a href="TIdMessage_MessageParts.html" target="topic">MessageParts</a> are counted to update the value used when comparing the <a href="TIdMessage_Encoding.html" target="topic">Encoding</a> and content transfer encodings for the message and message parts.&nbsp;</p>
+<p class="Element10">
+If the encoding is meDefault, the user wants to automatically determine the encoding mechanism based on values found in the message and message parts.&nbsp;</p>
+<p class="Element10">
+If there are no attachments, the simplest type, just the headers followed by the message body: UU does this for us (note there are no attachments, picking meUU will not generate any UU-encoded message content).&nbsp;</p>
+<p class="Element10">
+When are attachments, the default encoding used is MIME-encoding.&nbsp;</p>
+<p class="Element10">
+GenerateHeader compares the <a href="TIdMessage_Encoding.html" target="topic">Encoding</a> for the message to the content tranfer encoding used for any <a href="TIdMessage_MessageParts.html" target="topic">MessageParts</a>. Any unexpected content transfer encoding values are converted to 'base64'. If the message sahould not support attachments in an encoded body, the content transfer encoding for the message is cleared.&nbsp;</p>
+<p class="Element10">
+For MIME-encoded messages, the <a href="TIdMessage_ContentType.html" target="topic">ContentType</a> is determined for any omitted content type, and the <a href="TIdMessage_MIMEBoundary.html" target="topic">MIMEBoundary</a> for the message is generated.&nbsp;</p>
+<p class="Element10">
+GenerateHeader uses the message encoders for the message parts to initialize the headers for message. If a message encoder contains a Charset value, it is appended to <a href="TIdMessage_ContentType.html" target="topic">ContentType</a>.&nbsp;</p>
+<p class="Element10">
+If <a href="TIdMessage_Encoding.html" target="topic">Encoding</a> contains a value other than meMIME, and the message has multipart/related or multipart/alternative message parts, an <a href="EIdMessageException.html" target="topic">EIdMessageException</a> will be raised.&nbsp;</p>
+<p class="Element10">
+GenerateHeader calls <a href="TIdMessage_InitializeISO@TTransfer@Char@String.html" target="topic">InitializeISO</a> to determine the encoding used for headers in the message, and adjust the character set based on IdCharactersetNames.&nbsp;</p>
+<p class="Element10">
+<a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a> is cleared, and any existing values in <a href="TIdMessage_Headers.html" target="topic">Headers</a> is assigned to the <a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a> property.&nbsp;</p>
+<p class="Element10">
+The message headers handled in GenerateHeader and added to <a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a>, includes:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_From.html" target="topic">From</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_Subject.html" target="topic">Subject</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+To&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Cc&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bcc&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Newsgroups&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+In-Reply-To&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Content-Type&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+MIME-<a href="TIdBaseComponent_Version.html" target="topic">Version</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Content-Transfer-<a href="TIdMessage_Encoding.html" target="topic">Encoding</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_Sender.html" target="topic">Sender</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Reply-To&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_Organization.html" target="topic">Organization</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Disposition-Notification-To&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_References.html" target="topic">References</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdMessage_Date.html" target="topic">Date</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+X-<a href="TIdMessage_Priority.html" target="topic">Priority</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+GenerateHeader performs special processing for the values used in some headers in <a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a>.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Header Processing&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---------------------------- ----------------------------------------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&quot;In-Reply-To:&quot; Header will contain the value in the <a href="TIdMessage_Subject.html" target="topic">Subject</a> property when <a href="TIdMessage_InReplyTo.html" target="topic">InReplyTo</a> is an empty string.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&quot;MIME-<a href="TIdBaseComponent_Version.html" target="topic">Version</a>:&quot; Assigned the value &quot;1.0&quot; only when the encoding is resolved to meMIME.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&quot;Content-Transfer-<a href="TIdMessage_Encoding.html" target="topic">Encoding</a>:&quot; Assigned only when the encoding is resolved to meMIME.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&quot;<a href="TIdMessage_Date.html" target="topic">Date</a>:&quot; Assigned the current date and time when <a href="TIdMessage_UseNowForDate.html" target="topic">UseNowForDate</a> is True, or the value in the <a href="TIdMessage_Date.html" target="topic">Date</a> property when <a href="TIdMessage_UseNowForDate.html" target="topic">UseNowForDate</a> is False.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&quot;X-<a href="TIdMessage_Priority.html" target="topic">Priority</a>:&quot; Omitted when the the <a href="TIdMessage_Priority.html" target="topic">Priority</a> property contains the value mpNormal.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+GenerateHeader appends any existing values in <a href="TIdMessage_ExtraHeaders.html" target="topic">ExtraHeaders</a> to <a href="TIdMessage_LastGeneratedHeaders.html" target="topic">LastGeneratedHeaders</a> to capture the headers values that may have been created by a UA. Duplicate header names are permitted.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdHeaderList.html" target="topic">TIdHeaderList</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdMessageException.html" target="topic">EIdMessageException</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdMessage.html" target="topic">TIdMessage Class</a><br /><a href="!!MEMBEROVERVIEW_TIdMessage.html" target="topic">TIdMessage Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

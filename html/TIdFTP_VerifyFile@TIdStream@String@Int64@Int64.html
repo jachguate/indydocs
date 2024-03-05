@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.VerifyFile Method (TIdStream, String, Int64, Int64)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_VerifyFile@TIdStream@String@Int64@Int64.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &gt; <a href="!!OVERLOADED_VerifyFile_TIdFTP.html" target="topic">VerifyFile Method</a> &gt; <a href="TIdFTP_VerifyFile@TIdStream@String@Int64@Int64.html" target="topic">VerifyFile Method (TIdStream, String, Int64, Int64)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_VerifyFile@String@String@Int64@Int64.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_VerifyFile_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.VerifyFile Method (TIdStream, String, Int64, Int64)</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Compares all or part of the specified local and remote files for verified transfer integrity.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> VerifyFile(
+    ALocalFile: TIdStream; 
+    <strong>const</strong> ARemoteFile: <strong>String</strong>; 
+    <strong>const</strong> AStartPoint: Int64 = 0; 
+    <strong>const</strong> AByteCount: Int64 = 0
+): Boolean; <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ALocalFile&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stream with the content for the local file.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ARemoteFile&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Name of the file on the remote FTP server.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStartPoint&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Initial position for comparing the local and remote files. Default value is 0.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AByteCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Number of bytes to use for the checksum calculation. Default value is 0.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Boolean - True when the local and remote files are the same.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+VerifyFile is an overloaded method used to compare all or part the contents of the specified local and remote files as part of the extensibility features for verified transfer integrity.&nbsp;</p>
+<p class="Element10">
+VerifyFile can be used to determine the integrity of a file transfer using one of the following checksum algorithms:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="29%">
+<div class="Element66">
+Algorithm&nbsp;</div></td><td class="Element65" valign="top" width="71%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+XSHA&nbsp;</div></td><td class="Element67" valign="top" width="71%">
+<div class="Element68">
+SHA-1 checksum&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+XMD5&nbsp;</div></td><td class="Element67" valign="top" width="71%">
+<div class="Element68">
+MD5 checksum&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="29%">
+<div class="Element68">
+XCRC&nbsp;</div></td><td class="Element67" valign="top" width="71%">
+<div class="Element68">
+<a href="TIdFTP_CRC@String@Int64@Int64.html" target="topic">CRC</a>-32 checksum&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+One of the algorithms must be listed in the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> for the FTP server, or VerifyFile cannot determine the checksum value on the remote FTP server.&nbsp;</p>
+<p class="Element10">
+VerifyFile selects the algorithm using the following preferred order:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+XSHA&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+XMD5&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+XCRC&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Internally, VerifyFile uses an instance of <a href="TIdHashMessageDigest5.html" target="topic">TIdHashMessageDigest5</a>, <a href="TIdHashSHA1.html" target="topic">TIdHashSHA1</a>, or <a href="TIdHashCRC32.html" target="topic">TIdHashCRC32</a> to calculate the checksum value for the contents of the local file using the ALocalFile argument.&nbsp;</p>
+<p class="Element10">
+AStartPoint indicates the initial position in the files to use when calculating the checksum values. When AStartPoint contains 0 (zero) or a positive Integer value, the stream in ALocalFile is positioned to to that location prior to starting the checksum calculation.&nbsp;</p>
+<p class="Element10">
+AByteCount indicates the number of bytes to include when performing the checksum calculation. The default value is 0, and indicates that the byte count should be derived from the <a href="TIdFTP_Size@String.html" target="topic">size</a> of the stream for the local file and the initial position indicated in AStartPoint.&nbsp;</p>
+<p class="Element10">
+VerifyFile builds and sends an FTP command using an algorithm name and arguments as required for the operation. The checksum value from the remote FTP server is captured and compared to the value calculated for the local file. VerifyFile returns True when the local checksum and the remote checksum values are the same. VerifyFile returns False when the checksum values are not the same, or when the capability is not supported on the remote FTP server.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_SupportsVerification.html" target="topic">SupportsVerification</a> to determine if the FTP server support the extensibility feature.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+VerifyFile&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_SupportsVerification.html" target="topic">SupportsVerification</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

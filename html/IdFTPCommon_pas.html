@@ -1,0 +1,840 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdFTPCommon.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdFTPCommon_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdFTPCommon_pas.html" target="topic">IdFTPCommon.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdFTPBaseFileSystem_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdFTPList_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdFTPCommon.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Enumerations,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Enumerations,Functions,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains common procedure, functions, and constants used in implementing the FTP client and server in the Indy library.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdFTPCommon.pas contains common procedure, functions, and constants used in implementing the FTP client and server in the Indy library.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="CDATE_PART_SEP.html" target="topic">CDATE_PART_SEP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="CUR_DIR.html" target="topic">CUR_DIR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the current directory marker in an FTP directory listing.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="DEF_ZLIB_COMP_LEVEL.html" target="topic">DEF_ZLIB_COMP_LEVEL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="DEF_ZLIB_MEM_LEVEL.html" target="topic">DEF_ZLIB_MEM_LEVEL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="DEF_ZLIB_METHOD.html" target="topic">DEF_ZLIB_METHOD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="DEF_ZLIB_STRATAGY.html" target="topic">DEF_ZLIB_STRATAGY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="DEF_ZLIB_WINDOW_BITS.html" target="topic">DEF_ZLIB_WINDOW_BITS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EPLF_BASE_DATE.html" target="topic">EPLF_BASE_DATE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_IEXEC.html" target="topic">Id__S_IEXEC</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_IREAD.html" target="topic">Id__S_IREAD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_ISGID.html" target="topic">Id__S_ISGID</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_ISUID.html" target="topic">Id__S_ISUID</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_ISVTX.html" target="topic">Id__S_ISVTX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id__S_IWRITE.html" target="topic">Id__S_IWRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IEXEC.html" target="topic">IdS_IEXEC</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IREAD.html" target="topic">IdS_IREAD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IRGRP.html" target="topic">IdS_IRGRP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IROTH.html" target="topic">IdS_IROTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IRUSR.html" target="topic">IdS_IRUSR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IRWXG.html" target="topic">IdS_IRWXG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IRWXO.html" target="topic">IdS_IRWXO</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IRWXU.html" target="topic">IdS_IRWXU</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_ISGID.html" target="topic">IdS_ISGID</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_ISUID.html" target="topic">IdS_ISUID</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_ISVTX.html" target="topic">IdS_ISVTX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IWGRP.html" target="topic">IdS_IWGRP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IWOTH.html" target="topic">IdS_IWOTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IWRITE.html" target="topic">IdS_IWRITE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IWUSR.html" target="topic">IdS_IWUSR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IXGRP.html" target="topic">IdS_IXGRP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IXOTH.html" target="topic">IdS_IXOTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="IdS_IXUSR.html" target="topic">IdS_IXUSR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MS_DOS_ALL_FILES.html" target="topic">MS_DOS_ALL_FILES</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MS_DOS_CURDIR.html" target="topic">MS_DOS_CURDIR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="MVS_JES_Status.html" target="topic">MVS_JES_Status</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PARENT_DIR.html" target="topic">PARENT_DIR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_DEVICE_SEP_DOS.html" target="topic">PATH_DEVICE_SEP_DOS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_DEVICE_SEP_UNIX.html" target="topic">PATH_DEVICE_SEP_UNIX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_DEVICE_SEP_VMS.html" target="topic">PATH_DEVICE_SEP_VMS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_FILENAME_SEP_DOS.html" target="topic">PATH_FILENAME_SEP_DOS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_FILENAME_SEP_UNIX.html" target="topic">PATH_FILENAME_SEP_UNIX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_FILENAME_SEP_VMS.html" target="topic">PATH_FILENAME_SEP_VMS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_SUBDIR_SEP_DOS.html" target="topic">PATH_SUBDIR_SEP_DOS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_SUBDIR_SEP_UNIX.html" target="topic">PATH_SUBDIR_SEP_UNIX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PATH_SUBDIR_SEP_VMS.html" target="topic">PATH_SUBDIR_SEP_VMS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="SCCN_FEAT.html" target="topic">SCCN_FEAT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="SSCN_ERR_NEGOTIATION_REPLY.html" target="topic">SSCN_ERR_NEGOTIATION_REPLY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="SSCN_OFF.html" target="topic">SSCN_OFF</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="SSCN_OK_REPLY.html" target="topic">SSCN_OK_REPLY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="SSCN_ON.html" target="topic">SSCN_ON</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TLS_AUTH_NAMES.html" target="topic">TLS_AUTH_NAMES</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="UnitreeStoreTypes.html" target="topic">UnitreeStoreTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="UNIX_ALL_FILES.html" target="topic">UNIX_ALL_FILES</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="UNIX_CURDIR.html" target="topic">UNIX_CURDIR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="UNIX_DIR_SIZE.html" target="topic">UNIX_DIR_SIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="UNIX_LINKTO_SYM.html" target="topic">UNIX_LINKTO_SYM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="VMS_ALL_FILES.html" target="topic">VMS_ALL_FILES</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="VMS_BLOCK_SIZE.html" target="topic">VMS_BLOCK_SIZE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="VMS_RELPATH_PREFIX.html" target="topic">VMS_RELPATH_PREFIX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="VSE_PowerQueue_Dispositions.html" target="topic">VSE_PowerQueue_Dispositions</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="VSERootDirItemTypes.html" target="topic">VSERootDirItemTypes</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Enumerations"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Enumerations');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgEnumerations">Enumerations</a></div>
+<div id="divEnumerations">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Enumeration&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdFTPDataPortSecurity.html" target="topic">TIdFTPDataPortSecurity</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdFTPDataStructure.html" target="topic">TIdFTPDataStructure</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdFTPTransferMode.html" target="topic">TIdFTPTransferMode</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the data transmission mode for an FTP session.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdFTPTransferType.html" target="topic">TIdFTPTransferType</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates the the data representation used in FTP transfers.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdVSEPQDisposition.html" target="topic">TIdVSEPQDisposition</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Functions"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Functions');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgFunctions">Functions</a></div>
+<div id="divFunctions">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Function&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="AddMissingYear@Cardinal@Cardinal.html" target="topic">AddMissingYear</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Derives the year for a partial date value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="AS400Date@String.html" target="topic">AS400Date</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Converts an AS400-formatted date from a string to a native data type.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="CharsInStr@Char@String.html" target="topic">CharsInStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates the position where a character occurs in a specified string.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ChmodNoToModeBits@Cardinal.html" target="topic">ChmodNoToModeBits</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Determines user, group, and object permissions bits assigned using the specified Unix chmod value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ChmodNoToPerms@Integer@String.html" target="topic">ChmodNoToPerms</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Converts a <a href="UNIX.html" target="topic">UNIX</a> chmod value to a string that represents user, group, and Owner permissions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ChmodNoToPerms@Integer@String@String@String.html" target="topic">ChmodNoToPerms</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Converts a <a href="UNIX.html" target="topic">UNIX</a> chmod value to strings that represent user, group, and Owner permissions.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DateDDStrMonthYY@String@String.html" target="topic">DateDDStrMonthYY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Converts a string to a native date/time value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DateMMDDYY@String.html" target="topic">DateMMDDYY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DateStrMonthDDYY@String@String@Boolean.html" target="topic">DateStrMonthDDYY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DateYYMMDD@String.html" target="topic">DateYYMMDD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DateYYStrMonthDD@String@String.html" target="topic">DateYYStrMonthDD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DispositionCodeToTIdVSEPQDisposition@Char.html" target="topic">DispositionCodeToTIdVSEPQDisposition</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="DOSPathToUnixPath@String.html" target="topic">DOSPathToUnixPath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="EPLFDateToGMTDateTime@String.html" target="topic">EPLFDateToGMTDateTime</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="EPLFDateToLocalDateTime@String.html" target="topic">EPLFDateToLocalDateTime</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ExcludeQVNET@String.html" target="topic">ExcludeQVNET</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ExtractNovellPerms@String.html" target="topic">ExtractNovellPerms</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ExtractNumber@String@Boolean.html" target="topic">ExtractNumber</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ExtractQVNETFileName@String.html" target="topic">ExtractQVNETFileName</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ExtractRecFormat@String.html" target="topic">ExtractRecFormat</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="FetchLength@string@Integer@string@Boolean@Boolean.html" target="topic">FetchLength</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="FindDelimInNumbers@String.html" target="topic">FindDelimInNumbers</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="FTPDateTimeToMDTMD@TIdDateTime@Boolean@Boolean.html" target="topic">FTPDateTimeToMDTMD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="FTPMDTMToGMTDateTime@String.html" target="topic">FTPMDTMToGMTDateTime</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="GMTDateTimeToEPLFDate@TIdDateTime.html" target="topic">GMTDateTimeToEPLFDate</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IndyGetFileExt@String.html" target="topic">IndyGetFileExt</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IndyGetFileName@String.html" target="topic">IndyGetFileName</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IndyGetFilePath@String.html" target="topic">IndyGetFilePath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IndyIsRelativePath@String.html" target="topic">IndyIsRelativePath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsDDMonthYY@String@String.html" target="topic">IsDDMonthYY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsHHMMSS@String@String.html" target="topic">IsHHMMSS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Determines if FTP directory listing text represents a delimited 24-hour time string.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsIn6MonthWindow@TIdDateTime.html" target="topic">IsIn6MonthWindow</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates if the date and time value occurs in the preceeding six months.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsLineStr@String.html" target="topic">IsLineStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsMDTMDate@String.html" target="topic">IsMDTMDate</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates if a string represents a valid MDTM date and time stamp value.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsMMDDYY@String@String.html" target="topic">IsMMDDYY</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates if a string contains a valid date using the specified delimiters.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsNavPath@String.html" target="topic">IsNavPath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsNovelPSPattern@String.html" target="topic">IsNovelPSPattern</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsSubDirContentsBanner@String.html" target="topic">IsSubDirContentsBanner</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsTotalLine@String.html" target="topic">IsTotalLine</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsUnixExec@String@String@String.html" target="topic">IsUnixExec</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsUnixHiddenFile@String.html" target="topic">IsUnixHiddenFile</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsUnixLsErr@String.html" target="topic">IsUnixLsErr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidNovellPermissionStr@String.html" target="topic">IsValidNovellPermissionStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidSterCommData@String.html" target="topic">IsValidSterCommData</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidSterCommFlags@String.html" target="topic">IsValidSterCommFlags</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidSterCommProt@String.html" target="topic">IsValidSterCommProt</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidTimeStamp@String.html" target="topic">IsValidTimeStamp</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsValidUnixPerms@String@Boolean.html" target="topic">IsValidUnixPerms</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsVMBFS@String.html" target="topic">IsVMBFS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="IsYYYYMMDD@String.html" target="topic">IsYYYYMMDD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Indicates if a string contains a date in YYYMMDD format with delimiters.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="LocalDateTimeToEPLFDate@TIdDateTime.html" target="topic">LocalDateTimeToEPLFDate</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="MDTMOffset@String.html" target="topic">MDTMOffset</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="MinutesFromGMT.html" target="topic">MinutesFromGMT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ModeBitsToChmodNo@Cardinal.html" target="topic">ModeBitsToChmodNo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ModeBitsToPermString@Cardinal.html" target="topic">ModeBitsToPermString</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="MVSDate@String.html" target="topic">MVSDate</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="PadSpaces@String@Integer.html" target="topic">PadSpaces</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ParseFacts@String@TIdStrings@String@String.html" target="topic">ParseFacts</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+This is function ParseFacts.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="ParseQuotedArgs@String@TIdStrings.html" target="topic">ParseQuotedArgs</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="PatternsInStr@String@String.html" target="topic">PatternsInStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="PermsToChmodNo@String@String@String.html" target="topic">PermsToChmodNo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="PermStringToModeBits@String.html" target="topic">PermStringToModeBits</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="RemoveDuplicatePathSyms@String.html" target="topic">RemoveDuplicatePathSyms</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="StripInitPathDelin@String.html" target="topic">StripInitPathDelin</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="StripNo@String.html" target="topic">StripNo</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="StripPath@String@String.html" target="topic">StripPath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="StripSpaces@String@Cardinal.html" target="topic">StripSpaces</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="StrPart@string@Integer@Boolean.html" target="topic">StrPart</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TIdVSEPQDispositionDispositionCode@TIdVSEPQDisposition.html" target="topic">TIdVSEPQDispositionDispositionCode</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="TimeHHMMSS@String.html" target="topic">TimeHHMMSS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="UnfoldLines@String@Integer@TIdStrings.html" target="topic">UnfoldLines</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="UnixPathToDOSPath@String.html" target="topic">UnixPathToDOSPath</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="UnquotedStr@String.html" target="topic">UnquotedStr</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<img src="indicator_method.gif" border="0" alt="" title=""> <a href="Y2Year@Integer.html" target="topic">Y2Year</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

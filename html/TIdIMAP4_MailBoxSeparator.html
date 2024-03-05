@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIMAP4.MailBoxSeparator Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIMAP4_MailBoxSeparator.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdIMAP4.html" target="topic">TIdIMAP4 Properties</a> &gt; <a href="TIdIMAP4_MailBoxSeparator.html" target="topic">MailBoxSeparator Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIMAP4_MailBox.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdIMAP4.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIMAP4_MilliSecsToWaitToClearBuffer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIMAP4.MailBoxSeparator Property</div>
+<div class="Element7">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Identifies the character used to separate mailbox names in the hierarchical mailbox namespace.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> MailBoxSeparator: Char;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+MailBoxSeparator is a Char property that represents the character used to separate levels of hierarchy in a hierarchical mailbox namespace. The default value for MailBoxSeparator is '/', as assigned during initialization of the component.&nbsp;</p>
+<p class="Element10">
+The namespace may contain an optional namespace character '#' and namespace identifier that specifies the type of mailbox store, followed by one or more mailboxes. The interpretation of mailbox names is implementation-dependent. However, the case-insensitive mailbox name 'INBOX' is a special name reserved to mean &quot;the primary mailbox for this user on this server&quot;.&nbsp;</p>
+<p class="Element10">
+For instance, the following examples represent the default mailbox for an IMAP4 account for the user 'jdoe', and the shared NNTP mailbox for the borland.public.delphi.internet.winsock newsgroup on the server Forums.Borland.Com:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">jdoe/InBox
+#news/Forums/Borland/Com/Borland/Public/Delphi/Internet/Winsock</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+By changing the MailboxSeparator character to '.', the previous examples would contain the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">jdoe.InBox
+#news.Forums.Borland.Com.Borland.Public.Delphi.Internet.Winsock</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+MailBoxSeparator is used when parsing IMAP4 server responses that include mailbox names. MailBoxSeparator may also be updated to reflect the mailbox separator character detected when parsing the IMAP4 server response.&nbsp;</p>
+<p class="Element10">
+Please note that MailBoxSeparator may be set to the value <a href="CHAR0.html" target="topic">CHAR0</a> (decimal 0) when server responses use the value NIL as the mailbox seperator character.</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIMAP4.html" target="topic">TIdIMAP4 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIMAP4.html" target="topic">TIdIMAP4 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

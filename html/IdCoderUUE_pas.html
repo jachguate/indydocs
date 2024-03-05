@@ -1,0 +1,510 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdCoderUUE.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdCoderUUE_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdCoderUUE_pas.html" target="topic">IdCoderUUE.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdCoderQuotedPrintable_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdCoderXXE_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdCoderUUE.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Classes,Variables,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Classes,Variables,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains classes, types, constants, and variables needed to implement coders that use the UUEncode and UUDecode algorithms.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdCoderUUE.pas contains classes, types, constants, and variables needed to implement coders that use the UUEncode and UUDecode algorithms.&nbsp;</p>
+<p class="Element10">
+The UUEncode algorithm is designed to encode binary data into a 7-bit textual representation, called UUEncode, as established by UUCP (Unix-to-Unix Copy Program).&nbsp;</p>
+<p class="Element10">
+UUEncode, like Base64, is an encoding mechanism designed to represent arbitrary sequences of byte data in a form that need not be humanly readable. UUEncode is often used to send EMail attachments in an environment that is not MIME-compliant, and also allows larger files to be divided into multi-part transmissions.&nbsp;</p>
+<p class="Element10">
+The UUEncode algorithm represents 24-bit groups of input as output strings of 4 encoded characters. Proceeding from left to right, a 24-bit input group is formed by concatenating 3 8-bit input groups. These 24 bits are then treated as 4 concatenated 6-bit groups, each of which is translated into a single digit in the UUEncode alphabet.&nbsp;</p>
+<p class="Element10">
+UUEncode differs from Base64 encoding by utilizing a different coding table, or alphabet, to represent the encoded output values.&nbsp;</p>
+<p class="Element10">
+The UUEncode Alphabet can represented by the following encodings and values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="55%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="45%">
+<div class="Element66">
+Encoding&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+`&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+!&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+2&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+&quot;&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+3&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+#&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+4&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+$&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+5&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+%&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+6&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+&amp;&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+7&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+'&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+8&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+'&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+9&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+(&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+10&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+11&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+*&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+12&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
++&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+13&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+,&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+14&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+-&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+15&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+16&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+/&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+17&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+0&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+18&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+1&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+19&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+2&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+20&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+3&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+21&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+4&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+22&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+5&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+23&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+6&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+24&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+7&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+25&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+8&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+26&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+9&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+27&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+:&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+28&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+;&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+29&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+&lt;&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+30&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+=&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+31&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+&gt;&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+32&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+?&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+33&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+@&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+34&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+A&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+35&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+B&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+36&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+C&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+37&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+D&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+38&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+E&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+39&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+F&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+40&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+G&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+41&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+H&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+42&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+I&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+43&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+J&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+44&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+K&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+45&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+L&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+46&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+M&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+47&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+N&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+48&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+O&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+49&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+P&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+50&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+Q&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+51&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+R&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+52&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+S&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+53&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+T&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+54&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+U&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+55&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+V&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+56&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+W&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+57&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+X&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+58&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+Y&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+59&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+Z&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+60&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+[&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+61&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+\&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+62&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+]&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+63&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+^&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="55%">
+<div class="Element68">
+64&nbsp;</div></td><td class="Element67" valign="top" width="45%">
+<div class="Element68">
+_&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+IdCoder3To4.pas&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEncoderUUE.html" target="topic">TIdEncoderUUE</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDecoderUUE.html" target="topic">TIdDecoderUUE</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdDecoderUUE.html" target="topic">TIdDecoderUUE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements a decoder for data encoded using the UUEncode algorithm and the UUEncode alphabet.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdEncoderUUE.html" target="topic">TIdEncoderUUE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements support for the UUENcode alphabet in the UUEncode algorithm.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GUUECodeTable.html" target="topic">GUUECodeTable</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Represents the valid characters in the UUEncode alphabet.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Variables"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Variables');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgVariables">Variables</a></div>
+<div id="divVariables">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Variable&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="GUUEDecodeTable.html" target="topic">GUUEDecodeTable</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Identifies the decoding table used by <a href="TIdDecoderUUE.html" target="topic">TIdDecoderUUE</a> for the UUEncode alphabet.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

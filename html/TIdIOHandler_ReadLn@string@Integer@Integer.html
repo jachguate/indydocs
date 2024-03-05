@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandler.ReadLn Method (string, Integer, Integer)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandler_ReadLn@string@Integer@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a> &gt; <a href="!!OVERLOADED_ReadLn_TIdIOHandler.html" target="topic">ReadLn Method</a> &gt; <a href="TIdIOHandler_ReadLn@string@Integer@Integer.html" target="topic">ReadLn Method (string, Integer, Integer)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIOHandler_ReadLn.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_ReadLn_TIdIOHandler.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIOHandler_ReadLnSplit@Boolean@string@Integer@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandler.ReadLn Method (string, Integer, Integer)</div>
+<div class="Element7">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads a line from the Indy buffer.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> ReadLn(
+    ATerminator: <strong>string</strong>; 
+    ATimeout: Integer = IdTimeoutDefault; 
+    AMaxLineLength: Integer = -1
+): <strong>string</strong>; <strong>virtual</strong>; <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ATerminator&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+End-of-line termination character or characters.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ATimeout&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Time-out in milliseconds.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AMaxLineLength&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Maximum length allowed for the line read from the IOHandler.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+String - Line read from the buffer.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ReadLn is a String function that returns a a single line from the input buffer maintained for the IOHandler.&nbsp;</p>
+<p class="Element10">
+ATerminator is an optional parameter that indicates the end-of-line symbol for the client or protocol. When ATerminator is not specified or contains an empty string, <a href="LF.html" target="topic">LF</a> is used as the default terminator. If data is expected and you do not need a custom end-of-line symbol, you can use the default ATerminator value or one of the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="10%">
+<div class="Element66">
+Char&nbsp;</div></td><td class="Element65" valign="top" width="90%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+<a href="LF.html" target="topic">LF</a>&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Line Feed (Decimal 10)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+<a href="CR.html" target="topic">CR</a>&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+Carriage Return (Decimal 13)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="10%">
+<div class="Element68">
+<a href="EOL.html" target="topic">EOL</a>&nbsp;</div></td><td class="Element67" valign="top" width="90%">
+<div class="Element68">
+End-of-line (Carriage Return + Line Feed)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+ATimeout allows the client to use a custom timeout value to change the number of milliseconds to wait for a response from the peer connection before a time-out occurs. The default value for ATimeout is <a href="IdTimeoutDefault.html" target="topic">IdTimeoutDefault</a>.&nbsp;</p>
+<p class="Element10">
+AMaxLineLength is used to indictate that ReadLn cannot accept a string with a length in excess of the parameter value. The default value for AMaxLineLength is -1, and indicates that the value in the <a href="TIdIOHandler_MaxLineLength.html" target="topic">MaxLineLength</a> property should be used in ReadLn.&nbsp;</p>
+<p class="Element10">
+ReadLn retrieves data from <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> until the symbol in ATerminator is located, AMaxLineLength is exceeded, the socket connection is closed, or a timeout occurs. If there is not enough data to satisfy the request, ReadLn calls <a href="TIdIOHandler_CheckForDisconnect@Boolean@Boolean.html" target="topic">CheckForDisconnect</a> to update the IOHandler status and reads data from the data source for the IOHandler connection.&nbsp;</p>
+<p class="Element10">
+ReadLn will return an empty string ('') if the peer connection is prematurely closed or a time-out occurs. If a timeout condition occurs in ReadLn, the ReadLnTimedOut property is set to True.&nbsp;</p>
+<p class="Element10">
+ReadLn can raise an <a href="EIdReadLnMaxLineLengthExceeded.html" target="topic">EIdReadLnMaxLineLengthExceeded</a> exception when the position of ATerminator in <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> is greater than the value in AMaxLineLength, and <a href="TIdIOHandler_MaxLineAction.html" target="topic">MaxLineAction</a> contains maException.&nbsp;</p>
+<p class="Element10">
+When <a href="TIdIOHandler_MaxLineAction.html" target="topic">MaxLineAction</a> is not maException, <a href="TIdIOHandler_ReadLnSplit@Boolean@string@Integer@Integer.html" target="topic">ReadLnSplit</a> is set to True and the string is extracted from <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a>.&nbsp;</p>
+<p class="Element10">
+All ATerminator characters in the return value for ReadLn (including <a href="CR.html" target="topic">CR</a> characters) are removed prior to exiting from the method.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIOHandler_InputBuffer.html" target="topic">TIdIOHandler.InputBuffer</a>&nbsp;</p>
+<p class="Section9">
+ TIdIOHandler.ReadLnTimedOut&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_ReadLnSplit@Boolean@string@Integer@Integer.html" target="topic">TIdIOHandler.ReadLnSplit</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_MaxLineLength.html" target="topic">TIdIOHandler.MaxLineLength</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_MaxLineAction.html" target="topic">TIdIOHandler.MaxLineAction</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdTimeoutInfinite.html" target="topic">IdTimeoutInfinite</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdReadLnMaxLineLengthExceeded.html" target="topic">EIdReadLnMaxLineLengthExceeded</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

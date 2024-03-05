@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandler.ReadStream Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandler_ReadStream@TIdStream@Int64@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a> &gt; <a href="TIdIOHandler_ReadStream@TIdStream@Int64@Boolean.html" target="topic">ReadStream Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIOHandler_ReadSmallInt@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIOHandler_ReadString@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandler.ReadStream Method</div>
+<div class="Element7">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads data from the IOHandler into a stream.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> ReadStream(
+    AStream: TIdStream; 
+    AByteCount: Int64 = -1; 
+    AReadUntilDisconnect: Boolean = False
+); <strong>virtual</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStream&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stream used to store<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AByteCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Type is Int64. Default value is -1.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AReadUntilDisconnect&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Type is Boolean. Default value is False.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ReadStream is a method used to read data from the IOHandler into the stream instance specified in AStream. An EAssertionFailed exception will be raised if AStream is unassigned.&nbsp;</p>
+<p class="Element10">
+AByteCount indicates the number of bytes of data to read using the IOHandler, and to store in the stream instance in AStream.&nbsp;</p>
+<p class="Element10">
+When AByteCount contains the value cSizeUnknown, the amount of data to read from the IOHandler is determined either by reading the byte count from the IOHandler or by reading data until the connection is closed by the peer.&nbsp;</p>
+<p class="Element10">
+When AReadUntilDisconnect contains False, the byte count is read from the IOHandler. The byte count will be an Integer data type when <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a> contains False, or an Int64 value when <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a> contains True. This allows the Indy library to maintain compatibility with older VCL versions where stream sizes and positions are not returned as Int64 data types. The byte count (from the argument or read from the IOHandler) is used to pre-allocate the stream size.&nbsp;</p>
+<p class="Element10">
+When AReadUntilDisconnect contains True, ReadStream expects the connection for the IOHandler to be closed when no more data is available for the method.&nbsp;</p>
+<p class="Element10">
+ReadStream signals the <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a>, <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a>, and <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a> event handlers when reading values from the IOHandler. The expected number of bytes for <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a> is an arbitrarily large value when AReadUntilDisconnect contains True, and will not reflect the actual number of bytes read from the IOHandler. The <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a> event handler is signalled when byte values are extracted and removed from <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a>, and not when they are added.&nbsp;</p>
+<p class="Element10">
+ReadStream always consumes data from the internal buffer for the IOHandler. Any exisiting data in <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> is used before reading additional data using the ReadFromSource method. The value in <a href="TIdIOHandler_RecvBufferSize.html" target="topic">RecvBufferSize</a> is used to allocate a <a href="TIdBytes.html" target="topic">TIdBytes</a> buffer that stores data extracted from the <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> and written to the stream instance in AStream.&nbsp;</p>
+<p class="Element10">
+ReadStream iteratively calls <a href="TIdIOHandler_ReadBytes@TIdBytes@Integer@boolean.html" target="topic">ReadBytes</a> to extract values from <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> until the expected number of bytes has been read and written to AStream, or until the IOHandler is no longer <a href="TIdIOHandler_Connected.html" target="topic">Connected</a>.&nbsp;</p>
+<p class="Element10">
+If an exception occurs while reading bytes from the IOHandler, any existing data in the <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a> is extacted and written to the stream. An <a href="EIdConnClosedGracefully.html" target="topic">EIdConnClosedGracefully</a> is ignored when AReadUntilDisconnect contains true. Use the <a href="TIdIOHandler_ClosedGracefully.html" target="topic">ClosedGracefully</a> property to determine when the connection for the IOHandler has been closed by the peer.&nbsp;</p>
+<p class="Element10">
+Any other exception occurring in the method is re-raised to allow the application to detect the error condition.&nbsp;</p>
+<p class="Element10">
+ReadFromStream ensures that the size of the stream in AStream is adjusted to reflect the actual amount of data read from the IOHandler before exiting from the method.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+EAssertionFailed&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised when the stream for the operation is unassigned.<br>&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdException.html" target="topic">EIdException</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised for other error conditions during the operation.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_InputBuffer.html" target="topic">InputBuffer</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_ReadBytes@TIdBytes@Integer@boolean.html" target="topic">ReadBytes</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_ClosedGracefully.html" target="topic">ClosedGracefully</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdConnClosedGracefully.html" target="topic">EIdConnClosedGracefully</a>&nbsp;</p>
+<p class="Section9">
+ EAssertionFailed</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdSchedulerOfThreadDefault.NewThread Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdSchedulerOfThreadDefault_NewThread.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Methods</a> &gt; <a href="TIdSchedulerOfThreadDefault_NewThread.html" target="topic">NewThread Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdSchedulerOfThreadDefault_AcquireYarn.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdSchedulerOfThreadDefault.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdSchedulerOfThreadPool.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdSchedulerOfThreadDefault.NewThread Method</div>
+<div class="Element7">
+<a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Returns,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Returns,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Initializes a new thread for a client connection task in the scheduler.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> NewThread: TIdThreadWithTask; <strong>override</strong>;</pre></div></div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+<a href="TIdThreadWithTask.html" target="topic">TIdThreadWithTask</a> - Thread created for the scheduler, or Nil when a thread cannot be created.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+NewThread is an overridden <a href="TIdThreadWithTask.html" target="topic">TIdThreadWithTask</a> function used to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> and initialize the executable task for a yarn managed by the thread-based scheduler.&nbsp;</p>
+<p class="Element10">
+The return value for the method is a <a href="TIdThreadWithTask.html" target="topic">TIdThreadWithTask</a> instance that represents the thread created for the client connection executable task in the scheduler, or Nil when a thread cannot be created.&nbsp;</p>
+<p class="Element10">
+NewThread calls the inherited NewThread method to initialize the thread for the scheduler.&nbsp;</p>
+<p class="Element10">
+NewThread uses the value in <a href="TIdSchedulerOfThread_MaxThreads.html" target="topic">MaxThreads</a> to determine is a limit is imposed on the number threads allowed in the thread-based scheduler. When <a href="TIdSchedulerOfThread_MaxThreads.html" target="topic">MaxThreads</a> contains a positive non-zero value, the number of active yarns in <a href="TIdScheduler_ActiveYarns.html" target="topic">ActiveYarns</a> is checked to ensure that new thread would not exceed the limit. If the number of <a href="TIdYarn.html" target="topic">TIdYarn</a> instances in <a href="TIdScheduler_ActiveYarns.html" target="topic">ActiveYarns</a> would exceed the value in <a href="TIdSchedulerOfThread_MaxThreads.html" target="topic">MaxThreads</a>, an <a href="EIdSchedulerMaxThreadsExceeded.html" target="topic">EIdSchedulerMaxThreadsExceeded</a> is raised.&nbsp;</p>
+<p class="Element10">
+NewThread uses the value in <a href="TIdSchedulerOfThread_ThreadPriority.html" target="topic">ThreadPriority</a> to determine if the thread priority for the new thread should be adjusted. When <a href="TIdSchedulerOfThread_ThreadPriority.html" target="topic">ThreadPriority</a> contains a value other than <a href="ThreadPriorityValues.html" target="topic">tpNormal</a>, <a href="SetThreadPriority@TIdNativeThread@TIdThreadPriority@Integer.html" target="topic">SetThreadPriority</a> is called to adjust the preference given to the thread during pre-emptive scheduling by the operating system.&nbsp;</p>
+<p class="Element10">
+NewThread also sets the value in FreeOnTerminate to True.&nbsp;</p>
+<p class="Element10">
+NewThread is used in the <a href="TIdSchedulerOfThreadDefault_AcquireYarn.html" target="topic">AcquireYarn</a> method when an executable thread is needed for one of the <a href="TIdScheduler_ActiveYarns.html" target="topic">ActiveYarns</a> managed by the scheduler.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdSchedulerOfThread_StartYarn@TIdYarn@TIdTask.html" target="topic">StartYarn</a> to begin execution of the thread for a client connections' executable task.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdSchedulerOfThread_TerminateYarn@TIdYarn.html" target="topic">TerminateYarn</a> to halt execution of the thread for a client connections' executable task.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdSchedulerMaxThreadsExceeded.html" target="topic">EIdSchedulerMaxThreadsExceeded</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised with the message <a href="RSchedMaxThreadEx.html" target="topic">RSchedMaxThreadEx</a> when the number of threads would exceed the value in <a href="TIdSchedulerOfThread_MaxThreads.html" target="topic">MaxThreads</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdThreadWithTask.html" target="topic">TIdThreadWithTask</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThread_MaxThreads.html" target="topic">MaxThreads</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdScheduler_ActiveYarns.html" target="topic">ActiveYarns</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThread_ThreadPriority.html" target="topic">ThreadPriority</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThreadDefault_AcquireYarn.html" target="topic">AcquireYarn</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThread_StartYarn@TIdYarn@TIdTask.html" target="topic">StartYarn</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThread_TerminateYarn@TIdYarn.html" target="topic">TerminateYarn</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdYarnOfThread.html" target="topic">TIdYarnOfThread</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdSchedulerMaxThreadsExceeded.html" target="topic">EIdSchedulerMaxThreadsExceeded</a>&nbsp;</p>
+<p class="Section9">
+ <a href="RSchedMaxThreadEx.html" target="topic">RSchedMaxThreadEx</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Class</a><br /><a href="!!MEMBEROVERVIEW_TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

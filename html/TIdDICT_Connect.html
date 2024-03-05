@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdDICT.Connect Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdDICT_Connect.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdDICT.html" target="topic">TIdDICT Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdDICT.html" target="topic">TIdDICT Methods</a> &gt; <a href="TIdDICT_Connect.html" target="topic">Connect Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Methods_TIdDICT.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdDICT.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!OVERLOADED_Define_TIdDICT.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdDICT.Connect Method</div>
+<div class="Element7">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Establishes the connection to the DICT server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Connect; <strong>override</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Connect is an overridden method in <a href="TIdDICT.html" target="topic">TIdDICT</a> that establishes the connection to the DICT server indicated using the <a href="TIdTCPClient_Host.html" target="topic">Host</a> and <a href="TIdDICT_Port.html" target="topic">Port</a> properties.&nbsp;</p>
+<p class="Element10">
+Connect clears the <a href="TIdDICT_Capabilities.html" target="topic">Capabilities</a> and <a href="TIdDICT_Server.html" target="topic">Server</a> properties prior to calling the inherited Connect method to open the client connection to the server. If the connection is successful, as indicated by the numeric response code 220, value are parsed from the server greeting and stored in the <a href="TIdDICT_Server.html" target="topic">Server</a> and <a href="TIdDICT_Capabilities.html" target="topic">Capabilities</a> properties.&nbsp;</p>
+<p class="Element10">
+Connect sends the DICT CLIENT command using the value in the <a href="TIdDICT_Client.html" target="topic">Client</a> property to provide information about the client to the DICT server.&nbsp;</p>
+<p class="Element10">
+Connect performs authentication for the client based on the value of the <a href="TIdDICT_AuthType.html" target="topic">AuthType</a> property and the <a href="TIdDICT_Capabilities.html" target="topic">Capabilities</a> supported on the DICT server. When <a href="TIdDICT_AuthType.html" target="topic">AuthType</a> contains atDefault, the DICT AUTH command is used with the values in <a href="TIdDICT_Username.html" target="topic">Username</a> and <a href="TIdDICT_Password.html" target="topic">Password</a> to perform authentication using an MD5 hash value. When <a href="TIdDICT_AuthType.html" target="topic">AuthType</a> contains atSASL, the <a href="TIdDICT_SASLMechanisms.html" target="topic">SASLMechanisms</a> for the client are used to perform authentication.&nbsp;</p>
+<p class="Element10">
+Connect sends the DICT OPTION MIME command when &quot;MIME&quot; is included in the <a href="TIdDICT_Capabilities.html" target="topic">Capabilities</a> supported on the DICT server.&nbsp;</p>
+<p class="Element10">
+If an exception is encountered during processing in the Connect method, the <a href="TIdTCPConnection_Disconnect.html" target="topic">Disconnect</a> method is called to close the connection to the DICT server.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdDICT_AuthType.html" target="topic">AuthType</a> <a href="TIdDICT_Capabilities.html" target="topic">Capabilities</a> <a href="TIdTCPConnection_Disconnect.html" target="topic">Disconnect</a> <a href="TIdDICT_Password.html" target="topic">Password</a> <a href="TIdDICT_SASLMechanisms.html" target="topic">SASLMechanisms</a> <a href="TIdDICT_Server.html" target="topic">Server</a> <a href="TIdDICT_Username.html" target="topic">Username</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a><br /><a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCustomHTTP.RedirectCount Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCustomHTTP_RedirectCount.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Properties</a> &gt; <a href="TIdCustomHTTP_RedirectCount.html" target="topic">RedirectCount Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdCustomHTTP_ProxyParams.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdCustomHTTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdCustomHTTP_RedirectMaximum.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCustomHTTP.RedirectCount Property</div>
+<div class="Element7">
+<a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Indicates the number of redirects encountered in the last request for the HTTP client.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> RedirectCount: Integer;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+RedirectCount is a read-only Integer property that indicates the number of redirects encountered in the last request for the HTTP client.&nbsp;</p>
+<p class="Element10">
+The value in RedirectCount is always set to 0 (zero) prior to handling a new HTTP request in methods like <a href="TIdCustomHTTP_Get@string.html" target="topic">Get</a> and <a href="TIdCustomHTTP_Post@string@TIdMultiPartFormDataStream.html" target="topic">Post</a>. RedirectCount is maintained in the ProcessResponse method for the HTTP protocol handler when an HTTP redirect response code is encountered.&nbsp;</p>
+<p class="Element10">
+Redirects are indicated by the HTTP <a href="TIdCustomHTTP_Response.html" target="topic">Response</a> having a response code in the range 300 to 307, and requires further action by the HTTP Client to fulfill the request.&nbsp;</p>
+<p class="Element10">
+Redirection <a href="TIdCustomHTTP_Response.html" target="topic">Response</a> codes include the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="2%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="98%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+300&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Multiple Choices. The request can be fulfilled with one of a set of resources, each with its own specific location. The HTTP client can select a preferred representation and redirect its request to that location.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+301&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Moved Permanently. The requested resource has been assigned a new permanent URI and any future references to this resource should use the new location specified in the <a href="TIdCustomHTTP_Response.html" target="topic">Response</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+302&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Found. The requested resource resides temporarily under a different URI. Since the redirection might be altered on occasion, the client should continue to use the URI in the <a href="TIdCustomHTTP_Request.html" target="topic">Request</a> for future requests.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+304&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Not Modified. If the client has performed a conditional GET request and access is allowed, but the document has not been modified, the server should respond with this status code. The 304 response should not contain a message body, and is always terminated by the first empty line after the header fields, and must include a Date header.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+305&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Use Proxy. The requested resource must be accessed through the proxy given by the Location header in the HTTP <a href="TIdCustomHTTP_Response.html" target="topic">Response</a> containing the URI of the Proxy.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+307&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Temporary Redirect. The requested resource resides temporarily under a different URI. Since the redirection may be altered on occasion, the HTTP client should continue to use the URI in the RequestI for future requests.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdCustomHTTP_HandleRedirects.html" target="topic">HandleRedirects</a> and <a href="TIdCustomHTTP_RedirectMaximum.html" target="topic">RedirectMaximum</a> to limit the number of active redirections for the client to the values specified.&nbsp;</p>
+<p class="Element10">
+When <a href="TIdCustomHTTP_HandleRedirects.html" target="topic">HandleRedirects</a> is True, the HTTP Client will trigger the <a href="TIdCustomHTTP_OnRedirect.html" target="topic">OnRedirect</a> event handler to determine if the client can accept the redirection location found in an HTTP response. When accepted, the redirect causes a new HTTP request with the new location to be issued to fulfill the original request.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCustomHTTP_RedirectMaximum.html" target="topic">RedirectMaximum</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomHTTP_OnRedirect.html" target="topic">OnRedirect</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPProtocol.html" target="topic">TIdHTTPProtocol</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

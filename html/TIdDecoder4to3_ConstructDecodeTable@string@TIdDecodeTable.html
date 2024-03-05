@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdDecoder4to3.ConstructDecodeTable Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdDecoder4to3_ConstructDecodeTable@string@TIdDecodeTable.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Methods</a> &gt; <a href="TIdDecoder4to3_ConstructDecodeTable@string@TIdDecodeTable.html" target="topic">ConstructDecodeTable Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Methods_TIdDecoder4to3.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdDecoder4to3.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdDecoder4to3_Decode@string@Integer@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdDecoder4to3.ConstructDecodeTable Method</div>
+<div class="Element7">
+<a href="TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Initializes the coding table used by the decoder.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>class</strong> <strong>procedure</strong> ConstructDecodeTable(
+    <strong>const</strong> ACodingTable: <strong>string</strong>; 
+    <strong>var</strong> ADecodeArray: TIdDecodeTable
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ACodingTable&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+String containing the initial coder alphabet.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADecodeArray&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Table used by the decoder to detect valid characters and ordinal position.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+ConstructDecodeTable is a Class procedure that initializes the CodingTable used by <a href="TIdDecoder4to3.html" target="topic">TIdDecoder4to3</a>. All elements in ADecoderArray are initialize to decimal 255, and the valid characters in ACodingTable are overlaid to indicate their ordinal position in the coder alphabet.&nbsp;</p>
+<p class="Element10">
+ADecodeArray is used by descendant classes, like <a href="TIdDecoderMIME.html" target="topic">TIdDecoderMIME</a> and <a href="TIdDecoderUUE.html" target="topic">TIdDecoderUUE</a>, to initialize their DecodeTable properties based on the alphabet for each specific coder.</p></div>
+</div>
+</div>
+<a name="Example"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Example');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExample">Example</a></div>
+<div id="divExample">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Constructing a decoder using the encode and decode alphabets.&nbsp;</p>
+<p class="Element10">
+[Delphi] </p><div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00023');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00023"><pre class="Element12">  TIdDecoder4to3.ConstructDecodeTable(GBase64CodeTable, GBase64DecodeTable);</pre></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdDecoderMIME.html" target="topic">TIdDecoderMIME</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDecoderUUE.html" target="topic">TIdDecoderUUE</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDecoderXXE.html" target="topic">TIdDecoderXXE</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Class</a><br /><a href="!!MEMBEROVERVIEW_TIdDecoder4to3.html" target="topic">TIdDecoder4to3 Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

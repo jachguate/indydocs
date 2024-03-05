@@ -1,0 +1,208 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCustomTCPServer.Active Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCustomTCPServer_Active.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Properties</a> &gt; <a href="TIdCustomTCPServer_Active.html" target="topic">Active Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdCustomTCPServer_Bindings.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCustomTCPServer.Active Property</div>
+<div class="Element7">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Indicates if the server is running and listening for client connections.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> Active: Boolean;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Active is a Boolean property that indicates the current state of the <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> for accepting and servicing client connections.&nbsp;</p>
+<p class="Element10">
+When it is Active, the server will listen for client connections requests, allocate socket handles and executable tasks for client connections, and respond to execution of client connection tasks in <a href="TIdCustomTCPServer_Contexts.html" target="topic">Contexts</a> in the manner prescribed by the <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a>.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Server StartUp</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+When Active is set to True, a number of actions required to start the TCP server are performed.&nbsp;</p>
+<p class="Element10">
+The <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a> collection is examined to determine if at least one IP address and port number has been configured for the listener thread in the TCP server. If no items exist in <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a>, a binding is configured that will be used to listen for connection requests using IPv4 addresses. If the protocol stack hosting the Indy library supports IPv6 addresses, an additional binding will be configured that will be used to listen for connection requests using IPv6 addresses.&nbsp;</p>
+<p class="Element10">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> requires that a server <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> be assigned for proper operation of the TCP server. If a <a href="TIdServerIOHandlerStack.html" target="topic">TIdServerIOHandlerStack</a> instance has not been assigned for the <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> property, an instance is created and initialized using the TCP server as the owner of the object instance. In addition, the <a href="TIdCustomTCPServer_ImplicitIOHandler.html" target="topic">ImplicitIOHandler</a> property is set to True to indicate that the <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> is managed by the <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> instance.&nbsp;</p>
+<p class="Element10">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> requires that a <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> be assigned to allow creating and managing the executable tasks for client connections to the server. If a <a href="TIdScheduler.html" target="topic">TIdScheduler</a> (or descendant class) instance has not been assigned to the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> property, an instance of <a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault</a> is created and assigned to the property. The <a href="TIdCustomTCPServer_ImplicitScheduler.html" target="topic">ImplicitScheduler</a> property is set to True to indicate that the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> is managed by the <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> instance. The default <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> (<a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault</a>) allows creating and executing Thread-based tasks for client connections to the Server.&nbsp;</p>
+<p class="Element10">
+Finally, the listener thread(s) used for accepting connection requests for the server instance are initialized and started.&nbsp;</p>
+<p class="Element10">
+Initializing listener threads requires that each item in <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a> have a valid socket handle allocated, that socket options for the socket handle be set, and that the IP address and port number for the socket descriptor be bound to the socket handle.&nbsp;</p>
+<p class="Element10">
+If an exception occurs during initialization of any socket handle in <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a>, all socket handles for the server instance are closed and the exception is re-raised. The value in Active will continue to contain False.&nbsp;</p>
+<p class="Element10">
+On successful initialization of the socket handles for the listener threads, the <a href="TIdCustomTCPServer_OnAfterBind.html" target="topic">OnAfterBind</a> event handler is signalled.&nbsp;</p>
+<p class="Element10">
+Each socket handle in <a href="TIdCustomTCPServer_Bindings.html" target="topic">Bindings</a> is then instructed to listen for connection requests using the backlog specified in <a href="TIdCustomTCPServer_ListenQueue.html" target="topic">ListenQueue</a>. A <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> instance is created that uses the socket handle in the Binding. The priority for listener thread instances is set to <a href="ThreadPriorityValues.html" target="topic">tpHighest</a> to give preference to responding to connection requests over execution of tasks for client connections. The <a href="TIdCustomTCPServer_OnBeforeListenerRun.html" target="topic">OnBeforeListenerRun</a> event handler in the server is assigned to the OnBeforeRun event handler in each of the listener threads. The listener threads are then added to the internal <a href="TIdThreadList.html" target="topic">TIdThreadList</a> for the server, and each listener thread is started.&nbsp;</p>
+<p class="Element10">
+The value in the Active property is updated as the final step in server startup. At this point, connection requests on listener threads should be handled normally using values specified in <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a>, <a href="TIdCustomTCPServer_ContextClass.html" target="topic">ContextClass</a>, <a href="TIdCustomTCPServer_Contexts.html" target="topic">Contexts</a>, and OnExecute (in <a href="TIdTCPServer.html" target="topic">TIdTCPServer</a>).&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Before Starting the Server</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+All configuration options for the server instance (other than the defaults values and actions as described above) should be performed before starting the server (by setting the Active property to True). Changed properties values are often ignored after setting Active to True, while other property value changes may result in Exceptions being raised. Explicit assignments to the following properties should be performed before server startup:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_ContextClass.html" target="topic">ContextClass</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_Intercept.html" target="topic">Intercept</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_DefaultPort.html" target="topic">DefaultPort</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_ListenQueue.html" target="topic">ListenQueue</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdCustomTCPServer_MaxConnections.html" target="topic">MaxConnections</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+OnExecute&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+During Server Execution</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+While Active remains set to True, <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer</a> uses listener thread(s) to detect and accept client connection requests. When a connection request is detected, the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> in the server instance is used to acquire the thread or fiber that controls execution of the task for the client connection. The <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> in the server is used to get an <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> for the client connection.&nbsp;</p>
+<p class="Element10">
+A client connection request can be refused for a number of reasons. The listener thread may get stopped during processing of the request, or the attempt to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> a client <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler</a> fails because of an invalid socket handle.&nbsp;</p>
+<p class="Element10">
+The most common error occurs when the number of client connections in <a href="TIdCustomTCPServer_Contexts.html" target="topic">Contexts</a> exceeds the number allowed in <a href="TIdCustomTCPServer_MaxConnections.html" target="topic">MaxConnections</a>. In this situation, an message is written to the client connection that indicates the condition and the client connection is disconnected.&nbsp;</p>
+<p class="Element10">
+If the connection is refused due to any other exception, the <a href="TIdCustomTCPServer_OnListenException.html" target="topic">OnListenException</a> is triggered.&nbsp;</p>
+<p class="Element10">
+If no error or exception is detected for the connection request, a <a href="TIdContext.html" target="topic">TIdContext</a> is created for the client connections executable task. Procedures that trigger the <a href="TIdCustomTCPServer_OnConnect.html" target="topic">OnConnect</a>, <a href="TIdCustomTCPServer_OnDisconnect.html" target="topic">OnDisconnect</a>, and OnExecute event handlers are assigned to the context. The context is then given to the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for execution using its native thread or fiber support.&nbsp;</p>
+<p class="Element10">
+At this point, the client connections executable task is fully self-contained and controlled using the <a href="TIdCustomTCPServer_OnConnect.html" target="topic">OnConnect</a>, <a href="TIdCustomTCPServer_OnDisconnect.html" target="topic">OnDisconnect</a>, and OnExecute event handlers. <a href="TIdCustomTCPServer_OnConnect.html" target="topic">OnConnect</a> and <a href="TIdCustomTCPServer_OnDisconnect.html" target="topic">OnDisconnect</a> are optional, and should be used only to perform simple tasks that are not time consuming. Using Synchronized method calls that access the main VCL thread are highly discouraged. Use OnExecute to control the interaction between the client and the server during the lifetime of the client connection.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Server ShutDown</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+A Number of actions required to stop the server are performed when the Active property is set to False. These actions include steps needed to stop all listener threads for the server instance, and to terminate all executable tasks for client connections to the server.&nbsp;</p>
+<p class="Element10">
+Listener threads are terminated and removed from the internal thread list to prevent any additional connection requests from being accepted during the ShutDown process. Each <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> instance in the internal <a href="TIdThreadList.html" target="topic">TIdThreadList</a> is halted, and the socket handle for the listener thread is closed and invalidated. When the thread has completed execution, it is freed. The internal <a href="TIdThreadList.html" target="topic">TIdThreadList</a> for a <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> instance is freed.&nbsp;</p>
+<p class="Element10">
+Any existing executable tasks for client connections found in <a href="TIdCustomTCPServer_Contexts.html" target="topic">Contexts</a> are terminated by Disconnecting the Connection for the <a href="TIdContext.html" target="topic">TIdContext</a> instances, and by terminating all threads or fibers under control of the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for the server instance. If the <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> is managed by the server instance (Implicit <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> contains True), it is freed and released.&nbsp;</p>
+<p class="Element10">
+Changing the value in Active using the IDE (design-time) has no effect other than storing the property value that is used at runtime and during component streaming.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdListenerThread.html" target="topic">TIdListenerThread</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdScheduler.html" target="topic">TIdScheduler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSchedulerOfThreadDefault.html" target="topic">TIdSchedulerOfThreadDefault</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdContext.html" target="topic">TIdContext</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdServerIOHandlerStack.html" target="topic">TIdServerIOHandlerStack</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandles.html" target="topic">TIdSocketHandles</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

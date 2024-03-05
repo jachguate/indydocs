@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>CopyTIdString Function</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'CopyTIdString@String@TIdBytes@Integer@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Functions &gt; <a href="CopyTIdString@String@TIdBytes@Integer@Integer.html" target="topic">CopyTIdString Function</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="CopyTIdNetworkWord@Word@TIdBytes@Integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="CopyTIdWord@Word@TIdBytes@Integer.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+CopyTIdString Function</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Copy all or part of a string data type into the specified array bytes.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdGlobal_pas.html" target="topic">IdGlobal</a></p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> CopyTIdString(
+    <strong>const</strong> ASource: <strong>String</strong>; 
+    <strong>var</strong> VDest: TIdBytes; 
+    <strong>const</strong> ADestIndex: Integer; 
+    ALength: Integer = -1
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASource&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+string data type with values to be copied in the operation.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+VDest&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Storage for values copied from ASource.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADestIndex&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+zero-based offset that identifies the initial position where copied values will be stored.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ALength&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+number of bytes from ASource to be copied into the array of bytes in VDest. The default value is -1.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+CopyTIdString is a procedure used to copy all or part of a string data type into the specified array bytes&nbsp;</p>
+<p class="Element10">
+ASource is the string data type with values to be copied in the operation.&nbsp;</p>
+<p class="Element10">
+VDest is the <a href="TIdBytes.html" target="topic">TIdBytes</a> where the values copied from ASource will be stored.&nbsp;</p>
+<p class="Element10">
+ADestIndex is the zero-based offset that identifies the initial position in VDest where values copied from ASource will be stored.&nbsp;</p>
+<p class="Element10">
+ALength indicates the number of bytes from ASource to be copied into the array of bytes in VDest. The default value is -1 and indicates that all byte values in ASource should be included in the copy operation.&nbsp;</p>
+<p class="Element10">
+<img src="DotNet.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+For the .Net platform, CopyTIdString calls <a href="ToBytes@Byte.html" target="topic">ToBytes</a> to access an array of bytes that represent the values in ASource. The Copy method in the FCL System.Array class is used to peform the copy operation with the specified index and byte count.&nbsp;</p>
+<p class="Element10">
+<img src="Win.png" border="0" alt="" title=""> <img src="Linux.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+For all other platform where the Borland RTL is natively supported, the Move procedure in SysUtils.pas is called to peform the copy operation with the specified index and byte count.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="CopyTIdBytes@TIdBytes@Integer@TIdBytes@Integer@Integer.html" target="topic">CopyTIdBytes</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdByteArray@array_of_Byte@Integer@array_of_Byte@Integer@Integer.html" target="topic">CopyTIdByteArray</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdWord@Word@TIdBytes@Integer.html" target="topic">CopyTIdWord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdLongWord@LongWord@TIdBytes@Integer.html" target="topic">CopyTIdLongWord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdCardinal@Cardinal@TIdBytes@Integer.html" target="topic">CopyTIdCardinal</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdInt64@Int64@TIdBytes@Integer.html" target="topic">CopyTIdInt64</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CopyTIdIPV6Address@TIdIPv6Address@TIdBytes@Integer.html" target="topic">CopyTIdIPV6Address</a>&nbsp;</p>
+<p class="Section9">
+ CopyTIdString</p></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFinger.CompleteQuery Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFinger_CompleteQuery.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFinger.html" target="topic">TIdFinger Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdFinger.html" target="topic">TIdFinger Properties</a> &gt; <a href="TIdFinger_CompleteQuery.html" target="topic">CompleteQuery Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!MEMBERTYPE_Properties_TIdFinger.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdFinger.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFinger_Host.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFinger.CompleteQuery Property</div>
+<div class="Element7">
+<a href="TIdFinger.html" target="topic">TIdFinger Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFinger.html" target="topic">TIdFinger Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,Example,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Identifies the query for the <a href="TIdFinger_Finger.html" target="topic">Finger</a> protocol.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> CompleteQuery: <strong>String</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+CompleteQuery is a String property that represents the the entire <a href="TIdFinger_Finger.html" target="topic">Finger</a> query, such as &quot;user@host&quot;, to be sent in the <a href="TIdFinger_Finger.html" target="topic">Finger</a> method. The CompleteQuery property is provided as a convenience for programs which prompt for a query in this form. CompleteQuery may contain values that permit recursive <a href="TIdFinger_Finger.html" target="topic">finger</a> queries on servers that permit this capability, such as:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">   test@test.com@example.com</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Reading the value in CompleteQuery returns the concatenated values in <a href="TIdFinger_Query.html" target="topic">Query</a> and <a href="TIdFinger_Host.html" target="topic">Host</a> in the form:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">   query@host</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Writing a value to CompleteQuery forces the right-most host name to be parsed and stored in the <a href="TIdFinger_Host.html" target="topic">Host</a> property. If no host name is present, or recursive hosts are used in the query, the remainder of the new value is copied to the <a href="TIdFinger_Query.html" target="topic">Query</a> property.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFinger_VerboseOutput.html" target="topic">VerboseOutput</a> to indicate if the server should provide detailed output in the response returned by the <a href="TIdFinger_Finger.html" target="topic">Finger</a> method.</p></div>
+</div>
+</div>
+<a name="Example"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Example');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExample">Example</a></div>
+<div id="divExample">
+<div class="Element11">
+<div class="Element10">
+<div class="Element170">
+<a href="#" onclick="CopyElementToClipboard('code00028');">Copy Code</a></div>
+<div class="Element13"><div class="Element12" id="code00028"><pre class="Element12">   <i>// var AFingerL TIdFinger;</i>
+
+   AFinger.Host := 'myisp.net';
+   AFinger.CompleteQuery := '/W jblogs@test.com@example.com';
+   <i>// Query contains '/W jblogs@test.com'</i>
+   <i>// Host contains 'example.com'</i>
+
+   AFinger.Host := 'myisp.net';
+   AFinger.CompleteQuery := 'myaccount';
+   <i>// Query contains 'myaccount'</i>
+   <i>// Host contains 'myisp.net'</i></pre></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdFinger_Query.html" target="topic">TIdFinger.Query</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFinger_Host.html" target="topic">TIdFinger.Host</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFinger_VerboseOutput.html" target="topic">TIdFinger.VerboseOutput</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFinger.html" target="topic">TIdFinger Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFinger.html" target="topic">TIdFinger Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

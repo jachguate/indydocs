@@ -1,0 +1,597 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdReplySMTP.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdReplySMTP_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdReplySMTP_pas.html" target="topic">IdReplySMTP.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdReplyRFC_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdResourceStrings_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdReplySMTP.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('See_Also,Classes,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('See_Also,Classes,Constants', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Description"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdReplySMTP.pas contains Classes, Types, and Constants required to implement the SMTP Service Extension for Returning Enhanced Error Codes, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc1869.txt"> RFC 1869 - SMTP Service Extensions </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2034.txt"> RFC 2034 - SMTP Service Extension for Returning Enhanced Error Codes </a>&nbsp;</p></div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdReplySMTP.html" target="topic">TIdReplySMTP</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSMTPEnhancedCode.html" target="topic">TIdSMTPEnhancedCode</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdSMTPReply.html" target="topic">EIdSMTPReply</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Ancestor class for exceptions raised when handling values in SMTP enhanced status code replies.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdSMTPReplyError.html" target="topic">EIdSMTPReplyError</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdSMTPReplyInvalidClass.html" target="topic">EIdSMTPReplyInvalidClass</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Exception raised when an invalid valid is assigned to the status class in an SMTP enhanced status code reply.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="EIdSMTPReplyInvalidReplyString.html" target="topic">EIdSMTPReplyInvalidReplyString</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Exception raised when an invalid value is found in an SMTP enhanced status code reply.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdRepliesSMTP.html" target="topic">TIdRepliesSMTP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdReplySMTP.html" target="topic">TIdReplySMTP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Implements Enhanced Error Codes in WSMTP responses.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="TIdSMTPEnhancedCode.html" target="topic">TIdSMTPEnhancedCode</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Constants"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Constants');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgConstants">Constants</a></div>
+<div id="divConstants">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Constant&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="AVAIL_DEF.html" target="topic">AVAIL_DEF</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="CLASS_DEF.html" target="topic">CLASS_DEF</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_GENERIC_OK.html" target="topic">Id_EHR_GENERIC_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_GENERIC_PERM.html" target="topic">Id_EHR_GENERIC_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_GENERIC_TRANS.html" target="topic">Id_EHR_GENERIC_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_DISABLED_PERM.html" target="topic">Id_EHR_MB_DISABLED_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_DISABLED_TEMP.html" target="topic">Id_EHR_MB_DISABLED_TEMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_FULL.html" target="topic">Id_EHR_MB_FULL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_ML_EXPAN_PERM.html" target="topic">Id_EHR_MB_ML_EXPAN_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_ML_EXPAN_TEMP.html" target="topic">Id_EHR_MB_ML_EXPAN_TEMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_MSG_LEN_LIMIT.html" target="topic">Id_EHR_MB_MSG_LEN_LIMIT</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_OTHER_STATUS_OK.html" target="topic">Id_EHR_MB_OTHER_STATUS_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_OTHER_STATUS_PERM.html" target="topic">Id_EHR_MB_OTHER_STATUS_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MB_OTHER_STATUS_TRANS.html" target="topic">Id_EHR_MB_OTHER_STATUS_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_INCORRECT_CONFIG_PERM.html" target="topic">Id_EHR_MD_INCORRECT_CONFIG_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_INCORRECT_CONFIG_TRANS.html" target="topic">Id_EHR_MD_INCORRECT_CONFIG_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_MAIL_SYSTEM_FULL.html" target="topic">Id_EHR_MD_MAIL_SYSTEM_FULL</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_NOT_CAPABLE_FEAT_PERM.html" target="topic">Id_EHR_MD_NOT_CAPABLE_FEAT_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_NOT_CAPABLE_FEAT_TRANS.html" target="topic">Id_EHR_MD_NOT_CAPABLE_FEAT_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_NOT_EXCEPTING_PERM.html" target="topic">Id_EHR_MD_NOT_EXCEPTING_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_NOT_EXCEPTING_TRANS.html" target="topic">Id_EHR_MD_NOT_EXCEPTING_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_OTHER_OK.html" target="topic">Id_EHR_MD_OTHER_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_OTHER_PERM.html" target="topic">Id_EHR_MD_OTHER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_OTHER_TRANS.html" target="topic">Id_EHR_MD_OTHER_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MD_TOO_BIG.html" target="topic">Id_EHR_MD_TOO_BIG</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_FAILED_PERM.html" target="topic">Id_EHR_MED_CONV_FAILED_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_FAILED_TRANS.html" target="topic">Id_EHR_MED_CONV_FAILED_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_LOSS_ERROR.html" target="topic">Id_EHR_MED_CONV_LOSS_ERROR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_LOSS_WARNING.html" target="topic">Id_EHR_MED_CONV_LOSS_WARNING</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_REQUIRED_NOT_SUP_PERM.html" target="topic">Id_EHR_MED_CONV_REQUIRED_NOT_SUP_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_REQUIRED_NOT_SUP_TRANS.html" target="topic">Id_EHR_MED_CONV_REQUIRED_NOT_SUP_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_REQUIRED_PROHIB_PERM.html" target="topic">Id_EHR_MED_CONV_REQUIRED_PROHIB_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_CONV_REQUIRED_PROHIB_TRANS.html" target="topic">Id_EHR_MED_CONV_REQUIRED_PROHIB_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_NOT_SUPPORTED.html" target="topic">Id_EHR_MED_NOT_SUPPORTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_OTHER_OK.html" target="topic">Id_EHR_MED_OTHER_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_OTHER_PERM.html" target="topic">Id_EHR_MED_OTHER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MED_OTHER_TRANS.html" target="topic">Id_EHR_MED_OTHER_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_AMBIG_DEST.html" target="topic">Id_EHR_MSG_AMBIG_DEST</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_BAD_DEST.html" target="topic">Id_EHR_MSG_BAD_DEST</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_BAD_DEST_SYNTAX.html" target="topic">Id_EHR_MSG_BAD_DEST_SYNTAX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_BAD_DEST_SYST.html" target="topic">Id_EHR_MSG_BAD_DEST_SYST</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_BAD_SENDER_ADDR.html" target="topic">Id_EHR_MSG_BAD_SENDER_ADDR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_DEST_MOVED_NOFORWARD.html" target="topic">Id_EHR_MSG_DEST_MOVED_NOFORWARD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_OTH_OK.html" target="topic">Id_EHR_MSG_OTH_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_OTH_PERM.html" target="topic">Id_EHR_MSG_OTH_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_OTH_TRANS.html" target="topic">Id_EHR_MSG_OTH_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_SENDER_BOX_SYNTAX.html" target="topic">Id_EHR_MSG_SENDER_BOX_SYNTAX</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_MSG_VALID_DEST.html" target="topic">Id_EHR_MSG_VALID_DEST</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_BAD_CONNECTION.html" target="topic">Id_EHR_NR_BAD_CONNECTION</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_DELIVERY_EXPIRED_PERM.html" target="topic">Id_EHR_NR_DELIVERY_EXPIRED_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_DELIVERY_EXPIRED_TEMP.html" target="topic">Id_EHR_NR_DELIVERY_EXPIRED_TEMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_DIR_SVR_FAILURE.html" target="topic">Id_EHR_NR_DIR_SVR_FAILURE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_LOOP_DETECTED.html" target="topic">Id_EHR_NR_LOOP_DETECTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_NO_ANSWER.html" target="topic">Id_EHR_NR_NO_ANSWER</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_OTHER_OK.html" target="topic">Id_EHR_NR_OTHER_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_OTHER_PERM.html" target="topic">Id_EHR_NR_OTHER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_OTHER_TRANS.html" target="topic">Id_EHR_NR_OTHER_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_SYSTEM_CONGESTION.html" target="topic">Id_EHR_NR_SYSTEM_CONGESTION</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_UNABLE_TO_ROUTE_PERM.html" target="topic">Id_EHR_NR_UNABLE_TO_ROUTE_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_NR_UNABLE_TO_ROUTE_TRANS.html" target="topic">Id_EHR_NR_UNABLE_TO_ROUTE_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_INVALID_CMD.html" target="topic">Id_EHR_PR_INVALID_CMD</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_INVALID_CMD_ARGS.html" target="topic">Id_EHR_PR_INVALID_CMD_ARGS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_OTHER_OK.html" target="topic">Id_EHR_PR_OTHER_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_OTHER_PERM.html" target="topic">Id_EHR_PR_OTHER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_OTHER_TEMP.html" target="topic">Id_EHR_PR_OTHER_TEMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_SYNTAX_ERR.html" target="topic">Id_EHR_PR_SYNTAX_ERR</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_TOO_MANY_RECIPIENTS_PERM.html" target="topic">Id_EHR_PR_TOO_MANY_RECIPIENTS_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_TOO_MANY_RECIPIENTS_TEMP.html" target="topic">Id_EHR_PR_TOO_MANY_RECIPIENTS_TEMP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_WRONG_VER_PERM.html" target="topic">Id_EHR_PR_WRONG_VER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_PR_WRONG_VER_TRANS.html" target="topic">Id_EHR_PR_WRONG_VER_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_CONV_REQ_NOT_POSSIBLE.html" target="topic">Id_EHR_SEC_CONV_REQ_NOT_POSSIBLE</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_CRYPT_ALG_NOT_SUP_PERM.html" target="topic">Id_EHR_SEC_CRYPT_ALG_NOT_SUP_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_CRYPT_ALG_NOT_SUP_TRANS.html" target="topic">Id_EHR_SEC_CRYPT_ALG_NOT_SUP_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_CRYPT_FAILURE_PERM.html" target="topic">Id_EHR_SEC_CRYPT_FAILURE_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_CRYPT_FAILURE_TRANS.html" target="topic">Id_EHR_SEC_CRYPT_FAILURE_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_DEL_NOT_AUTH.html" target="topic">Id_EHR_SEC_DEL_NOT_AUTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_EXP_NOT_AUTH.html" target="topic">Id_EHR_SEC_EXP_NOT_AUTH</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_INTEGRETIY_FAILED_TRANS.html" target="topic">Id_EHR_SEC_INTEGRETIY_FAILED_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_INTEGRETIY_FAILED_WARN.html" target="topic">Id_EHR_SEC_INTEGRETIY_FAILED_WARN</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_NOT_SUPPORTED.html" target="topic">Id_EHR_SEC_NOT_SUPPORTED</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_OTHER_OK.html" target="topic">Id_EHR_SEC_OTHER_OK</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_OTHER_PERM.html" target="topic">Id_EHR_SEC_OTHER_PERM</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_SEC_OTHER_TRANS.html" target="topic">Id_EHR_SEC_OTHER_TRANS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="Id_EHR_USE_STARTTLS.html" target="topic">Id_EHR_USE_STARTTLS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="NODETAILS.html" target="topic">NODETAILS</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="PARTSEP.html" target="topic">PARTSEP</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ValidClassChars.html" target="topic">ValidClassChars</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+<a href="ValidClassVals.html" target="topic">ValidClassVals</a>&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

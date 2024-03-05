@@ -1,0 +1,756 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFSPStatInfo_Size.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic">TIdFTP Properties</a> &nbsp; <a href="!!MEMBERTYPE_Events_TIdFTP.html" target="topic">TIdFTP Events</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,Todo,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements a File Transfer Protocol (FTP) client.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdFTP_pas.html" target="topic">IdFTP</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdFTP.png" border="0" alt="" title="" usemap="#TIdFTP"><map class="Element150" name="TIdFTP"><area class="Element150" shape="rect" coords="139,0,257,15" href="TIdInitializerComponent.html"><area class="Element150" shape="rect" coords="287,0,388,15" href="TIdBaseComponent.html"><area class="Element150" shape="rect" coords="418,0,499,15" href="TIdComponent.html"><area class="Element150" shape="rect" coords="657,0,765,15" href="TIdTCPClientCustom.html"><area class="Element150" shape="rect" coords="795,0,896,15" href="TIdExplicitTLSClient.html"><area class="Element150" shape="rect" coords="926,0,977,15" href="TIdFTP.html"><area class="Element150" shape="rect" coords="529,0,627,15" href="TIdTCPConnection.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdFTP = <strong>class</strong>(TIdExplicitTLSClient);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdFTP is a <a href="TIdExplicitTLSClient.html" target="topic">TIdExplicitTLSClient</a> descendant that implements a File Transfer Protocol (FTP) client, as described in the Internet Standards documents:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc959.txt"> RFC 959 - File Transfer Protocol [FTP] </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2228.txt"> RFC 2228 - FTP Security Extensions </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2389.txt"> RFC 2389 - Feature negotiation mechanism for the File Transfer Protocol </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2428.txt"> RFC 2428 - FTP Extensions for IPv6 and NATs </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2640.txt"> RFC 2640 - FTP Internalization </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.ietf.org/internet-drafts/draft-ietf-ftpext-mlst-16.txt"> IETF Draft Extensions to FTP </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www1.ietf.org/internet-drafts/draft-preston-ftpext-deflate-02.txt"> Deflate transmission mode for FTP </a>&nbsp;</p>
+<p class="Element10">
+<a href="http://www.ietf.org/internet-drafts/draft-murray-auth-ftp-ssl-14.txt"> Securing FTP with TLS </a>&nbsp;</p>
+<p class="Element10">
+FTP is a protocol that promotes sharing files, efficiently uploading and downloading files, as well as isolating differences in the file systems for remote host computers.&nbsp;</p>
+<p class="Element10">
+TIdFTP provides an encapsulation of the FTP protocol interpreter that acts as the control channel or communication path for the exchange of FTP commands and their specific FTP replies. Several key properties and methods are used to establish the control channel for the FTP session, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Host.html" target="topic">Host</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Port.html" target="topic">Port</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Username.html" target="topic">Username</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Password.html" target="topic">Password</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_ClientInfo.html" target="topic">ClientInfo</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_ProxySettings.html" target="topic">ProxySettings</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_AutoLogin.html" target="topic">AutoLogin</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Connect.html" target="topic">Connect</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Login.html" target="topic">Login</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_Quit.html" target="topic">Quit</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+After creating the control channel connection using <a href="TIdFTP_Connect.html" target="topic">Connect</a> or <a href="TIdFTP_Login.html" target="topic">Login</a>, the following properties can be used to examine the content of FTP replies and settings detected during the process:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdTCPConnection_Greeting.html" target="topic">Greeting</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_LoginMsg.html" target="topic">LoginMsg</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_SystemDesc.html" target="topic">SystemDesc</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_TZInfo.html" target="topic">TZInfo</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_UsingSFTP.html" target="topic">UsingSFTP</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+<a href="TIdFTP_LangsSupported.html" target="topic">LangsSupported</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdFTP uses properties and methods to implement the FTP Access Control Commands, as described in RFC 959 and other related Internet Standards documents.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="17%">
+<div class="Element66">
+FTP Command&nbsp;</div></td><td class="Element65" valign="top" width="83%">
+<div class="Element66">
+Method or Properties&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+USER&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_Username.html" target="topic">Username</a> property supplied in the <a href="TIdFTP_Login.html" target="topic">Login</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+PASS&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_Password.html" target="topic">Password</a> property supplied in the <a href="TIdFTP_Login.html" target="topic">Login</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+ACCT&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_Account.html" target="topic">Account</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+CWD&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_ChangeDir@string.html" target="topic">ChangeDir</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+CDUP&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_ChangeDirUp.html" target="topic">ChangeDirUp</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+SMNT&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_StructureMount@String.html" target="topic">StructureMount</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+REIN&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_ReInitialize@Cardinal.html" target="topic">Reinitialize</a> method&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="17%">
+<div class="Element68">
+QUIT&nbsp;</div></td><td class="Element67" valign="top" width="83%">
+<div class="Element68">
+<a href="TIdFTP_Quit.html" target="topic">Quit</a> method&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Internally, TIdFTP handles the interactions required for establishing and maintaining the data channel over which data is transferred using the specified structure, mode and type. All file transfer functions are performed using the internal data channel. The data channel connection can use the default port number for the FTP client, or may negotiate a non-default port number using the FTP PORT command.&nbsp;</p>
+<p class="Element10">
+Data transfer commands and arguments are implemented in TIdFTP using the following properties and methods:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="9%">
+<div class="Element66">
+FTP Command&nbsp;</div></td><td class="Element65" valign="top" width="91%">
+<div class="Element66">
+Method or Properties&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+PORT&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Uses the value in <a href="TIdFTP_DataPort.html" target="topic">DataPort</a> when the data channel is opened in the <a href="TIdFTP_Get@string@TIdStream@Boolean.html" target="topic">Get</a> and <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> methods.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+PASV&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Uses the <a href="TIdFTP_Passive.html" target="topic">Passive</a> property when the data channel is opened in the <a href="TIdFTP_Get@string@TIdStream@Boolean.html" target="topic">Get</a> and <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> methods.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+TYPE&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Uses the <a href="TIdFTP_TransferType.html" target="topic">TransferType</a> property in <a href="TIdFTP_Login.html" target="topic">Login</a> or when the property value is changed.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+STRU&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+<a href="TIdFTP_FileStructure@TIdFTPDataStructure.html" target="topic">FileStructure</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+MODE&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+<a href="TIdFTP_TransferMode@TIdFTPTransferMode.html" target="topic">TransferMode</a> method.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdFTP also implements support for compression of data using the &quot;<a href="deflate@TZStreamRec@Integer.html" target="topic">deflate</a>&quot; transmission mode, as described in the Internet Draft &quot;Deflate transmission mode for FTP&quot;. In <a href="deflate@TZStreamRec@Integer.html" target="topic">deflate</a> transmission mode, data is compressed and transmitted as a stream of octets (8 bit bytes). The sender and receiver rely on a compression engine to perform compression operations (<a href="deflate@TZStreamRec@Integer.html" target="topic">deflate</a>/<a href="inflate@TZStreamRec@Integer.html" target="topic">inflate</a>) and maintain state. The compression engine generates a unique data stream using the ZLIB compressed data format specified in RFC 1950.&nbsp;</p>
+<p class="Element10">
+The <a href="deflate@TZStreamRec@Integer.html" target="topic">deflate</a> extension modifies the MODE command by adding the parameter &quot;Z&quot;.&nbsp;</p>
+<p class="Element10">
+TIdFTP also supports the FTP FEAT and OPTS commands as specified in RFC 2389 to discover optional commands supported on the FTP server. Use the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> property to examine features supported on the server. Use the <a href="TIdFTP_SetCMDOpt@String@String.html" target="topic">SetCMDOpt</a> method to send the FTP OPTS command that specifies the desired behavior of the FTP server process when a subsequent FTP command is issued.&nbsp;</p>
+<p class="Element10">
+TIdFTP implements the common FTP Service Commands that define the file transfer or the file system function requested by the client. FTP service commands are issued on the control channel for the client session. Data transferred in response to an FTP service commands is always be sent over the data channel connection. TIdFTP implements the following FTP service commands using the indicated properties and methods:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="13%">
+<div class="Element66">
+FTP Command&nbsp;</div></td><td class="Element65" valign="top" width="87%">
+<div class="Element66">
+Method or Properties&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+RETR&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Get@string@TIdStream@Boolean.html" target="topic">Get</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+STOR&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Uses the <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> method and the Append argument.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+STOU&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_StoreUnique@TIdStream.html" target="topic">StoreUnique</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+APPE&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Used in the <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> method and the Append argument.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+ALLO&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Allocate@Integer.html" target="topic">Allocate</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+REST&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Sent in the <a href="TIdFTP_Put@TIdStream@string@boolean.html" target="topic">Put</a> and Append methods, or when the <a href="TIdFTP_ResumeSupported.html" target="topic">ResumeSupported</a> property is updated.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+RNFR&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Used in the <a href="TIdFTP_Rename@string@string.html" target="topic">Rename</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+RNTO&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Used in the <a href="TIdFTP_Rename@string@string.html" target="topic">Rename</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+ABOR&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Abort.html" target="topic">Abort</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+DELE&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Delete@string.html" target="topic">Delete</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+RMD&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_RemoveDir@string.html" target="topic">RemoveDir</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+MKD&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_MakeDir@string.html" target="topic">MakeDir</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+PWD&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_RetrieveCurrentDir.html" target="topic">RetrieveCurrentDir</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+LIST&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_List.html" target="topic">List</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+<a href="NLST.html" target="topic">NLST</a>&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_List.html" target="topic">List</a> method using the ADetails argument.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+SITE&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Site@string.html" target="topic">Site</a> method or the <a href="TIdFTP_Connect.html" target="topic">Connect</a> method when SITE ZONE is supported.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+SYST&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+Used in the <a href="TIdFTP_Connect.html" target="topic">Connect</a> method to update the <a href="TIdFTP_SystemDesc.html" target="topic">SystemDesc</a> property.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+STAT&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Status@TIdStrings.html" target="topic">Status</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+HELP&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Help@TIdStringList@String.html" target="topic">Help</a> method.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+NOOP&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+<a href="TIdFTP_Noop.html" target="topic">Noop</a> method.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Secure FTP using TLS</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TIdFTP also supports the mechanism that can be used by FTP clients and servers to implement security and authentication using the TLS protocol defined in RFC 2246, and the extensions to the FTP protocol defined by RFC 2228. When the FTP session control channel is established, the client requests TLS using the value in the <a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a> property. Data channel connections may be secured using the <a href="TIdFTP_Passive.html" target="topic">Passive</a> and <a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a> properties. Should the FTP client wish to make the control connection revert back into plaintext (once the authentication phase is completed), set the value in <a href="TIdFTP_UseCCC.html" target="topic">UseCCC</a>.&nbsp;</p>
+<p class="Element10">
+Use of TLS for control and/or data channel connections requires the use of <a href="TIdSSLIOHandlerSocketBase.html" target="topic">TIdSSLIOHandlerSocketBase</a>, and access to the OpenSSL (or compatible) library for the operating system or platform hosting the Indy application.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+FTP Protocol Replies</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Replies to File Transfer Protocol commands are devised to ensure the synchronization of requests and actions in the process of file transfer, and to guarantee that the user process always knows the state of the Server. Every command must generate at least one reply, although there may be more than one; in the latter case, the multiple replies must be easily distinguished. In addition, some commands occur in sequential groups, such as USER, PASS and ACCT, or RNFR and RNTO. The replies show the existence of an intermediate state if all preceding commands have been successful. A failure at any point in the sequence necessitates the repetition of the entire sequence from the beginning.&nbsp;</p>
+<p class="Element10">
+FTP reply values can be accessed using the <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a> property, and consists of a 3-digit numeric response number followed by some arbitrary text. The response number is intended for use by automata to determine what state to enter next; the text is intended for the human user. It is intended that the three digits contain enough encoded information that the control channel will not need to examine the text and may either discard it or pass it on to the user, as appropriate. In particular, the text may be server-dependent, so there are likely to be varying texts for each reply code.&nbsp;</p>
+<p class="Element10">
+The three digits of the reply each have a special significance. This is intended to allow a range of very simple to very sophisticated responses by the user-process. The first digit denotes whether the response is good, bad or incomplete. The FTP client can determine its next course of action by simply examining this first digit in the numeric response. For more detailed information about a numeric response code, the FTP client may examine the second digit, reserving the third digit for the finest gradation of information (e.g., RNTO command without a preceding RNFR).&nbsp;</p>
+<p class="Element10">
+There are five values for the first digit of the reply code:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="2%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="98%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+1xx&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Positive Preliminary reply. The requested action is being initiated, but expect another reply before proceeding with a new command.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+2xx&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Positive Completion reply. The requested action has been successfully completed. A new request may be initiated.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+3xx&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Positive Intermediate reply. The command has been accepted, but the requested action is being held in abeyance, pending receipt of further information. The user should send another command specifying this information.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+4xx&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Transient Negative Completion reply. The command was not accepted and the requested action did not take place, but the error condition is temporary and the action may be requested again.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+5xx&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Permanent Negative Completion reply. The command was not accepted and the requested action did not take place. The client is discouraged from repeating the exact request (in the same sequence).&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The second digit in a numeric response code encodes the following functional groupings:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="3%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="97%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="3%">
+<div class="Element68">
+x0x&nbsp;</div></td><td class="Element67" valign="top" width="97%">
+<div class="Element68">
+Syntax. These replies refer to syntax errors, syntactically correct commands that don't fit any functional category, unimplemented or superfluous commands.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="3%">
+<div class="Element68">
+x1x&nbsp;</div></td><td class="Element67" valign="top" width="97%">
+<div class="Element68">
+Information. These are replies to requests for information, such as <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a> or <a href="TIdFTP_Help@TIdStringList@String.html" target="topic">help</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="3%">
+<div class="Element68">
+x2x&nbsp;</div></td><td class="Element67" valign="top" width="97%">
+<div class="Element68">
+Connections. Replies referring to the control and data connections.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="3%">
+<div class="Element68">
+x3x&nbsp;</div></td><td class="Element67" valign="top" width="97%">
+<div class="Element68">
+Authentication and accounting. Replies for the <a href="TIdFTP_Login.html" target="topic">login</a> process and accounting procedures.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="3%">
+<div class="Element68">
+x4x&nbsp;</div></td><td class="Element67" valign="top" width="97%">
+<div class="Element68">
+Unspecified as yet. x5x File system. These replies indicate the <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a> of the Server file system for the requested file transfer or other file system action.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The third digit in the numeric response code provides the finest gradation of meaning in each of the function categories. The text associated with each reply is recommended, rather than mandatory, and may even change according to the command with which it is associated. The reply codes, on the other hand, must strictly follow the specifications in the last section; that is, Server implementations should not invent new codes for situations that are only slightly different from the ones described here, but rather should adapt codes already defined.&nbsp;</p>
+<p class="Element10">
+The following <a href="TIdFTP_List.html" target="topic">list</a> indicates the numeric FTP reply codes and their suggested textual content for a typical FTP server implementation:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="9%">
+<div class="Element66">
+Code&nbsp;</div></td><td class="Element65" valign="top" width="91%">
+<div class="Element66">
+Message&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+110&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+MARK yyyy = mmmm&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+120&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Service ready in nnn minutes.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+125&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Data connection already open; transfer starting.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+150&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+File <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a> okay; about to open data connection.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+200&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Command okay.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+202&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Command not implemented, superfluous at this <a href="TIdFTP_Site@string.html" target="topic">site</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+211&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+System <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a>, or system <a href="TIdFTP_Help@TIdStringList@String.html" target="topic">help</a> reply.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+212&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Directory <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+213&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+File <a href="TIdFTP_Status@TIdStrings.html" target="topic">status</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+214&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+<a href="TIdFTP_Help@TIdStringList@String.html" target="topic">Help</a> message.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+215&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+NAME system type.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+220&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Service ready for new user.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+221&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Service closing control connection.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+225&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Data connection open; no transfer in progress.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+226&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Closing data connection.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+227&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Entering <a href="TIdFTP_Passive.html" target="topic">Passive</a> Mode (h1,h2,h3,h4,p1,p2).&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+230&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+User logged in, proceed.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+250&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested file action okay, completed.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+257&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+&quot;PATHNAME&quot; created.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+331&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+User name okay, need password.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+332&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Need account for <a href="TIdFTP_Login.html" target="topic">login</a>.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+350&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested file action pending further information.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+421&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Service not available, closing control connection.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+425&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Can't open data connection.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+426&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Connection closed; transfer aborted.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+450&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested file action not taken.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+451&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested action aborted: local error in processing.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+452&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested action not taken.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+500&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Syntax error, command unrecognized.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+501&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Syntax error in parameters or arguments.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+502&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Command not implemented.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+503&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Bad sequence of commands.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+504&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Command not implemented for that parameter.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+530&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Not logged in.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+532&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Need account for storing files.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+550&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested action not taken.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+551&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested action aborted: page type unknown.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+552&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested file action aborted.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+553&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Requested action not taken.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Directory Listings Using TIdFTP</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+One of the key features of the FTP protocol is the ability to access a <a href="TIdFTP_List.html" target="topic">list</a> of files found in a directory on the remote host using the FTP LIST or <a href="NLST.html" target="topic">NLST</a> commands. TIdFTP implements this feature, and captures the <a href="TIdFTP_List.html" target="topic">list</a> of file names and optional file details in the <a href="TIdFTP_ListResult.html" target="topic">ListResult</a> property.&nbsp;</p>
+<p class="Element10">
+The FTP protocol (by design) isolated the FTP client from the nuances of host-specific file systems. In obeyance of this design goal, it also did not specify a standard representation for the contents of a directory listing. Instead, FTP clients have historically relied on defacto representations for the content of a directory listing as used in specific server implementations.&nbsp;</p>
+<p class="Element10">
+There are FTP extensions that have been presented to the IETF (Internet Engineering Task Force) that specifies new FTP commands to obtain listings of remote directories in a defined format. Two commands are defined, <a href="MLST.html" target="topic">MLST</a> which provides data about exactly the object named on its command line, and no others. MLSD on the other hand will <a href="TIdFTP_List.html" target="topic">list</a> the contents of a directory if a directory is named. The <a href="MLST.html" target="topic">MLST</a> and MLSD commands are intended to standardize the file and directory information returned by the Server FTP process. These commands differ from the LIST command in that the format of the replies is strictly defined although extensible.&nbsp;</p>
+<p class="Element10">
+The <a href="MLST.html" target="topic">MLST</a> format is intended for machine processing, not human viewing, and as such the format is very rigid. implementations must not vary the format by, for example, inserting extra spaces for readability, replacing spaces by tabs, including header or title lines, or inserting blank lines, or in any other way alter this format.&nbsp;</p>
+<p class="Element10">
+In TIdFTP, the <a href="TIdFTP_List.html" target="topic">List</a> command can use either the FTP LIST or <a href="NLST.html" target="topic">NLST</a> commands to request the content of a directory listing. In addition, the <a href="TIdFTP_ExtListDir@TIdStrings@string.html" target="topic">ExtListDir</a> and <a href="TIdFTP_ExtListItem@TIdFTPListItems@String.html" target="topic">ExtListItem</a> methods can be used to invoke the FTP extenstion commands <a href="MLST.html" target="topic">MLST</a> and MLSTD for servers supporting the features.&nbsp;</p>
+<p class="Element10">
+The Indy library recognizes these defacto standards, and makes provisions for the IETF draft standards. TIdFTP provides the capabilitiy to parse the various formats for the textual content in the <a href="TIdFTP_ListResult.html" target="topic">ListResult</a> property into a structured representation of the directory stored in the <a href="TIdFTP_DirectoryListing.html" target="topic">DirectoryListing</a> property. At the present time, Indy offers parsers for 30 different host-specific directory listing formats. Additional parsers are offered as new directory listing formats are encountered and codified. Use the IdAllFTPListParser.pas unit to include and register the known directory listing parsers for the Indy library.</p></div>
+</div>
+</div>
+<a name="Todo"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Todo');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTodo">Todo</a></div>
+<div id="divTodo">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Discuss enabling LargeStream support in IOHandlers using <a href="TIdFTP_OnDataChannelCreate.html" target="topic">OnDataChannelCreate</a></p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdExplicitTLSClient.html" target="topic">TIdExplicitTLSClient</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic">TIdFTP Properties</a><br /><a href="!!MEMBERTYPE_Events_TIdFTP.html" target="topic">TIdFTP Events</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

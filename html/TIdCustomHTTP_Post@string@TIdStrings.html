@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCustomHTTP.Post Method (string, TIdStrings)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCustomHTTP_Post@string@TIdStrings.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Methods</a> &gt; <a href="!!OVERLOADED_Post_TIdCustomHTTP.html" target="topic">Post Method</a> &gt; <a href="TIdCustomHTTP_Post@string@TIdStrings.html" target="topic">Post Method (string, TIdStrings)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdCustomHTTP_Post@string@TIdStream@TIdStream.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Post_TIdCustomHTTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdCustomHTTP_Post@string@TIdStrings@TIdStream.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCustomHTTP.Post Method (string, TIdStrings)</div>
+<div class="Element7">
+<a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Send HTTP data to a web server or CGI program.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> Post(
+    AURL: <strong>string</strong>; 
+    ASource: TIdStrings
+): <strong>string</strong>; <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASource&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+String list or stream containing the request data.&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+URL&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Location of the host or CGI application.<br>&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+String - Values received in a <a href="TIdCustomHTTP_Response.html" target="topic">Response</a> for the HTTP POST method.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Post is an overloaded method that is used to send data specified in ASource to the resource location in AURL. Post is overloaded to allow use of either <a href="TIdStrings.html" target="topic">TIdStrings</a> or <a href="TIdStream.html" target="topic">TIdStream</a> object instances in ASource, and also provides procedure- and function-based variants of the method to allow String return values or storage of return values in AResponseContent.&nbsp;</p>
+<p class="Element10">
+By default, Indy will restrict all POST requests to the use of HTTP version 1.0 in the headers for the request. This occurs because some HTTP servers do not respect the RFC for HTTP 1.1 to the full extent of the specification. In particular, most servers do not send or expect to receive the 100-Continue HTTP header.&nbsp;</p>
+<p class="Element10">
+To use HTTP version 1.1 requests when calling the Post method, include the value hoKeepOrigProtocol in the <a href="TIdCustomHTTP_HTTPOptions.html" target="topic">HTTPOptions</a> property. Please note that this does not include retaining a HTTP persistent connection for the session; persistent connections established using the HTTP 'Keep-Alive' header are always closed prior to performing an HTTP Post operation.&nbsp;</p>
+<p class="Element10">
+This variant of the Post method prepares an HTTP request from the values in ASource, and ensures that the content conforms to the default encoding used for HTML forms. This includes setting the content type in the <a href="TIdCustomHTTP_Request.html" target="topic">Request</a> to the value 'application/x-www-form-urlencoded' when it has been omitted or contains the value 'text/html'. Form field names and values in ASource should appear in the order used in the original HTML document with the field name separated from the field value by the '=' character.&nbsp;</p>
+<p class="Element10">
+Field values in ASource will be encoded when the <a href="TIdCustomHTTP_HTTPOptions.html" target="topic">HTTPOptions</a> property contains the value hoForceEncodeParams. Space characters (Decimal 32) are replaced with the character '+'. Other Reserved characters are scaped using the same notation that applies to URLs; that is, non-alphanumeric characters are replaced by `%HH', a percent sign and two hexadecimal digits representing the ASCII code of the character. Line breaks in multi-line text field values are represented as CRLF pairs, i.e. `%0D%0A'. Field value encoding is performed by calling the <a href="TIdURI_ParamsEncode@string.html" target="topic">TIdURI.ParamsEncode</a> method for each line in ASource in NAME=VALUE format.&nbsp;</p>
+<p class="Element10">
+Form field name and value pairs should be separated from each other using the '&amp;' character. Any remaining CRLF line-end sequences found in ASource are replaced with the '&amp;' character.&nbsp;</p>
+<p class="Element10">
+Post calls an overloaded variant of the method to perform the HTTP transfer.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+EAssertionFailed&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised if the source string list for the request is unassigned.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+TIdCustomHTTP.Post&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomHTTP_HTTPOptions.html" target="topic">TIdCustomHTTP.HTTPOptions</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdURI_ParamsEncode@string.html" target="topic">TIdURI.ParamsEncode</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdCustomHTTP.html" target="topic">TIdCustomHTTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdCustomHTTP.html" target="topic">TIdCustomHTTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

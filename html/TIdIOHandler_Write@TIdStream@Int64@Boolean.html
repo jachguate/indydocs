@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdIOHandler.Write Method (TIdStream, Int64, Boolean)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdIOHandler_Write@TIdStream@Int64@Boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdIOHandler.html" target="topic">TIdIOHandler Methods</a> &gt; <a href="!!OVERLOADED_Write_TIdIOHandler.html" target="topic">Write Method</a> &gt; <a href="TIdIOHandler_Write@TIdStream@Int64@Boolean.html" target="topic">Write Method (TIdStream, Int64, Boolean)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdIOHandler_Write@TIdBytes.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Write_TIdIOHandler.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdIOHandler_Write@TIdStrings@Boolean.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdIOHandler.Write Method (TIdStream, Int64, Boolean)</div>
+<div class="Element7">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Writes content from a stream to the IOHandler.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> <strong>Write</strong>(
+    AStream: TIdStream; 
+    ASize: Int64 = 0; 
+    AWriteByteCount: Boolean = False
+); <strong>virtual</strong>; <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStream&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Stream with content to write to the IOHandler.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ASize&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Number of bytes from the stream to write to the IOHandler. Default value is 0.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AWriteByteCount&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Indicates if the bytecount for the operation is written to the IOHandler. Default value is False.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Write is an overloaded method used to write content from a stream to the IOHandler.&nbsp;</p>
+<p class="Element10">
+AStream is a stream instance with the content to write to the IOHandler.&nbsp;</p>
+<p class="Element10">
+ASize indicates the number of bytes from the stream to write to the IOHandler. The default value is 0, and signifies that all of the content in the stream as indicated by its' Size should be written. The value -1 indicates that any content in the stream should be written starting at the current stream position, and and include all content up to and including the Size of the stream. When ASize contains a positive non-zero value, the argument value is used as the total number of bytes to write to the IOHandler.&nbsp;</p>
+<p class="Element10">
+AWriteByteCount indicates if the byte count for the operation is written to the IOHandler. When AWriteByteCount contains True, the value in ASize is written as the initial step in the write operation. ASize will be written as an Int64 data type when <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a> contains True. ASize will be written as an Integer data type when <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a> contains False. The default value for AWriteByteCount is False.&nbsp;</p>
+<p class="Element10">
+Write can raise an <a href="EIdIoHandlerRequiresLargeStream.html" target="topic">EIdIoHandlerRequiresLargeStream</a> exception if ASize is larger than the value MaxInt when <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a> contains False. What does this really mean? It means that older VCL versions that do not support 64-bit stream sizes and positions should not call Write using a byte count value in ASize larger than the value MaxInt.&nbsp;</p>
+<p class="Element10">
+Write signals the <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a>, <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a>, and <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a> event handlers when writing values using the IOHandler. The expected number of bytes in ASize is passed to the <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a> event handler. The <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a> event handler is signalled when byte values are output using the IOHandler. The <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a> event handler is signalled just prior to completion of the method.&nbsp;</p>
+<p class="Element10">
+Write iteratively sends blocks of data from the stream in AStream until the requested number of bytes have been read from the stream and written to the IOHandler. The value in the <a href="TIdIOHandler_SendBufferSize.html" target="topic">SendBufferSize</a> property indicates the number of bytes read from the stream and written to the IOHandler during each iteration of the processing required in the method.&nbsp;</p>
+<p class="Element10">
+Write can raise an <a href="EIdNoDataToRead.html" target="topic">EIdNoDataToRead</a> exception when the required number of bytes in ASize cannot be read from the stream.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdIoHandlerRequiresLargeStream.html" target="topic">EIdIoHandlerRequiresLargeStream</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised when the requested number of bytes is larger than the maximum value supported for the stream.<br>&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdNoDataToRead.html" target="topic">EIdNoDataToRead</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+Raised with the message <a href="RSIdNoDataToRead.html" target="topic">RSIdNoDataToRead</a> when a required number of bytes cannot be read from the stream.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+Write&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_LargeStream.html" target="topic">LargeStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWork.html" target="topic">OnWork</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWorkBegin.html" target="topic">OnWorkBegin</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdIOHandler_OnWorkEnd.html" target="topic">OnWorkEnd</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdIoHandlerRequiresLargeStream.html" target="topic">EIdIoHandlerRequiresLargeStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="EIdNoDataToRead.html" target="topic">EIdNoDataToRead</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdIOHandler.html" target="topic">TIdIOHandler Class</a><br /><a href="!!MEMBEROVERVIEW_TIdIOHandler.html" target="topic">TIdIOHandler Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

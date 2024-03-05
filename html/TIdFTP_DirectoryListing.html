@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.DirectoryListing Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_DirectoryListing.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic">TIdFTP Properties</a> &gt; <a href="TIdFTP_DirectoryListing.html" target="topic">DirectoryListing Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_DataPortProtection.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_DirFormat.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.DirectoryListing Property</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Container for a structured file and directory listing.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> DirectoryListing: TIdFTPListItems;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+DirectoryListing is a read-only <a href="TIdFTPListItems.html" target="topic">TIdFTPListItems</a> property that implements a container for <a href="TIdFTPListItem.html" target="topic">TIdFTPListItem</a> instances created from the result values for the <a href="TIdFTP_List.html" target="topic">List</a> or <a href="TIdFTP_Status@TIdStrings.html" target="topic">Status</a> methods.&nbsp;</p>
+<p class="Element10">
+DirectoryListing provides a structured means of accessing data about files and directories returned from the FTP LIST, <a href="NLST.html" target="topic">NLST</a>, <a href="MLST.html" target="topic">MLST</a>, MLSD, or STAT commands.&nbsp;</p>
+<p class="Element10">
+Items stored in the DirectoryListing container are always cleared prior to adding the values returned by the <a href="TIdFTP_List.html" target="topic">List</a> or <a href="TIdFTP_Status@TIdStrings.html" target="topic">Status</a> methods, or following use of the <a href="TIdFTP_ReInitialize@Cardinal.html" target="topic">Reinitialize</a> method.&nbsp;</p>
+<p class="Element10">
+Accessing values in the DirectoryListing property causes the DirectoryListing property to be initialized (if it has not previously been assigned), and triggers the <a href="TIdFTP_OnCreateFTPList.html" target="topic">OnCreateFTPList</a> event handler to indicate the condition.&nbsp;</p>
+<p class="Element10">
+In addition, accessing values the DirectoryListing property causes the textual directory listing to be parsed into its corresponding structured form.&nbsp;</p>
+<p class="Element10">
+Traditionally, the FTP protocol did not specify a standardized format for file and directory listings in FTP server implementations. This was done to isolate file system dependencies on the FTP server, and probably contributed to the wide-spread acceptance and implementation of the FTP protocol. But this approach also creates problems when we wish to use automated programs for processing files and directories using the FTP protocol.&nbsp;</p>
+<p class="Element10">
+In recent years, enhancements have been proposed for the FTP protocol that allow for consistent yet extensible approach to directory and file listing formats. This has been implemented using the FTP FEAT command, and its corresponding <a href="MLST.html" target="topic">MLST</a> and MLSD features.&nbsp;</p>
+<p class="Element10">
+The Indy library includes support for the <a href="MLST.html" target="topic">MLST</a> and MLSD features, but also provides additional support for the defacto standard directory listing formats.&nbsp;</p>
+<p class="Element10">
+Additional parsers are available that recognize the defacto directory listing formats used in approximately 30 different platforms and operating systems. To include additional parsers for listing formats, the unit containing the parser must be added to the project containing the FTP client. Each parser is automatically registered in the initialization section for the unit. Include the <a href="IdAllFTPListParsers_pas.html" target="topic">IdAllFTPListParsers.pas</a> unit in your application to force all known FTP directory listing parsers to be included and registered.&nbsp;</p>
+<p class="Element10">
+Accessing values stored in DirectoryListing also causes the textual values in <a href="TIdFTP_ListResult.html" target="topic">ListResult</a> to be parsed using the capabilities of the registered parsers for the FTP client. By default, the <a href="NLST.html" target="topic">NLST</a> and <a href="MLST.html" target="topic">MLST</a> directory listing formats are registered for <a href="TIdFTP.html" target="topic">TIdFTP</a>.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_ExtListDir@TIdStrings@string.html" target="topic">ExtListDir</a> and <a href="TIdFTP_ExtListItem@TIdFTPListItems@String.html" target="topic">ExtListItem</a> to access directory or file listings specifically generated using the FTP <a href="MLST.html" target="topic">MLST</a> or MLSD commands.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_ListParserClass.html" target="topic">ListParserClass</a> to access the class reference used to parse the directory format based on values updated in the <a href="CheckListParseCapa@TIdStrings@TIdFTPListItems@String@TIdFTPListParseClass@String@Boolean.html" target="topic">CheckListParseCapa</a> function.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdFTP_DirFormat.html" target="topic">DirFormat</a> to access the identifier for the listing format detected while parsing the directory or file listing.&nbsp;</p>
+<p class="Element10">
+DirectoryListing can also be used in application code to populate GUI controls, like TTreeView or TListView, that display the results of an FTP directory operation.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdFTPListItems.html" target="topic">TIdFTPListItems</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTPListItem.html" target="topic">TIdFTPListItem</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_List.html" target="topic">List</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Status@TIdStrings.html" target="topic">Status</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ReInitialize@Cardinal.html" target="topic">Reinitialize</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_OnCreateFTPList.html" target="topic">OnCreateFTPList</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ListResult.html" target="topic">ListResult</a>&nbsp;</p>
+<p class="Section9">
+ <a href="CheckListParseCapa@TIdStrings@TIdFTPListItems@String@TIdFTPListParseClass@String@Boolean.html" target="topic">CheckListParseCapa</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ExtListDir@TIdStrings@string.html" target="topic">ExtListDir</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ExtListItem@TIdFTPListItems@String.html" target="topic">ExtListItem</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_DirFormat.html" target="topic">DirFormat</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

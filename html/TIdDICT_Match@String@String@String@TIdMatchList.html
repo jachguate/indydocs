@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdDICT.Match Method (String, String, String, TIdMatchList)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdDICT_Match@String@String@String@TIdMatchList.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdDICT.html" target="topic">TIdDICT Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdDICT.html" target="topic">TIdDICT Methods</a> &gt; <a href="!!OVERLOADED_Match_TIdDICT.html" target="topic">Match Method</a> &gt; <a href="TIdDICT_Match@String@String@String@TIdMatchList.html" target="topic">Match Method (String, String, String, TIdMatchList)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!OVERLOADED_Match_TIdDICT.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_Match_TIdDICT.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdDICT_Match@String@String@TIdMatchList@Boolean.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdDICT.Match Method (String, String, String, TIdMatchList)</div>
+<div class="Element7">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Searches a dictionary index for words that match the specified criteria.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Match(
+    <strong>const</strong> AWord: <strong>String</strong>; 
+    <strong>const</strong> ADBName: <strong>String</strong>; 
+    <strong>const</strong> AStrat: <strong>String</strong>; 
+    AResults: TIdMatchList
+); <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AWord&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Word to match in the selected database.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADBName&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Database to search for word matches.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AStrat&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Search strategy for the matches.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AResults&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Container for matches found in the dictionary indices.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Match is an overloaded method used to search an index for a dictionary on the DICT server, and reports words found using a particular search strategy. Not all strategies are useful for all dictionaries, and some dictionaries may support additional search strategies (e.g., reverse lookup).&nbsp;</p>
+<p class="Element10">
+Match sends the DICT MATCH command using the provided arguments.&nbsp;</p>
+<p class="Element10">
+AWord indictes the word to match, and is used relative to the search strategy.&nbsp;</p>
+<p class="Element10">
+AResults is the container for the word matches found using a given search strategy.&nbsp;</p>
+<p class="Element10">
+All DICT servers implement the MATCH command, and must support the &quot;exact&quot; and &quot;prefix&quot; strategies. These are easy to implement and are generally the most useful. Other strategies are server dependent.&nbsp;</p>
+<p class="Element10">
+The &quot;exact&quot; strategy matches a word exactly, although different servers may treat non-alphanumeric data differently. Case-insensitive comparison which ignores non-alphanumeric characters and which folds whitespace is useful for English-language dictionaries. Other comparisons may be more appropriate for other languages or when using extended character sets.&nbsp;</p>
+<p class="Element10">
+The &quot;prefix&quot; strategy is similar to &quot;exact&quot;, except that it only compares the first part of the word.&nbsp;</p>
+<p class="Element10">
+Different servers may implement these algorithms differently. The requirement is that strategies with the names &quot;exact&quot; and &quot;prefix&quot; exist so that a simple client can use them.&nbsp;</p>
+<p class="Element10">
+Other strategies that might be considered by a server implementor are matches based on substring, suffix, regular expressions, soundex [KNUTH73], and Levenshtein [PZ85] algorithms. These last two are especially useful for correcting spelling errors. Other useful strategies perform some sort of &quot;reverse&quot; lookup (i.e., by searching definitions to find the word that the query suggests).&nbsp;</p>
+<p class="Element10">
+If the database name is specified with an exclamation point (decimal code 33, &quot;!&quot;), then all of the databases will be searched until a match is found, and all matches in that database will be displayed. If the database name is specified with a star (decimal code 42, &quot;*&quot;), then all of the matches in all available databases will be displayed. In both of these special cases, the databases will be searched in the same order as that printed by the &quot;SHOW DB&quot; command.&nbsp;</p>
+<p class="Element10">
+If the strategy is specified using a period (decimal code 46, &quot;.&quot;), then the word will be matched using a server-dependent default strategy, which should be the best strategy available for interactive spell checking. This is usually a derivative of the Levenshtein algorithm [PZ85].&nbsp;</p>
+<p class="Element10">
+Match sends the DICT MATCH command using the values indicated in ADBName, AStrat, and AWord as arguments.&nbsp;</p>
+<p class="Element10">
+If no matches are found in any of the searched databases, then status code 552 will be returned.&nbsp;</p>
+<p class="Element10">
+Otherwise, status code 152 will be returned followed by a list of matched words in AResults.&nbsp;</p>
+<p class="Element10">
+This makes the responses directly useful in a DEFINE command.&nbsp;</p>
+<p class="Element10">
+Following the list, status code 250 is sent, which may include server-specific timing and statistical information, as discussed in the section on the DEFINE command.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Responses</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="8%">
+<div class="Element66">
+Rsp&nbsp;</div></td><td class="Element65" valign="top" width="92%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+550&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+Invalid database, use &quot;SHOW DB&quot; for list of databases&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+551&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+Invalid strategy, use &quot;SHOW STRAT&quot; for a list of strategies&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+552&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+No match&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+152&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+n matches found - text follows&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+250&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+ok (optional timing information here)&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+TIdDICT.Match&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMatchList.html" target="topic">TIdMatchList</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdDICT.html" target="topic">TIdDICT Class</a><br /><a href="!!MEMBEROVERVIEW_TIdDICT.html" target="topic">TIdDICT Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

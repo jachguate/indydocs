@@ -1,0 +1,425 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Packages Changes</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'MigratingIndy10Packages.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="MigratingIndy10.html" target="topic">Migrating to Indy.Sockets Version 10</a> &gt; <a href="MigratingIndy10Packages.html" target="topic">Packages Changes</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="MigratingIndy10NetCompatibility.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="MigratingIndy10.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="ChangesObjectHierarchy.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Packages Changes</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+One significant change in Indy 10 is the reorganization of the library into four separate packages.&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">IndySystem</li>
+<li class="Element601">IndyCore</li>
+<li class="Element601">IndyProtocols</li>
+<li class="Element601">IndySuperCore</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+Each package, except IndySystem, consists of both a runtime and designtime .DPK file for Delphi compiler versions 4, 5, 6, 7, 8, Delphi 2005, Delphi 2006, and Kylix 3. (IndySystem has only a runtime .DPK file - the designtime .DPK is not required.)&nbsp;</p>
+<p class="Element10">
+.DPK files for the packages include the package name and the compiler version as part of the package file name. For instance, the IndySystem package file for Delphi 7 is represented by the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  IndySystem70.dpk</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For platforms that offer support for .Net, the package file naming convention is similar but includes a suffix that indicates support for the .Net platform. For example:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  IndySystem80Net.dpk</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For packages that include designtime components, an additional package file is available. For instance, the designtime IndyCore package file for Delphi 7 is represented by the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element103"><div class="Element102"><pre class="Element102">  dclIndyCore70.dpk</pre></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+.DPK files are located in the same directory as the source code for the package. The following is a list of the package file names and directory names relative to the Indy installation directory:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Indy Packages for Delphi 4 Pro and Enterprise</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem40.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.40.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.40.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols40.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols40.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 5</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem50.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.50.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.50.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols50.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols50.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 6</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem60.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.60.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.60.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols60.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols60.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 7</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\SuperCore\IndySuperCore.70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\SuperCore\dclIndySuperCore.70.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 8</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem80Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.80Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.80Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols80Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols80Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+</p><div class="Element15">
+Indy Packages for Delphi 2005 (Win32 support)</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols90.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 2005 (.Net support)</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem90Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.90Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.90Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols90Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols90Net.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 2006 (Win32 support)</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols90.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Indy Packages for Delphi 2006 (.Net support)</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\System\IndySystem100Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\IndyCore.100Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Core\dclIndyCore.100Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\IndyProtocols100Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+.\Protocols\dclIndyProtocols100Net.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Installing Indy Using Package Files</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Installation of the Indy library using the package files is a very simple process. Package files need to be built in the following order:&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">IndySystem</li>
+<li class="Element601">IndyCore</li>
+<li class="Element601">IndyProtocols</li>
+<li class="Element601">(optional) IndySuperCore (for Delphi 7 only)</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+If a package has both runtime and designtime .DPK files, the runtime .DPK must be compiled. The designtime .DPK file must be compiled and installed in the IDE. Since source code resides in separate directories for each package, the directory name for any dependent package must be added to the library search path using the IDE options. For example, the following steps are required to install Indy 10 for Delphi 7 including the optional IndySuperCore package:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="19%">
+<div class="Element66">
+Package&nbsp;</div></td><td class="Element65" valign="top" width="62%">
+<div class="Element66">
+Package file name&nbsp;</div></td><td class="Element65" valign="top" width="19%">
+<div class="Element66">
+Action(s)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndySystem&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\System\IndySystem70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndyCore&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\Core\IndyCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndyCore&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\Core\dclIndyCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile/Install&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndyProtocols&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\Protocols\IndyProtocols70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndyProtocols&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\Protocols\dclIndyProtocols70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile/Install&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndySuperCore&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\SuperCore\IndySuperCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="19%">
+<div class="Element68">
+IndySuperCore&nbsp;</div></td><td class="Element67" valign="top" width="62%">
+<div class="Element68">
+$(Indy)\SuperCore\dclIndySuperCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="19%">
+<div class="Element68">
+Compile/Install&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Changes to the Uses Clause</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+As a result of package and unit changes, the Uses clause in programs may need to be edited to reflect that the proper file name is in use. This could be a result of different search or library paths in the IDE, but most often it is because something moved from one unit to another unit and can no longer be resolved at compile time.&nbsp;</p>
+<p class="Element10">
+When attempting to open a project created with a prior version of Indy, you may receive warnings about missing properties when loading DFM files. This is caused by Forms or Frames that contain visual Indy components with properties that have been removed or renamed in Indy
+<ol class="Element631">
+<li value="10" class="Element601">In most cases, you can Ignore the error message, recompile, and</li>
+</ol>save to the form to eliminate the warning. In the worst case, you may be required to removed the troublesome component and re-add the component in the IDE.&nbsp;</p>
+<p class="Element10">
+For more information about .Net-specific code and issues, please refer to the Delphi documentation in the &quot;Porting Applications to VCL for .Net&quot; section.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

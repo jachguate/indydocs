@@ -1,0 +1,183 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTPListItem Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTPListItem.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTPListItem.html" target="topic">TIdFTPListItem Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTPListBaseHeader_ParseListing@TIdStrings@TIdFTPListItems.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdFTPListItem.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTPListItem Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdFTPListItem.html" target="topic">TIdFTPListItem Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdFTPListItem.html" target="topic">TIdFTPListItem Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTPListItem.html" target="topic">TIdFTPListItem Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents items added to the structured directory listing collection for the Indy FTP client.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdFTPList_pas.html" target="topic">IdFTPList</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdFTPListItem.png" border="0" alt="" title="" usemap="#TIdFTPListItem"><map class="Element150" name="TIdFTPListItem"><area class="Element150" shape="rect" coords="123,0,207,15" href="TIdFTPListItem.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdFTPListItem = <strong>class</strong>(TIdCollectionItem);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdFTPListItem is a <a href="TIdCollectionItem.html" target="topic">TIdCollectionItem</a> descendant that represents items added to the <a href="TIdFTPListItems.html" target="topic">TIdFTPListItems</a> structured directory listing for the Indy FTP client.&nbsp;</p>
+<p class="Element10">
+TIdFTPListItem contains properties that represent common information for items parsed from an FTP response and added to the structured directory listing in <a href="TIdFTP.html" target="topic">TIdFTP</a> client. These properties include the following:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="12%">
+<div class="Element66">
+Property&nbsp;</div></td><td class="Element65" valign="top" width="88%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_Data.html" target="topic">Data</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Values parsed from the FTP directory listing response and used to initialize properties in the collection item.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_Size.html" target="topic">Size</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+<a href="TIdFTPListItem_Size.html" target="topic">Size</a> allocated for the resource on the remote FTP server.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_ModifiedDate.html" target="topic">ModifiedDate</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Last modified date and time for the resource on the remote FTP server.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_FileName.html" target="topic">FileName</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+File name for the resource.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_LocalFileName.html" target="topic">LocalFileName</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Suggested file name for the resopurce if stored on the local file system.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_ItemType.html" target="topic">ItemType</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Type of item represented by the collection entry.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_SizeAvail.html" target="topic">SizeAvail</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Indicates if file size information is available for the resource on the remote FTP server.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_ModifiedAvail.html" target="topic">ModifiedAvail</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+Indicates if last modification date and time information is available for the resource on the remote FTP server.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="12%">
+<div class="Element68">
+<a href="TIdFTPListItem_PermissionDisplay.html" target="topic">PermissionDisplay</a>&nbsp;</div></td><td class="Element67" valign="top" width="88%">
+<div class="Element68">
+User-displayable representation of permissions assigned for the resource on the remote FTP server.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Use the <a href="TIdFTPListItem_Assign@TIdPersistent.html" target="topic">Assign</a> method to copy property values from another TIdFTPListItem instance into the current object instance.&nbsp;</p>
+<p class="Element10">
+Some remote FTP server file systems support additional values that can be detected and parsed by a registered parser in the FTP client. For those parser implementations, TIdFTPListItem may be use as an ancestor class for the collection item that maintains additional file system information.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdCollectionItem.html" target="topic">TIdCollectionItem</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTPListItems.html" target="topic">TIdFTPListItems</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_DirectoryListing.html" target="topic">TIdFTP.DirectoryListing</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdFTPListItem.html" target="topic">TIdFTPListItem Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdFTPListItem.html" target="topic">TIdFTPListItem Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdFTPListItem.html" target="topic">TIdFTPListItem Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TMINFORecord Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TMINFORecord.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TMINFORecord.html" target="topic">TMINFORecord Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIpProperty_OnChange.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TMINFORecord.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TMINFORecord Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TMINFORecord.html" target="topic">TMINFORecord Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TMINFORecord.html" target="topic">TMINFORecord Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TMINFORecord.html" target="topic">TMINFORecord Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents a resource record returned from a DNS query that includes mailbox or mailing list resource record types.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TMINFORecord.png" border="0" alt="" title="" usemap="#TMINFORecord"><map class="Element150" name="TMINFORecord"><area class="Element150" shape="rect" coords="123,0,200,15" href="TResultRecord.html"><area class="Element150" shape="rect" coords="230,0,315,15" href="TMINFORecord.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TMINFORecord = <strong>class</strong>(TResultRecord);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TMINFORecord is a <a href="TResultRecord.html" target="topic">TResultRecord</a> descendant that represents a resource record returned in the results for a DNS query. TMINFORecord is a collection item created to represent a resource record returned when TIDNSResolver.QueryRecords includes the value qtMINFO for Mailbox Information resource records.&nbsp;</p>
+<p class="Element10">
+MINFO resource records are an experimental record type used to represent mailbox addresses for both the maintainer and error logging facilities for a mailing list or email address specified in the owner.&nbsp;</p>
+<p class="Element10">
+An MINFO resoure record uses the same DNS packet layout as other <a href="TResultRecord.html" target="topic">TResultRecord</a>-based responses, but extends the use of <a href="TResultRecord_RData.html" target="topic">RData</a> to include the following definition and format:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">RMAILBX - Domain name which specifies a mailbox which is responsible for the mailing list or mailbox. If this domain name names the root, the owner of the MINFO Resource Record is responsible for itself. Many existing mailing lists use a mailbox X-request for the RMAILBX field of mailing list X, e.g., Msgroup-request for Msgroup. This field provides a more general mechanism.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">EMAILBX - Domain name which specifies a mailbox used to receive error messages related to the mailing list or mailbox specified by the owner of the MINFO Resource Record (similar to the ERRORS-TO: field which has been proposed). If this domain name names the root, errors should be returned to the sender of the message.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+Although MINFO resource record can be associated with a simple mailbox, they are usually used with a mailing list address.&nbsp;</p>
+<p class="Element10">
+TMINFORecord extends <a href="TTextRecord.html" target="topic">TTextRecord</a> to implement the specifics of accessing <a href="TResultRecord_RData.html" target="topic">RData</a> values as properties, including <a href="TMINFORecord_ResponsiblePersonMailbox.html" target="topic">ResponsiblePersonMailbox</a> and <a href="TMINFORecord_ErrorMailbox.html" target="topic">ErrorMailbox</a>.&nbsp;</p>
+<p class="Element10">
+TMINFORecord also overrides the <a href="TMINFORecord_Parse@TIdBytes@Integer.html" target="topic">Parse</a> method to read the values in <a href="TResultRecord_RData.html" target="topic">RData</a> into their property counterparts.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TResultRecord.html" target="topic">TResultRecord</a> <a href="TQueryResult.html" target="topic">TQueryResult</a> TIdDNSResolver.QueryRecords</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TMINFORecord.html" target="topic">TMINFORecord Methods</a><br /><a href="!!MEMBERTYPE_Properties_TMINFORecord.html" target="topic">TMINFORecord Properties</a><br /><a href="!!MEMBEROVERVIEW_TMINFORecord.html" target="topic">TMINFORecord Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

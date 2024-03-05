@@ -1,0 +1,613 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>Packages and Assemblies</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'PackagesAndAssemblies.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: <a href="IntroIndy10.html" target="topic">Introduction to Indy.Sockets version 10</a> &gt; <a href="PackagesAndAssemblies.html" target="topic">Packages and Assemblies</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="WhatsNewIndy10.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="IntroIndy10.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="InstallUninstall.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+Packages and Assemblies</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+An overview of the Packages and Assemblies in the Internet Direct (Indy) source code.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Indy.Sockets Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The source code in the Indy 10 library has been reorganized into the following packages:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">IndySystem</li>
+<li class="Element600">IndyCore</li>
+<li class="Element600">IndyProtocols</li>
+<li class="Element600">IndySuperCore (for use with Delphi 7 only)</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Each package (and the source files used in the package) are stored in separate directories. For example, Delphi 2005 could have Indy package files and source code in the following directories:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\BDS\3.0\Source\Indy10\System&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\BDS\3.0\Source\Indy10\Core&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+C:\Program Files\Borland\BDS\3.0\Source\Indy10\Protocols&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Each package includes a run-time .DPK file for Delphi compiler versions 4, 5, 6, 7, 2005 (and beyond). For packages that also include installable IDE components, there is also a design-time .DPK file for Delphi compiler versions 4, 5, 6, 7, 2005 (and beyond).&nbsp;</p>
+<p class="Element10">
+The compiler version is used as a suffix in the package file name. For example, Delphi 2005 (compiler version 9.0) uses the suffix '90' in all package file names.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Delphi 5 Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="20%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="41%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndySystem50.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyCore50.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore50.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyProtocols50.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols50.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 6 Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="20%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="41%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndySystem60.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyCore60.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore60.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyProtocols60.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols60.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 7 Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="21%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="40%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndySystem70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndyCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndyProtocols70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols70.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\SuperCore&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndySuperCore70.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndySuperCore70.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 2005 VCL Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="20%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="41%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndySystem90.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyCore90.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore90.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyProtocols90.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols90.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 2005 .NET Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="18%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="43%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndySystem90Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndyCore90Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore90Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndyProtocols90Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols90Net.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 2006 VCL Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="20%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="42%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="42%">
+<div class="Element68">
+IndySystem100.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="42%">
+<div class="Element68">
+IndyCore100.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore100.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="20%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="42%">
+<div class="Element68">
+IndyProtocols100.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols100.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 2006 .NET Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="18%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="43%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndySystem100Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndyCore100Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore100Net.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="18%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="43%">
+<div class="Element68">
+IndyProtocols100Net.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols100Net.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If you are using a version of Indy.Sockets that is installed along with the Borland Developer Studio 2006 IDE and compilers, the compiler verison suffix is omitted from the package names. For Instance:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+Delphi 2006 Borland-Installed .NET Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="22%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="40%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="22%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndySystem.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="22%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndyCore.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore.dpk&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="22%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="40%">
+<div class="Element68">
+IndyProtocols.dpk&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols.dpk&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+Delphi 2006 Borland-Installed Win32 Packages</div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="21%">
+<div class="Element66">
+Path&nbsp;</div></td><td class="Element65" valign="top" width="41%">
+<div class="Element66">
+Run-time Package&nbsp;</div></td><td class="Element65" valign="top" width="39%">
+<div class="Element66">
+Design-time Package&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\System&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndySystem.dpkw&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+n/a&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\Core&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyCore.dpkw&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyCore.dpkw&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="21%">
+<div class="Element68">
+.\Protocols&nbsp;</div></td><td class="Element67" valign="top" width="41%">
+<div class="Element68">
+IndyProtocols.dpkw&nbsp;</div></td><td class="Element67" valign="top" width="39%">
+<div class="Element68">
+dclIndyProtocols.dpkw&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+The IndySystem Package</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IndySystem package (IndySystemXX.dpk) provides system-level support for constructs used in the Indy library. For instance:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Winsock2 header translations</li>
+<li class="Element600">Socket handle classes for supported platforms</li>
+<li class="Element600">Stream implementations for VCL and .Net</li>
+<li class="Element600">Run-time library support classes for VCL, VCL.Net, and the .Net FCL</li>
+<li class="Element600">Utility Classes/Procedures/Functions</li>
+<li class="Element600">Exceptions</li>
+<li class="Element600">The base component in the Indy library</li>
+<li class="Element600">GUI integration classes for blocking socket operations</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+The IndyCore Package</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IndyCore package includes the essential base classes and components needed to implement ICMP, TCP, and UDP clients or servers, including:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<ul class="Element630">
+<li class="Element600">Buffers used for reading and writing in the Indy library</li>
+<li class="Element600">An ICMP client</li>
+<li class="Element600">A TCP client and server</li>
+<li class="Element600">A TCP client and server that implement support for command handlers</li>
+<li class="Element600">A UDP client and server</li>
+<li class="Element600">IP address classes</li>
+<li class="Element600">IOHandlers</li>
+<li class="Element600">Intercepts</li>
+<li class="Element600">Logging components</li>
+<li class="Element600">RFC-compliant message response formats</li>
+<li class="Element600">Threads</li>
+<li class="Element600">Thread-safe data types</li>
+<li class="Element600">A design-time GUI integration class</li>
+</ul><p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IndyCore package does not include support for any of the higher-level protocols.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+The IndyProtocols Package</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IndyProtocols package implements classes need to create and support clients and servers for Internet Standard protocols, like:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+HTTP&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+QOTD&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+FTP&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+RSH&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+SMTP&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+SASL&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+NNTP&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+SNMP&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+POP3&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+Socks&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+IMAP4&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+SysStat&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+DNS&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+TFTP&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+Finger&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+WebDAV&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+Gopher&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+Hashing algorithms&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+HL7&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+MIME, UUE, and XXE message handling&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+Ident&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+Encryption and Decryption&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+WhoIs&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+Compression using ZLib&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+SNTP&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+Cookies&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+Time&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+URI&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="30%">
+<div class="Element68">
+Echo&nbsp;</div></td><td class="Element67" valign="top" width="70%">
+<div class="Element68">
+VCard&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<div class="Element15">
+The IndySuperCore Package</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+The IndySuperCore package provides support for advance functionality available on Windows server platforms for the Fibers API, I/O Completion Ports, and chained IOHandlers.&nbsp;</p>
+<p class="Element10">
+The IndySuperCore package is designed to aid in creating more scalable servers where thousands of simultaneous client connections are required.&nbsp;</p>
+<p class="Element10">
+Fiber and IOCP APIs are supported only for the Windows 2000, 2003, and XP operating systems using Delphi version 7. Windows 95, 98, and ME are not supported. Delphi compilers prior to version 7 are also unsupported due to critical changes in the VCL since those releases.&nbsp;</p>
+<p class="Element10">
+For more detailed information about differences in the implementations for the Indy 9 and Indy 10 libraries, please refer to the &quot;Migrating to Indy 10&quot; section in the documentation.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element15">
+.Net Assemblies</div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Indy.Sockets is developed using the Delphi programming language (formerly know as Object Pascal). Borland IDE users can compile packages and assemblies using the package files included in the source code for the library. For users on .NET platform that do not include support for the Delphi language (including VS.NET and Mono), the Indy.Sockets.DLL pre-compiled assembly is available from the Indy website.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p></div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

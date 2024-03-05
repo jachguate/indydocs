@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdMimeTable Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdMimeTable.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdMimeTable.html" target="topic">TIdMimeTable Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdMIMEBoundaryStrings_IndyMIMEBoundary.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdMimeTable.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdMimeTable Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdMimeTable.html" target="topic">TIdMimeTable Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdMimeTable.html" target="topic">TIdMimeTable Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdMimeTable.html" target="topic">TIdMimeTable Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Provides access to MIME types for the local computer.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdGlobalProtocols_pas.html" target="topic">IdGlobalProtocols</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdMimeTable.png" border="0" alt="" title="" usemap="#TIdMimeTable"><map class="Element150" name="TIdMimeTable"><area class="Element150" shape="rect" coords="82,0,161,15" href="TIdMimeTable.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdMimeTable = <strong>class</strong>(TObject);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdMimeTable is a class used in Indy to provide access to the known MIME types and file name extensions from settings on the local computer system. TIdMimeTable provides a degree of isolation from the issues related to platform-specific MIME type storage.&nbsp;</p>
+<p class="Element10">
+On the Windows platform, TIdMimeTable relies on an initial set of common MIME types supplemented by values harvested from the Windows HKEY_CLASSES_ROOT Registry key. On the Linux platform, there is no universal counterpart to the Windows Registry for MIME types. A text-based configuration file is normally present in most Linux distributions. But it's name and location in the file system hierarchy is different for each family of distribution. Each Desktop/Window manager, and many applications, maintain their own MIME type configuration files. Their names and locations are almost always radically different, too.&nbsp;</p>
+<p class="Element10">
+To accommodate developers on both platforms, TIdMimeTable provides methods that can be used to control the location, format, and content of values used for MIME types. The <a href="TIdMimeTable_OnBuildCache.html" target="topic">OnBuildCache</a> event handler can be used to override loading of the cached MIME types registered on the local computer. In addition, <a href="TIdMimeTable_LoadFromStrings@TIdStrings@Char.html" target="topic">LoadFromStrings</a> and <a href="TIdMimeTable_SaveToStrings@TIdStrings@Char.html" target="topic">SaveToStrings</a> can be used to override the values loaded and stored for TIdMimeTable.&nbsp;</p>
+<p class="Element10">
+<a href="TIdMimeTable_GetFileMIMEType@string.html" target="topic">GetFileMIMEType</a> can be used to retrieve the MIME type for a specified file name based on the file extension. <a href="TIdMimeTable_GetDefaultFileExt@string.html" target="topic">GetDefaultFileExt</a> can be used to retrieve the file extension associated with the specified MIME type. Use <a href="TIdMimeTable_AddMimeType@string@string.html" target="topic">AddMimeType</a> to add a file extension and MIME type to TIdMimeTable.&nbsp;</p>
+<p class="Element10">
+TIdMimeTable is designed primarily for use by client applications. But, TIdMimeTable is also used in <a href="TIdCustomHTTPServer.html" target="topic">TIdCustomHTTPServer</a> to determine the file names and extensions that can be provided for an HTTP request with &quot;Accept&quot; header(s) for specific MIME types.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdMimeTable_OnBuildCache.html" target="topic">TIdMimeTable.OnBuildCache</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_LoadTypesFromOS.html" target="topic">LoadTypesFromOS</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_LoadFromStrings@TIdStrings@Char.html" target="topic">TIdMimeTable.LoadFromStrings</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_SaveToStrings@TIdStrings@Char.html" target="topic">TIdMimeTable.SaveToStrings</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_GetFileMIMEType@string.html" target="topic">TIdMimeTable.GetFileMIMEType</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_GetDefaultFileExt@string.html" target="topic">TIdMimeTable.GetDefaultFileExt</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdMimeTable_AddMimeType@string@string.html" target="topic">TIdMimeTable.AddMimeType</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomHTTPServer_MIMETable.html" target="topic">TIdCustomHTTPServer.MIMETable</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IndySupport.html" target="topic">IndySupport</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdMimeTable.html" target="topic">TIdMimeTable Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdMimeTable.html" target="topic">TIdMimeTable Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdMimeTable.html" target="topic">TIdMimeTable Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

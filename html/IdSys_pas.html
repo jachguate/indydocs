@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>IdSys.pas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'IdSys_pas.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Files &gt; <a href="IdSys_pas.html" target="topic">IdSys.pas</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="IdSync_pas.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="IdSysBase_pas.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+IdSys.pas</div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Description,See_Also,Classes,Types', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Description,See_Also,Classes,Types', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.</p></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IdSys.pas contains classes and types needed to minimize dependencies on platform-specific APIs as used in the the Borland RTL (Run-Time Library).&nbsp;</p>
+<p class="Element10">
+The Sys class instance in the unit provides primarily class methods that can be called without requiring an explicit instance of the class. These methods are provided to minimize dependencies on RTL where its' implementation may require Operating System- or platform-specific API calls that may not be available on all platforms, including use of VCL-specific classes, procedures, and functions that are not available for VS.Net distributions of the Indy library.&nbsp;</p>
+<p class="Element10">
+Please note that additional units provide platform-specific implementations, and are included based on the following defines:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="16%">
+<div class="Element66">
+Define&nbsp;</div></td><td class="Element65" valign="top" width="33%">
+<div class="Element66">
+Unit&nbsp;</div></td><td class="Element65" valign="top" width="51%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+DotNetDistro&nbsp;</div></td><td class="Element67" valign="top" width="33%">
+<div class="Element68">
+<a href="IdSysNet_pas.html" target="topic">IdSysNet.pas</a>&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+.Net without VCL dependencies&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+MSWindows&nbsp;</div></td><td class="Element67" valign="top" width="33%">
+<div class="Element68">
+<a href="IdSysWin32_pas.html" target="topic">IdSysWin32.pas</a>&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Windows API&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+Linux&nbsp;</div></td><td class="Element67" valign="top" width="33%">
+<div class="Element68">
+<a href="IdSysLinux_pas.html" target="topic">IdSysLinux.pas</a>&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Linux API&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="33%">
+<div class="Element68">
+<a href="IdSysVCL_pas.html" target="topic">IdSysVCL.pas</a>&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+VCL.Net dependencies&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="33%">
+<div class="Element68">
+<a href="IdSysBase_pas.html" target="topic">IdSysBase.pas</a>&nbsp;</div></td><td class="Element67" valign="top" width="51%">
+<div class="Element68">
+Base class for all platforms&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Exceptions are another area where platform-specific implementations of the Exception and EIdExceptionBase classes can provide difficulties in maintaining a single-source code base for the Indy library. All exception raised by the Indy library must descend from <a href="EIdException.html" target="topic">EIdException</a> and not from EIdExceptionBase. EIdExceptionBase is the base class that differentiates Indy exceptions from non-Indy exceptions in a cross- platform manner. In IdSys.pas, EIdExceptionBase is an alias that references the correct ancestor class for the platform using the folowing defines:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="44%">
+<div class="Element66">
+Define&nbsp;</div></td><td class="Element65" valign="top" width="56%">
+<div class="Element66">
+Ancestor class&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="44%">
+<div class="Element68">
+DotNetDistro&nbsp;</div></td><td class="Element67" valign="top" width="56%">
+<div class="Element68">
+System.Exception&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="44%">
+<div class="Element68">
+All Other platforms&nbsp;</div></td><td class="Element67" valign="top" width="56%">
+<div class="Element68">
+SysUtils.Exception&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In a similar manner, aliases are used for the EAbort and the Exception types to ensure that the correct platform-specific implementations are used. For .Net platforms not based on VCL, EAbort and Exception are aliased in the following manner:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="37%">
+<div class="Element66">
+Symbol&nbsp;</div></td><td class="Element65" valign="top" width="63%">
+<div class="Element66">
+Alias&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="37%">
+<div class="Element68">
+EAbort&nbsp;</div></td><td class="Element67" valign="top" width="63%">
+<div class="Element68">
+IdSysNET.EAbort&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="37%">
+<div class="Element68">
+Exception&nbsp;</div></td><td class="Element67" valign="top" width="63%">
+<div class="Element68">
+System.Exception&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+For all other platforms where VCL is used, EAbort and Exception are aliased in the following manner:&nbsp;</p>
+<p class="Element10">
+Symbol Alias</p><div class="Element15">
+--------- ------------------</div>
+<p class="Element10">
+Exception SysUtils.Exception EAbort SysUtils.EAbort &nbsp;</p>
+<p class="Element10">
+Finally, the implementation of a date and time value differs for the platform hosting the Indy library. To isolate this difference, Indy uses a <a href="TIdDateTimeBase.html" target="topic">TIdDateTimeBase</a> type as the ancestor for all date and time values used in the library. For platforms using VCL, <a href="TIdDateTimeBase.html" target="topic">TIdDateTimeBase</a> is an alias for the TDateTime type. For .Net platforms not using VCL, <a href="TIdDateTimeBase.html" target="topic">TIdDateTimeBase</a> is an alias for the Double type defined in the framework class library. IdSys.pas defines the TIdDateTime type using the TIdDateTimeBaser alias declared for the host platform.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+Sys&nbsp;</p>
+<p class="Section9">
+ EAbort&nbsp;</p>
+<p class="Section9">
+ Exception&nbsp;</p>
+<p class="Section9">
+ EIdExceptionBase&nbsp;</p>
+<p class="Section9">
+ TIdDateTime&nbsp;</p>
+<p class="Section9">
+ <a href="IdSysBase_pas.html" target="topic">IdSysBase.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdSysLinux_pas.html" target="topic">IdSysLinux.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdSysNet_pas.html" target="topic">IdSysNet.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdSysVCL_pas.html" target="topic">IdSysVCL.pas</a>&nbsp;</p>
+<p class="Section9">
+ <a href="IdSysWin32_pas.html" target="topic">IdSysWin32.pas</a></p></div>
+</div>
+</div>
+<a name="Classes"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Classes');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgClasses">Classes</a></div>
+<div id="divClasses">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Class&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+Sys&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Types"></a><div class="Section1000030">
+<a onclick="toggleVisibilityStored('Types');" class="a_Section1000030"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgTypes">Types</a></div>
+<div id="divTypes">
+<div class="Element10030">
+<div class="Section30">
+<div class="Element212">
+<div class="TableDiv">
+<table cellspacing="0" class="Table0">
+<tr>
+<td class="Element200" valign="top" width="35%">
+<div class="Element201">
+Type&nbsp;</div></td><td class="Element204" valign="top" width="65%">
+<div class="Element205">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+EAbort&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+EIdExceptionBase&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+Exception&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.&nbsp;</div></td></tr><tr>
+<td class="Element202" valign="top" width="35%">
+<div class="Element203">
+TIdDateTime&nbsp;</div></td><td class="Element206" valign="top" width="65%">
+<div class="Element207">
+Contains classes and types needed to minimize dependencies on platform-specific APIs and the Borland RTL.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

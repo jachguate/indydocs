@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdThreadSafeDateTime Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdThreadSafeDateTime.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdThreadSafeCardinal_Value.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TIdThreadSafeDateTime.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdThreadSafeDateTime Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Implements a thread-safe DateTime data type.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdThreadSafe_pas.html" target="topic">IdThreadSafe</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TIdThreadSafeDateTime.png" border="0" alt="" title="" usemap="#TIdThreadSafeDateTime"><map class="Element150" name="TIdThreadSafeDateTime"><area class="Element150" shape="rect" coords="0,0,81,15" href="TIdThreadSafe.html"><area class="Element150" shape="rect" coords="111,0,233,15" href="TIdThreadSafeDateTime.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TIdThreadSafeDateTime = <strong>class</strong>(TIdThreadSafe);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TIdThreadSafeDateTime is a <a href="TIdThreadSafe.html" target="topic">TIdThreadSafe</a> descendant that implements a thread-safe data type for storing a <a href="IdSys_pas.html" target="topic">TIdDateTime</a> value.&nbsp;</p>
+<p class="Element10">
+TIdThreadSafeDateTime uses <a href="TIdCriticalSection.html" target="topic">TIdCriticalSection</a> for resource protection in multi-threaded applications.&nbsp;</p>
+<p class="Element10">
+TIdThreadSafeDateTime implements the <a href="TIdThreadSafeDateTime_Value.html" target="topic">Value</a> property for reading or writing the native data type for the class instance using resource protection.&nbsp;</p>
+<p class="Element10">
+TIdThreadSafeDateTime also implements methods that protect write access to the <a href="TIdThreadSafeDateTime_Value.html" target="topic">Value</a> for the data type when performing date arithemtic operations in <a href="TIdThreadSafeDateTime_Add@TIdDateTime.html" target="topic">Add</a> and <a href="TIdThreadSafeDateTime_Subtract@TIdDateTime.html" target="topic">Subtract</a>.&nbsp;</p>
+<p class="Element10">
+<img src="Win.png" border="0" alt="" title=""> <img src="Linux.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+On the Win32 and Linux platorms, <a href="IdSys_pas.html" target="topic">TIdDateTime</a> is defined as a Double (64-bit floating-point number). Date and time information in <a href="IdSys_pas.html" target="topic">TIdDateTime</a> is stored as the number of days since midnight on 30-Dec-1899.&nbsp;</p>
+<p class="Element10">
+<img src="DotNet.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+On the .Net platform, <a href="IdSys_pas.html" target="topic">TIdDateTime</a> is a record that handles implicit conversions to and from a Double value. Internally, the Date/Time value is stored using the System.DateTime type from the Framework Class Library.&nbsp;</p>
+<p class="Element10">
+System.DateTime was designed to hold dates and times, while Double (the original TDateTime) was designed to hold floating-point numbers. Delphi coders relied on this small, but critical, implementation detail. Since TDateTime was a double, it was easy to perform arithmetic operations on it - for example, subtracting one TDateTime from another to get the difference between them in days. Occasionally, the difference was negative (the first date was later then the second date), and if your code allows that, it will no longer work. Instead, you'll get the absolute value of the difference. Use TDateTime's ToOADate method to get a value compatible with previous versions of Delphi.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdThreadSafeDateTime_Value.html" target="topic">Value</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdThreadSafeDateTime_Add@TIdDateTime.html" target="topic">Add</a>&nbsp;</p>
+<p class="Section9">
+ Substract&nbsp;</p>
+<p class="Section9">
+ <a href="TIdThreadSafe.html" target="topic">TIdThreadSafe</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCriticalSection.html" target="topic">TIdCriticalSection</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Methods</a><br /><a href="!!MEMBERTYPE_Properties_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Properties</a><br /><a href="!!MEMBEROVERVIEW_TIdThreadSafeDateTime.html" target="topic">TIdThreadSafeDateTime Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

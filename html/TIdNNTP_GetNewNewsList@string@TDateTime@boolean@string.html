@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdNNTP.GetNewNewsList Method (string, TDateTime, boolean, string)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdNNTP_GetNewNewsList@string@TDateTime@boolean@string.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdNNTP.html" target="topic">TIdNNTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdNNTP.html" target="topic">TIdNNTP Methods</a> &gt; <a href="!!OVERLOADED_GetNewNewsList_TIdNNTP.html" target="topic">GetNewNewsList Method</a> &gt; <a href="TIdNNTP_GetNewNewsList@string@TDateTime@boolean@string.html" target="topic">GetNewNewsList Method (string, TDateTime, boolean, string)</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="!!OVERLOADED_GetNewNewsList_TIdNNTP.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!OVERLOADED_GetNewNewsList_TIdNNTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdNNTP_GetNewNewsList@string@TDateTime@boolean@string@TIdStrings.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdNNTP.GetNewNewsList Method (string, TDateTime, boolean, string)</div>
+<div class="Element7">
+<a href="TIdNNTP.html" target="topic">TIdNNTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdNNTP.html" target="topic">TIdNNTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Retrieves a list of message identifiers for new articles.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> GetNewNewsList(
+    ANewsgroups: <strong>string</strong>; 
+    ADate: TDateTime; 
+    AGMT: boolean; 
+    ADistributions: <strong>string</strong>
+); <strong>overload</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ANewsgroups&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Name of the newsgroup to be examined.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADate&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+<a href="TIdNNTP_Previous.html" target="topic">Previous</a> data and time the newsgroup list was retrieved.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AGMT&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Time is expressed in GMT.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ADistributions&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Optional list of distribution patterns.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GetNewNewsList is an overloaded procedure in <a href="TIdNNTP.html" target="topic">TIdNNTP</a> used to retrieve a list of message identifiers posted or received in a specified newsgroup since a given date and time.&nbsp;</p>
+<p class="Element10">
+ANewsgroups can contain a value that identifies the name or search patterns used in locating newsgroups to be included in the list of new message identifiers. ANewsgroups can contain the '*' (asterisk) indicating that the search will match any newsgroup name matching fixed portions of the search value. Multiple newsgroup names or search patterns may be specified as a comma-delimited list.&nbsp;</p>
+<p class="Element10">
+For instance, 'net.micro*' will match 'net.micro.wombat', 'net.micro.apple', etc. In addition, 'net.*.unix' would match newsgroups with names like 'net.wombat.unix' and 'net.whocares.unix'.&nbsp;</p>
+<p class="Element10">
+If only an asterisk character is given in ANewsgroups, all newsgroups will be searched for new message identifiers. If no asterisk appears in a given newsgroup name, only the specified newsgroup will be searched for new articles.&nbsp;</p>
+<p class="Element10">
+ANewsgroups may also contain an exclamation point ('!') character used to negate a match, and omit newsgroups matching the specified names or search patterns. For example, a newsgroups specification of 'net.*,mod.*,!mod.map.*' would specify that all groups starting with 'net.' or 'mod.' except newsgroups starting with 'mod.map.' would be matched. If used, the exclamation point must appear as the first character of the given newsgroup name or pattern.&nbsp;</p>
+<p class="Element10">
+ADate represents the date and time to be used in determining which message identifiers are included in the list of new articles.&nbsp;</p>
+<p class="Element10">
+When AGMT is True, the value in ADate is based on Greenwich Mean Time or Universal Time Coordinated (0 meridian). When AGMT is False, the value in ADate represents a value for the local time-zone.&nbsp;</p>
+<p class="Element10">
+ADistributions is an optional string containing a comma-delimited list of newsgroups or prefixes to be used as a filter when retrieving the list new articles. Only those articles which have at least one newsgroup belonging to the list of distributions will be returned in the list of new articles.&nbsp;</p>
+<p class="Element10">
+GetNewNewsList relies on the <a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> event handler to signal receipt of response lines from the NNTP server. Applications must assign a procedure to the <a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> event handler to allow responsing to the event notification. GetNewNewsList will raise an <a href="EIdNNTPNoOnNewNewsList.html" target="topic">EIdNNTPNoOnNewNewsList</a> exception if the <a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> event handler property is unassigned.&nbsp;</p>
+<p class="Element10">
+GetNewNewsList sends the NNTP NEWNEWS command using the arguments supplied in ANewsgroups, ADate, AGMT, and ADistributions. GetNewNewsList reads the response lines from the NNTP server, where each line contains a single message identifer for an NNTP article and the final line consisting of one period ('.') that terminates the list. GetNewNewsList may return only the list terminator character sequence when there are no new articles for the specified criteria.&nbsp;</p>
+<p class="Element10">
+<a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> is signalled for each response line from the NNTP server containing a message identifier, or until <a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> indicates that additional message identifiers cannot be processed.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdNNTP_GetNewGroupsList@TDateTime@boolean@string.html" target="topic">GetNewGroupsList</a> to process newsgroups added to the server since a specified date and time.&nbsp;</p>
+<p class="Element10">
+Implementors are cautioned to adhere to the 512 character limit for the length of NNTP commands.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdNNTPNoOnNewNewsList.html" target="topic">EIdNNTPNoOnNewNewsList</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+With the message <a href="RSNNTPNoOnNewNewsList.html" target="topic">RSNNTPNoOnNewNewsList</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdNNTP_SendCmd@string@array_of_SmallInt.html" target="topic">SendCmd</a> GetNewNewsList <a href="TIdNNTP_OnNewNewsList.html" target="topic">OnNewNewsList</a> TEventNewNewsList <a href="EIdNNTPNoOnNewNewsList.html" target="topic">EIdNNTPNoOnNewNewsList</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdNNTP.html" target="topic">TIdNNTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdNNTP.html" target="topic">TIdNNTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

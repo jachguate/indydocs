@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdHTTPResponseInfo.WriteContent Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdHTTPResponseInfo_WriteContent.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Methods</a> &gt; <a href="TIdHTTPResponseInfo_WriteContent.html" target="topic">WriteContent Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdHTTPResponseInfo_SmartServeFile@TIdContext@TIdHTTPRequestInfo@String.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdHTTPResponseInfo.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdHTTPResponseInfo_WriteHeader.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdHTTPResponseInfo.WriteContent Method</div>
+<div class="Element7">
+<a href="TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Generates the HTTP response content.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> WriteContent;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+WriteContent is a procedure used to generate the content for the HTTP response. WriteContent generates the content using either <a href="TIdHTTPResponseInfo_ContentText.html" target="topic">ContentText</a>, or <a href="TIdHTTPResponseInfo_ContentStream.html" target="topic">ContentStream</a> when assigned, for <a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">ResponseNo</a> values in the range 200
+<ul class="Element631">
+<li class="Element601">499 inclusive. If <a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">ResponseNo</a> is not in this range, only the</li>
+</ul><a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">ResponseNo</a> and <a href="TIdHTTPResponseInfo_ResponseText.html" target="topic">ResponseText</a> is included in the content of the HTTP response.&nbsp;</p>
+<p class="Element10">
+WriteContent calls <a href="TIdHTTPResponseInfo_WriteHeader.html" target="topic">WriteHeader</a> when <a href="TIdHTTPResponseInfo_HeaderHasBeenWritten.html" target="topic">HeaderHasBeenWritten</a> contains False. <a href="TIdHTTPResponseInfo_WriteHeader.html" target="topic">WriteHeader</a> is generally used for responses where the Content length is unknown.&nbsp;</p>
+<p class="Element10">
+WriteContent uses methods in <a href="TIdEntityHeaderInfo_Connection.html" target="topic">Connection</a> to transfer the content of the HTTP response to the HTTP client. When <a href="TIdHTTPResponseInfo_ContentStream.html" target="topic">ContentStream</a> is assigned, the WriteStream method in <a href="TIdEntityHeaderInfo_Connection.html" target="topic">Connection</a> is called. When <a href="TIdHTTPResponseInfo_ContentText.html" target="topic">ContentText</a> is non-blank, the Write method is called. Otherwise, WriteLn is used to send an HTML document containing the HTTP <a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">ResponseNo</a> and <a href="TIdHTTPResponseInfo_ResponseText.html" target="topic">ResponseText</a>.&nbsp;</p>
+<p class="Element10">
+WriteContent sets <a href="TIdHTTPResponseInfo_ContentText.html" target="topic">ContentText</a> to an empty string ('') and releases the <a href="TIdHTTPResponseInfo_ContentStream.html" target="topic">ContentStream</a> to signify that the content of the HTTP response has been written.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdHTTPResponseInfo_ContentText.html" target="topic">ContentText</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponseInfo_ContentStream.html" target="topic">ContentStream</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponseInfo_HeaderHasBeenWritten.html" target="topic">HeaderHasBeenWritten</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponseInfo_WriteHeader.html" target="topic">WriteHeader</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponseInfo_ResponseNo.html" target="topic">ResponseNo</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdHTTPResponseInfo_ResponseText.html" target="topic">ResponseText</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdEntityHeaderInfo_Connection.html" target="topic">Connection</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Class</a><br /><a href="!!MEMBEROVERVIEW_TIdHTTPResponseInfo.html" target="topic">TIdHTTPResponseInfo Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

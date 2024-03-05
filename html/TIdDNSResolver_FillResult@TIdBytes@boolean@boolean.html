@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdDNSResolver.FillResult Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdDNSResolver_FillResult@TIdBytes@boolean@boolean.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdDNSResolver.html" target="topic">TIdDNSResolver Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdDNSResolver.html" target="topic">TIdDNSResolver Methods</a> &gt; <a href="TIdDNSResolver_FillResult@TIdBytes@boolean@boolean.html" target="topic">FillResult Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdDNSResolver_Destroy.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdDNSResolver.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdDNSResolver_FillResultWithOutCheckId@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdDNSResolver.FillResult Method</div>
+<div class="Element7">
+<a href="TIdDNSResolver.html" target="topic">TIdDNSResolver Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdDNSResolver.html" target="topic">TIdDNSResolver Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Description,Exceptions,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Captures and parses results returned in a DNS query response.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> FillResult(
+    AResult: TIdBytes; 
+    checkID: boolean = true; 
+    ResetResult: boolean = true
+);</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AResult&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Raw byte values for the DNS query result.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+checkID&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Indicates if the ID in the DNS query response must match the ID in the DNS query.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+ResetResult&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Indicates <a href="TIdDNSResolver_QueryResult.html" target="topic">QueryResult</a> is cleared prior to parsing answers in the DNS query response.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+FillResult is a procedure used to capture and parse results returned in a DNS query response in the <a href="TIdDNSResolver_Resolve@string@TIdRR_SOA@integer.html" target="topic">Resolve</a> method.&nbsp;</p>
+<p class="Element10">
+FillResult will raise an <a href="EIdDnsResolverError.html" target="topic">EIdDnsResolverError</a> exception if the size of the DNS results in AResult is smaller than the 12 bytes (size of the DNS header in a DNS query response).&nbsp;</p>
+<p class="Element10">
+FillResult parses values in the DNS header to get access to the identifier and result code for the DNS query response.&nbsp;</p>
+<p class="Element10">
+When CheckID contains True, the identifier in the DNS query reponse must match the identifier from the DNS query or an <a href="EIdDnsResolverError.html" target="topic">EIdDnsResolverError</a> will be raised.&nbsp;</p>
+<p class="Element10">
+FillResult checks the result code from the internal <a href="TDNSHeader.html" target="topic">TDNSHeader</a> instance to determine if an error has occurred. A non-zero value in the result code causes an <a href="EIdDnsResolverError.html" target="topic">EIdDnsResolverError</a> exception to be raised.&nbsp;</p>
+<p class="Element10">
+FillResult parses each of the DNS answers included in the DNS query response.&nbsp;</p>
+<p class="Element10">
+When ResetResult contains True, the value in <a href="TIdDNSResolver_QueryResult.html" target="topic">QueryResult</a> is cleared when ParseAnswer is called to parse each answer in the DNS query response.&nbsp;</p>
+<p class="Element10">
+Use <a href="TIdDNSResolver_QueryResult.html" target="topic">QueryResult</a> to access the resource records returned in the DNS query response.</p></div>
+</div>
+</div>
+<a name="Exceptions"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Exceptions');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgExceptions">Exceptions</a></div>
+<div id="divExceptions">
+<div class="Element11">
+<div class="Element10">
+<div class="Element312">
+<div class="TableDiv">
+<table cellspacing="0" class="Table3">
+<tr>
+<td class="Element300" valign="top" width="35%">
+<div class="Element301">
+Exceptions&nbsp;</div></td><td class="Element304" valign="top" width="65%">
+<div class="Element305">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element302" valign="top" width="35%">
+<div class="Element303">
+<a href="EIdDnsResolverError.html" target="topic">EIdDnsResolverError</a>&nbsp;</div></td><td class="Element306" valign="top" width="65%">
+<div class="Element307">
+With the message <a href="RSQueryLessThanTwelve.html" target="topic">RSQueryLessThanTwelve</a> when an invalid DNS header is present. With the message <a href="RSQueryInvalidHeaderID.html" target="topic">RSQueryInvalidHeaderID</a> when the DNS query response identifier does not match the DNS query identifier. With the response code from the DNS query response.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="EIdDnsResolverError.html" target="topic">EIdDnsResolverError</a> ParseAnswer <a href="TIdDNSResolver_QueryResult.html" target="topic">QueryResult</a> <a href="TDNSHeader.html" target="topic">TDNSHeader</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdDNSResolver.html" target="topic">TIdDNSResolver Class</a><br /><a href="!!MEMBEROVERVIEW_TIdDNSResolver.html" target="topic">TIdDNSResolver Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdFTP.Login Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdFTP_Login.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdFTP.html" target="topic">TIdFTP Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic">TIdFTP Methods</a> &gt; <a href="TIdFTP_Login.html" target="topic">Login Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdFTP_List@string@Boolean.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdFTP.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdFTP_MakeDir@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdFTP.Login Method</div>
+<div class="Element7">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Authenticates a client connection to the FTP server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> Login;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Login is a procedure used to perform FTP protocol exchanges needed to provide authentication for the FTP client connection to the remote FTP server.&nbsp;</p>
+<p class="Element10">
+<a href="TIdFTP.html" target="topic">TIdFTP</a> includes support for Tranport Layer Security (or TLS) as indicated in the <a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a> property. When <a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a> contains a value that indicates explicit use of TLS/SSL, Login will perform the FTP commands required to handle the TLS negotiation including the FTP AUTH command for the values indicated in the the <a href="TLS_AUTH_NAMES.html" target="topic">TLS_AUTH_NAMES</a> array.&nbsp;</p>
+<p class="Element10">
+Login provides support for proxied connections to the FTP server through properties and methods in <a href="TIdFTP_ProxySettings.html" target="topic">ProxySettings</a>. Set the value in ProxySettings.ProxyType to the <a href="TIdFtpProxyType.html" target="topic">TIdFtpProxyType</a> value desired for the connection prior to calling <a href="TIdFTP_Connect.html" target="topic">Connect</a> or Login. Please note that proxied connections using the <a href="TIdFtpProxyType.html" target="topic">TIdFtpProxyType</a> value fpcmHttpProxyWithFtp are not implemented at this time.&nbsp;</p>
+<p class="Element10">
+Login sends the OPEN (for certain proxy settings), USER, and PASS commands as required to perform authentication using the values in <a href="TIdFTP_Username.html" target="topic">Username</a>, <a href="TIdFTP_Password.html" target="topic">Password</a>, and the corresponding property values in <a href="TIdFTP_ProxySettings.html" target="topic">ProxySettings</a>. If the FTP server supports the OTP (One-Time-<a href="TIdFTP_Password.html" target="topic">Password</a>) system, the appropriate hashed values are calculated using the OTP challenge and the <a href="TIdFTP_Password.html" target="topic">Password</a> property.&nbsp;</p>
+<p class="Element10">
+Login stores the values in <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a> in the <a href="TIdFTP_LoginMsg.html" target="topic">LoginMsg</a> property, and triggers the <a href="TIdFTP_OnBannerAfterLogin.html" target="topic">OnBannerAfterLogin</a> eent handler using the formatted reply in <a href="TIdFTP_LoginMsg.html" target="topic">LoginMsg</a>.&nbsp;</p>
+<p class="Element10">
+Login will attempt to perform optional feature negotiation for servers supporting the FTP FEAT command. The response from the FTP FEAT command is stored in the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> property, and made available for use in other FTP client methods. When <a href="TIdFTP_UsingExtDataPort.html" target="topic">UsingExtDataPort</a> is True, Login checks that the FTP EPRT and EPSV extension commands are available in the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> property.&nbsp;</p>
+<p class="Element10">
+When <a href="TIdFTP_ClientInfo.html" target="topic">ClientInfo</a> contains non-empty values, the FTP CLNT extension command is used to send the identification values when the remote server include the CLNT command in its Capabilties.&nbsp;</p>
+<p class="Element10">
+Login updates the value in CanUseMLS to indicate if the <a href="MLST.html" target="topic">MLST</a> and MLSD listing formats can be used and are supported in the server Capabilties.&nbsp;</p>
+<p class="Element10">
+Login updates the value in <a href="TIdFTP_LangsSupported.html" target="topic">LangsSupported</a> to reflect the facts associated with the FTP feature extracted from the <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a> property.&nbsp;</p>
+<p class="Element10">
+Login sends the trandfer type for the authenticated connection using the value in the <a href="TIdFTP_TransferType.html" target="topic">TransferType</a> property.&nbsp;</p>
+<p class="Element10">
+Login is called by the <a href="TIdFTP_Connect.html" target="topic">Connect</a> method when <a href="TIdFTP_AutoLogin.html" target="topic">AutoLogin</a> contains True, and can be called in an application after using the <a href="TIdFTP_ReInitialize@Cardinal.html" target="topic">ReInitialize</a> method.&nbsp;</p>
+<p class="Element10">
+Use the <a href="TIdFTP_Account.html" target="topic">Account</a> method to provide additional information about a client connection on some FTP server implementations.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdFTP_Username.html" target="topic">Username</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Password.html" target="topic">Password</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ProxySettings.html" target="topic">ProxySettings</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Account.html" target="topic">Account</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ClientInfo.html" target="topic">ClientInfo</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_Connect.html" target="topic">Connect</a>&nbsp;</p>
+<p class="Section9">
+ Login&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_LoginMsg.html" target="topic">LoginMsg</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_AutoLogin.html" target="topic">AutoLogin</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdExplicitTLSClient_Capabilities.html" target="topic">Capabilities</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_LangsSupported.html" target="topic">LangsSupported</a>&nbsp;</p>
+<p class="Section9">
+ CanUseMLS&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_UseTLS.html" target="topic">UseTLS</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_ReInitialize@Cardinal.html" target="topic">ReInitialize</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFTP_TransferType.html" target="topic">TransferType</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdFtpProxyType.html" target="topic">TIdFtpProxyType</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdFTP.html" target="topic">TIdFTP Class</a><br /><a href="!!MEMBEROVERVIEW_TIdFTP.html" target="topic">TIdFTP Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

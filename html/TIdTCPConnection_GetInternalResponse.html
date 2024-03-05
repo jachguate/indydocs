@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdTCPConnection.GetInternalResponse Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdTCPConnection_GetInternalResponse.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdTCPConnection.html" target="topic">TIdTCPConnection Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdTCPConnection.html" target="topic">TIdTCPConnection Methods</a> &gt; <a href="TIdTCPConnection_GetInternalResponse.html" target="topic">GetInternalResponse Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdTCPConnection_DisconnectNotifyPeer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdTCPConnection.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="!!OVERLOADED_GetResponse_TIdTCPConnection.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdTCPConnection.GetInternalResponse Method</div>
+<div class="Element7">
+<a href="TIdTCPConnection.html" target="topic">TIdTCPConnection Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdTCPConnection.html" target="topic">TIdTCPConnection Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Reads response detail lines from a peer connection.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>procedure</strong> GetInternalResponse; <strong>virtual</strong>;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+GetInternalResponse is a procedure used to read and process RFC-compliant response lines from the peer connection.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse implements the processing required for generic RFC-compliant responses. Responses contain a 3-digit response code, an optional continuation marker ('-') or an end marker (<a href="CHAR32.html" target="topic">CHAR32</a>), and the text associated with the response code.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse may be overridden in descendant classes supporting a protocol using response message in a different format or requiring specific processing based on values in the reply.&nbsp;</p>
+<p class="Element10">
+The following is an example of the Continue status response defined for the HTTP protocol as both a terminal and a continuation response:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="32%">
+<div class="Element66">
+End Marker&nbsp;</div></td><td class="Element65" valign="top" width="68%">
+<div class="Element66">
+Response&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="32%">
+<div class="Element68">
+Yes&nbsp;</div></td><td class="Element67" valign="top" width="68%">
+<div class="Element68">
+100 Continue&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="32%">
+<div class="Element68">
+No&nbsp;</div></td><td class="Element67" valign="top" width="68%">
+<div class="Element68">
+100-Continue&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+GetInternalResponse builds a TStringList to store the values read from the connection, and reads one or more reponse lines using the ReadLnWait method for the <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a>. GetInternalResponse will continue to read response lines until an end marker is found in the most recent response line from the <a href="TIdTCPConnection_IOHandler.html" target="topic">IOHandler</a>.&nbsp;</p>
+<p class="Element10">
+Responses read from the connection are assigned to the formatted reply property in <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a>.&nbsp;</p>
+<p class="Element10">
+GetInternalResponse is used in the overloaded <a href="TIdTCPConnection_GetResponse@SmallInt.html" target="topic">GetResponse</a> method.&nbsp;</p>
+<p class="Element10">
+Some servers may send blank lines before the contents of the reply. Some protocols also allow sending out-of-band data in the midst of RFC responses from a server. Descendant classes may need to override this method to account for these situations.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdTCPConnection_GetResponse@SmallInt.html" target="topic">GetResponse</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdTCPConnection_LastCmdResult.html" target="topic">LastCmdResult</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdReplyRFC.html" target="topic">TIdReplyRFC</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdTCPConnection.html" target="topic">TIdTCPConnection Class</a><br /><a href="!!MEMBEROVERVIEW_TIdTCPConnection.html" target="topic">TIdTCPConnection Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

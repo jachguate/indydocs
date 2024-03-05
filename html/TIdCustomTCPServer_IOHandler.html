@@ -1,0 +1,116 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdCustomTCPServer.IOHandler Property</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdCustomTCPServer_IOHandler.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &gt; <a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Properties</a> &gt; <a href="TIdCustomTCPServer_IOHandler.html" target="topic">IOHandler Property</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdCustomTCPServer_Intercept.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Properties_TIdCustomTCPServer.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdCustomTCPServer_ListenQueue.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdCustomTCPServer.IOHandler Property</div>
+<div class="Element7">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents the IOHandler used by listener threads for the server.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>property</strong> IOHandler: TIdServerIOHandler;</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IOHandler is a <a href="TIdServerIOHandler.html" target="topic">TIdServerIOHandler</a> property that represents the input / output handler used by listener threads that accept client connections for the server. IOHandler is used to get the <a href="TIdServerIOHandlerSocket.html" target="topic">TIdServerIOHandlerSocket</a> instance assigned to the property when the server becomes <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a>.&nbsp;</p>
+<p class="Element10">
+Applications can assign another <a href="TIdServerIOHandler.html" target="topic">TIdServerIOHandler</a> descendant to the property prior to setting <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a> to True. Assigning a value to IOHandler cause an existing IOHandler instance to be freed prior to updating the property value. The IOHandler is also updated to reflect the current <a href="TIdCustomTCPServer_Scheduler.html" target="topic">Scheduler</a> for the server.&nbsp;</p>
+<p class="Element10">
+<a href="TIdListenerThread.html" target="topic">TIdListenerThread</a> uses the IOHandler for the server when the listener thread is executed. The IOHandler is used to accept the client connection and to <a href="TIdBaseComponent_Create@TComponent.html" target="topic">create</a> a <a href="TIdIOHandler.html" target="topic">TIdIOHandler</a> instance used in the <a href="TIdTCPConnection.html" target="topic">TIdTCPConnection</a> that represents the client connection.&nbsp;</p>
+<p class="Element10">
+IOHandler is freed in <a href="TIdCustomTCPServer_Destroy.html" target="topic">Destroy</a> when an instance has been assigned and <a href="TIdCustomTCPServer_ImplicitIOHandler.html" target="topic">ImplicitIOHandler</a> contains True.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdServerIOHandler.html" target="topic">TIdServerIOHandler</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdServerIOHandlerSocket.html" target="topic">TIdServerIOHandlerSocket</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdListenerThread.html" target="topic">TIdListenerThread</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdCustomTCPServer_Active.html" target="topic">Active</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Class</a><br /><a href="!!MEMBEROVERVIEW_TIdCustomTCPServer.html" target="topic">TIdCustomTCPServer Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

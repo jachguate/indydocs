@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdSocketHandle.Readable Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdSocketHandle_Readable@Integer.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdSocketHandle.html" target="topic">TIdSocketHandle Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdSocketHandle.html" target="topic">TIdSocketHandle Methods</a> &gt; <a href="TIdSocketHandle_Readable@Integer.html" target="topic">Readable Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdSocketHandle_Listen@integer.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdSocketHandle.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdSocketHandle_Receive@TIdBytes.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdSocketHandle.Readable Method</div>
+<div class="Element7">
+<a href="TIdSocketHandle.html" target="topic">TIdSocketHandle Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdSocketHandle.html" target="topic">TIdSocketHandle Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Determines if the socket handle is available for reading.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> Readable(
+    AMSec: Integer = IdTimeoutDefault
+): boolean;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+AMSec&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Numberof milliseconds to wait for the socket handle to become ready. The default value is <a href="IdTimeoutDefault.html" target="topic">IdTimeoutDefault</a>.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+boolean - True when the socket handle is ready.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Readable is a boolean function used to determine when the socket handle for the connection is available. Readable returns True when the socket descriptor is ready for read operations using <a href="TIdSocketHandle_Receive@TIdBytes.html" target="topic">Receive</a>, <a href="TIdSocketHandle_RecvFrom@TIdBytes@string@Integer@TIdIPVersion.html" target="topic">RecvFrom</a>, or <a href="TIdSocketHandle_Accept@TIdStackSocketHandle.html" target="topic">Accept</a>.&nbsp;</p>
+<p class="Element10">
+Readable uses <a href="TIdSocketHandle_HandleAllocated.html" target="topic">HandleAllocated</a> to determine if the socket handle for the connection is still valid. An <a href="EIdConnClosedGracefully.html" target="topic">EIdConnClosedGracefully</a> exception is raised if the handle is no longer connected or assigned.&nbsp;</p>
+<p class="Element10">
+Readable detects the use of a <a href="TIdAntiFreeze.html" target="topic">TIdAntiFreeze</a> instance in an application. When present, Readable yields processing cycles during the lifetime of the method call to the TIdAntifreeze.DoProcess method.&nbsp;</p>
+<p class="Element10">
+When AMSec is <a href="IdTimeoutInfinite.html" target="topic">IdTimeoutInfinite</a>, Readable uses the IdleTimeout value in TIdAntifreeze as its time-out value. Readable will continue to execute until the socket is ready to read.&nbsp;</p>
+<p class="Element10">
+When AMsec is larger than the IdleTimeout value in TIdAntifreeze, Readable is called using the difference between the two time-out values. If the socket is ready to read, no further processing is performed. If the socket is not ready to read, the time-out value is set to the IdleTimeout value in TIdAntifreeze and Readable is called again to determine the socket status. Readable yields processing cycles to the TIdAntifreeze.DoProcess method if the socket is still not ready to read.&nbsp;</p>
+<p class="Element10">
+Readable calls <a href="TIdSocketHandle_Select@Integer.html" target="topic">Select</a> to add the socket handle to read list for the protocol stack.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdSocketHandle_Receive@TIdBytes.html" target="topic">TIdSocketHandle.Receive</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandle_RecvFrom@TIdBytes@string@Integer@TIdIPVersion.html" target="topic">TIdSocketHandle.RecvFrom</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandle_Accept@TIdStackSocketHandle.html" target="topic">TIdSocketHandle.Accept</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdSocketHandle_Select@Integer.html" target="topic">TIdSocketHandle.Select</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdAntiFreeze.html" target="topic">TIdAntiFreeze</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdSocketHandle.html" target="topic">TIdSocketHandle Class</a><br /><a href="!!MEMBEROVERVIEW_TIdSocketHandle.html" target="topic">TIdSocketHandle Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

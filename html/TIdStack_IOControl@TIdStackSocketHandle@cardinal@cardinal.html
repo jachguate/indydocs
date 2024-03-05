@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TIdStack.IOControl Method</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TIdStack_IOControl@TIdStackSocketHandle@cardinal@cardinal.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TIdStack.html" target="topic">TIdStack Class</a> &gt; <a href="!!MEMBERTYPE_Methods_TIdStack.html" target="topic">TIdStack Methods</a> &gt; <a href="TIdStack_IOControl@TIdStackSocketHandle@cardinal@cardinal.html" target="topic">IOControl Method</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TIdStack_IncUsage.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><a href="!!MEMBERTYPE_Methods_TIdStack.html" target="topic"><img src="btn_up_midblue.gif" border="0" alt="Up" title="Up" onmouseover="switchImage(this, 'btn_up_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_up_midblue.gif');"></a><a href="TIdStack_IsIP@string.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TIdStack.IOControl Method</div>
+<div class="Element7">
+<a href="TIdStack.html" target="topic">TIdStack Class</a> &nbsp; <a href="!!MEMBEROVERVIEW_TIdStack.html" target="topic">TIdStack Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Pascal,Parameters,Returns,Description,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Specifies the mechanism used to access the ioctlsocket() API for the platform or operating system hosting the Indy library.</p></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100"><strong>function</strong> IOControl(
+    <strong>const</strong> s: TIdStackSocketHandle; 
+    <strong>const</strong> cmd: cardinal; 
+    <strong>var</strong> arg: cardinal
+): Integer; <strong>virtual</strong>; <strong>abstract</strong>;</pre></div></div>
+</div>
+<a name="Parameters"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Parameters');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgParameters">Parameters</a></div>
+<div id="divParameters">
+<div class="Element11">
+<div class="Element10">
+<div class="Element252">
+<div class="TableDiv">
+<table cellspacing="0" class="Table2">
+<tr>
+<td class="Element240" valign="top" width="35%">
+<div class="Element241">
+Parameters&nbsp;</div></td><td class="Element244" valign="top" width="65%">
+<div class="Element245">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+s&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Sokcet handle for the operation.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+cmd&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+ioctlsocket command for the operation.<br>&nbsp;</div></td></tr><tr>
+<td class="Element242" valign="top" width="35%">
+<div class="Element243">
+arg&nbsp;</div></td><td class="Element246" valign="top" width="65%">
+<div class="Element247">
+Arguments for the operation.&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="Returns"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Returns');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgReturns">Returns</a></div>
+<div id="divReturns">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Integer - 0 on success, or the socket error from the protocol stack.</p></div>
+</div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+IOControl is an abstract virtual method that specifies the mechanism used to access the ioctlsocket() API for the platform or operating system hosting the Indy library.&nbsp;</p>
+<p class="Element10">
+IOControl is used to set or retrieve operating parameters associated with the socket, independent of the protocol and communications subsystem. The following are the values and semantics supported in the cmd argument to the method:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="2%">
+<div class="Element66">
+Command&nbsp;</div></td><td class="Element65" valign="top" width="98%">
+<div class="Element66">
+Argument and values&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+FIONBIO&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Unsigned long value. Pass a nonzero value if the&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+nonblocking socket mode should be enabled, or 0 (zero)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+if noblocking is disabled.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+FIONREAD&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Used to determine the amount of data pending in the&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+network's input buffer that can be read from the socket.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+The argp parameter points to an unsigned long value in&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+which ioctlsocket stores the result. FIONREAD returns the&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+amount of data that can be read in a single call to the&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+recv function, which may not be the same as the total&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+amount of data queued on the socket. If socket handle in s&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+is message oriented (for example, type SOCK_DGRAM),&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+FIONREAD still returns the amount of pending data in the&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+network buffer, however, the amount that can actually be&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+read in a single call to the recv function is limited to&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+the data size written in the <a href="TIdStack_Send@TIdStackSocketHandle@TIdBytes@Integer@Integer.html" target="topic">send</a> or <a href="TIdStack_SendTo@TIdStackSocketHandle@TIdBytes@Integer@string@integer@TIdIPVersion.html" target="topic">sendto</a> function call.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+SIOCATMARK&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+Used to determine if all out of band (OOB) data has been&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+read. (See Windows Sockets 1.1 Blocking Routines and&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+EINPROGRESS for a discussion on OOB data.) This applies&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+only to a stream oriented socket (for example, type&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+SOCK_STREAM) that has been configured for in-line&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+reception of any OOB data (SO_OOBINLINE). On sockets with&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+the SO_OOBINLINE socket option set, SIOCATMARK always&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+returns TRUE and the OOB data is returned to the user as&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="2%">
+<div class="Element68">
+&nbsp;</div></td><td class="Element67" valign="top" width="98%">
+<div class="Element68">
+normal data.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Please note that some of the cmd values are not relevant for use in the Indy library; specifically, asynchronous socket operations specified using FIONBIO are not supported.&nbsp;</p>
+<p class="Element10">
+In addition, IOControl performs only a subset of functions on a socket when compared to the ioctl function found in Berkeley sockets. The ioctlsocket function has no command parameter equivalent to the FIOASYNC of ioctl, and SIOCATMARK is the only socket-level command that is supported by ioctlsocket.&nbsp;</p>
+<p class="Element10">
+Return values for the IOControl method including the following values and meanings:&nbsp;</p>
+<p class="Element10">
+Upon successful completion, the ioctlsocket returns zero. Otherwise, a value of SOCKET_ERROR is returned, and a specific error code can be retrieved by calling WSAGetLastError.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="16%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="84%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+Successful completion.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+WSANOTINITIALISED&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+A successful WSAStartup call must occur before using this function.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+WSAENETDOWN&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+The network subsystem has failed.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+WSAEINPROGRESS&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+A blocking socket call is in progress, or the service provider is still processing a callback function.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+WSAENOTSOCK&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+The socket descriptor is not a valid socket handle.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="16%">
+<div class="Element68">
+WSAEFAULT&nbsp;</div></td><td class="Element67" valign="top" width="84%">
+<div class="Element68">
+The argument parameter is not a valid part of the user address space.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+IOControl must be overridden and implemented in a descendant class that provides access to the protocol stack implementation for the platform or operating system hosting the Indy library.</p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="TIdStack.html" target="topic">TIdStack Class</a><br /><a href="!!MEMBEROVERVIEW_TIdStack.html" target="topic">TIdStack Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>
