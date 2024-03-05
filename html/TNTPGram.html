@@ -1,0 +1,682 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TNTPGram Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TNTPGram.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TNTPGram.html" target="topic">TNTPGram Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TNSRecord.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TNTPGram.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TNTPGram Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Properties_TNTPGram.html" target="topic">TNTPGram Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TNTPGram.html" target="topic">TNTPGram Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents the NTP / SNTP Datagram message format.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdSNTP_pas.html" target="topic">IdSNTP</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TNTPGram.png" border="0" alt="" title="" usemap="#TNTPGram"><map class="Element150" name="TNTPGram"><area class="Element150" shape="rect" coords="82,0,148,15" href="TNTPGram.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TNTPGram = <strong>class</strong>(TObject);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TNTPGram is a TObject descendant used for processing SNTP requests and responses. TNTPGram represents the data transmitted in UDP packets, and represents the NTP / SNTP Datagram message format as described in the Internet standards document:&nbsp;</p>
+<p class="Element10">
+<a href="http://www.rfc-editor.org/rfc/rfc2030.txt"> RFC 2030 - Simple Network Time Protocol (SNTP) Version 4 for IPv4, IPv6 and OSI </a>&nbsp;</p>
+<p class="Element10">
+SNTP Version 4 includes certain optional extensions to the basic Version 3 model. TNTPGram does not implement the optional extensions for either Key Identifier or Message Digest portions of the NTP / SNTP message format.&nbsp;</p>
+<p class="Element10">
+<img src="SNTPMessageFormat.jpg" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head1.html" target="topic">Head1</a> - Leap Indicator, Version Number, and Mode&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head1.html" target="topic">Head1</a> represents byte 1 of 4 bytes in the TNTPGram header. <a href="TNTPGram_Head1.html" target="topic">Head1</a> is utilized to store the values for the Leap Indicator, Version Number, and Mode bit fields as indicated in the diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="26%">
+<div class="Element66">
+Bits&nbsp;</div></td><td class="Element65" valign="top" width="74%">
+<div class="Element66">
+Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="26%">
+<div class="Element68">
+0-1&nbsp;</div></td><td class="Element67" valign="top" width="74%">
+<div class="Element68">
+Leap Indicator&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="26%">
+<div class="Element68">
+2-4&nbsp;</div></td><td class="Element67" valign="top" width="74%">
+<div class="Element68">
+Version Number&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="26%">
+<div class="Element68">
+5-7&nbsp;</div></td><td class="Element67" valign="top" width="74%">
+<div class="Element68">
+Mode&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Leap Indicator (LI) - Two-bit code warning of an impending leap second to be inserted/deleted in the last minute of the current day, with bit 0 and bit 1, respectively, coded as follows:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="8%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="92%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+no warning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+last minute has 61 seconds&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+2&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+last minute has 59 seconds)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="8%">
+<div class="Element68">
+3&nbsp;</div></td><td class="Element67" valign="top" width="92%">
+<div class="Element68">
+alarm condition (clock not synchronized)&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Version Number (VN) - Three-bit integer indicating the NTP/SNTP version number. The version number is 3 for Version 3 (IPv4 only) and 4 for Version 4 (IPv4, IPv6 and OSI). If necessary to distinguish between IPv4, IPv6 and OSI, the encapsulating context must be inspected.&nbsp;</p>
+<p class="Element10">
+Mode - Three-bit integer indicating the mode, with values defined as follows:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="9%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="91%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+reserved&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+symmetric active&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+2&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+symmetric passive&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+3&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+client&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+4&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+server&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+5&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+broadcast&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+6&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+reserved for NTP control message&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+7&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+reserved for private use&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+In unicast and anycast modes, the client sets this field to 3 (client) in the request and the server sets it to 4 (server) in the reply. In multicast mode, the server sets this field to 5 (broadcast).&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head2.html" target="topic">Head2</a> - Statum level of the local clock&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head2.html" target="topic">Head2</a> represents byte 2 of 4 bytes in the TNTPGram header. <a href="TNTPGram_Head2.html" target="topic">Head2</a> is utilized to store the values of Stratum, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="37%">
+<div class="Element66">
+Bits&nbsp;</div></td><td class="Element65" valign="top" width="63%">
+<div class="Element66">
+Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="37%">
+<div class="Element68">
+0-7&nbsp;</div></td><td class="Element67" valign="top" width="63%">
+<div class="Element68">
+Stratum&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Stratum - Eight-bit unsigned integer indicating the stratum level of the local clock, with values defined as follows:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="13%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="87%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+unspecified or unavailable&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+primary reference (e.g., radio clock)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+2-15&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+secondary reference (via NTP or SNTP)&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="13%">
+<div class="Element68">
+16-255&nbsp;</div></td><td class="Element67" valign="top" width="87%">
+<div class="Element68">
+reserved&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head3.html" target="topic">Head3</a> - Polling Interval&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head3.html" target="topic">Head3</a> represents byte 3 of 4 bytes in the TNTPGram header. <a href="TNTPGram_Head3.html" target="topic">Head3</a> is utilized to store the values of Poll, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="44%">
+<div class="Element66">
+Bits&nbsp;</div></td><td class="Element65" valign="top" width="56%">
+<div class="Element66">
+Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="44%">
+<div class="Element68">
+0-7&nbsp;</div></td><td class="Element67" valign="top" width="56%">
+<div class="Element68">
+Poll&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Poll Interval - Eight-bit signed integer indicating the maximum interval between successive messages, in seconds to the nearest power of two. The values that can appear in this field presently range from 4 (16 s) to 14 (16284 s); however, most applications use only the sub-range 6 (64 s) to 10 (1024 s).&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head4.html" target="topic">Head4</a> - Precision of the local clock&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Head4.html" target="topic">Head4</a> represents byte 4 of 4 bytes in the TNTPGram header. <a href="TNTPGram_Head4.html" target="topic">Head4</a> is utilized to store the values of Precision, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="33%">
+<div class="Element66">
+Bits&nbsp;</div></td><td class="Element65" valign="top" width="67%">
+<div class="Element66">
+Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="33%">
+<div class="Element68">
+0-7&nbsp;</div></td><td class="Element67" valign="top" width="67%">
+<div class="Element68">
+Precision&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+Precision - Eight-bit signed integer indicating the precision of the local clock, in seconds to the nearest power of two. The values that normally appear in this field range from -6 for mains-frequency clocks to -20 for microsecond clocks found in some workstations.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Org1.html" target="topic">Org1</a> - Date portion of the Originate Timestamp.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Org1.html" target="topic">Org1</a> is used to store the LongInt value representing the date portion of the Originate Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Org1.html" target="topic">Org1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Org2.html" target="topic">Org2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Org2.html" target="topic">Org2</a> - Time portion of the Originate Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Org2.html" target="topic">Org2</a> is used to store the LongInt value representing the time portion of the Originate Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- --------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Org1.html" target="topic">Org1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Org2.html" target="topic">Org2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Rcv1.html" target="topic">Rcv1</a> - Date portion of the Receive Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Rcv1.html" target="topic">Rcv1</a> is used to store the LongInt value representing the date portion of the Receive Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+--- -----</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Rcv1.html" target="topic">Rcv1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Rcv2.html" target="topic">Rcv2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+In unicast and anycast modes, the Receive Timestamp and Transmit Timestamp fields are set to the time of day when the message is sent and the Originate Timestamp field is copied unchanged from the Transmit Timestamp field of the request. It is important that this field be copied intact, as a NTP client uses it to avoid replays. In multicast mode, the Originate Timestamp and Receive Timestamp fields are set to 0 and the Transmit Timestamp field is set to the time of day when the message is sent.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Rcv2.html" target="topic">Rcv2</a> - Time portion of the Receive Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Rcv2.html" target="topic">Rcv2</a> is used to store the LongInt value representing the time portion of the Receive Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Rcv1.html" target="topic">Rcv1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Rcv2.html" target="topic">Rcv2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+In unicast and anycast modes, the Receive Timestamp and Transmit Timestamp fields are set to the time of day when the message is sent and the Originate Timestamp field is copied unchanged from the Transmit Timestamp field of the request. It is important that this field be copied intact, as a NTP client uses it to avoid replays. In multicast mode, the Originate Timestamp and Receive Timestamp fields are set to 0 and the Transmit Timestamp field is set to the time of day when the message is sent.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Ref1.html" target="topic">Ref1</a> - Date portion of the Reference Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Ref1.html" target="topic">Ref1</a> is used to store the LongInt value representing the date portion of the Reference Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- ------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Ref1.html" target="topic">Ref1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Ref2.html" target="topic">Ref2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Ref2.html" target="topic">Ref2</a> - Time portion of the Reference Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Ref2.html" target="topic">Ref2</a> is used to store the LongInt value representing the time portion of the Reference Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Ref1.html" target="topic">Ref1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Ref2.html" target="topic">Ref2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RefID.html" target="topic">RefID</a> - Reference Identifier&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RefID.html" target="topic">RefID</a> is the LongInt value in TNTPGram used to identify the particular reference source, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+In the case of NTP Version 3 or Version 4 stratum-0 (unspecified) or stratum-1 (primary) servers, this is a four-character ASCII string, left justified and zero padded to 32 bits.&nbsp;</p>
+<p class="Element10">
+In NTP Version 3 secondary servers, this is the 32-bit IPv4 address of the reference source. In NTP Version 4 secondary servers, this is the low order 32 bits of the latest transmit timestamp of the reference source.&nbsp;</p>
+<p class="Element10">
+In the case of NTP primary (stratum 1) servers, this field is a code identifying the external reference source according to the following list:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Value Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------------------------------------------------------------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+LOCL Uncalibrated local clock used as a primary reference for a subnet without external means of synchronization&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+PPS Atomic clock or other pulse-per-second source individually calibrated to national standards&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+ACTS NIST dialup modem service&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+USNO USNO modem service&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+PTB PTB (Germany) modem service&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+TDF Allouis (France) Radio 164 kHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+DCF Mainflingen (Germany) Radio 77.5 kHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+MSF Rugby (UK) Radio 60 kHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+WWV Ft. Collins (US) Radio 2.5, 5, 10, 15, 20 MHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+WWVB Boulder (US) Radio 60 kHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+WWVH Kaui Hawaii (US) Radio 2.5, 5, 10, 15 MHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+CHU Ottawa (Canada) Radio 3330, 7335, 14670 kHz&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+LORC LORAN-C radionavigation system&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+OMEG OMEGA radionavigation system&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+GPS Global Positioning Service&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+GOES Geostationary Orbit Environment Satellite&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the external reference is one of those listed, the associated code should be used. Codes for sources not listed can be contrived as appropriate.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDelay.html" target="topic">RootDelay</a> - Total roundtrip delay to the time server.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDelay.html" target="topic">RootDelay</a> is the LongInt value in TNTPGram indicating the total roundtrip delay to the primary reference source, in seconds. <a href="TNTPGram_RootDelay.html" target="topic">RootDelay</a> stores fractional seconds after bit 15, as seen in the message diagram.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDelay.html" target="topic">RootDelay</a> can have both positive and negative values, depending on the relative time and frequency offsets. The values that normally appear in this field range from negative values of a few milliseconds to positive values of several hundred milliseconds.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDispersion.html" target="topic">RootDispersion</a> - Nominal error for the time server&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDispersion.html" target="topic">RootDispersion</a> is the LongInt value in TNTPGram that indicates the nominal error relative to the primary reference source. <a href="TNTPGram_RootDispersion.html" target="topic">RootDispersion</a> stores fractional seconds after bit 15, as seen in the message diagram.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_RootDispersion.html" target="topic">RootDispersion</a> is measured in seconds, and values normally range from 0 to several hundred milliseconds.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Xmit1.html" target="topic">Xmit1</a> - Date portion of the Transmit Timestamp&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Xmit1.html" target="topic">Xmit1</a> is used to store the LongInt value representing the date portion of the Transmit Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Xmit1.html" target="topic">Xmit1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Xmit2.html" target="topic">Xmit2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+In unicast and anycast modes, the Receive Timestamp and Transmit Timestamp fields are set to the time of day when the message is sent and the Originate Timestamp field is copied unchanged from the Transmit Timestamp field of the request. It is important that this field be copied intact, as a NTP client uses it to avoid replays. In multicast mode, the Originate Timestamp and Receive Timestamp fields are set to 0 and the Transmit Timestamp field is set to the time of day when the message is sent.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Xmit2.html" target="topic">Xmit2</a>- Time portion of the Transmit Timestamp.&nbsp;</p>
+<p class="Element10">
+<a href="TNTPGram_Xmit2.html" target="topic">Xmit2</a> is used to store the LongInt value representing the time portion of the Transmit Timestamp, as indicated in the message diagram.&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+Bits Field&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+&nbsp;</p><div class="Element15">
+---- -------</div>
+<p class="Element68">
+&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+0-15 <a href="TNTPGram_Xmit1.html" target="topic">Xmit1</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="100%">
+<div class="Element68">
+16-31 <a href="TNTPGram_Xmit2.html" target="topic">Xmit2</a>&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+If the server is unsynchronized, all timestamp fields are set to zero. If synchronized, the Reference Timestamp is set to the time the last update was received from the radio clock or modem.&nbsp;</p>
+<p class="Element10">
+In unicast and anycast modes, the Receive Timestamp and Transmit Timestamp fields are set to the time of day when the message is sent and the Originate Timestamp field is copied unchanged from the Transmit Timestamp field of the request. It is important that this field be copied intact, as a NTP client uses it to avoid replays. In multicast mode, the Originate Timestamp and Receive Timestamp fields are set to 0 and the Transmit Timestamp field is set to the time of day when the message is sent.&nbsp;</p>
+<p class="Element10">
+There is some latitude on the part of most clients to forgive invalid timestamps, such as might occur when first coming up or during periods when the primary reference source is inoperative. The most important indicator of an unhealthy server is the LI field in <a href="TNTPGram_Head1.html" target="topic">Head1</a>, in which a value of 3 indicates an unsynchronized condition. When this value is displayed, clients should discard the server message, regardless of the contents of other fields.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdSNTP.html" target="topic">TIdSNTP</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Properties_TNTPGram.html" target="topic">TNTPGram Properties</a><br /><a href="!!MEMBEROVERVIEW_TNTPGram.html" target="topic">TNTPGram Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

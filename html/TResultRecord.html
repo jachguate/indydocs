@@ -1,0 +1,200 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TResultRecord Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TResultRecord.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TResultRecord.html" target="topic">TResultRecord Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TReplyStatus_ToIpAddress.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TResultRecord.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TResultRecord Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TResultRecord.html" target="topic">TResultRecord Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TResultRecord.html" target="topic">TResultRecord Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TResultRecord.html" target="topic">TResultRecord Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Collection item used to represent resource records returned by a DNS query.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TResultRecord.png" border="0" alt="" title="" usemap="#TResultRecord"><map class="Element150" name="TResultRecord"><area class="Element150" shape="rect" coords="123,0,200,15" href="TResultRecord.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TResultRecord = <strong>class</strong>(TIdCollectionItem);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TResultRecord is a TCollectionItem descendant that represents resource records returned in the results for a DNS query. TResultRecord contains data associated with names, aliases, and internet addresses in the tree-structured Domain <a href="TResultRecord_Name.html" target="topic">Name</a> Space.&nbsp;</p>
+<p class="Element10">
+Resource records are returned in the Answer, Authority, and Additional sections of a DNS response, and they all share the same format: a variable number of resource records, where the number of records is specified in the corresponding count field in the header.&nbsp;</p>
+<p class="Element10">
+A resource record has the following format:&nbsp;</p>
+<p class="Element10">
+<img src="RR.png" border="0" alt="" title="">&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="4%">
+<div class="Element66">
+Field&nbsp;</div></td><td class="Element65" valign="top" width="96%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+NAME&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+Domain name to which this resource record pertains.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+TYPE&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+Two octets containing one of the encoded resource record type codes. TYPE specifies the meaning of the data in the RDATA field.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+CLASS&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+Two octets which specify the class of the data in the RDATA field.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+<a href="TResultRecord_TTL.html" target="topic">TTL</a>&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+32-bit unsigned integer that specifies the time interval (in seconds) that the resource record may be cached before it should be discarded. Zero values are interpreted to mean that the resource record can only be used for the transaction in progress, and should not be cached.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+RDLENGTH&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+16-bit unsigned integer that specifies the length in octets of the RDATA field.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="4%">
+<div class="Element68">
+RDATA&nbsp;</div></td><td class="Element67" valign="top" width="96%">
+<div class="Element68">
+A variable length string of octets that describes the resource. The format of this information varies according to the TYPE and CLASS of the resource record. For example, the if the TYPE is A and the CLASS is IN, the RDATA field is a 4 octet ARPA Internet address.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+TResultRecord provides properties that represent the values found in a resource record, including the resource record type, resource class, Time-To-Live, data for the resource record, and the length of data in the resource record.&nbsp;</p>
+<p class="Element10">
+TResultRecord also provides methods to handle parsing of raw data from a DNS query response, and storing the resulting values in properties for the object instance.&nbsp;</p>
+<p class="Element10">
+TResultRecord is also an ancestor class for other resource record types such as <a href="TARecord.html" target="topic">TARecord</a>, <a href="TCNRecord.html" target="topic">TCNRecord</a>, <a href="THINFORecord.html" target="topic">THINFORecord</a>, <a href="TMINFORecord.html" target="topic">TMINFORecord</a>, <a href="TMXRecord.html" target="topic">TMXRecord</a>, <a href="TNAMERecord.html" target="topic">TNAMERecord</a>, <a href="TNSRecord.html" target="topic">TNSRecord</a>, <a href="TPTRRecord.html" target="topic">TPTRRecord</a>, <a href="TRDATARecord.html" target="topic">TRDATARecord</a>, <a href="TSOARecord.html" target="topic">TSOARecord</a>, <a href="TTextRecord.html" target="topic">TTextRecord</a>, and <a href="TWKSRecord.html" target="topic">TWKSRecord</a>. These descendant classes provide additional properties used for labels in the RDATA field that are specific to the resource class and resource record type.&nbsp;</p>
+<p class="Element10">
+TResultRecord is the type used to represent collection items maintained in the <a href="TQueryResult.html" target="topic">TQueryResult</a> collection, and the item class returned when accessing the resource records returned by a DNS query in TIdDNSResolver.QueryResult.Items.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TIdDNSResolver_Resolve@string@TIdRR_SOA@integer.html" target="topic">TIdDNSResolver.Resolve</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TIdDNSResolver_QueryResult.html" target="topic">TIdDNSResolver.QueryResult</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TQueryResult.html" target="topic">TQueryResult</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TARecord.html" target="topic">TARecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TCNRecord.html" target="topic">TCNRecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="THINFORecord.html" target="topic">THINFORecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TMINFORecord.html" target="topic">TMINFORecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TMXRecord.html" target="topic">TMXRecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TNAMERecord.html" target="topic">TNAMERecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TNSRecord.html" target="topic">TNSRecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TPTRRecord.html" target="topic">TPTRRecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TRDATARecord.html" target="topic">TRDATARecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TSOARecord.html" target="topic">TSOARecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TTextRecord.html" target="topic">TTextRecord</a>&nbsp;</p>
+<p class="Section9">
+ <a href="TWKSRecord.html" target="topic">TWKSRecord</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TResultRecord.html" target="topic">TResultRecord Methods</a><br /><a href="!!MEMBERTYPE_Properties_TResultRecord.html" target="topic">TResultRecord Properties</a><br /><a href="!!MEMBEROVERVIEW_TResultRecord.html" target="topic">TResultRecord Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

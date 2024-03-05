@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TSOARecord Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TSOARecord.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TSOARecord.html" target="topic">TSOARecord Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TSNMPInfo_ValueType.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TSOARecord.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TSOARecord Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TSOARecord.html" target="topic">TSOARecord Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TSOARecord.html" target="topic">TSOARecord Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TSOARecord.html" target="topic">TSOARecord Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents resource records in a DNS response that include Start of Authority resource record types.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TSOARecord.png" border="0" alt="" title="" usemap="#TSOARecord"><map class="Element150" name="TSOARecord"><area class="Element150" shape="rect" coords="123,0,200,15" href="TResultRecord.html"><area class="Element150" shape="rect" coords="230,0,303,15" href="TSOARecord.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TSOARecord = <strong>class</strong>(TResultRecord);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TSOARecord is a <a href="TResultRecord.html" target="topic">TResultRecord</a> descendant that represents a resource record returned in the results for a DNS query. TSOARecord is the collection item created to represent a resource resource returned when TIdDNSResolver.QueryRecords includes the value qtSOA for Start of Authority resource records.&nbsp;</p>
+<p class="Element10">
+A Start of Authority resource record is used to identify the start of a zone of authority for the authoritative data in the Answer section of the DNS response. A Start of Authority resource record is especially for describing name server zone management parameters.&nbsp;</p>
+<p class="Element10">
+A Start of Authority resource record uses the same DNS packet layout as other <a href="TResultRecord.html" target="topic">TResultRecord</a>-based responses, but extends the use of <a href="TResultRecord_RData.html" target="topic">RData</a> to include the following definition and format:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="6%">
+<div class="Element66">
+Field&nbsp;</div></td><td class="Element65" valign="top" width="94%">
+<div class="Element66">
+Description&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+MNAME&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+Domain name of the name server that was the original or primary source of data for this zone.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+RNAME&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+Domain name which specifies the mailbox of the person responsible for this zone.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+SERIAL&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+32-bit unsigned integer that is the version number of the original copy of the zone. Zone transfers preserve this value. This value wraps and should be compared using sequence space arithmetic.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+REFRESH&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+32-bit time interval before the zone should be refreshed.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+RETRY&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+32-bit time interval that should elapse before a failed refresh should be retried.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+EXPIRE&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+32-bit time value that specifies the upper limit on the time interval that can elapse before the zone is no longer authoritative.&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="6%">
+<div class="Element68">
+MINIMUM&nbsp;</div></td><td class="Element67" valign="top" width="94%">
+<div class="Element68">
+32-bit unsigned integer that is the minimum <a href="TResultRecord_TTL.html" target="topic">TTL</a> field that should be exported with any RR from this zone.&nbsp;</div></td></tr></table></div></div>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+All times values are expressed in seconds.&nbsp;</p>
+<p class="Element10">
+Most of these fields are pertinent only for name server maintenance operations. However, MINIMUM is used in all query operations that retrieve Resource Records from a zone.&nbsp;</p>
+<p class="Element10">
+Whenever a Start of Authority RR is sent in a response to a query, the <a href="TResultRecord_TTL.html" target="topic">TTL</a> field is set to the maximum of the <a href="TResultRecord_TTL.html" target="topic">TTL</a> field from the Resource Record, and the MINIMUM field in the appropriate SOA. Thus MINIMUM is a lower bound on the <a href="TResultRecord_TTL.html" target="topic">TTL</a> field for all RRs in a zone. Note that this use of MINIMUM should occur when the Resource Records are copied into the response and not when the zone is loaded from a master file or via a zone transfer. The reason for this provison is to allow future dynamic update facilities to change the Start of Authority Resource Record with known semantics.&nbsp;</p>
+<p class="Element10">
+TSOARecord extends <a href="TResultRecord.html" target="topic">TResultRecord</a> to implement the specifics of accessing <a href="TResultRecord_RData.html" target="topic">RData</a> values as properties, including <a href="TSOARecord_Primary.html" target="topic">Primary</a>, <a href="TSOARecord_ResponsiblePerson.html" target="topic">ResponsiblePerson</a>, <a href="TSOARecord_Serial.html" target="topic">Serial</a>, <a href="TSOARecord_Refresh.html" target="topic">Refresh</a>, <a href="TSOARecord_Retry.html" target="topic">Retry</a>, <a href="TSOARecord_Expire.html" target="topic">Expire</a>, and <a href="TSOARecord_MinimumTTL.html" target="topic">MinimumTTL</a>.&nbsp;</p>
+<p class="Element10">
+TSOARecord also overrides the <a href="TSOARecord_Parse@TIdBytes@Integer.html" target="topic">Parse</a> method to read the values in <a href="TResultRecord_RData.html" target="topic">RData</a> into their property counterparts.</p></div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TResultRecord.html" target="topic">TResultRecord</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TSOARecord.html" target="topic">TSOARecord Methods</a><br /><a href="!!MEMBERTYPE_Properties_TSOARecord.html" target="topic">TSOARecord Properties</a><br /><a href="!!MEMBEROVERVIEW_TSOARecord.html" target="topic">TSOARecord Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>

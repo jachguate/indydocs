@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<title>TWKSRecord Class</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="generator" content="Doc-O-Matic" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <link rel="STYLESHEET" href="default.css" type="text/css" />
+
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body class="Element700" onload="onBodyLoadEx('frames.html', 'topic', 'TWKSRecord.html');" onmousedown="onBodyMouseDown();">
+
+<!-- Begin Popups -->
+
+<!-- End Popups -->
+
+<!-- Begin Page Header -->
+<div class="Element710" id="areafixed">
+<div class="Element94">
+Topic Path: Symbol Reference &gt; Classes &gt; <a href="TWKSRecord.html" target="topic">TWKSRecord Class</a></div>
+<div class="Element92">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="50%">
+<div class="Element2">
+<a href="contents.html" target="tocidx"><img src="btn_globals_contents_midblue.gif" border="0" alt="Contents" title="Contents" onmouseover="switchImage(this, 'btn_globals_contents_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_contents_midblue.gif');"></a><a href="idx.html" target="tocidx"><img src="btn_globals_index_midblue.gif" border="0" alt="Index" title="Index" onmouseover="switchImage(this, 'btn_globals_index_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_index_midblue.gif');"></a><a href="index.html" target="topic"><img src="btn_globals_home_midblue.gif" border="0" alt="Home" title="Home" onmouseover="switchImage(this, 'btn_globals_home_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_globals_home_midblue.gif');"></a></div>
+</td><td width="50%">
+<div class="Element90">
+<a href="TTextRecord_Text.html" target="topic"><img src="btn_prev_midblue.gif" border="0" alt="Previous" title="Previous" onmouseover="switchImage(this, 'btn_prev_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_prev_midblue.gif');"></a><img src="btn_up_d.gif" border="0" alt="Up" title="Up"><a href="!!MEMBEROVERVIEW_TWKSRecord.html" target="topic"><img src="btn_next_midblue.gif" border="0" alt="Next" title="Next" onmouseover="switchImage(this, 'btn_next_midblue_hover.gif');" onmouseout="switchImage(this, 'btn_next_midblue.gif');"></a></div>
+</td></tr></table><div class="Element5">
+TWKSRecord Class</div>
+<div class="Element7">
+<a href="!!MEMBERTYPE_Methods_TWKSRecord.html" target="topic">TWKSRecord Methods</a> &nbsp; <a href="!!MEMBERTYPE_Properties_TWKSRecord.html" target="topic">TWKSRecord Properties</a> &nbsp; <a href="!!MEMBEROVERVIEW_TWKSRecord.html" target="topic">TWKSRecord Members</a></div>
+<div class="Element731">
+<div class="Element730">
+<a href="#" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');"><img src="btn_collapse.gif" border="0" alt="" title="" id="imgToggleAllElements"></a><a href="#" id="linkToggleAllElements" onclick="ToggleAllElements('Hierarchy,Pascal,Description,See_Also,Related_Information', 'linkToggleAllElements', 'imgToggleAllElements', 'Collapse All', 'Expand All');">Collapse All</a></div>
+</div>
+</div>
+</div>
+
+<!-- End Page Header -->
+
+<!-- Begin Client Area -->
+<div class="Element720" id="areascroll">
+<div class="Element721">
+
+<!-- Begin Page Content -->
+<a name="PageContent"></a><div class="Element58">
+<a name="Summary"></a><div class="Element11">
+<div class="Element10">
+<p class="Element10">
+Represents a Well Known Service Resource Record from a DNS Response packet.</p></div>
+</div>
+<a name="File"></a><div class="Element14">
+File</div>
+<div class="Element10033">
+<div class="Section33">
+<p class="Section33">
+<a href="IdDNSResolver_pas.html" target="topic">IdDNSResolver</a></p></div>
+</div>
+<a name="Hierarchy"></a><div class="Section1000032">
+<a onclick="toggleVisibilityStored('Hierarchy');" class="a_Section1000032"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgHierarchy">Hierarchy</a></div>
+<div id="divHierarchy">
+<div class="Element151"><div class="Element150"><pre class="Element150"><img src="TWKSRecord.png" border="0" alt="" title="" usemap="#TWKSRecord"><map class="Element150" name="TWKSRecord"><area class="Element150" shape="rect" coords="123,0,200,15" href="TResultRecord.html"><area class="Element150" shape="rect" coords="230,0,302,15" href="TWKSRecord.html"></map></pre></div></div>
+</div>
+<a name="Pascal"></a><div class="Element99">
+<a onclick="toggleVisibilityStored('Pascal');"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgPascal">Pascal</a></div>
+<div id="divPascal">
+<div class="Element101"><div class="Element100"><pre class="Element100">TWKSRecord = <strong>class</strong>(TResultRecord);</pre></div></div>
+</div>
+<a name="Description"></a><div class="Element14">
+<a onclick="toggleVisibilityStored('Description');" class="a_Element14"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgDescription">Description</a></div>
+<div id="divDescription">
+<div class="Element11">
+<div class="Element10">
+<p class="Element10">
+TWKSRecord is a <a href="TResultRecord.html" target="topic">TResultRecord</a> descendant that represents a resource record returned in the results for a DNS query. TWKSRecord is the collection item created to represent a resource resource returned when TIdDNSResolver.QueryRecords includes the value qtWKS for Well Known Service resource records.&nbsp;</p>
+<p class="Element10">
+Well Known Service resoure records are used to describe the well known services supported by a particular protocol on a particular internet address. If a server supports both TCP and UDP variants of a service, multiple WKS resource records are returned in a DNS response.&nbsp;</p>
+<p class="Element10">
+A Well Known Service resoure record uses the same DNS packet layout as other <a href="TResultRecord.html" target="topic">TResultRecord</a>-based responses, but extends the use of <a href="TResultRecord_RData.html" target="topic">RData</a> to include the following definition and format:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">ADDRESS - 32-bit Internet address.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">PROTOCOL - 8-bit IP protocol number. Uses BITMAP to indicate one bit per port of the specified protocol.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+
+<ul class="Element631">
+<li class="Element601">BITMAP - Variable length bit map with a length that is a multiple of 8-bits long. The first bit corresponds to port 0, the second to port 1, etc. If the bit map does not include a bit for a protocol of interest, that bit is assumed zero.</li>
+</ul>&nbsp;</p>
+<p class="Element10">
+TWKSRecord extends <a href="TResultRecord.html" target="topic">TResultRecord</a> to implement the specifics of accessing <a href="TResultRecord_RData.html" target="topic">RData</a> values as properties, including Address, <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>, <a href="TWKSRecord_ByteCount.html" target="topic">ByteCount</a>, and <a href="TWKSRecord_BitMap.html" target="topic">BitMap</a>. TWKSRecord also overrides the <a href="TWKSRecord_Parse@TIdBytes@Integer.html" target="topic">Parse</a> method to read the values in <a href="TResultRecord_RData.html" target="topic">RData</a> into their property counterparts.&nbsp;</p>
+<p class="Element10">
+The appropriate values and mnemonics for ports and protocols are specified in RFC 1010. For example, if PROTOCOL=TCP, the 26th bit corresponds to TCP port 25 (SMTP). If this bit is set, a SMTP server should be listening on TCP port 25; if zero, SMTP service is not supported on the specified address.&nbsp;</p>
+<p class="Element10">
+<a href="TWKSRecord_Protocol.html" target="topic">Protocol</a> specifies the IP protocol the host supports, as described in RFC 1010, and may contain one of the following values:&nbsp;</p>
+<p class="Element10">
+&nbsp;</p><div class="Element63">
+<div class="TableDiv">
+<table cellspacing="0" class="Table1">
+<tr>
+<td class="Element65" valign="top" width="9%">
+<div class="Element66">
+Value&nbsp;</div></td><td class="Element65" valign="top" width="91%">
+<div class="Element66">
+Meaning&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+0&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Reserved&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+1&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+ICMP Internet Control Message&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+2&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+IGMP Internet Group Management&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+3&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+GGP Gateway-to-Gateway&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+4&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+5&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+ST Stream&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+6&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+TCP Transmission Control&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+7&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+UCL&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+8&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+EGP Exterior Gateway <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+9&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+IGP any private interior gateway&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+10&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+BBN-RCC-MON BBN RCC Monitoring&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+11&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+NVP-II Network Voice <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+12&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+PUP&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+13&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+ARGUS&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+14&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+EMCON&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+15&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+XNET Cross Net Debugger&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+16&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+CHAOS&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+17&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+UDP User Datagram&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+18&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+MUX Multiplexing&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+19&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+DCN-MEAS DCN Measurement Subsystems&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+20&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+HMP Host Monitoring&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+21&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+PRM Packet Radio Measurement&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+22&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+XNS-IDP XEROX NS IDP&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+23&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+TRUNK-1 Trunk-1&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+24&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+TRUNK-2 Trunk-2&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+25&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+LEAF-1 Leaf-1&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+26&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+LEAF-2 Leaf-2&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+27&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+RDP Reliable Data <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+28&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+IRTP Internet Reliable Transaction&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+29&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+ISO-TP4 ISO Transport <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a> Class 4&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+30&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+NETBLT Bulk Data Transfer <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+31&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+MFE-NSP MFE Network Services <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+32&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+MERIT-INP MERIT Internodal <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+33&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+SEP Sequential Exchange <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+34-60&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+61&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+any host internal protocol&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+62&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+CFTP&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+63&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+any local network&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+64&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+SAT-EXPAK SATNET and Backroom EXPAK&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+65&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+MIT-SUBNET MIT Subnet Support&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+66&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+RVD MIT Remote Virtual Disk <a href="TWKSRecord_Protocol.html" target="topic">Protocol</a>&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+67&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+IPPC Internet Pluribus Packet Core&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+68&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+any distributed file system&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+69&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+SAT-MON SATNET Monitoring&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+70&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+71&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+IPCV Internet Packet Core Utility&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+72-75&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+76&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+BR-SAT-MON Backroom SATNET Monitoring&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+77&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+78&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+WB-MON WIDEBAND Monitoring&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+79&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+WB-EXPAK WIDEBAND EXPAK&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+80-254&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Unassigned&nbsp;</div></td></tr><tr>
+<td class="Element67" valign="top" width="9%">
+<div class="Element68">
+255&nbsp;</div></td><td class="Element67" valign="top" width="91%">
+<div class="Element68">
+Reserved&nbsp;</div></td></tr></table></div></div>
+</div>
+</div>
+</div>
+<a name="See_Also"></a><div class="Section1000009">
+<a onclick="toggleVisibilityStored('See_Also');" class="a_Section1000009"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgSee_Also">See Also</a></div>
+<div id="divSee_Also">
+<div class="Element10009">
+<div class="Section9">
+<p class="Section9">
+<a href="TResultRecord.html" target="topic">TResultRecord</a></p></div>
+</div>
+</div>
+<a name="Related_Information"></a><div class="Section1000034">
+<a onclick="toggleVisibilityStored('Related_Information');" class="a_Section1000034"><img src="btn_collapse_large.gif" border="0" alt="" title="" id="imgRelated_Information">Related Information</a></div>
+<div id="divRelated_Information">
+<div class="Element10034">
+<div class="Section34">
+<a href="!!MEMBERTYPE_Methods_TWKSRecord.html" target="topic">TWKSRecord Methods</a><br /><a href="!!MEMBERTYPE_Properties_TWKSRecord.html" target="topic">TWKSRecord Properties</a><br /><a href="!!MEMBEROVERVIEW_TWKSRecord.html" target="topic">TWKSRecord Members</a></div>
+</div>
+</div>
+</div>
+<!-- End Page Content -->
+
+<!-- Begin Page Footer -->
+<div class="Element93">
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td width="100%">
+<div class="Element3">
+Copyright © 1993-2006, Chad Z. Hower (aka Kudzu) and the Indy Pit Crew. All rights reserved.</div>
+</td></tr><tr><td width="100%">
+<div class="Element97">
+Post feedback to the <a href="news://news.atozed.com/atozedsoftware.indy.documentation">Indy Docs Newsgroup</a>.</div>
+</td></tr></table></div>
+
+<!-- End Page Footer -->
+</div>
+</div>
+
+<!-- End Client Area -->
+</body></html>
