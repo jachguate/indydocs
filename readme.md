@@ -5,4 +5,6 @@ This repository contains a COPY of the official indy documentation in HTML for t
 
 At the time of the repository creation, March 4, 2024, it appears there's no official documentation online, at least I couldn't find it, so I set up this repository and uploaded it to have it online using github pages.
 
-You can visit the live site at https://jachguate.github.io/indydocs
+You can visit the live site at https://jachguate.github.io/indydocs/html
+
+You can find this same readme at https://jachguate.github.io/indydocs
